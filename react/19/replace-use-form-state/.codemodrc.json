@@ -1,0 +1,14 @@
+{
+  "name": "react/19/replace-use-form-state",
+  "version": "1.0.9",
+  "engine": "jscodeshift",
+  "private": false,
+  "applicability": {
+    "from": [["react", "<=", "18"]]
+  },
+  "arguments": [],
+  "meta": {
+    "tags": ["react", "migration"],
+    "git": "https://github.com/codemod-com/commons/tree/main/react/19/replace-use-form-state"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
+  "version": "1.0.1",
+  "private": false,
+  "name": "python/orjson/dumps-add-UTC_Z",
+  "engine": "ast-grep",
+  "meta": {
+    "tags": ["python", "json", "orjson", "sentry"],
+    "git": "https://github.com/codemod-com/commons/tree/main/python/orjson/orjson.dumps-add-UTC_Z"
+  }
+}
