@@ -1,39 +1,38 @@
-:warning::warning: Please do not include any proprietary code in the pull request. :warning::warning:
+<!--
+THANK YOU for contributing to Codemod Commons! Let's speed up migration velocity for all, one PR at a time! :)
 
-For your codemod pull request to be compatible with the Codemod.com platform, it must follow the following structure:
+Before opening this PR, please:
+1. Read and accept the contributing guidelines here: https://github.com/codemod-com/codemod-registry/blob/main/CONTRIBUTING.md
+2. Ensure that the PR title follows conventional commits: https://www.conventionalcommits.org
 
-```bash
-├── src
-│   ├── index.ts # contains the codemod transform function
-│   ├── [example-file].ts # contains any helper files
-│   ├── ..
-│   ├── .
-├── test
-│   ├── test.ts # containts tests
-├── .codemodrc.json # contains the codemod's metadata; refer to existing codemods for the config file structure.
-├── package.json
-├── tsconfig.json
-└── README.md # must follow the structure described below
-```
+Here are some examples:
 
----
+feat(studio): add new codemod engine
+feat(cli)!: revamp the design (BREAKING CHANGE)
+fix(cli): fix a bug for the formatter
+chore(backend): upgrade node
+docs: improve codemod publish docs
+refactor(registry www): modularize filters
+test(vsce): add tests for VS Code extension
+-->
 
-# Codemod Title
+#### 📚 Description
+<!-- 
+A summary of the change. Include relevant motivation and context.
+-->
 
-## Description
+#### 🔗 Linked Issue
+<!-- 
+For trivial changes, this can be removed. For non-trivial changes, link to an issue that includes the impact, priority, effort, and more context and discussions. Mention its number here. For example:
+- Fixes #XXXX (GitHub issue number for community contributions)
+-->
 
-Add a clear description of what should the codemod do.
+#### 🧪 Test Plan
+<!-- 
+Describe the tests you ran to verify your changes. Provide instructions so we can reproduce them.
+-->
 
-## Example
-
-### Before
-
-```
-//insert your code before transformation here
-```
-
-### After
-
-```
-//insert your code after transformation here
-```
+#### 📄 Documentation to Update
+<!--
+Please identify the existing or missing docs for your feature and update or create them if needed.
+-->
