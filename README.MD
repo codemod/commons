@@ -2,6 +2,7 @@
 
 Codemods, public or private, are preferred to reside in repositories owned by the main organization of their respective projects.
 This repository serves as a catch-all for some codemod sources that still have not found thier way to their ideal home or for Codemod-compatible forks of existing codemods for easier publishing.
+Please [chat with us](https://go.codemod.com/community) before making any major contribution.
 
 ## Usage
 
