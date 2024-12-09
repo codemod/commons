@@ -1,4 +1,5 @@
 import type { ImportSpecifier, SourceFile } from "ts-morph";
+import { Node } from 'ts-morph';
 
 function addNamedImportDeclaration(
   sourceFile: SourceFile,
@@ -20,7 +21,12 @@ function aliasAwareRename(specifier: ImportSpecifier, name: string) {
   if (specifier.getAliasNode()) {
     specifier.getNameNode().replaceWithText(name);
   } else {
-    specifier.getNameNode().rename(name);
+    const nameNode = specifier.getNameNode();
+    if (Node.isIdentifier(nameNode)) {
+      nameNode.rename(name);
+    } else {
+      nameNode.replaceWithText(name);
+    }
   }
 
   return specifier;
