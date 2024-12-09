@@ -8,10 +8,8 @@ import type {
   ObjectProperty,
 } from "jscodeshift";
 
-import {
-  getFunctionComponents,
-  getFunctionName,
-} from "@codemod.com/codemod-utils";
+import { getFunctionName } from "@codemod.com/codemod-utils/src/jscodeshift/function.js";
+import { getFunctionComponents } from "@codemod.com/codemod-utils/src/jscodeshift/react.js";
 
 const getComponentStaticPropValue = (
   j: JSCodeshift,
@@ -41,7 +39,20 @@ const buildPropertyWithDefaultValue = (
   property: ObjectProperty,
   defaultValue: any,
 ) => {
-  return j.assignmentPattern(property.value, defaultValue);
+  // Special handling for nested destructuring patterns
+  if (property.value.type === 'ObjectPattern') {
+    return j.assignmentPattern(
+      property.value,
+      defaultValue
+    );
+  }
+
+  if (!j.Identifier.check(property.key)) {
+    return property.value;
+  }
+  
+  const identifier = j.identifier(property.key.name);
+  return j.assignmentPattern(identifier, defaultValue);
 };
 
 export default function transform(
@@ -85,6 +96,7 @@ export default function transform(
       defaultPropsMap.set(property.key.name, property.value);
     });
 
+
     const propsArg = path.value.params.at(0);
 
     if (j.ObjectPattern.check(propsArg)) {
@@ -96,7 +108,6 @@ export default function transform(
         ) {
           return;
         }
-
         if (defaultPropsMap.has(property.key.name)) {
           isDirty = true;
           property.value = buildPropertyWithDefaultValue(
