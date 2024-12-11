@@ -5,7 +5,7 @@ Replaces deprecated `React.createFactory` method with JSX.
 ### Before
 
 ```tsx
-import { createFactory } from 'react';
+import { createFactory } from "react";
 
 const route = createFactory(Route);
 ```
@@ -15,4 +15,3 @@ const route = createFactory(Route);
 ```tsx
 const route = <Route />;
 ```
-

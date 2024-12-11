@@ -1,4 +1,4 @@
-value = BigNumber.from('1000');
+value = BigNumber.from("1000");
 
 sum = value1.add(value2);
 

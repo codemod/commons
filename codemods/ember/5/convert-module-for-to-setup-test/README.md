@@ -3,28 +3,28 @@ This codemod transforms from the older `moduleFor*` syntax of `ember-qunit@2` to
 ## Before
 
 ```tsx
-import { moduleFor, test } from 'ember-qunit';
+import { moduleFor, test } from "ember-qunit";
 
-moduleFor('service:flash', 'Unit | Service | Flash', {
-	unit: true,
+moduleFor("service:flash", "Unit | Service | Flash", {
+  unit: true,
 });
 
-test('should allow messages to be queued', function (assert) {
-	let subject = this.subject();
+test("should allow messages to be queued", function (assert) {
+  let subject = this.subject();
 });
 ```
 
 ## After
 
 ```tsx
-import { setupTest } from 'ember-qunit';
-import { module, test } from 'qunit';
+import { setupTest } from "ember-qunit";
+import { module, test } from "qunit";
 
-module('Unit | Service | Flash', function (hooks) {
-	setupTest(hooks);
+module("Unit | Service | Flash", function (hooks) {
+  setupTest(hooks);
 
-	test('should allow messages to be queued', function (assert) {
-		let subject = this.owner.lookup('service:flash');
-	});
+  test("should allow messages to be queued", function (assert) {
+    let subject = this.owner.lookup("service:flash");
+  });
 });
 ```

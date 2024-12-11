@@ -3,43 +3,43 @@ This codemod transforms `get()` to `getProperties()` to use traditional object d
 ## Before
 
 ```jsx
-let chancancode = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let chancancode = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-chancancode.get('fullName');
+chancancode.get("fullName");
 
-let model = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let model = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-model.get('fullName');
+model.get("fullName");
 
-let route = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let route = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-route.get('fullName');
+route.get("fullName");
 
-let controller = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let controller = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-controller.get('fullName');
-controller.get('foo.bar');
-controller.get('foo-bar');
+controller.get("fullName");
+controller.get("foo.bar");
+controller.get("foo-bar");
 ```
 
 ## After
 
 ```tsx
-let chancancode = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let chancancode = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-chancancode.get('fullName');
+chancancode.get("fullName");
 
-let model = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let model = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
-model.get('fullName');
+model.get("fullName");
 
-let route = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let route = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
 route.fullName;
 
-let controller = Person.create({ firstName: 'Godfrey', lastName: 'Chan' });
+let controller = Person.create({ firstName: "Godfrey", lastName: "Chan" });
 
 controller.fullName;
-controller.get('foo.bar');
-controller['foo-bar'];
+controller.get("foo.bar");
+controller["foo-bar"];
 ```

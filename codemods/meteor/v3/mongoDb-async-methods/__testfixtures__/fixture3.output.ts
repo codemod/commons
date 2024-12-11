@@ -1,1 +1,1 @@
-const doc = await MyCollection.findOneAsync({ _id: '123' });
+const doc = await MyCollection.findOneAsync({ _id: "123" });

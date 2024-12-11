@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
 class Parent extends React.Component {
   static childContextTypes = {
@@ -7,7 +7,7 @@ class Parent extends React.Component {
   };
 
   getChildContext() {
-    return { foo: 'bar' };
+    return { foo: "bar" };
   }
 
   render() {

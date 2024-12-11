@@ -5,13 +5,13 @@ This codemod relocates the format helpers from the `StyleDictionary` module/clas
 ## Before
 
 ```jsx
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 const { fileHeader, formattedVariables } = StyleDictionary.formatHelpers;
 ```
 
 ## After
 
 ```jsx
-import StyleDictionary from 'style-dictionary';
-import { fileHeader, formattedVariables } from 'style-dictionary/utils';
+import StyleDictionary from "style-dictionary";
+import { fileHeader, formattedVariables } from "style-dictionary/utils";
 ```

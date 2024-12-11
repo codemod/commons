@@ -1,3 +1,3 @@
 ethers.defineProperties(obj, {
-  name: value
+  name: value,
 });

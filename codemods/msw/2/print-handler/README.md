@@ -10,6 +10,6 @@ worker.printHandlers();
 
 ```ts
 worker.listHandlers().forEach((handler) => {
-	console.log(handler.info.header);
+  console.log(handler.info.header);
 });
 ```

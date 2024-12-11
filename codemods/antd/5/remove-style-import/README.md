@@ -1,5 +1,3 @@
-
-
 Comment out the style file import from antd (in js file).
 
 ## Example

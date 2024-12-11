@@ -6,7 +6,7 @@ Further manual changes are required: firing multiple notifications using `fireDa
 
 ```ts
 PushNotificationIOS.scheduleLocalNotification({
-    repeatInterval: 'minute',
+  repeatInterval: "minute",
 });
 ```
 
@@ -14,6 +14,6 @@ PushNotificationIOS.scheduleLocalNotification({
 
 ```ts
 PushNotificationIOS.scheduleLocalNotification({
-    fireIntervalSeconds: 60,
+  fireIntervalSeconds: 60,
 });
 ```

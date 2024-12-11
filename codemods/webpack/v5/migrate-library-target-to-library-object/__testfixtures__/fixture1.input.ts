@@ -1,6 +1,6 @@
 module.exports = {
   output: {
-    library: 'MyLibrary',
-    libraryTarget: 'commonjs2',
+    library: "MyLibrary",
+    libraryTarget: "commonjs2",
   },
 };

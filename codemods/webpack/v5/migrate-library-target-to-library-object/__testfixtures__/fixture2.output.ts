@@ -1,10 +1,10 @@
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
-      type: 'commonjs2',
+      name: "MyLibrary",
+      type: "commonjs2",
     },
 
-    filename: 'bundle.js',
+    filename: "bundle.js",
   },
 };

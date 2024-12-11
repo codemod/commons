@@ -6,18 +6,18 @@ This highly experimental codemod moves the CSS-in-JS styles into the CSS Modules
 
 ```jsx
 const Head = () => {
-	return (
-		<head>
-			<style type="text/css">
-				{`
+  return (
+    <head>
+      <style type="text/css">
+        {`
         body {
           margin: 0;
           padding: 0;
         }
       `}
-			</style>
-		</head>
-	);
+      </style>
+    </head>
+  );
 };
 
 export default Head;
@@ -28,10 +28,10 @@ export default Head;
 The file gets transformed into:
 
 ```jsx
-import styles from 'Head.module.css';
+import styles from "Head.module.css";
 
 const Head = () => {
-	return <head className={styles['wrapper']}></head>;
+  return <head className={styles["wrapper"]}></head>;
 };
 
 export default Head;

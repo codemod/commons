@@ -6,11 +6,11 @@ This codemod migrates certain viewport metadata to `viewport` export.
 
 ```jsx
 export const metadata = {
-	title: 'My App',
-	themeColor: 'dark',
-	viewport: {
-		width: 1,
-	},
+  title: "My App",
+  themeColor: "dark",
+  viewport: {
+    width: 1,
+  },
 };
 ```
 
@@ -18,11 +18,11 @@ export const metadata = {
 
 ```jsx
 export const metadata = {
-	title: 'My App',
+  title: "My App",
 };
 
 export const viewport = {
-	width: 1,
-	themeColor: 'dark',
+  width: 1,
+  themeColor: "dark",
 };
 ```

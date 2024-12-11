@@ -6,11 +6,11 @@ Safely removes `<a>` from `Link` components imported from the `next/link` module
 
 ```jsx
 export default function Component() {
-	return (
-		<Link href="/a">
-			<a>Anchor</a>
-		</Link>
-	);
+  return (
+    <Link href="/a">
+      <a>Anchor</a>
+    </Link>
+  );
 }
 ```
 
@@ -18,6 +18,6 @@ export default function Component() {
 
 ```jsx
 export default function Component() {
-	return <Link href="/a">Anchor</Link>;
+  return <Link href="/a">Anchor</Link>;
 }
 ```

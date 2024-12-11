@@ -1,3 +1,3 @@
-import { createFactory } from 'react';
+import { createFactory } from "react";
 
 const route = createFactory(Route);

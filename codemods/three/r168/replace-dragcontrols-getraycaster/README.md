@@ -1,6 +1,5 @@
 This codemod renames DragControls.getRaycaster() to controls.raycaster
 
-
 ## Example
 
 ### Before
@@ -42,4 +41,3 @@ if (something) {
   anything.controls.raycaster;
 }
 ```
-

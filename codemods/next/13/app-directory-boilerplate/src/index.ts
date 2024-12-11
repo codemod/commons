@@ -1105,15 +1105,17 @@ const handleData: HandleData<Dependencies, State> = async (
   }
 };
 
-const initializeState: Filemod<Dependencies, State>["initializeState"] =
-  async () => {
-    return {
-      underscoreAppData: null,
-      underscoreAppPath: null,
-      underscoreDocumentData: null,
-      underscoreDocumentPath: null,
-    };
+const initializeState: Filemod<
+  Dependencies,
+  State
+>["initializeState"] = async () => {
+  return {
+    underscoreAppData: null,
+    underscoreAppPath: null,
+    underscoreDocumentData: null,
+    underscoreDocumentPath: null,
   };
+};
 
 export const repomod: Filemod<Dependencies, State> = {
   includePatterns: ["**/pages/**/*.{js,jsx,ts,tsx,cjs,mjs,mdx}"],

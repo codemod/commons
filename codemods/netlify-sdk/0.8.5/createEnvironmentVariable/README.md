@@ -10,9 +10,9 @@ createEnvironmentVariable(accountId, siteId, key, values);
 
 ```jsx
 createEnvironmentVariable({
-	accountId: accountId,
-	siteId: siteId,
-	key: key,
-	values: values,
+  accountId: accountId,
+  siteId: siteId,
+  key: key,
+  values: values,
 });
 ```

@@ -5,31 +5,31 @@ This codemod safely migrates existing Next.js 10, 11, 12 applications importing 
 ### Before
 
 ```jsx
-import FutureImage from 'next/future/image';
-import Image from 'next/image';
+import FutureImage from "next/future/image";
+import Image from "next/image";
 
 export default function Home() {
-	return (
-		<div>
-			<Image src="/test.jpg" width="100" height="200" />
-			<FutureImage src="/test.png" width="300" height="400" />
-		</div>
-	);
+  return (
+    <div>
+      <Image src="/test.jpg" width="100" height="200" />
+      <FutureImage src="/test.png" width="300" height="400" />
+    </div>
+  );
 }
 ```
 
 ### After
 
 ```jsx
-import FutureImage from 'next/image';
-import Image from 'next/legacy/image';
+import FutureImage from "next/image";
+import Image from "next/legacy/image";
 
 export default function Home() {
-	return (
-		<div>
-			<Image src="/test.jpg" width="100" height="200" />
-			<FutureImage src="/test.png" width="300" height="400" />
-		</div>
-	);
+  return (
+    <div>
+      <Image src="/test.jpg" width="100" height="200" />
+      <FutureImage src="/test.png" width="300" height="400" />
+    </div>
+  );
 }
 ```

@@ -9,22 +9,25 @@ Previously, it was possible to pass `dedupe: boolean` to `refresh`. These were a
 ## Before
 
 ```jsx
-const { refresh } = await useAsyncData(async () => ({ message: 'Hello, Nuxt 3!' }))
+const { refresh } = await useAsyncData(async () => ({
+  message: "Hello, Nuxt 3!",
+}));
 
-async function refreshData () {
-  await refresh({ dedupe: true })
-  await refresh({ dedupe: false })
+async function refreshData() {
+  await refresh({ dedupe: true });
+  await refresh({ dedupe: false });
 }
 ```
 
 ## After
 
 ```jsx
-const { refresh } = await useAsyncData(async () => ({ message: 'Hello, Nuxt 3!' }))
+const { refresh } = await useAsyncData(async () => ({
+  message: "Hello, Nuxt 3!",
+}));
 
-async function refreshData () {
-  await refresh({ dedupe: 'cancel' })
-  await refresh({ dedupe: 'defer' })
+async function refreshData() {
+  await refresh({ dedupe: "cancel" });
+  await refresh({ dedupe: "defer" });
 }
-
 ```

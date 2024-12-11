@@ -2,9 +2,9 @@
 prisma.user.findMany({
   where: {
     settings: {
-      path: ['someSetting'],
+      path: ["someSetting"],
       equals: someValue,
-      other: '123'
+      other: "123",
     },
   },
-})
+});

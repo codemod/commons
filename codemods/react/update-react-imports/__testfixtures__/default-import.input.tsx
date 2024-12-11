@@ -4,6 +4,6 @@ function MyComponent() {
   return React.createElement(
     "div",
     null,
-    React.createElement(React.Fragment, null, "Hello")
+    React.createElement(React.Fragment, null, "Hello"),
   );
 }

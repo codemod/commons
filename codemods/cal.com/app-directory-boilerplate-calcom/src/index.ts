@@ -508,101 +508,103 @@ const getNewPagePath = (
   return newDirArr.join(sep);
 };
 
-const handleFile: Filemod<Dependencies, Record<string, never>>["handleFile"] =
-  async (api, path, options) => {
-    const parsedPath = parse(path);
-    const directoryNames = parsedPath.dir.split(sep);
-    const endsWithPages =
-      directoryNames.length > 0 &&
-      directoryNames.lastIndexOf("pages") === directoryNames.length - 1;
+const handleFile: Filemod<
+  Dependencies,
+  Record<string, never>
+>["handleFile"] = async (api, path, options) => {
+  const parsedPath = parse(path);
+  const directoryNames = parsedPath.dir.split(sep);
+  const endsWithPages =
+    directoryNames.length > 0 &&
+    directoryNames.lastIndexOf("pages") === directoryNames.length - 1;
 
-    const nameIsIndex = parsedPath.name === "index";
+  const nameIsIndex = parsedPath.name === "index";
 
-    if (endsWithPages && nameIsIndex) {
-      return [];
-    }
-
-    const oldData = await api.readFile(path);
-
-    if (!endsWithPages) {
-      const project = new tsmorph.Project({
-        useInMemoryFileSystem: true,
-        skipFileDependencyResolution: true,
-        compilerOptions: {
-          allowJs: true,
-        },
-      });
-
-      const sourceFile = project.createSourceFile(path ?? "", oldData);
-
-      const pageUsesServerSideData = usesServerSideData(sourceFile);
-      const pageUsesLayout = usesLayout(sourceFile);
-
-      const newPagePath = getNewPagePath(
-        directoryNames,
-        parsedPath.name,
-        pageUsesServerSideData,
-        pageUsesLayout,
-      );
-
-      const nestedPathWithoutExtension = `${
-        parsedPath.dir.split("/pages/")[1] ?? ""
-      }/${parsedPath.name}`;
-
-      const pageContent = getPageContent(
-        newPagePath,
-        pageUsesLayout,
-        nestedPathWithoutExtension,
-      );
-
-      const commands: FileCommand[] = [
-        {
-          kind: "upsertFile",
-          path: format({
-            root: parsedPath.root,
-            dir: newPagePath,
-            ext: parsedPath.ext,
-            name: "page",
-          }),
-          options: {
-            ...options,
-            filePurpose: FilePurpose.ROUTE_PAGE,
-            oldPath: path,
-            oldData: removeLeadingLineBreaks(pageContent),
-            legacyPageData: oldData,
-          },
-        },
-        {
-          kind: "upsertFile",
-          path: format({
-            root: parsedPath.root,
-            dir: parsedPath.dir,
-            ext: parsedPath.ext,
-            name: parsedPath.name,
-          }),
-          options: {
-            ...options,
-            filePurpose: FilePurpose.ORIGINAL_PAGE,
-            oldPath: path,
-            oldData,
-          },
-        },
-      ];
-
-      return commands;
-    }
-
-    if (parsedPath.name === "_app" || parsedPath.name === "_document") {
-      return [
-        {
-          kind: "deleteFile",
-          path,
-        },
-      ];
-    }
-
+  if (endsWithPages && nameIsIndex) {
     return [];
-  };
+  }
+
+  const oldData = await api.readFile(path);
+
+  if (!endsWithPages) {
+    const project = new tsmorph.Project({
+      useInMemoryFileSystem: true,
+      skipFileDependencyResolution: true,
+      compilerOptions: {
+        allowJs: true,
+      },
+    });
+
+    const sourceFile = project.createSourceFile(path ?? "", oldData);
+
+    const pageUsesServerSideData = usesServerSideData(sourceFile);
+    const pageUsesLayout = usesLayout(sourceFile);
+
+    const newPagePath = getNewPagePath(
+      directoryNames,
+      parsedPath.name,
+      pageUsesServerSideData,
+      pageUsesLayout,
+    );
+
+    const nestedPathWithoutExtension = `${
+      parsedPath.dir.split("/pages/")[1] ?? ""
+    }/${parsedPath.name}`;
+
+    const pageContent = getPageContent(
+      newPagePath,
+      pageUsesLayout,
+      nestedPathWithoutExtension,
+    );
+
+    const commands: FileCommand[] = [
+      {
+        kind: "upsertFile",
+        path: format({
+          root: parsedPath.root,
+          dir: newPagePath,
+          ext: parsedPath.ext,
+          name: "page",
+        }),
+        options: {
+          ...options,
+          filePurpose: FilePurpose.ROUTE_PAGE,
+          oldPath: path,
+          oldData: removeLeadingLineBreaks(pageContent),
+          legacyPageData: oldData,
+        },
+      },
+      {
+        kind: "upsertFile",
+        path: format({
+          root: parsedPath.root,
+          dir: parsedPath.dir,
+          ext: parsedPath.ext,
+          name: parsedPath.name,
+        }),
+        options: {
+          ...options,
+          filePurpose: FilePurpose.ORIGINAL_PAGE,
+          oldPath: path,
+          oldData,
+        },
+      },
+    ];
+
+    return commands;
+  }
+
+  if (parsedPath.name === "_app" || parsedPath.name === "_document") {
+    return [
+      {
+        kind: "deleteFile",
+        path,
+      },
+    ];
+  }
+
+  return [];
+};
 
 const handleData: HandleData<Dependencies, State> = async (
   api,

@@ -5,12 +5,12 @@ This codemod migrates project from Launchdarkly React SDK to DevCycle React SDK
 ### Before
 
 ```ts
-import { withLDProvider } from 'launchdarkly-react-client-sdk';
+import { withLDProvider } from "launchdarkly-react-client-sdk";
 
 const App = () => null;
 
 export default withLDProvider({
-    clientSideID: '',
+  clientSideID: "",
 })(App);
 ```
 
@@ -22,7 +22,6 @@ import { withDevCycleProvider } from "@devcycle/react-client-sdk";
 const App = () => null;
 
 export default withDevCycleProvider({
-    sdkKey: ''
+  sdkKey: "",
 })(App);
 ```
-

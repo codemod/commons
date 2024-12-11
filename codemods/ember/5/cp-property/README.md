@@ -4,9 +4,9 @@
 
 ```jsx
 const Person = EmberObject.extend({
-	fullName: computed(function () {
-		return `${this.firstName} ${this.lastName}`;
-	}).property('firstName', 'lastName'),
+  fullName: computed(function () {
+    return `${this.firstName} ${this.lastName}`;
+  }).property("firstName", "lastName"),
 });
 ```
 
@@ -14,8 +14,8 @@ const Person = EmberObject.extend({
 
 ```tsx
 const Person = EmberObject.extend({
-	fullName: computed('firstName', 'lastName', function () {
-		return `${this.firstName} ${this.lastName}`;
-	}),
+  fullName: computed("firstName", "lastName", function () {
+    return `${this.firstName} ${this.lastName}`;
+  }),
 });
 ```

@@ -1,3 +1,3 @@
 const C = (props) => {
-    return <>{ props.text }</>;
-}
+  return <>{props.text}</>;
+};

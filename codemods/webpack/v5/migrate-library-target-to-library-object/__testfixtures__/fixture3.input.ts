@@ -1,5 +1,5 @@
 module.exports = {
   output: {
-    library: 'MyLibrary',
+    library: "MyLibrary",
   },
 };

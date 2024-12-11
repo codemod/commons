@@ -5,7 +5,7 @@ prisma.user.findMany({
   where: {
     id: { in: listUsedAsAVariable },
   },
-})
+});
 
 prisma.user.findMany({
   where: {
@@ -14,22 +14,22 @@ prisma.user.findMany({
       equals: someValue,
     },
   },
-})
+});
 
 prisma.post.findMany({
   where: {
-    tags: listUsedAsAVariable
+    tags: listUsedAsAVariable,
   },
-})
+});
 
 prisma.post.create({
   data: {
     commentsList: listUsedAsAVariable,
   },
-})
+});
 
 prisma.user.findMany({
   where: {
     OR: objectNotWrappedInAnArrayUsedAsAVariable,
   },
-})
+});

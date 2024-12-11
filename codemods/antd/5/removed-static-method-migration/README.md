@@ -1,5 +1,3 @@
-
-
 Replace message.warn with message.warning.
 Replace notification.close with notification.destroy.
 

@@ -1,5 +1,5 @@
 import type { ImportSpecifier, SourceFile } from "ts-morph";
-import { Node } from 'ts-morph';
+import { Node } from "ts-morph";
 
 function addNamedImportDeclaration(
   sourceFile: SourceFile,

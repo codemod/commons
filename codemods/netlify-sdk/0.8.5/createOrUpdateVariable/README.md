@@ -10,9 +10,9 @@ createOrUpdateVariable(accountId, siteId, key, value);
 
 ```jsx
 createOrUpdateVariable({
-	accountId: accountId,
-	siteId: siteId,
-	key: key,
-	values: value,
+  accountId: accountId,
+  siteId: siteId,
+  key: key,
+  values: value,
 });
 ```

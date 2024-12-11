@@ -1,4 +1,4 @@
-This recipe is a set of codemods that will help migrate webpack v4 to v5.  
+This recipe is a set of codemods that will help migrate webpack v4 to v5.
 
 The recipe includes the following codemods:
 

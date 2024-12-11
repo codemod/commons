@@ -1,8 +1,7 @@
-
-
 This codemod will replace the usages of `useFormState()` to use `useActionState()`, introduced in React v19.
 
 ## Example
+
 ### Before:
 
 ```ts
@@ -64,4 +63,3 @@ function StatefulForm({}) {
   return <form></form>;
 }
 ```
-

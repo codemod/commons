@@ -27,6 +27,7 @@ provider.sendTransaction(signedTx);
 ```ts
 provider.broadcastTransaction(signedTx);
 ```
+
 The **StaticJsonRpcProvider** in v5 is now integrated into the v6 **JsonRpcProvider** directly. When connecting to a network which cannot change its network, it is much more efficient to disable the automatic safety check ethers performs.
 
 ### Before
@@ -44,14 +45,14 @@ provider = new JsonRpcProvider(url, network, {
   staticNetwork: network,
 });
 
-
 // If you want to transform your StaticJsonRpcProvider into below method you have to do it manually
 
 // v6: If you want the network automatically detected, this will query eth_chainId only once
 provider = new JsonRpcProvider(url, undefined, {
-  staticNetwork: true
+  staticNetwork: true,
 });
 ```
+
 Since the fees for Ethereum chains has become more complicated, all Fee parameters in v6 were coalesced into a single `.getFeeData` method. While `gasPrice` is no longer widely used in modern networks, when using a legacy network, it is available using that method.
 
 ### Before
@@ -63,6 +64,5 @@ await provider.getGasPrice();
 ### After
 
 ```ts
-(await provider.getFeeData()).gasPrice
+(await provider.getFeeData()).gasPrice;
 ```
-

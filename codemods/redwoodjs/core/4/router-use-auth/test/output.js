@@ -1,4 +1,4 @@
-import { useAuth } from 'src/auth';
+import { useAuth } from "src/auth";
 
 /*
 The MIT License (MIT)
@@ -25,5 +25,5 @@ THE SOFTWARE.
 */
 
 const Routes = () => {
-	return <Router useAuth={useAuth}>{/* ... */}</Router>;
+  return <Router useAuth={useAuth}>{/* ... */}</Router>;
 };

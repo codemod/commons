@@ -1,6 +1,6 @@
 // @ts-nocheck
 prisma.user.findMany({
   where: {
-    OR: { email: 'foo@example.com' },
+    OR: { email: "foo@example.com" },
   },
-})
+});

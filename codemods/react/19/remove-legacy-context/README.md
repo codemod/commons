@@ -1,14 +1,13 @@
-Removes legacy context methods `childContextTypes` and `getChildContext` from react class component. 
-Wraps rendered children with Context. 
-
+Removes legacy context methods `childContextTypes` and `getChildContext` from react class component.
+Wraps rendered children with Context.
 
 ## Example
 
 ### Before
 
 ```tsx
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
 class Parent extends React.Component {
   static childContextTypes = {
@@ -16,7 +15,7 @@ class Parent extends React.Component {
   };
 
   getChildContext() {
-    return { foo: 'bar' };
+    return { foo: "bar" };
   }
 
   render() {
@@ -28,15 +27,18 @@ class Parent extends React.Component {
 ### After
 
 ```tsx
-import PropTypes from 'prop-types';
-import React from 'react';
+import PropTypes from "prop-types";
+import React from "react";
 
 const Context = React.createContext();
 
 class Parent extends React.Component {
   render() {
-    return <Context value={{ foo: 'bar' }}><Child /></Context>;
+    return (
+      <Context value={{ foo: "bar" }}>
+        <Child />
+      </Context>
+    );
   }
 }
 ```
-

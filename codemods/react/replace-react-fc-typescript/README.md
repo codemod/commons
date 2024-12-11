@@ -1,16 +1,14 @@
-
-
 This codemod removes `React.FC`, `React.FunctionComponent` and `React.SFC` and replaces the Props as the type of the unique argument in the component definition.
 
 This codemod supports:
 
--   Inline defined props.
--   Generics.
--   Props defined with intersection.
--   Component modules defined using intersection.
--   Regular named functions.
--   Functions that accept a component definition.
--   Using FC, FunctionComponent and SFC as a named export.
+- Inline defined props.
+- Generics.
+- Props defined with intersection.
+- Component modules defined using intersection.
+- Regular named functions.
+- Functions that accept a component definition.
+- Using FC, FunctionComponent and SFC as a named export.
 
 ## Before:
 
@@ -26,6 +24,6 @@ export const MyComponent2: React.FC<Props2> = (props) => {
 ```tsx
 type Props2 = { id: number };
 export const MyComponent2 = (props: Props2) => {
-	return <span>{props.id}</span>;
+  return <span>{props.id}</span>;
 };
 ```

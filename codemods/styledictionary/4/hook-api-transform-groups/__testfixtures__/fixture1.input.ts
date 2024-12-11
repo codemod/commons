@@ -1,12 +1,12 @@
 export default {
-    // register it inline or by SD.registerTransformGroup
-    transformGroup: {
-        foo: ['foo-transform'],
+  // register it inline or by SD.registerTransformGroup
+  transformGroup: {
+    foo: ["foo-transform"],
+  },
+  platforms: {
+    css: {
+      // apply it per platform
+      transformGroup: ["foo"],
     },
-    platforms: {
-        css: {
-            // apply it per platform
-            transformGroup: ['foo'],
-        },
-    },
+  },
 };

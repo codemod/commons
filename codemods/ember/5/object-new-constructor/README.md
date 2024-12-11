@@ -4,7 +4,7 @@
 
 ```jsx
 let obj1 = new EmberObject();
-let obj2 = new EmberObject({ prop: 'value' });
+let obj2 = new EmberObject({ prop: "value" });
 
 const Foo = EmberObject.extend();
 let foo = new Foo({ bar: 123 });
@@ -14,7 +14,7 @@ let foo = new Foo({ bar: 123 });
 
 ```tsx
 let obj1 = EmberObject.create();
-let obj2 = EmberObject.create({ prop: 'value' });
+let obj2 = EmberObject.create({ prop: "value" });
 
 const Foo = EmberObject.extend();
 let foo = new Foo({ bar: 123 });

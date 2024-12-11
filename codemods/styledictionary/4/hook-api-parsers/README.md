@@ -6,36 +6,34 @@ This codemod updates registered parsers to be placed inside the `hooks.parsers` 
 
 ```jsx
 export default {
-    // register it inline or by SD.registerPreprocessor
-    parsers: [
-        {
-            pattern: /\.json5$/,
-            parse: ({ contents, filePath }) => {
-                return JSON5.parse(contents);
-            },
-        },
-    ],
+  // register it inline or by SD.registerPreprocessor
+  parsers: [
+    {
+      pattern: /\.json5$/,
+      parse: ({ contents, filePath }) => {
+        return JSON5.parse(contents);
+      },
+    },
+  ],
 };
-
 ```
 
 ## After
 
 ```jsx
 export default {
-    // register it inline or by SD.registerPreprocessor
-    parsers: ['json5-parser'],
+  // register it inline or by SD.registerPreprocessor
+  parsers: ["json5-parser"],
 
-    hooks: {
-        parsers: {
-            name: 'json5-parser',
-            pattern: /\.json5$/,
+  hooks: {
+    parsers: {
+      name: "json5-parser",
+      pattern: /\.json5$/,
 
-            parser: ({ contents, filePath }) => {
-                return JSON5.parse(contents);
-            },
-        },
+      parser: ({ contents, filePath }) => {
+        return JSON5.parse(contents);
+      },
     },
+  },
 };
-
 ```

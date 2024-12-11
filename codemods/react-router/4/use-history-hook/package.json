@@ -19,6 +19,10 @@
     "test:watch": "vitest watch",
     "coverage": "vitest run --coverage"
   },
-  "files": ["./README.md", "./.codemodrc.json", "./dist/index.cjs"],
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
   "type": "module"
 }

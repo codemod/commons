@@ -1,5 +1,3 @@
-
-
 This codemod updates synchronous MongoDB operations in a Meteor project to use their asynchronous counterparts, making the code compatible with modern JavaScript best practices (using `async/await`). It transforms methods such as `find`, `findOne`, `insert`, `update`, `remove`, and `upsert` to their asynchronous equivalents by appending `Async` to method names and introducing `await`.
 
 ### Example
@@ -9,15 +7,15 @@ This codemod converts synchronous MongoDB queries and updates into asynchronous 
 ### Before
 
 ```ts
-const docs = MyCollection.find({ _id: '123' }).fetch();
-const doc = MyCollection.findOne({ _id: '123' });
+const docs = MyCollection.find({ _id: "123" }).fetch();
+const doc = MyCollection.findOne({ _id: "123" });
 ```
 
 ### After
 
 ```ts
-const docs = await MyCollection.find({ _id: '123' }).fetchAsync();
-const doc = await MyCollection.findOneAsync({ _id: '123' });
+const docs = await MyCollection.find({ _id: "123" }).fetchAsync();
+const doc = await MyCollection.findOneAsync({ _id: "123" });
 ```
 
 ### Transformations
@@ -29,13 +27,13 @@ This codemod handles various MongoDB operations and converts them into asynchron
 **Before:**
 
 ```ts
-const docs = MyCollection.find({ _id: '123' }).fetch();
+const docs = MyCollection.find({ _id: "123" }).fetch();
 ```
 
 **After:**
 
 ```ts
-const docs = await MyCollection.find({ _id: '123' }).fetchAsync();
+const docs = await MyCollection.find({ _id: "123" }).fetchAsync();
 ```
 
 #### Example 2: Fetching a single document
@@ -43,13 +41,13 @@ const docs = await MyCollection.find({ _id: '123' }).fetchAsync();
 **Before:**
 
 ```ts
-const doc = MyCollection.findOne({ _id: '123' });
+const doc = MyCollection.findOne({ _id: "123" });
 ```
 
 **After:**
 
 ```ts
-const doc = await MyCollection.findOneAsync({ _id: '123' });
+const doc = await MyCollection.findOneAsync({ _id: "123" });
 ```
 
 #### Example 3: Updating documents
@@ -57,15 +55,15 @@ const doc = await MyCollection.findOneAsync({ _id: '123' });
 **Before:**
 
 ```ts
-MyCollection.update({ _id: '123' }, { $set: { name: 'John' } });
-const updatedDocument = MyCollection.findOne({ _id: '123' });
+MyCollection.update({ _id: "123" }, { $set: { name: "John" } });
+const updatedDocument = MyCollection.findOne({ _id: "123" });
 ```
 
 **After:**
 
 ```ts
-await MyCollection.updateAsync({ _id: '123' }, { $set: { name: 'John' } });
-const updatedDocument = await MyCollection.findOneAsync({ _id: '123' });
+await MyCollection.updateAsync({ _id: "123" }, { $set: { name: "John" } });
+const updatedDocument = await MyCollection.findOneAsync({ _id: "123" });
 ```
 
 #### Example 4: Inserting, updating, removing, and upserting documents
@@ -73,19 +71,19 @@ const updatedDocument = await MyCollection.findOneAsync({ _id: '123' });
 **Before:**
 
 ```ts
-MyCollection.insert({ name: 'Jane', age: 30 });
-MyCollection.update({ _id: '123' }, { $set: { name: 'John' } });
-MyCollection.remove({ _id: '123' });
-MyCollection.upsert({ _id: '123' }, { $set: { name: 'John' } });
+MyCollection.insert({ name: "Jane", age: 30 });
+MyCollection.update({ _id: "123" }, { $set: { name: "John" } });
+MyCollection.remove({ _id: "123" });
+MyCollection.upsert({ _id: "123" }, { $set: { name: "John" } });
 ```
 
 **After:**
 
 ```ts
-await MyCollection.insertAsync({ name: 'Jane', age: 30 });
-await MyCollection.updateAsync({ _id: '123' }, { $set: { name: 'John' } });
-await MyCollection.removeAsync({ _id: '123' });
-await MyCollection.upsertAsync({ _id: '123' }, { $set: { name: 'John' } });
+await MyCollection.insertAsync({ name: "Jane", age: 30 });
+await MyCollection.updateAsync({ _id: "123" }, { $set: { name: "John" } });
+await MyCollection.removeAsync({ _id: "123" });
+await MyCollection.upsertAsync({ _id: "123" }, { $set: { name: "John" } });
 ```
 
 ---

@@ -1,51 +1,51 @@
 ## Before
 
 ```jsx
-import EmberObject from '@ember/object';
+import EmberObject from "@ember/object";
 
 let Person = EmberObject.extend({
-	init() {
-		this._super(...arguments);
+  init() {
+    this._super(...arguments);
 
-		this.firstName = 'Betty';
-		this.lastName = 'Jones';
-	},
+    this.firstName = "Betty";
+    this.lastName = "Jones";
+  },
 
-	fullName: function () {
-		return `${this.firstName} ${this.lastName}`;
-	}.property('firstName', 'lastName'),
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  }.property("firstName", "lastName"),
 });
 
 let client = Person.create();
 
-client.get('fullName'); // 'Betty Jones'
+client.get("fullName"); // 'Betty Jones'
 
-client.set('lastName', 'Fuller');
-client.get('fullName'); // 'Betty Fuller'
+client.set("lastName", "Fuller");
+client.get("fullName"); // 'Betty Fuller'
 ```
 
 ## After
 
 ```tsx
-import EmberObject, { computed } from '@ember/object';
+import EmberObject, { computed } from "@ember/object";
 
 let Person = EmberObject.extend({
-	init() {
-		this._super(...arguments);
+  init() {
+    this._super(...arguments);
 
-		this.firstName = 'Betty';
-		this.lastName = 'Jones';
-	},
+    this.firstName = "Betty";
+    this.lastName = "Jones";
+  },
 
-	fullName: computed('firstName', 'lastName', function () {
-		return `${this.firstName} ${this.lastName}`;
-	}),
+  fullName: computed("firstName", "lastName", function () {
+    return `${this.firstName} ${this.lastName}`;
+  }),
 });
 
 let client = Person.create();
 
-client.get('fullName'); // 'Betty Jones'
+client.get("fullName"); // 'Betty Jones'
 
-client.set('lastName', 'Fuller');
-client.get('fullName'); // 'Betty Fuller'
+client.set("lastName", "Fuller");
+client.get("fullName"); // 'Betty Fuller'
 ```

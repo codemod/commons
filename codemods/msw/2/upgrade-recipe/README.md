@@ -18,16 +18,16 @@ This recipe does not change the signatures of MSW handlers, if they were called 
 
 ```ts
 export function mockFactory<T extends MyComplexType>(
- url: string,
- resolver: MyResolverType,
+  url: string,
+  resolver: MyResolverType,
 ) {
- return rest.get(url, resolver);
+  return rest.get(url, resolver);
 }
 
 const handlers = [
- mockFactory('/some/url', (req, res, ctx) => {
-  return res(ctx.status(200));
- }),
+  mockFactory("/some/url", (req, res, ctx) => {
+    return res(ctx.status(200));
+  }),
 ];
 ```
 

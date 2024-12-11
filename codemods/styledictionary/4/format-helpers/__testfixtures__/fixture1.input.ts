@@ -1,2 +1,2 @@
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 const { fileHeader, formattedVariables } = StyleDictionary.formatHelpers;

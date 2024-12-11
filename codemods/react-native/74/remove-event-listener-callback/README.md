@@ -4,13 +4,13 @@ This codemod removes deprecated handler on any calls to `PushNotificationIOS.rem
 
 ```ts
 const callback = () => {
-    console.log('some  callback to remove');
+  console.log("some  callback to remove");
 };
-PushNotificationIOS.removeEventListener('notification', callback);
+PushNotificationIOS.removeEventListener("notification", callback);
 ```
 
 ## After:
 
 ```ts
-PushNotificationIOS.removeEventListener('notification');
+PushNotificationIOS.removeEventListener("notification");
 ```

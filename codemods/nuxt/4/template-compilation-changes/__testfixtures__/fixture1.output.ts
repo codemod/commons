@@ -1,17 +1,20 @@
-import { template } from 'lodash-es';
-import { readFileSync } from 'node:fs';
+import { template } from "lodash-es";
+import { readFileSync } from "node:fs";
 addTemplate({
-    fileName: 'appinsights-vue.js',
+  fileName: "appinsights-vue.js",
 
-    options: {
-        /* some options */
-    },
+  options: {
+    /* some options */
+  },
 
-    getContents({ options: options }) {
-        const contents = readFileSync(resolver.resolve('./runtime/plugin.ejs'), 'utf-8');
+  getContents({ options: options }) {
+    const contents = readFileSync(
+      resolver.resolve("./runtime/plugin.ejs"),
+      "utf-8",
+    );
 
-        return template(contents)({
-            options: options,
-        });
-    },
+    return template(contents)({
+      options: options,
+    });
+  },
 });

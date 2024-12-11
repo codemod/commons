@@ -6,7 +6,7 @@ The placeholder files define the basic layout and page structure.
 
 The boilerplate includes the following:
 
--   placeholder `page.tsx` and `layout.tsx` files which define a UI unique to a route.
+- placeholder `page.tsx` and `layout.tsx` files which define a UI unique to a route.
 
 If the codemod detects that a `getStaticProps` function is not used, it will be removed. Otherwise, it will remove the `export` keyword from the function definition.
 

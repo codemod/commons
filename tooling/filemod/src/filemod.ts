@@ -9,9 +9,8 @@ import type {
   FinishCommand,
 } from "./types/internal-commands.js";
 
-type DistributedOmit<T, K> = T extends NonNullable<unknown>
-  ? Pick<T, Exclude<keyof T, K>>
-  : never;
+type DistributedOmit<T, K> =
+  T extends NonNullable<unknown> ? Pick<T, Exclude<keyof T, K>> : never;
 
 export type CallbackService = Readonly<{
   onCommandExecuted?: (

@@ -1,7 +1,7 @@
 const C = ({ text }) => {
-    return <>{ text }</>;
-}
+  return <>{text}</>;
+};
 
 C.defaultProps = {
-    text: 'test'
-}
+  text: "test",
+};

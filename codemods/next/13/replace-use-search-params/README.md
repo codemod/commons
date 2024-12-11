@@ -8,22 +8,22 @@ A recent update in Next.js brought a breaking change: the `useSearchParams` hook
 ### Before
 
 ```jsx
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams } from "next/navigation";
 
 export async function Component() {
- const params = useSearchParams();
- return <div>My Component</div>;
+  const params = useSearchParams();
+  return <div>My Component</div>;
 }
 ```
 
 ### After
 
 ```jsx
-import { useCompatSearchParams } from 'hooks/utils';
+import { useCompatSearchParams } from "hooks/utils";
 
 export async function Component() {
- const params = useCompatSearchParams();
+  const params = useCompatSearchParams();
 
- return <div>My Component</div>;
+  return <div>My Component</div>;
 }
 ```

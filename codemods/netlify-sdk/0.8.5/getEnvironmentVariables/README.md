@@ -10,7 +10,7 @@ getEnvironmentVariables(accountId, siteId);
 
 ```jsx
 getEnvironmentVariables({
-	accountId: accountId,
-	siteId: siteId,
+  accountId: accountId,
+  siteId: siteId,
 });
 ```

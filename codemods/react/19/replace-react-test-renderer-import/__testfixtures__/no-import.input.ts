@@ -1,1 +1,1 @@
-import something from 'otherlib';
+import something from "otherlib";

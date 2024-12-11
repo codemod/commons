@@ -20,36 +20,37 @@ This codemod requires internet connection.
 
 ```json
 {
-	"name": "package-name",
-	"dependencies": {
-		"prettier": "^3.1.0",
-		"prettier-plugin-tailwindcss": "^0.5.4",
-		"@tanstack/eslint-plugin-query": "^4.29.25",
-		"@someorg/prettier-config": "^1.1.1"
-	},
-	"devDependencies": {
-		"eslint-plugin-airbnb": "^10.2.0",
-		"eslint": "^10.2.0",
-		"eslint-plugin-prettier": "^10.2.0",
-		"eslint-config-prettier": "^10.2.0"
-	},
-	"main": "./dist/index.cjs",
-		"scripts": {
-		"start": "pnpm run build:cjs && node ./dist/index.cjs",
-				"lint:eslint": "eslint . --fix",
-		"lint:prettier": "prettier --write ."
-	},
-	"eslintIgnore": ["ignore-key"],
-	"files": [
-		"prettier-test-no-replace",
-		"README.md",
-		".codemodrc.json",
-		"./dist/index.cjs"	],
-	"lint-staged": {
-		"*.js": "eslint --fix",
-		"*.ts": "eslint --fix"
-	},
-	"type": "module"
+  "name": "package-name",
+  "dependencies": {
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "@tanstack/eslint-plugin-query": "^4.29.25",
+    "@someorg/prettier-config": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-airbnb": "^10.2.0",
+    "eslint": "^10.2.0",
+    "eslint-plugin-prettier": "^10.2.0",
+    "eslint-config-prettier": "^10.2.0"
+  },
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "start": "pnpm run build:cjs && node ./dist/index.cjs",
+    "lint:eslint": "eslint . --fix",
+    "lint:prettier": "prettier --write ."
+  },
+  "eslintIgnore": ["ignore-key"],
+  "files": [
+    "prettier-test-no-replace",
+    "README.md",
+    ".codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.ts": "eslint --fix"
+  },
+  "type": "module"
 }
 ```
 
@@ -57,29 +58,30 @@ This codemod requires internet connection.
 
 ```json
 {
-	"name": "package-name",
-	"dependencies": {},
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3"
-	},
-	"main": "./dist/index.cjs",
-		"scripts": {
-		"start": "pnpm run build:cjs && node ./dist/index.cjs",
-				"lint:eslint": "pnpm dlx @biomejs/biome lint . --apply",
-		"lint:prettier": "pnpm dlx @biomejs/biome format --write .",
-		"NOTE": "You can apply both linter, formatter and import ordering by using https://biomejs.dev/reference/cli/#biome-check",
-		"NOTE2": "There is an ongoing work to release prettier-tailwind-plugin alternative: https://biomejs.dev/linter/rules/use-sorted-classes/, https://github.com/biomejs/biome/issues/1274"
-	},
-	"files": [
-		"prettier-test-no-replace",
-		"README.md",
-		".codemodrc.json",
-		"./dist/index.cjs"	],
-	"lint-staged": {
-		"*.js": "pnpm dlx @biomejs/biome lint --apply",
-		"*.ts": "pnpm dlx @biomejs/biome lint --apply"
-	},
-	"type": "module"
+  "name": "package-name",
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3"
+  },
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "start": "pnpm run build:cjs && node ./dist/index.cjs",
+    "lint:eslint": "pnpm dlx @biomejs/biome lint . --apply",
+    "lint:prettier": "pnpm dlx @biomejs/biome format --write .",
+    "NOTE": "You can apply both linter, formatter and import ordering by using https://biomejs.dev/reference/cli/#biome-check",
+    "NOTE2": "There is an ongoing work to release prettier-tailwind-plugin alternative: https://biomejs.dev/linter/rules/use-sorted-classes/, https://github.com/biomejs/biome/issues/1274"
+  },
+  "files": [
+    "prettier-test-no-replace",
+    "README.md",
+    ".codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "lint-staged": {
+    "*.js": "pnpm dlx @biomejs/biome lint --apply",
+    "*.ts": "pnpm dlx @biomejs/biome lint --apply"
+  },
+  "type": "module"
 }
 ```
 
@@ -103,7 +105,7 @@ This codemod requires internet connection.
 
 ```json
 {
-	"printWidth": 80
+  "printWidth": 80
 }
 ```
 
@@ -115,27 +117,21 @@ This codemod requires internet connection.
 
 ```json
 {
-	"linter": {
-		"ignore": [
-			"ignore-key",
-			"dist",
-			"build",
-			"pnpm-lock.yaml",
-			"node_modules"
-		],
-		"rules": {
-			"suspicious": {
-				"noDoubleEquals": "warn",
-				"noAssignInExpressions": "warn"
-			},
-			"correctness": {
-				"noUnusedVariables": "off"
-			}
-		}
-	},
-	"formatter": {
-		"ignore": [],
-		"indentStyle": "tab"
-	}
+  "linter": {
+    "ignore": ["ignore-key", "dist", "build", "pnpm-lock.yaml", "node_modules"],
+    "rules": {
+      "suspicious": {
+        "noDoubleEquals": "warn",
+        "noAssignInExpressions": "warn"
+      },
+      "correctness": {
+        "noUnusedVariables": "off"
+      }
+    }
+  },
+  "formatter": {
+    "ignore": [],
+    "indentStyle": "tab"
+  }
 }
 ```

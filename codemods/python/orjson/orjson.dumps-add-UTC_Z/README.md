@@ -1,4 +1,3 @@
-
 Add OPT_UTC_Z to orjson.dumps.
 
 ## Example
@@ -14,4 +13,3 @@ orjson.dumps(content_as_json)
 ```python
 orjson.dumps(content_as_json, option=orjson.OPT_UTC_Z)
 ```
-

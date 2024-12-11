@@ -7,7 +7,7 @@ This brings a significant performance improvement for deeply nested objects and 
 ## Before
 
 ```jsx
-const { data } = useFetch('/api/test')
+const { data } = useFetch("/api/test");
 ```
 
 > This can apply to all useAsyncData, useFetch, useLazyAsyncData and useLazyFetch.
@@ -15,7 +15,7 @@ const { data } = useFetch('/api/test')
 ## After
 
 ```jsx
-const { data } = useFetch('/api/test', { deep: true })
+const { data } = useFetch("/api/test", { deep: true });
 ```
 
 ### Additional Feature
@@ -27,17 +27,17 @@ This codemod ensures that any unique key of your data is always resolvable to th
 Code before transformation:
 
 ```jsx
-const route = useRoute()
+const route = useRoute();
 const { data } = await useAsyncData(async () => {
-    return await $fetch(`/api/my-page/${route.params.slug}`)
+  return await $fetch(`/api/my-page/${route.params.slug}`);
 });
 ```
 
 Code after transformation:
 
 ```jsx
-const route = useRoute()
+const route = useRoute();
 const { data } = await useAsyncData(route.params.slug, async () => {
-    return await $fetch(`/api/my-page/${route.params.slug}`), { deep: true }
+  return await $fetch(`/api/my-page/${route.params.slug}`), { deep: true };
 });
 ```

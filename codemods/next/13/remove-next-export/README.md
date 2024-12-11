@@ -19,7 +19,7 @@ npm run next build
 
 ```javascript
 module.exports = {
-	distDir: 'out',
+  distDir: "out",
 };
 ```
 
@@ -27,7 +27,7 @@ module.exports = {
 
 ```javascript
 module.exports = {
-	distDir: 'out',
-	output: 'export',
+  distDir: "out",
+  output: "export",
 };
 ```

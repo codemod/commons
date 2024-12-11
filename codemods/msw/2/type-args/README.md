@@ -7,32 +7,32 @@ This codemod runs `.fixUnusedIdentifiers()` on a target source file. This would 
 ## Before
 
 ```ts
-http.get<ReqBodyType, PathParamsType>('/resource', (req, res, ctx) => {
-	return res(ctx.json({ firstName: 'John' }));
+http.get<ReqBodyType, PathParamsType>("/resource", (req, res, ctx) => {
+  return res(ctx.json({ firstName: "John" }));
 });
 ```
 
 ## After
 
 ```ts
-http.get<PathParamsType, ReqBodyType>('/resource', (req, res, ctx) => {
-	return res(ctx.json({ firstName: 'John' }));
+http.get<PathParamsType, ReqBodyType>("/resource", (req, res, ctx) => {
+  return res(ctx.json({ firstName: "John" }));
 });
 ```
 
 ## Before
 
 ```ts
-http.get<ReqBodyType>('/resource', (req, res, ctx) => {
-	return res(ctx.json({ firstName: 'John' }));
+http.get<ReqBodyType>("/resource", (req, res, ctx) => {
+  return res(ctx.json({ firstName: "John" }));
 });
 ```
 
 ## After
 
 ```ts
-http.get<any, ReqBodyType>('/resource', (req, res, ctx) => {
-	return res(ctx.json({ firstName: 'John' }));
+http.get<any, ReqBodyType>("/resource", (req, res, ctx) => {
+  return res(ctx.json({ firstName: "John" }));
 });
 ```
 
@@ -40,9 +40,9 @@ http.get<any, ReqBodyType>('/resource', (req, res, ctx) => {
 
 ```ts
 const handlers: RestHandler<DefaultBodyType>[] = [
-	http.get('/resource', (req, res, ctx) => {
-		return res(ctx.json({ firstName: 'John' }));
-	}),
+  http.get("/resource", (req, res, ctx) => {
+    return res(ctx.json({ firstName: "John" }));
+  }),
 ];
 ```
 
@@ -50,9 +50,9 @@ const handlers: RestHandler<DefaultBodyType>[] = [
 
 ```ts
 const handlers: HttpHandler[] = [
-	http.get<any, DefaultBodyType>('/resource', (req, res, ctx) => {
-		return res(ctx.json({ firstName: 'John' }));
-	}),
+  http.get<any, DefaultBodyType>("/resource", (req, res, ctx) => {
+    return res(ctx.json({ firstName: "John" }));
+  }),
 ];
 ```
 
@@ -60,14 +60,14 @@ const handlers: HttpHandler[] = [
 
 ```ts
 export function mockFactory(
-	url: string,
-	resolver: ResponseResolver<
-		MockedRequest<{ id: string }>,
-		RestContext,
-		Awaited<ImportedPromiseBodyType>
-	>,
+  url: string,
+  resolver: ResponseResolver<
+    MockedRequest<{ id: string }>,
+    RestContext,
+    Awaited<ImportedPromiseBodyType>
+  >,
 ) {
-	return http.get(url, resolver);
+  return http.get(url, resolver);
 }
 ```
 
@@ -75,13 +75,13 @@ export function mockFactory(
 
 ```ts
 export function mockFactory(
-	url: string,
-	resolver: ResponseResolver<
-		HttpRequestResolverExtras<PathParams>,
-		{ id: string },
-		Awaited<ImportedPromiseBodyType>
-	>,
+  url: string,
+  resolver: ResponseResolver<
+    HttpRequestResolverExtras<PathParams>,
+    { id: string },
+    Awaited<ImportedPromiseBodyType>
+  >,
 ) {
-	return http.get(url, resolver);
+  return http.get(url, resolver);
 }
 ```

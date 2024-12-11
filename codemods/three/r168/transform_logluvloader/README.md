@@ -2,7 +2,6 @@ This codemod removes `LogLuvLoader`, and replaces it with `UltraHDRLoader`
 
 ## Example
 
-
 ### Before
 
 ```ts
@@ -38,4 +37,3 @@ case 'logluv': return new LogLuvLoader(this.loadingManager);
 ```ts
 case 'logluv': return new UltraHDRLoader(this.loadingManager);
 ```
-

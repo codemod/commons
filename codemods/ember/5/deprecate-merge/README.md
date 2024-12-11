@@ -3,19 +3,19 @@ This codemod replaces all calls to `Ember.merge` with `Ember.assign`.
 ## Before
 
 ```jsx
-import { merge } from '@ember/polyfills';
+import { merge } from "@ember/polyfills";
 
-var a = { first: 'Yehuda' };
-var b = { last: 'Katz' };
+var a = { first: "Yehuda" };
+var b = { last: "Katz" };
 merge(a, b);
 ```
 
 ## After
 
 ```tsx
-import { assign } from '@ember/polyfills';
+import { assign } from "@ember/polyfills";
 
-var a = { first: 'Yehuda' };
-var b = { last: 'Katz' };
+var a = { first: "Yehuda" };
+var b = { last: "Katz" };
 assign(a, b);
 ```

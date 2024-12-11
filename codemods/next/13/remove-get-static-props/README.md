@@ -1,14 +1,14 @@
 The following data fetching methods are no longer available in the `app` directory:
 
--   `getStaticPaths`,
--   `getServerSideProps`,
--   `getStaticProps`.
+- `getStaticPaths`,
+- `getServerSideProps`,
+- `getStaticProps`.
 
 The codemod migrates the data fetching functions into the supported in the `app` directory:
 
--   `getStaticPaths` -> `generateStaticParams`
--   `getServerSideProps` -> `getData`
--   `getStaticProps` -> `getData` (used in the component)
+- `getStaticPaths` -> `generateStaticParams`
+- `getServerSideProps` -> `getData`
+- `getStaticProps` -> `getData` (used in the component)
 
 If the `getStaticPaths` function has only one expression in the return statement, it will be inlined within the `nextData` function, otherwise it will remain unchanged.
 
@@ -23,24 +23,24 @@ It will also add the `revalidate` and `dynamicParams` route segment properties.
 ### Before
 
 ```jsx
-import PostLayout from '@/components/post-layout';
+import PostLayout from "@/components/post-layout";
 
 export async function getStaticPaths() {
-	return {
-		paths: [{ params: { id: '1' } }, { params: { id: '2' } }],
-		fallback: 'blocking',
-	};
+  return {
+    paths: [{ params: { id: "1" } }, { params: { id: "2" } }],
+    fallback: "blocking",
+  };
 }
 
 export async function getStaticProps({ params }) {
-	const res = await fetch(`https://.../posts/${params.id}`);
-	const post = await res.json();
+  const res = await fetch(`https://.../posts/${params.id}`);
+  const post = await res.json();
 
-	return { props: { post } };
+  return { props: { post } };
 }
 
 export default function Post({ post }) {
-	return <PostLayout post={post} />;
+  return <PostLayout post={post} />;
 }
 ```
 

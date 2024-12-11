@@ -3,19 +3,19 @@ This codemod renames `addHandler` to `addApiHandler` as required in Netlify SDK 
 ## Before
 
 ```jsx
-import { NetlifyIntegration } from '@netlify/sdk';
+import { NetlifyIntegration } from "@netlify/sdk";
 
 const integration = new NetlifyIntegration();
 
-integration.addHandler('some-function', async (event, context) => {});
+integration.addHandler("some-function", async (event, context) => {});
 ```
 
 ## After
 
 ```jsx
-import { NetlifyIntegration } from '@netlify/sdk';
+import { NetlifyIntegration } from "@netlify/sdk";
 
 const integration = new NetlifyIntegration();
 
-integration.addApiHandler('some-function', async (event, context) => {});
+integration.addApiHandler("some-function", async (event, context) => {});
 ```

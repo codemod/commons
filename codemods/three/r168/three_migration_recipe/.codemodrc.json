@@ -6,7 +6,10 @@
   "private": false,
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"],
   "applicability": {
-    "from": [["three", ">=", "0.167.0"], ["meteor", "<", "0.168.0"]],
+    "from": [
+      ["three", ">=", "0.167.0"],
+      ["meteor", "<", "0.168.0"]
+    ],
     "to": [["meteor", ">=", "0.168.0"]]
   },
   "arguments": [],

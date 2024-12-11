@@ -1,9 +1,9 @@
-const WebExtensionTarget = require('webpack-extension-target');
+const WebExtensionTarget = require("webpack-extension-target");
 
 module.exports = {
   target: WebExtensionTarget(nodeConfig),
-  mode: 'development',
+  mode: "development",
   output: {
-    filename: 'bundle.js',
+    filename: "bundle.js",
   },
 };

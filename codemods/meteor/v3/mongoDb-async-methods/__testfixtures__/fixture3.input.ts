@@ -1,1 +1,1 @@
-const doc = MyCollection.findOne({ _id: '123' });
+const doc = MyCollection.findOne({ _id: "123" });

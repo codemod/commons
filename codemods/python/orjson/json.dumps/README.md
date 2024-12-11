@@ -14,4 +14,3 @@ raw_data = json.load(dist_matched_artifact_index_release_file.file.getfile())
 ```python
 raw_data = orjson.loads(dist_matched_artifact_index_release_file.file.getfile().read())
 ```
-

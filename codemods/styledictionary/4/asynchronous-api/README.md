@@ -5,9 +5,9 @@ This codemod updates the following StyleDictionary class methods to be asynchron
 ## Before
 
 ```jsx
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 
-const sd = new StyleDictionary({ source: ['tokens.json'], platforms: {} });
+const sd = new StyleDictionary({ source: ["tokens.json"], platforms: {} });
 await sd.hasInitialized;
 console.log(sd.allTokens);
 
@@ -23,9 +23,9 @@ sd.cleanPlatform();
 ## After
 
 ```jsx
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 
-const sd = new StyleDictionary({ source: ['tokens.json'], platforms: {} });
+const sd = new StyleDictionary({ source: ["tokens.json"], platforms: {} });
 await sd.hasInitialized;
 console.log(sd.allTokens);
 
@@ -36,5 +36,4 @@ await sd.exportPlatform();
 await sd.getPlatform();
 await sd.buildPlatform();
 await sd.cleanPlatform();
-
 ```

@@ -6,7 +6,10 @@
   "private": false,
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"],
   "applicability": {
-    "from": [["ethers", ">=", "5.0.0"], ["ethers", "<", "6.0.0"]],
+    "from": [
+      ["ethers", ">=", "5.0.0"],
+      ["ethers", "<", "6.0.0"]
+    ],
     "to": [["ethers", ">=", "6.0.0"]]
   },
   "arguments": [],

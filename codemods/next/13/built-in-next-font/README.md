@@ -7,11 +7,11 @@ Using the `@next/font/*` modules is deprecated since Next.js v13.2.
 ### Before
 
 ```jsx
-import { Inter } from '@next/font/google';
+import { Inter } from "@next/font/google";
 ```
 
 ### After
 
 ```jsx
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 ```

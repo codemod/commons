@@ -1,5 +1,5 @@
-const StyleDictionary = require('style-dictionary');
+const StyleDictionary = require("style-dictionary");
 
-const sd = StyleDictionary.extend('config.json');
+const sd = StyleDictionary.extend("config.json");
 
 console.log(sd.tokens);

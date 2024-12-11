@@ -6,36 +6,34 @@ This codemod updates registered transform groups to be placed inside the `hooks.
 
 ```jsx
 export default {
-    // register it inline or by SD.registerTransformGroup
-    transformGroup: {
-        foo: ['foo-transform'],
+  // register it inline or by SD.registerTransformGroup
+  transformGroup: {
+    foo: ["foo-transform"],
+  },
+  platforms: {
+    css: {
+      // apply it per platform
+      transformGroup: ["foo"],
     },
-    platforms: {
-        css: {
-            // apply it per platform
-            transformGroup: ['foo'],
-        },
-    },
+  },
 };
-
 ```
 
 ## After
 
 ```jsx
 export default {
-    platforms: {
-        css: {
-            // apply it per platform
-            transformGroup: ['foo'],
-        },
+  platforms: {
+    css: {
+      // apply it per platform
+      transformGroup: ["foo"],
     },
+  },
 
-    hooks: {
-        transformGroups: {
-            foo: ['foo-transform'],
-        },
+  hooks: {
+    transformGroups: {
+      foo: ["foo-transform"],
     },
+  },
 };
-
 ```

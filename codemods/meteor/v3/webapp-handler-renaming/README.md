@@ -1,5 +1,3 @@
-
-
 This codemod automates the process of updating API names from Connect to Express in your project. The codemod is specifically designed to align your codebase with the new naming conventions introduced after switching from Connect to Express in Meteor 3.0.
 
 You can find the implementation of this codemod in the Studio [here](https://go.codemod.com/CiUQu35).
@@ -7,6 +5,7 @@ You can find the implementation of this codemod in the Studio [here](https://go.
 ## Overview
 
 This codemod updates the following API names:
+
 - `WebApp.connectHandlers.use(middleware)` is now `WebApp.handlers.use(middleware)`.
 - `WebApp.rawConnectHandlers.use(middleware)` is now `WebApp.rawHandlers.use(middleware)`.
 - `WebApp.connectApp` is now `WebApp.expressApp`.

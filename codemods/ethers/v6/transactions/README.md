@@ -15,7 +15,7 @@ tx = Transaction.from(txBytes);
 ```
 
 There is new way to serialize the transaction object('tx') back into raw transaction bytes.
-The advantage here is that *Transaction* object itself manages whether the transaction is signed or not, and the serialized property 
+The advantage here is that _Transaction_ object itself manages whether the transaction is signed or not, and the serialized property
 will automatically include the signature if it is present in the Transaction object.
 
 Whereas in v5 we have to we have to explicitly mentioned whether the transaction is signed or not.
@@ -45,4 +45,3 @@ txBytes = serializeTransaction(tx, sig);
 ```ts
 txBytes = Transaction.from(tx).serialized;
 ```
-

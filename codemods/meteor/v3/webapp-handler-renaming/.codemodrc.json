@@ -9,7 +9,10 @@
     "tags": ["meteor", "v3", "migration"]
   },
   "applicability": {
-    "from": [["meteor", ">=", "2"], ["meteor", "<", "3"]],
+    "from": [
+      ["meteor", ">=", "2"],
+      ["meteor", "<", "3"]
+    ],
     "to": [["meteor", ">=", "3"]]
   }
 }

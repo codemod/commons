@@ -13,7 +13,9 @@ splitSig = splitSignature(sigBytes);
 ```ts
 splitSig = ethers.Signature.from(sigBytes);
 ```
+
 ,
+
 ### Before
 
 ```ts
@@ -25,4 +27,3 @@ sigBytes = joinSignature(splitSig);
 ```ts
 sigBytes = ethers.Signature.from(splitSig).serialized;
 ```
-

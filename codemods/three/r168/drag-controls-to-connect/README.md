@@ -25,4 +25,3 @@ dragControls.activate();
 ```ts
 connect();
 ```
-

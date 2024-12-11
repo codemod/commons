@@ -5,18 +5,10 @@
   "version": "1.0.1",
   "engine": "jscodeshift",
   "private": false,
-  "include": [
-    "**/*.js",
-    "**/*.ts",
-    "**/*.jsx",
-    "**/*.tsx"
-  ],
+  "include": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"],
   "arguments": [],
   "meta": {
-    "tags": [
-      "react",
-      "migration"
-    ],
+    "tags": ["react", "migration"],
     "git": "https://github.com/reactjs/react-codemod/tree/master/transforms"
   }
 }

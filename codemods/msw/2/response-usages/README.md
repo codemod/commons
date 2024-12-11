@@ -5,52 +5,52 @@ This codemod does not remove unused properties on the callback signature due to 
 ## Before
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return res(
-		ctx.json({ id: 'abc-123' }),
-		ctx.cookie('roses', 'red'),
-		ctx.cookie('violets', 'blue'),
-		ctx.set('X-Custom', 'value'),
-	);
+rest.get("/user", (req, res, ctx) => {
+  return res(
+    ctx.json({ id: "abc-123" }),
+    ctx.cookie("roses", "red"),
+    ctx.cookie("violets", "blue"),
+    ctx.set("X-Custom", "value"),
+  );
 });
 ```
 
 ## After
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return HttpResponse.json(
-		{ id: 'abc-123' },
-		{
-			headers: {
-				'X-Custom': 'value',
-				'Set-Cookie': 'roses=red;violets=blue;',
-			},
-		},
-	);
+rest.get("/user", (req, res, ctx) => {
+  return HttpResponse.json(
+    { id: "abc-123" },
+    {
+      headers: {
+        "X-Custom": "value",
+        "Set-Cookie": "roses=red;violets=blue;",
+      },
+    },
+  );
 });
 ```
 
 ## Before
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return res(ctx.text('Hello world!'), ctx.delay(500), ctx.status(401));
+rest.get("/user", (req, res, ctx) => {
+  return res(ctx.text("Hello world!"), ctx.delay(500), ctx.status(401));
 });
 ```
 
 ## After
 
 ```ts
-import { rest, delay } from 'msw';
+import { rest, delay } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
+rest.get("/user", (req, res, ctx) => {
   await delay(500);
 
   return HttpResponse.text("Hello world", {
@@ -62,58 +62,58 @@ rest.get('/user', (req, res, ctx) => {
 ## Before
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return res(ctx.body('Hello world!'), ctx.set('Content-Type', 'text/plain'));
+rest.get("/user", (req, res, ctx) => {
+  return res(ctx.body("Hello world!"), ctx.set("Content-Type", "text/plain"));
 });
 ```
 
 ## After
 
 ```ts
-import { delay, rest } from 'msw';
+import { delay, rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return HttpResponse.text('Hello world');
+rest.get("/user", (req, res, ctx) => {
+  return HttpResponse.text("Hello world");
 });
 ```
 
 ## Before
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return res(ctx.text('Hello world!'));
+rest.get("/user", (req, res, ctx) => {
+  return res(ctx.text("Hello world!"));
 });
 ```
 
 ## After
 
 ```ts
-import { rest } from 'msw';
+import { rest } from "msw";
 
-rest.get('/user', (req, res, ctx) => {
-	return HttpResponse.text('Hello world');
+rest.get("/user", (req, res, ctx) => {
+  return HttpResponse.text("Hello world");
 });
 ```
 
 ## Before
 
 ```ts
-graphql.query('GetUser', (req, res, ctx) => {
-	return res(
-		ctx.data({
-			user: { firstName: 'John' },
-		}),
-		ctx.errors([
-			{ message: `Failed to login:  user "${username}" does not exist` },
-		]),
-		ctx.extensions({
-			requestId: 'abc-123',
-		}),
-	);
+graphql.query("GetUser", (req, res, ctx) => {
+  return res(
+    ctx.data({
+      user: { firstName: "John" },
+    }),
+    ctx.errors([
+      { message: `Failed to login:  user "${username}" does not exist` },
+    ]),
+    ctx.extensions({
+      requestId: "abc-123",
+    }),
+  );
 });
 ```
 

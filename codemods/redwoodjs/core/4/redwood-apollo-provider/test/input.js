@@ -22,17 +22,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import Routes from 'src/Routes';
-import FatalErrorPage from 'src/pages/FatalErrorPage';
+import Routes from "src/Routes";
+import FatalErrorPage from "src/pages/FatalErrorPage";
 
-import './index.css';
+import "./index.css";
 
 const App = () => (
-	<FatalErrorBoundary page={FatalErrorPage}>
-		<RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
-			<RedwoodApolloProvider>
-				<Routes />
-			</RedwoodApolloProvider>
-		</RedwoodProvider>
-	</FatalErrorBoundary>
+  <FatalErrorBoundary page={FatalErrorPage}>
+    <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
+      <RedwoodApolloProvider>
+        <Routes />
+      </RedwoodApolloProvider>
+    </RedwoodProvider>
+  </FatalErrorBoundary>
 );

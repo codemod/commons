@@ -10,4 +10,48 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 */
-"use strict";Object.defineProperty(exports,"__esModule",{value:true});Object.defineProperty(exports,"default",{enumerable:true,get:function(){return transform}});function transform(file,api,options){const j=api.jscodeshift;const root=j(file.source);let dirtyFlag=false;root.find(j.CallExpression,{callee:{type:"MemberExpression",property:{name:"deactivate"}}}).forEach(path=>{const memberExpr=path.node.callee;if(j.MemberExpression.check(memberExpr)){const object=memberExpr.object;if(j.MemberExpression.check(object)){path.replace(j.callExpression(j.memberExpression(object.object,j.identifier("disconnect")),[]));dirtyFlag=true}}});root.find(j.CallExpression,{callee:{type:"MemberExpression",object:{type:"Identifier",name:"dragControls"},property:{name:"deactivate"}}}).forEach(path=>{path.replace(j.callExpression(j.identifier("disconnect"),[]));dirtyFlag=true});return dirtyFlag?root.toSource():undefined}
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return transform;
+  },
+});
+function transform(file, api, options) {
+  const j = api.jscodeshift;
+  const root = j(file.source);
+  let dirtyFlag = false;
+  root
+    .find(j.CallExpression, {
+      callee: { type: "MemberExpression", property: { name: "deactivate" } },
+    })
+    .forEach((path) => {
+      const memberExpr = path.node.callee;
+      if (j.MemberExpression.check(memberExpr)) {
+        const object = memberExpr.object;
+        if (j.MemberExpression.check(object)) {
+          path.replace(
+            j.callExpression(
+              j.memberExpression(object.object, j.identifier("disconnect")),
+              [],
+            ),
+          );
+          dirtyFlag = true;
+        }
+      }
+    });
+  root
+    .find(j.CallExpression, {
+      callee: {
+        type: "MemberExpression",
+        object: { type: "Identifier", name: "dragControls" },
+        property: { name: "deactivate" },
+      },
+    })
+    .forEach((path) => {
+      path.replace(j.callExpression(j.identifier("disconnect"), []));
+      dirtyFlag = true;
+    });
+  return dirtyFlag ? root.toSource() : undefined;
+}

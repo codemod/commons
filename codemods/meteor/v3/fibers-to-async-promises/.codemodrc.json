@@ -5,7 +5,10 @@
   "engine": "jscodeshift",
   "private": false,
   "applicability": {
-    "from": [["meteor", ">=", "2"], ["meteor", "<", "3"]],
+    "from": [
+      ["meteor", ">=", "2"],
+      ["meteor", "<", "3"]
+    ],
     "to": [["meteor", ">=", "3"]]
   },
   "arguments": [],

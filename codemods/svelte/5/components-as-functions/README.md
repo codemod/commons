@@ -3,23 +3,20 @@ In Svelte 3 and 4, components were classes, while in Svelte 5, components are fu
 ## Before
 
 ```jsx
-import App from './App.svelte';
+import App from "./App.svelte";
 
-const app = new App({ target: document.getElementById('app') });
+const app = new App({ target: document.getElementById("app") });
 
 export default app;
-
 ```
 
 ## After
 
 ```jsx
-import { mount } from 'svelte';
-import App from './App.svelte';
+import { mount } from "svelte";
+import App from "./App.svelte";
 
-const app = mount(App, { target: document.getElementById('app') });
+const app = mount(App, { target: document.getElementById("app") });
 
 export default app;
-
-
 ```

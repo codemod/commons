@@ -1,4 +1,3 @@
-
 Replaces Sentry json import with orjson.
 
 ## Example
@@ -14,4 +13,3 @@ from sentry.utils import json
 ```python
 import orjson
 ```
-

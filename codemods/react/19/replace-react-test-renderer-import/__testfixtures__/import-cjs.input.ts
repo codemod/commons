@@ -1,1 +1,1 @@
-var ShallowRenderer = require('react-test-renderer/shallow');
+var ShallowRenderer = require("react-test-renderer/shallow");

@@ -2,17 +2,17 @@
  *                                  Apache License
  *                            Version 2.0, January 2004
  *                         http://www.apache.org/licenses/
- * 
+ *
  *    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
- * 
+ *
  *    1. Definitions.
- * 
+ *
  *       "License" shall mean the terms and conditions for use, reproduction,
  *       and distribution as defined by Sections 1 through 9 of this document.
- * 
+ *
  *       "Licensor" shall mean the copyright owner or entity authorized by
  *       the copyright owner that is granting the License.
- * 
+ *
  *       "Legal Entity" shall mean the union of the acting entity and all
  *       other entities that control, are controlled by, or are under common
  *       control with that entity. For the purposes of this definition,
@@ -20,24 +20,24 @@
  *       direction or management of such entity, whether by contract or
  *       otherwise, or (ii) ownership of fifty percent (50%) or more of the
  *       outstanding shares, or (iii) beneficial ownership of such entity.
- * 
+ *
  *       "You" (or "Your") shall mean an individual or Legal Entity
  *       exercising permissions granted by this License.
- * 
+ *
  *       "Source" form shall mean the preferred form for making modifications,
  *       including but not limited to software source code, documentation
  *       source, and configuration files.
- * 
+ *
  *       "Object" form shall mean any form resulting from mechanical
  *       transformation or translation of a Source form, including but
  *       not limited to compiled object code, generated documentation,
  *       and conversions to other media types.
- * 
+ *
  *       "Work" shall mean the work of authorship, whether in Source or
  *       Object form, made available under the License, as indicated by a
  *       copyright notice that is included in or attached to the work
  *       (an example is provided in the Appendix below).
- * 
+ *
  *       "Derivative Works" shall mean any work, whether in Source or Object
  *       form, that is based on (or derived from) the Work and for which the
  *       editorial revisions, annotations, elaborations, or other modifications
@@ -45,7 +45,7 @@
  *       of this License, Derivative Works shall not include works that remain
  *       separable from, or merely link (or bind by name) to the interfaces of,
  *       the Work and Derivative Works thereof.
- * 
+ *
  *       "Contribution" shall mean any work of authorship, including
  *       the original version of the Work and any modifications or additions
  *       to that Work or Derivative Works thereof, that is intentionally
@@ -59,18 +59,18 @@
  *       Licensor for the purpose of discussing and improving the Work, but
  *       excluding communication that is conspicuously marked or otherwise
  *       designated in writing by the copyright owner as "Not a Contribution."
- * 
+ *
  *       "Contributor" shall mean Licensor and any individual or Legal Entity
  *       on behalf of whom a Contribution has been received by Licensor and
  *       subsequently incorporated within the Work.
- * 
+ *
  *    2. Grant of Copyright License. Subject to the terms and conditions of
  *       this License, each Contributor hereby grants to You a perpetual,
  *       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
  *       copyright license to reproduce, prepare Derivative Works of,
  *       publicly display, publicly perform, sublicense, and distribute the
  *       Work and such Derivative Works in Source or Object form.
- * 
+ *
  *    3. Grant of Patent License. Subject to the terms and conditions of
  *       this License, each Contributor hereby grants to You a perpetual,
  *       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
@@ -86,24 +86,24 @@
  *       or contributory patent infringement, then any patent licenses
  *       granted to You under this License for that Work shall terminate
  *       as of the date such litigation is filed.
- * 
+ *
  *    4. Redistribution. You may reproduce and distribute copies of the
  *       Work or Derivative Works thereof in any medium, with or without
  *       modifications, and in Source or Object form, provided that You
  *       meet the following conditions:
- * 
+ *
  *       (a) You must give any other recipients of the Work or
  *           Derivative Works a copy of this License; and
- * 
+ *
  *       (b) You must cause any modified files to carry prominent notices
  *           stating that You changed the files; and
- * 
+ *
  *       (c) You must retain, in the Source form of any Derivative Works
  *           that You distribute, all copyright, patent, trademark, and
  *           attribution notices from the Source form of the Work,
  *           excluding those notices that do not pertain to any part of
  *           the Derivative Works; and
- * 
+ *
  *       (d) If the Work includes a "NOTICE" text file as part of its
  *           distribution, then any Derivative Works that You distribute must
  *           include a readable copy of the attribution notices contained
@@ -120,14 +120,14 @@
  *           or as an addendum to the NOTICE text from the Work, provided
  *           that such additional attribution notices cannot be construed
  *           as modifying the License.
- * 
+ *
  *       You may add Your own copyright statement to Your modifications and
  *       may provide additional or different license terms and conditions
  *       for use, reproduction, or distribution of Your modifications, or
  *       for any such Derivative Works as a whole, provided Your use,
  *       reproduction, and distribution of the Work otherwise complies with
  *       the conditions stated in this License.
- * 
+ *
  *    5. Submission of Contributions. Unless You explicitly state otherwise,
  *       any Contribution intentionally submitted for inclusion in the Work
  *       by You to the Licensor shall be under the terms and conditions of
@@ -135,12 +135,12 @@
  *       Notwithstanding the above, nothing herein shall supersede or modify
  *       the terms of any separate license agreement you may have executed
  *       with Licensor regarding such Contributions.
- * 
+ *
  *    6. Trademarks. This License does not grant permission to use the trade
  *       names, trademarks, service marks, or product names of the Licensor,
  *       except as required for reasonable and customary use in describing the
  *       origin of the Work and reproducing the content of the NOTICE file.
- * 
+ *
  *    7. Disclaimer of Warranty. Unless required by applicable law or
  *       agreed to in writing, Licensor provides the Work (and each
  *       Contributor provides its Contributions) on an "AS IS" BASIS,
@@ -150,7 +150,7 @@
  *       PARTICULAR PURPOSE. You are solely responsible for determining the
  *       appropriateness of using or redistributing the Work and assume any
  *       risks associated with Your exercise of permissions under this License.
- * 
+ *
  *    8. Limitation of Liability. In no event and under no legal theory,
  *       whether in tort (including negligence), contract, or otherwise,
  *       unless required by applicable law (such as deliberate and grossly
@@ -162,7 +162,7 @@
  *       work stoppage, computer failure or malfunction, or any and all
  *       other commercial damages or losses), even if such Contributor
  *       has been advised of the possibility of such damages.
- * 
+ *
  *    9. Accepting Warranty or Additional Liability. While redistributing
  *       the Work or Derivative Works thereof, You may choose to offer,
  *       and charge a fee for, acceptance of support, warranty, indemnity,
@@ -173,11 +173,11 @@
  *       defend, and hold each Contributor harmless for any liability
  *       incurred by, or claims asserted against, such Contributor by reason
  *       of your accepting any such warranty or additional liability.
- * 
+ *
  *    END OF TERMS AND CONDITIONS
- * 
+ *
  *    APPENDIX: How to apply the Apache License to your work.
- * 
+ *
  *       To apply the Apache License to your work, attach the following
  *       boilerplate notice, with the fields enclosed by brackets "[]"
  *       replaced with your own identifying information. (Don't include
@@ -186,15 +186,15 @@
  *       file or class name and description of purpose be included on the
  *       same "printed page" as the copyright notice for easier
  *       identification within third-party archives.
- * 
+ *
  *    Copyright [yyyy] [name of copyright owner]
- * 
+ *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
  *    You may obtain a copy of the License at
- * 
+ *
  *        http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  *    Unless required by applicable law or agreed to in writing, software
  *    distributed under the License is distributed on an "AS IS" BASIS,
  *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -202,8 +202,8 @@
  *    limitations under the License.
  * JSON Schema Store
  * Copyright 2015-Current Mads Kristensen and Contributors
- * 
-*/
+ *
+ */
 /* eslint-disable */
 /**
  * This file was automatically generated by json-schema-to-typescript.
@@ -594,7 +594,10 @@ export interface PossibleErrors {
   /**
    * Disallow template literal placeholder syntax in regular strings
    */
-  "no-template-curly-in-string"?: number | ("off" | "warn" | "error") | unknown[];
+  "no-template-curly-in-string"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Disallow confusing multiline expressions
    */
@@ -846,7 +849,10 @@ export interface BestPractices {
   /**
    * Disallow unmodified loop conditions
    */
-  "no-unmodified-loop-condition"?: number | ("off" | "warn" | "error") | unknown[];
+  "no-unmodified-loop-condition"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Disallow unused expressions
    */
@@ -886,7 +892,10 @@ export interface BestPractices {
   /**
    * Require using Error objects as Promise rejection reasons
    */
-  "prefer-promise-reject-errors"?: number | ("off" | "warn" | "error") | unknown[];
+  "prefer-promise-reject-errors"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce the consistent use of the radix argument when using parseInt()
    */
@@ -944,7 +953,10 @@ export interface Variables {
   /**
    * Disallow identifiers from shadowing restricted names
    */
-  "no-shadow-restricted-names"?: number | ("off" | "warn" | "error") | unknown[];
+  "no-shadow-restricted-names"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Disallow the use of undeclared variables unless mentioned in /*global * / comments
    */
@@ -1086,7 +1098,10 @@ export interface StylisticIssues {
   /**
    * Enforce line breaks between arguments of a function call
    */
-  "function-call-argument-newline"?: number | ("off" | "warn" | "error") | unknown[];
+  "function-call-argument-newline"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce consistent line breaks inside function parentheses
    */
@@ -1134,7 +1149,10 @@ export interface StylisticIssues {
   /**
    * Require or disallow an empty line between class members
    */
-  "lines-between-class-members"?: number | ("off" | "warn" | "error") | unknown[];
+  "lines-between-class-members"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce consistent linebreak style
    */
@@ -1283,11 +1301,17 @@ export interface StylisticIssues {
   /**
    * Disallow whitespace before properties
    */
-  "no-whitespace-before-property"?: number | ("off" | "warn" | "error") | unknown[];
+  "no-whitespace-before-property"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce the location of single-line statements
    */
-  "nonblock-statement-body-position"?: number | ("off" | "warn" | "error") | unknown[];
+  "nonblock-statement-body-position"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce consistent line breaks inside braces
    */
@@ -1308,7 +1332,10 @@ export interface StylisticIssues {
   /**
    * Require or disallow newlines around var declarations
    */
-  "one-var-declaration-per-line"?: number | ("off" | "warn" | "error") | unknown[];
+  "one-var-declaration-per-line"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Require or disallow assignment operator shorthand where possible
    */
@@ -1324,7 +1351,10 @@ export interface StylisticIssues {
   /**
    * Require or disallow padding lines between statements
    */
-  "padding-line-between-statements"?: number | ("off" | "warn" | "error") | unknown[];
+  "padding-line-between-statements"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Require quotes around object literal property names
    */
@@ -1364,7 +1394,10 @@ export interface StylisticIssues {
   /**
    * Enforce consistent spacing before function definition opening parenthesis
    */
-  "space-before-function-paren"?: number | ("off" | "warn" | "error") | unknown[];
+  "space-before-function-paren"?:
+    | number
+    | ("off" | "warn" | "error")
+    | unknown[];
   /**
    * Enforce consistent spacing after the // or /* in a comment
    */
@@ -1551,7 +1584,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           suffixes?: string[];
-        }
+        },
       ];
   /**
    * Enforces a maximum number of lines in inline template, styles and animations. See more at https://angular.io/guide/styleguide#style-05-04
@@ -1566,7 +1599,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           template?: number;
           styles?: number;
           animations?: number;
-        }
+        },
       ];
   /**
    * Component selectors should follow given naming rules. See more at https://angular.io/guide/styleguide#style-02-07, https://angular.io/guide/styleguide#style-05-02
@@ -1582,7 +1615,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           type?: string | ("element" | "attribute")[];
           prefix?: string | unknown[];
           style?: "camelCase" | "kebab-case";
-        }
+        },
       ];
   /**
    * Ensures that classes use contextual decorators in its body
@@ -1609,7 +1642,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           suffixes?: string[];
-        }
+        },
       ];
   /**
    * Directive selectors should follow given naming rules. See more at https://angular.io/guide/styleguide#style-02-06 and https://angular.io/guide/styleguide#style-02-08.
@@ -1624,7 +1657,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           type?: string | ("element" | "attribute")[];
           prefix?: string | unknown[];
           style?: "camelCase" | "kebab-case";
-        }
+        },
       ];
   /**
    * The @Attribute decorator is used to obtain a single value for an attribute. This is a much less common use-case than getting a stream of values (using @Input), so often the @Attribute decorator is mistakenly used when @Input was what was intended. This rule disallows usage of @Attribute decorator altogether in order to prevent these mistakes.
@@ -1665,7 +1698,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowStatic?: boolean;
-        }
+        },
       ];
   /**
    * Ensures that input bindings, including aliases, are not named or prefixed by the configured disallowed prefixes
@@ -1678,7 +1711,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           prefixes?: string[];
-        }
+        },
       ];
   /**
    * Ensures that input bindings are not aliased
@@ -1694,7 +1727,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * A list with allowed input names
            */
           allowedNames?: string[];
-        }
+        },
       ];
   /**
    * Disallows usage of the `inputs` metadata property. See more at https://angular.io/styleguide#style-05-12
@@ -1763,7 +1796,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           prefixes?: string[];
-        }
+        },
       ];
   /**
    * Ensures component's `changeDetection` is set to `ChangeDetectionStrategy.OnPush`
@@ -1805,7 +1838,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           requireDescription?: boolean;
           requireMeaning?: boolean;
-        }
+        },
       ];
   /**
    * Ensures that lifecycle methods are declared in order of execution
@@ -1828,7 +1861,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * A string with a BCP 47 language tag.
            */
           locale?: string;
-        }
+        },
       ];
   /**
    * Component selector must be declared
@@ -1855,7 +1888,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoreClassNamePattern?: string;
-        }
+        },
       ];
   /**
    * Ensures that classes implement lifecycle interfaces corresponding to the declared lifecycle methods. See more at https://angular.io/styleguide#style-09-01
@@ -1890,7 +1923,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignore?: [string, ...string[]];
           caseSensitive?: boolean;
           caseSensitiveStrict?: boolean;
-        }
+        },
       ];
   /**
    * Ensure named imports correspond to a named export in the remote file.
@@ -1903,7 +1936,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           commonjs?: boolean;
-        }
+        },
       ];
   /**
    * Ensure a default export is present, given a default import.
@@ -1926,7 +1959,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * If `false`, will report computed (and thus, un-lintable) references to namespace members.
            */
           allowComputed?: boolean;
-        }
+        },
       ];
   /**
    * Forbid namespace (a.k.a. "wildcard" `*`) imports.
@@ -1939,7 +1972,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignore?: string[];
-        }
+        },
       ];
   /**
    * Forbid any invalid exports, i.e. re-export of the same name.
@@ -1987,10 +2020,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               from?: string | [string, ...string[]];
               except?: string[];
               message?: string;
-            }[]
+            }[],
           ];
           basePath?: string;
-        }
+        },
       ];
   /**
    * Forbid importing the submodules of other modules.
@@ -2024,7 +2057,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           ignore?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * Forbid importing modules from parent directories.
@@ -2043,7 +2076,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           ignore?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * Enforce or ban the use of inline type-only markers for named imports.
@@ -2086,7 +2119,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Allow cyclic dependency if there is at least one dynamic import in the chain
            */
           allowUnsafeDynamicCyclicDependency?: boolean;
-        }
+        },
       ];
   /**
    * Forbid named default exports.
@@ -2151,7 +2184,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * If `false`, will report default export of a class instantiation
            */
           allowNew?: boolean;
-        }
+        },
       ];
   /**
    * Forbid modules without exports, or exports without matching import in another module.
@@ -2179,7 +2212,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * report exports without any usage
            */
           unusedExports?: boolean;
-        }
+        },
       ];
   /**
    * Forbid CommonJS `require` calls and `module.exports` or `exports.*`.
@@ -2207,13 +2240,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           considerQueryString?: boolean;
           "prefer-inline"?: boolean;
-        }
+        },
       ];
   /**
    * Ensure all imports appear before other statements.
    * https://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/first.md
    */
-  "eslint-plugin-import/first"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-import/first"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce the maximum number of dependencies a module can have.
    * https://github.com/import-js/eslint-plugin-import/blob/v2.29.0/docs/rules/max-dependencies.md
@@ -2226,7 +2262,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           max?: number;
           ignoreTypeImports?: boolean;
-        }
+        },
       ];
   /**
    * Forbid the use of extraneous packages.
@@ -2245,7 +2281,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           packageDir?: string | unknown[];
           includeInternal?: boolean;
           includeTypes?: boolean;
-        }
+        },
       ];
   /**
    * Forbid import of modules using absolute paths.
@@ -2264,7 +2300,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           ignore?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * Forbid Node.js builtin modules.
@@ -2277,7 +2313,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allow?: string[];
-        }
+        },
       ];
   /**
    * Forbid webpack loader syntax in imports.
@@ -2304,17 +2340,30 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             patternOptions?: {
               [k: string]: unknown;
             };
-            group: "builtin" | "external" | "internal" | "unknown" | "parent" | "sibling" | "index" | "object" | "type";
+            group:
+              | "builtin"
+              | "external"
+              | "internal"
+              | "unknown"
+              | "parent"
+              | "sibling"
+              | "index"
+              | "object"
+              | "type";
             position?: "after" | "before";
           }[];
-          "newlines-between"?: "ignore" | "always" | "always-and-inside-groups" | "never";
+          "newlines-between"?:
+            | "ignore"
+            | "always"
+            | "always-and-inside-groups"
+            | "never";
           alphabetize?: {
             caseInsensitive?: boolean;
             order?: "ignore" | "asc" | "desc";
             orderImportKind?: "ignore" | "asc" | "desc";
           };
           warnOnUnassignedImports?: boolean;
-        }
+        },
       ];
   /**
    * Enforce a newline after import statements.
@@ -2329,7 +2378,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           count?: number;
           exactCount?: boolean;
           considerComments?: boolean;
-        }
+        },
       ];
   /**
    * Prefer a default export if module exports a single name or multiple names.
@@ -2342,7 +2391,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           target?: "single" | "any";
-        }
+        },
       ];
   /**
    * Forbid default exports.
@@ -2369,7 +2418,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           esmodule?: boolean;
-        }
+        },
       ];
   /**
    * Forbid potentially ambiguous parse goal (`script` vs. `module`).
@@ -2392,7 +2441,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           optionalDependencies?: boolean | unknown[];
           peerDependencies?: boolean | unknown[];
           allow?: string[];
-        }
+        },
       ];
   /**
    * Forbid unnecessary path segments in import and require statements.
@@ -2406,7 +2455,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           commonjs?: boolean;
           noUselessIndex?: boolean;
-        }
+        },
       ];
   /**
    * Enforce a leading comment with the webpackChunkName for dynamic imports.
@@ -2420,7 +2469,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           importFunctions?: string[];
           webpackChunknameFormat?: string;
-        }
+        },
       ];
   /**
    * Forbid import statements with CommonJS module.exports.
@@ -2433,7 +2482,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           exceptions?: unknown[];
-        }
+        },
       ];
   /**
    * Forbid empty named import blocks.
@@ -2475,7 +2524,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           sortCharacterClasses?: boolean;
-        }
+        },
       ];
   /**
    * Enforce a specific parameter name in catch clauses.
@@ -2489,7 +2538,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           name?: string;
           ignore?: unknown[];
-        }
+        },
       ];
   /**
    * Use destructured variables over properties.
@@ -2509,7 +2558,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkArrowFunctions?: boolean;
-        }
+        },
       ];
   /**
    * Enforce correct `Error` subclassing.
@@ -2554,7 +2603,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignoreDatesOnPullRequests?: boolean;
           allowWarningComments?: boolean;
           date?: string;
-        }
+        },
       ];
   /**
    * Enforce explicitly comparing the `length` or `size` property of a value.
@@ -2567,7 +2616,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           "non-zero"?: "greater-than" | "not-equal";
-        }
+        },
       ];
   /**
    * Enforce a case style for filenames.
@@ -2630,7 +2679,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignore?: unknown[];
-        }
+        },
       ];
   /**
    * Disallow `Array#reduce()` and `Array#reduceRight()`.
@@ -2643,7 +2692,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowSimpleOperations?: boolean;
-        }
+        },
       ];
   /**
    * Disallow member access from await expression.
@@ -2718,7 +2767,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           disallowedPrefixes?: [string];
           checkProperties?: boolean;
           onlyCamelCase?: boolean;
-        }
+        },
       ];
   /**
    * Disallow `if` statements as the only statement in `if` blocks without `else`.
@@ -2766,7 +2815,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkStrictEquality?: boolean;
-        }
+        },
       ];
   /**
    * Disallow the use of objects as default parameters.
@@ -2814,7 +2863,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkGlobalVariables?: boolean;
-        }
+        },
       ];
   /**
    * Disallow awaiting non-promise values.
@@ -2890,7 +2939,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkArguments?: boolean;
-        }
+        },
       ];
   /**
    * Disallow number literals with zero fractions or dangling dots.
@@ -2937,7 +2986,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             groupLength?: number;
           };
           onlyIfContainsSeparator?: boolean;
-        }
+        },
       ];
   /**
    * Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
@@ -2950,7 +2999,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           excludedPackages?: string[];
-        }
+        },
       ];
   /**
    * Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.
@@ -2963,7 +3012,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkFromLast?: boolean;
-        }
+        },
       ];
   /**
    * Prefer `.flatMap(…)` over `.map(…).flat()`.
@@ -2983,7 +3032,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           functions?: unknown[];
-        }
+        },
       ];
   /**
    * Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item.
@@ -3011,7 +3060,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           getLastElementFunctions?: unknown[];
           checkAllIndexAccess?: boolean;
-        }
+        },
       ];
   /**
    * Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.
@@ -3087,7 +3136,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoreUsedVariables?: boolean;
-        }
+        },
       ];
   /**
    * Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence.
@@ -3177,7 +3226,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkInfinity?: boolean;
-        }
+        },
       ];
   /**
    * Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.
@@ -3190,7 +3239,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           functions?: unknown[];
-        }
+        },
       ];
   /**
    * Prefer omitting the `catch` binding parameter.
@@ -3287,8 +3336,11 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           minimumCases?: number;
-          emptyDefaultCase?: "no-default-comment" | "do-nothing-comment" | "no-default-case";
-        }
+          emptyDefaultCase?:
+            | "no-default-comment"
+            | "do-nothing-comment"
+            | "no-default-case";
+        },
       ];
   /**
    * Prefer ternary expressions over simple `if-else` statements.
@@ -3367,7 +3419,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
                   message?: string;
                 };
           };
-        }
+        },
       ];
   /**
    * Enforce consistent brace style for `case` clauses.
@@ -3392,7 +3444,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           functions?: string[];
           selectors?: string[];
           comments?: string[];
-        }
+        },
       ];
   /**
    * Enforce consistent case for text encoding identifiers.
@@ -3562,7 +3614,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           before?: boolean;
           after?: boolean;
-        }
+        },
       ];
   /**
    * enforce attribute naming style on custom components in template
@@ -3619,13 +3671,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               )[]
           )[];
           alphabetical?: boolean;
-        }
+        },
       ];
   /**
    * disallow use other than available `lang`
    * https://eslint.vuejs.org/rules/block-lang.html
    */
-  "eslint-plugin-vue/block-lang"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/block-lang"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce order of component top-level elements
    * https://eslint.vuejs.org/rules/block-order.html
@@ -3637,13 +3692,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           order?: (string | string[])[];
-        }
+        },
       ];
   /**
    * Disallow or enforce spaces inside of blocks after opening block and before closing block in `<template>`
    * https://eslint.vuejs.org/rules/block-spacing.html
    */
-  "eslint-plugin-vue/block-spacing"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/block-spacing"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce line breaks after opening and before closing block-level tags
    * https://eslint.vuejs.org/rules/block-tag-newline.html
@@ -3668,13 +3726,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               maxEmptyLines?: number;
             };
           };
-        }
+        },
       ];
   /**
    * Enforce consistent brace style for blocks in `<template>`
    * https://eslint.vuejs.org/rules/brace-style.html
    */
-  "eslint-plugin-vue/brace-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/brace-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce camelcase naming convention in `<template>`
    * https://eslint.vuejs.org/rules/camelcase.html
@@ -3693,7 +3754,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 0
            */
           allow?: [] | [string];
-        }
+        },
       ];
   /**
    * Require or disallow trailing commas in `<template>`
@@ -3714,13 +3775,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           before?: boolean;
           after?: boolean;
-        }
+        },
       ];
   /**
    * Enforce consistent comma style in `<template>`
    * https://eslint.vuejs.org/rules/comma-style.html
    */
-  "eslint-plugin-vue/comma-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/comma-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * support comment-directives in `<template>`
    * https://eslint.vuejs.org/rules/comment-directive.html
@@ -3732,7 +3796,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           reportUnusedDisableDirectives?: boolean;
-        }
+        },
       ];
   /**
    * enforce component API style
@@ -3777,7 +3841,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           order?: (string | string[])[];
-        }
+        },
       ];
   /**
    * enforce specific casing for custom event name
@@ -3804,8 +3868,13 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
     | [
         number | ("off" | "warn" | "error"),
         {
-          order?: ("defineEmits" | "defineProps" | "defineOptions" | "defineSlots")[];
-        }
+          order?: (
+            | "defineEmits"
+            | "defineProps"
+            | "defineOptions"
+            | "defineSlots"
+          )[];
+        },
       ];
   /**
    * enforce declaration style of `defineProps`
@@ -3819,7 +3888,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * Enforce consistent newlines before and after dots in `<template>`
    * https://eslint.vuejs.org/rules/dot-location.html
    */
-  "eslint-plugin-vue/dot-location"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/dot-location"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce dot notation whenever possible in `<template>`
    * https://eslint.vuejs.org/rules/dot-notation.html
@@ -3832,7 +3904,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowKeywords?: boolean;
           allowPattern?: string;
-        }
+        },
       ];
   /**
    * Require the use of `===` and `!==` in `<template>`
@@ -3853,7 +3925,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           multiline?: "below" | "beside" | "ignore";
           singleline?: "below" | "beside" | "ignore";
-        }
+        },
       ];
   /**
    * Require or disallow spacing between function identifiers and their invocations in `<template>`
@@ -3875,7 +3947,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           button?: boolean;
           submit?: boolean;
           reset?: boolean;
-        }
+        },
       ];
   /**
    * require or disallow a line break before tag's closing brackets
@@ -3889,7 +3961,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           singleline?: "always" | "never";
           multiline?: "always" | "never";
-        }
+        },
       ];
   /**
    * require or disallow a space before tag's closing brackets
@@ -3904,7 +3976,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           startTag?: "always" | "never";
           endTag?: "always" | "never";
           selfClosingTag?: "always" | "never";
-        }
+        },
       ];
   /**
    * enforce unified line brake in HTML comments
@@ -3941,12 +4013,18 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * enforce consistent indentation in `<template>`
    * https://eslint.vuejs.org/rules/html-indent.html
    */
-  "eslint-plugin-vue/html-indent"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/html-indent"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce quotes style of HTML attributes
    * https://eslint.vuejs.org/rules/html-quotes.html
    */
-  "eslint-plugin-vue/html-quotes"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/html-quotes"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce self-closing style
    * https://eslint.vuejs.org/rules/html-self-closing.html
@@ -3965,7 +4043,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * Enforce consistent spacing between keys and values in object literal properties in `<template>`
    * https://eslint.vuejs.org/rules/key-spacing.html
    */
-  "eslint-plugin-vue/key-spacing"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/key-spacing"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce consistent spacing before and after keywords in `<template>`
    * https://eslint.vuejs.org/rules/keyword-spacing.html
@@ -4252,7 +4333,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               after?: boolean;
             };
           };
-        }
+        },
       ];
   /**
    * require component name property to match its file name
@@ -4266,7 +4347,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           extensions?: string[];
           shouldMatchCase?: boolean;
-        }
+        },
       ];
   /**
    * require the registered component name to match the imported component name
@@ -4295,13 +4376,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             | {
                 max?: number;
               };
-        }
+        },
       ];
   /**
    * enforce a maximum line length in `.vue` files
    * https://eslint.vuejs.org/rules/max-len.html
    */
-  "eslint-plugin-vue/max-len"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/max-len"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce maximum number of lines in Vue SFC blocks
    * https://eslint.vuejs.org/rules/max-lines-per-block.html
@@ -4316,7 +4400,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           template?: number;
           script?: number;
           skipBlankLines?: boolean;
-        }
+        },
       ];
   /**
    * require component names to be always multi-word
@@ -4329,7 +4413,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignores?: string[];
-        }
+        },
       ];
   /**
    * require a line break before and after the contents of a multiline element
@@ -4344,7 +4428,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignoreWhenEmpty?: boolean;
           ignores?: string[];
           allowEmptyLines?: boolean;
-        }
+        },
       ];
   /**
    * Enforce newlines between operands of ternary expressions in `<template>`
@@ -4373,13 +4457,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           minLineOfMultilineProperty?: number;
-        }
+        },
       ];
   /**
    * enforce Promise or callback style in `nextTick`
    * https://eslint.vuejs.org/rules/next-tick-style.html
    */
-  "eslint-plugin-vue/next-tick-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/next-tick-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * disallow using arrow functions to define watcher
    * https://eslint.vuejs.org/rules/no-arrow-functions-in-watch.html
@@ -4413,7 +4500,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             [k: string]: string[];
           };
           directives?: string[];
-        }
+        },
       ];
   /**
    * disallow boolean defaults
@@ -4437,7 +4524,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           additionalDirectives?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * disallow accessing computed properties in `data`.
@@ -4460,7 +4547,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           allow?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * Disallow constant expressions in conditions in `<template>`
@@ -4473,7 +4560,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkLoops?: boolean;
-        }
+        },
       ];
   /**
    * disallow custom modifiers on v-model used on the component
@@ -4556,7 +4643,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowVue3Compat?: boolean;
-        }
+        },
       ];
   /**
    * disallow deprecated `this` access in props default function (in Vue.js 3.0.0+)
@@ -4579,7 +4666,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * @minItems 1
            */
           components?: [string, ...string[]];
-        }
+        },
       ];
   /**
    * disallow deprecated `scope` attribute (in Vue.js 2.5.0+)
@@ -4648,7 +4735,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           groups?: unknown[];
-        }
+        },
       ];
   /**
    * disallow duplicate conditions in `v-if` / `v-else-if` chains
@@ -4676,7 +4763,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowCoexistClass?: boolean;
           allowCoexistStyle?: boolean;
-        }
+        },
       ];
   /**
    * disallow the `<template>` `<script>` `<style>` block to be empty
@@ -4696,7 +4783,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowObjectPatternsAsParameters?: boolean;
-        }
+        },
       ];
   /**
    * disallow `export` in `<script setup>`
@@ -4742,7 +4829,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           skipRegExps?: boolean;
           skipHTMLAttributeValues?: boolean;
           skipHTMLTextContents?: boolean;
-        }
+        },
       ];
   /**
    * disallow asynchronously registered lifecycle hooks
@@ -4762,7 +4849,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoreAccessible?: boolean;
-        }
+        },
       ];
   /**
    * Disallow literal numbers that lose precision in `<template>`
@@ -4782,7 +4869,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoreProperties?: boolean;
-        }
+        },
       ];
   /**
    * disallow to pass multiple objects into array to class
@@ -4816,7 +4903,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           shallowOnly?: boolean;
-        }
+        },
       ];
   /**
    * disallow parsing errors in `<template>`
@@ -4864,7 +4951,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           "non-void-html-element-start-tag-with-trailing-solidus"?: boolean;
           "x-invalid-end-tag"?: boolean;
           "x-invalid-namespace"?: boolean;
-        }
+        },
       ];
   /**
    * disallow a potential typo in your component property
@@ -4885,7 +4972,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            */
           custom?: string[];
           threshold?: number;
-        }
+        },
       ];
   /**
    * disallow use of value wrapped by `ref()` (Composition API) as an operand
@@ -4919,7 +5006,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           autofix?: boolean;
-        }
+        },
       ];
   /**
    * disallow the use of reserved names in component definitions
@@ -4933,7 +5020,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           disallowVueBuiltInComponents?: boolean;
           disallowVue3BuiltInComponents?: boolean;
-        }
+        },
       ];
   /**
    * disallow overwriting reserved keys
@@ -4947,7 +5034,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           reserved?: unknown[];
           groups?: unknown[];
-        }
+        },
       ];
   /**
    * disallow reserved names in props
@@ -4960,7 +5047,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           vueVersion?: 2 | 3;
-        }
+        },
       ];
   /**
    * disallow specific block
@@ -5099,7 +5186,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowBinding?: boolean;
-        }
+        },
       ];
   /**
    * disallow `key` attribute on `<template>`
@@ -5127,7 +5214,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowReferrer?: boolean;
           enforceDynamicLinks?: "always" | "never";
-        }
+        },
       ];
   /**
    * disallow mustaches in `<textarea>`
@@ -5154,7 +5241,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignorePatterns?: unknown[];
-        }
+        },
       ];
   /**
    * disallow undefined properties
@@ -5167,7 +5254,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignores?: string[];
-        }
+        },
       ];
   /**
    * disallow unsupported Vue.js syntax on the specified version
@@ -5196,7 +5283,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             | "define-options"
             | "define-slots"
           )[];
-        }
+        },
       ];
   /**
    * disallow registering components that are not used inside templates
@@ -5209,7 +5296,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoreWhenBindingPresent?: boolean;
-        }
+        },
       ];
   /**
    * disallow unused properties
@@ -5221,11 +5308,21 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
     | [
         number | ("off" | "warn" | "error"),
         {
-          groups?: ("props" | "data" | "asyncData" | "computed" | "methods" | "setup")[];
+          groups?: (
+            | "props"
+            | "data"
+            | "asyncData"
+            | "computed"
+            | "methods"
+            | "setup"
+          )[];
           deepData?: boolean;
           ignorePublicMembers?: boolean;
-          unreferencedOptions?: ("unknownMemberAsUnreferenced" | "returnAsUnreferenced")[];
-        }
+          unreferencedOptions?: (
+            | "unknownMemberAsUnreferenced"
+            | "returnAsUnreferenced"
+          )[];
+        },
       ];
   /**
    * disallow unused refs
@@ -5245,7 +5342,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignorePattern?: string;
-        }
+        },
       ];
   /**
    * disallow use computed property like method
@@ -5272,7 +5369,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowUsingIterationVar?: boolean;
-        }
+        },
       ];
   /**
    * Disallow unnecessary concatenation of literals or template literals in `<template>`
@@ -5293,7 +5390,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           ignoreIncludesComment?: boolean;
           ignoreStringEscape?: boolean;
-        }
+        },
       ];
   /**
    * disallow useless attribute on `<template>`
@@ -5314,7 +5411,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           ignoreIncludesComment?: boolean;
           ignoreStringEscape?: boolean;
-        }
+        },
       ];
   /**
    * disallow key of `<template v-for>` placed on child elements
@@ -5393,7 +5490,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowAllPropertiesOnSameLine?: boolean;
           allowMultiplePropertiesPerLine?: boolean;
-        }
+        },
       ];
   /**
    * Require or disallow method and property shorthand syntax for object literals in `<template>`
@@ -5428,7 +5525,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           order?: unknown[];
-        }
+        },
       ];
   /**
    * require or disallow padding lines between blocks
@@ -5537,7 +5634,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           disallowFunctionalComponentFunction?: boolean;
-        }
+        },
       ];
   /**
    * require type definitions in emits
@@ -5557,7 +5654,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowProps?: boolean;
-        }
+        },
       ];
   /**
    * require declare public properties using `expose`
@@ -5581,7 +5678,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           defineSlots?: string;
           useSlots?: string;
           useAttrs?: string;
-        }
+        },
       ];
   /**
    * require a name property in Vue components
@@ -5601,7 +5698,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           type?: "JSDoc" | "line" | "block" | "any";
-        }
+        },
       ];
   /**
    * require prop type to be a constructor
@@ -5677,7 +5774,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           treatUndefinedAsUnspecified?: boolean;
-        }
+        },
       ];
   /**
    * enforce that a return statement is present in emits validator
@@ -5690,7 +5787,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * enforce consistent indentation in `<script>`
    * https://eslint.vuejs.org/rules/script-indent.html
    */
-  "eslint-plugin-vue/script-indent"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/script-indent"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * prevent `<script setup>` variables used in `<template>` to be marked as unused
    * https://eslint.vuejs.org/rules/script-setup-uses-vars.html
@@ -5711,18 +5811,24 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignoreWhenNoAttributes?: boolean;
           ignoreWhenEmpty?: boolean;
           ignores?: string[];
-        }
+        },
       ];
   /**
    * enforce sort-keys in a manner that is compatible with order-in-components
    * https://eslint.vuejs.org/rules/sort-keys.html
    */
-  "eslint-plugin-vue/sort-keys"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/sort-keys"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce consistent spacing inside parentheses in `<template>`
    * https://eslint.vuejs.org/rules/space-in-parens.html
    */
-  "eslint-plugin-vue/space-in-parens"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/space-in-parens"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Require spacing around infix operators in `<template>`
    * https://eslint.vuejs.org/rules/space-infix-ops.html
@@ -5734,7 +5840,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           int32Hint?: boolean;
-        }
+        },
       ];
   /**
    * Enforce consistent spacing before or after unary operators in `<template>`
@@ -5751,7 +5857,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           overrides?: {
             [k: string]: boolean;
           };
-        }
+        },
       ];
   /**
    * enforce static class names order
@@ -5787,7 +5893,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * enforce `v-bind` directive style
    * https://eslint.vuejs.org/rules/v-bind-style.html
    */
-  "eslint-plugin-vue/v-bind-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/v-bind-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce `v-for` directive's delimiter style
    * https://eslint.vuejs.org/rules/v-for-delimiter-style.html
@@ -5824,12 +5933,18 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * enforce `v-on` directive style
    * https://eslint.vuejs.org/rules/v-on-style.html
    */
-  "eslint-plugin-vue/v-on-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/v-on-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * enforce `v-slot` directive style
    * https://eslint.vuejs.org/rules/v-slot-style.html
    */
-  "eslint-plugin-vue/v-slot-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "eslint-plugin-vue/v-slot-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * require valid attribute names
    * https://eslint.vuejs.org/rules/valid-attribute-name.html
@@ -5967,7 +6082,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           modifiers?: unknown[];
-        }
+        },
       ];
   /**
    * enforce valid `v-once` directives
@@ -6001,7 +6116,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowModifiers?: boolean;
-        }
+        },
       ];
   /**
    * enforce valid `v-text` directives
@@ -6039,7 +6154,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           readonly?: {
             [k: string]: unknown;
           };
-        }
+        },
       ];
   /**
    * Disallow awaiting a value that is not a Thenable
@@ -6063,7 +6178,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           "ts-nocheck"?: unknown;
           "ts-check"?: unknown;
           minimumDescriptionLength?: number;
-        }
+        },
       ];
   /**
    * Disallow `// tslint:<rule-flag>` comments
@@ -6086,18 +6201,24 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             [k: string]: unknown;
           };
           extendDefaults?: boolean;
-        }
+        },
       ];
   /**
    * Disallow or enforce spaces inside of blocks after opening block and before closing block
    * https://typescript-eslint.io/rules/block-spacing
    */
-  "typescript-eslint/block-spacing"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/block-spacing"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce consistent brace style for blocks
    * https://typescript-eslint.io/rules/brace-style
    */
-  "typescript-eslint/brace-style"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/brace-style"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce that literals on classes are exposed in a consistent style
    * https://typescript-eslint.io/rules/class-literal-property-style
@@ -6132,7 +6253,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Ignore classes that specifically implement some interface
            */
           ignoreClassesThatImplementAnInterface?: boolean | "public-fields";
-        }
+        },
       ];
   /**
    * Require or disallow trailing commas
@@ -6153,7 +6274,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           before?: boolean;
           after?: boolean;
-        }
+        },
       ];
   /**
    * Enforce specifying generic type arguments on type annotation or constructor name of a constructor call
@@ -6198,7 +6319,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           fixMixedExportsWithInlineTypeSpecifier?: boolean;
-        }
+        },
       ];
   /**
    * Enforce consistent usage of type imports
@@ -6213,7 +6334,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           prefer?: "type-imports" | "no-type-imports";
           disallowTypeAnnotations?: boolean;
           fixStyle?: "separate-type-imports" | "inline-type-imports";
-        }
+        },
       ];
   /**
    * Enforce default parameters to be last
@@ -6237,7 +6358,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           allowPrivateClassPropertyAccess?: boolean;
           allowProtectedClassPropertyAccess?: boolean;
           allowIndexSignaturePropertyAccess?: boolean;
-        }
+        },
       ];
   /**
    * Require explicit return types on functions and class methods
@@ -6281,7 +6402,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to ignore immediately invoked function expressions (IIFEs).
            */
           allowIIFEs?: boolean;
-        }
+        },
       ];
   /**
    * Require explicit accessibility modifiers on class properties and methods
@@ -6302,7 +6423,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             parameterProperties?: unknown;
           };
           ignoredMethodNames?: string[];
-        }
+        },
       ];
   /**
    * Require explicit return and argument types on exported functions' and classes' public class methods
@@ -6336,7 +6457,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to ignore type annotations on the variable of a function expression.
            */
           allowTypedFunctionExpressions?: boolean;
-        }
+        },
       ];
   /**
    * Require or disallow spacing between function identifiers and their invocations
@@ -6349,7 +6470,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * Enforce consistent indentation
    * https://typescript-eslint.io/rules/indent
    */
-  "typescript-eslint/indent"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/indent"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Require or disallow initialization in variable declarations
    * https://typescript-eslint.io/rules/init-declarations
@@ -6361,7 +6485,10 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
    * Enforce consistent spacing between property names and type annotations in types and interfaces
    * https://typescript-eslint.io/rules/key-spacing
    */
-  "typescript-eslint/key-spacing"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/key-spacing"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Enforce consistent spacing before and after keywords
    * https://typescript-eslint.io/rules/keyword-spacing
@@ -6652,7 +6779,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               after?: boolean;
             };
           };
-        }
+        },
       ];
   /**
    * Require empty lines around comments
@@ -6686,7 +6813,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           allowModuleEnd?: boolean;
           ignorePattern?: string;
           applyDefaultIgnorePatterns?: boolean;
-        }
+        },
       ];
   /**
    * Require or disallow an empty line between class members
@@ -6709,7 +6836,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           maximum?: number;
           max?: number;
           countVoidThis?: boolean;
-        }
+        },
       ];
   /**
    * Require a specific member delimiter style for interfaces and type literals
@@ -6734,7 +6861,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             typeLiteral?: unknown;
           };
           multilineDetection?: "brackets" | "last-member";
-        }
+        },
       ];
   /**
    * Require a consistent member declaration order
@@ -6751,7 +6878,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           classExpressions?: unknown;
           interfaces?: unknown;
           typeLiterals?: unknown;
-        }
+        },
       ];
   /**
    * Enforce using a particular method signature syntax
@@ -6786,7 +6913,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           ignoredTypeNames?: string[];
-        }
+        },
       ];
   /**
    * Disallow non-null assertion in locations that may be confusing
@@ -6807,7 +6934,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           ignoreArrowShorthand?: boolean;
           ignoreVoidOperator?: boolean;
-        }
+        },
       ];
   /**
    * Disallow duplicate class members
@@ -6835,7 +6962,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           ignoreIntersections?: boolean;
           ignoreUnions?: boolean;
-        }
+        },
       ];
   /**
    * Disallow using the `delete` operator on computed key expressions
@@ -6870,7 +6997,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             | "decoratedFunctions"
             | "overrideMethods"
           )[];
-        }
+        },
       ];
   /**
    * Disallow the declaration of empty interfaces
@@ -6883,7 +7010,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowSingleExtends?: boolean;
-        }
+        },
       ];
   /**
    * Disallow the `any` type
@@ -6903,7 +7030,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to ignore rest parameter arrays.
            */
           ignoreRestArgs?: boolean;
-        }
+        },
       ];
   /**
    * Disallow extra non-null assertions
@@ -6952,7 +7079,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to allow extraneous classes that include a decorator.
            */
           allowWithDecorator?: boolean;
-        }
+        },
       ];
   /**
    * Require Promise-like statements to be handled appropriately
@@ -6972,7 +7099,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to ignore async IIFEs (Immediately Invoked Function Expressions).
            */
           ignoreIIFE?: boolean;
-        }
+        },
       ];
   /**
    * Disallow iterating over an array with a for-in loop
@@ -7007,7 +7134,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           ignoreParameters?: boolean;
           ignoreProperties?: boolean;
-        }
+        },
       ];
   /**
    * Disallow `this` keywords outside of classes or class-like objects
@@ -7020,7 +7147,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           capIsConstructor?: boolean;
-        }
+        },
       ];
   /**
    * Disallow `void` type outside of generic or return types
@@ -7034,7 +7161,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowInGenericTypeArguments?: boolean | [string, ...string[]];
           allowAsThisParameter?: boolean;
-        }
+        },
       ];
   /**
    * Disallow function declarations that contain unsafe references inside loop statements
@@ -7070,7 +7197,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignoreEnums?: boolean;
           ignoreReadonlyClassProperties?: boolean;
           ignoreTypeIndexes?: boolean;
-        }
+        },
       ];
   /**
    * Disallow the `void` operator except when used to discard a value
@@ -7083,7 +7210,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           checkNever?: boolean;
-        }
+        },
       ];
   /**
    * Enforce valid definition of `new` and `constructor`
@@ -7113,7 +7240,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
                 variables?: boolean;
               };
           checksSpreads?: boolean;
-        }
+        },
       ];
   /**
    * Disallow enums from having both number and string members
@@ -7140,7 +7267,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to allow `declare` with custom TypeScript namespaces inside definition files.
            */
           allowDefinitionFiles?: boolean;
-        }
+        },
       ];
   /**
    * Disallow non-null assertions in the left operand of a nullish coalescing operator
@@ -7175,7 +7302,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           builtinGlobals?: boolean;
           ignoreDeclarationMerge?: boolean;
-        }
+        },
       ];
   /**
    * Disallow members of unions and intersections that do nothing or override type information
@@ -7214,7 +7341,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           ignoreOnInitialization?: boolean;
           ignoreTypeValueShadow?: boolean;
           ignoreFunctionTypeParameterNameValueShadow?: boolean;
-        }
+        },
       ];
   /**
    * Disallow aliasing `this`
@@ -7234,7 +7361,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Names to ignore, such as ["self"] for `const self = this;`.
            */
           allowedNames?: string[];
-        }
+        },
       ];
   /**
    * Disallow throwing literals as exceptions
@@ -7248,7 +7375,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allowThrowingAny?: boolean;
           allowThrowingUnknown?: boolean;
-        }
+        },
       ];
   /**
    * Disallow type aliases
@@ -7308,7 +7435,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           allowGenerics?: {
             [k: string]: unknown;
           };
-        }
+        },
       ];
   /**
    * Disallow unnecessary equality comparisons against boolean literals
@@ -7328,7 +7455,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to allow comparisons between nullable boolean variables and `false`.
            */
           allowComparingNullableBooleansToFalse?: boolean;
-        }
+        },
       ];
   /**
    * Disallow conditionals where the type is always truthy or always falsy
@@ -7348,7 +7475,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to not error when running with a tsconfig that has strictNullChecks turned.
            */
           allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
-        }
+        },
       ];
   /**
    * Disallow unnecessary namespace qualifiers
@@ -7378,7 +7505,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * A list of type names to ignore.
            */
           typesToIgnore?: string[];
-        }
+        },
       ];
   /**
    * Disallow unnecessary constraints on generic types
@@ -7457,13 +7584,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           allowTernary?: boolean;
           allowTaggedTemplates?: boolean;
           enforceForJSX?: boolean;
-        }
+        },
       ];
   /**
    * Disallow unused variables
    * https://typescript-eslint.io/rules/no-unused-vars
    */
-  "typescript-eslint/no-unused-vars"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/no-unused-vars"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Disallow the use of variables before they are defined
    * https://typescript-eslint.io/rules/no-use-before-define
@@ -7527,7 +7657,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         {
           allow?: unknown[];
           prefer?: "class-property" | "parameter-property";
-        }
+        },
       ];
   /**
    * Enforce the use of `as const` over literal type
@@ -7583,7 +7713,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           allowBitwiseExpressions?: boolean;
-        }
+        },
       ];
   /**
    * Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules
@@ -7615,7 +7745,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
               }
             | true;
           ignoreTernaryTests?: boolean;
-        }
+        },
       ];
   /**
    * Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects
@@ -7659,7 +7789,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Allow autofixers that will change the return type of the expression. This option is considered unsafe as it may break the build.
            */
           allowPotentiallyUnsafeFixesThatModifyTheReturnTypeIKnowWhatImDoing?: boolean;
-        }
+        },
       ];
   /**
    * Require private members to be marked as `readonly` if they're never modified outside of the constructor
@@ -7672,7 +7802,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           onlyInlineLambdas?: boolean;
-        }
+        },
       ];
   /**
    * Require function parameters to be typed as `readonly` to prevent accidental mutation of inputs
@@ -7704,7 +7834,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           checkParameterProperties?: boolean;
           ignoreInferredTypes?: boolean;
           treatMethodsAsReadonly?: boolean;
-        }
+        },
       ];
   /**
    * Enforce using type parameter when calling `Array#reduce` instead of casting
@@ -7763,13 +7893,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           checkFunctionDeclarations?: boolean;
           checkFunctionExpressions?: boolean;
           checkMethodDeclarations?: boolean;
-        }
+        },
       ];
   /**
    * Enforce the consistent use of either backticks, double, or single quotes
    * https://typescript-eslint.io/rules/quotes
    */
-  "typescript-eslint/quotes"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/quotes"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Require `Array#sort` calls to always provide a `compareFunction`
    * https://typescript-eslint.io/rules/require-array-sort-compare
@@ -7784,7 +7917,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to ignore arrays in which all elements are strings.
            */
           ignoreStringArrays?: boolean;
-        }
+        },
       ];
   /**
    * Disallow async functions which have no `await` expression
@@ -7827,7 +7960,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to skip compound assignments such as `+=`.
            */
           skipCompoundAssignments?: boolean;
-        }
+        },
       ];
   /**
    * Enforce template literal expressions to be of `string` type
@@ -7863,13 +7996,16 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to allow `never` typed values in template expressions.
            */
           allowNever?: boolean;
-        }
+        },
       ];
   /**
    * Enforce consistent returning of awaited values
    * https://typescript-eslint.io/rules/return-await
    */
-  "typescript-eslint/return-await"?: number | ("off" | "warn" | "error") | [number | ("off" | "warn" | "error"), {}];
+  "typescript-eslint/return-await"?:
+    | number
+    | ("off" | "warn" | "error")
+    | [number | ("off" | "warn" | "error"), {}];
   /**
    * Require or disallow semicolons instead of ASI
    * https://typescript-eslint.io/rules/semi
@@ -7912,7 +8048,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             | "tuple"
             | "union"
           )[];
-        }
+        },
       ];
   /**
    * Enforce consistent spacing before blocks
@@ -7941,7 +8077,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
         number | ("off" | "warn" | "error"),
         {
           int32Hint?: boolean;
-        }
+        },
       ];
   /**
    * Disallow certain types in boolean expressions
@@ -7962,7 +8098,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           allowNullableEnum?: boolean;
           allowAny?: boolean;
           allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
-        }
+        },
       ];
   /**
    * Require switch-case statements to be exhaustive
@@ -7978,7 +8114,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * If 'true', require a 'default' clause for switches on non-union types.
            */
           requireDefaultForNonUnion?: boolean;
-        }
+        },
       ];
   /**
    * Disallow certain triple slash directives in favor of ES6-style import declarations
@@ -7993,7 +8129,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           lib?: "always" | "never";
           path?: "always" | "never";
           types?: "always" | "never" | "prefer-import";
-        }
+        },
       ];
   /**
    * Require consistent spacing around type annotations
@@ -8015,7 +8151,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
             property?: unknown;
             returnType?: unknown;
           };
-        }
+        },
       ];
   /**
    * Require type annotations in certain places
@@ -8035,7 +8171,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
           propertyDeclaration?: boolean;
           variableDeclaration?: boolean;
           variableDeclarationIgnoreFunction?: boolean;
-        }
+        },
       ];
   /**
    * Enforce unbound methods are called with their expected scope
@@ -8051,7 +8187,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether to skip checking whether `static` methods are correctly bound.
            */
           ignoreStatic?: boolean;
-        }
+        },
       ];
   /**
    * Disallow two overloads that could be unified into one with a union or an optional/rest parameter
@@ -8067,7 +8203,7 @@ export interface HttpsJsonSchemastoreOrgPartialEslintPluginsJson {
            * Whether two parameters with different names at the same index should be considered different even if their types are the same.
            */
           ignoreDifferentlyNamedParameters?: boolean;
-        }
+        },
       ];
   [k: string]: unknown;
 }

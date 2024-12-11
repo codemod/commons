@@ -128,23 +128,21 @@ function getTSType(path: NodePath) {
         ? j.tsArrayType(j.tsUnknownKeyword())
         : j.tsUnionType(
             //@ts-expect-error any
-            arg
-              .get("elements")
-              .value.map(({ type, value }) => {
-                switch (type) {
-                  case "StringLiteral":
-                    return j.tsLiteralType(j.stringLiteral(value));
+            arg.get("elements").value.map(({ type, value }) => {
+              switch (type) {
+                case "StringLiteral":
+                  return j.tsLiteralType(j.stringLiteral(value));
 
-                  case "NumericLiteral":
-                    return j.tsLiteralType(j.numericLiteral(value));
+                case "NumericLiteral":
+                  return j.tsLiteralType(j.numericLiteral(value));
 
-                  case "BooleanLiteral":
-                    return j.tsLiteralType(j.booleanLiteral(value));
+                case "BooleanLiteral":
+                  return j.tsLiteralType(j.booleanLiteral(value));
 
-                  default:
-                    return j.tsUnknownKeyword();
-                }
-              }),
+                default:
+                  return j.tsUnknownKeyword();
+              }
+            }),
           );
     }
 

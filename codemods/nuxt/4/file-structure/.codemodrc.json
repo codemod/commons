@@ -5,7 +5,10 @@
   "name": "nuxt/4/file-structure",
   "engine": "workflow",
   "applicability": {
-    "from": [["nuxt", ">=", "3.0.0"], ["nuxt", "<", "4.0.0"]],
+    "from": [
+      ["nuxt", ">=", "3.0.0"],
+      ["nuxt", "<", "4.0.0"]
+    ],
     "to": [["nuxt", ">=", "4.0.0"]]
   },
   "meta": {

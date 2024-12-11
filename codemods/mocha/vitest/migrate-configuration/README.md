@@ -8,24 +8,24 @@ Run this codemod to upgrade configuration files that need to be changed after mi
 
 ```json
 {
-	"name": "package-name",
-	"dependencies": {
-		"mocha": "^10.2.0",
-		"some-mocha-plugin": "^10.0.4"
-	},
-	"devDependencies": {
-		"mocha": "^10.2.0",
-		"@types/mocha": "^10.0.4"
-	},
-	"main": "./dist/index.cjs",
-		"scripts": {
-				"test": "mocha"
-	},
-	"mocha": {
-		"config-key": "config-value"
-	},
-	"files": ["README.md", ".codemodrc.json", "./dist/index.cjs"],
-	"type": "module"
+  "name": "package-name",
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "some-mocha-plugin": "^10.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "@types/mocha": "^10.0.4"
+  },
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "test": "mocha"
+  },
+  "mocha": {
+    "config-key": "config-value"
+  },
+  "files": ["README.md", ".codemodrc.json", "./dist/index.cjs"],
+  "type": "module"
 }
 ```
 
@@ -33,19 +33,19 @@ Run this codemod to upgrade configuration files that need to be changed after mi
 
 ```json
 {
-	"name": "package-name",
-	"dependencies": {},
-	"devDependencies": {
-		"vitest": "^1.0.1",
-		"@vitest/coverage-v8": "^1.0.1"
-	},
-	"main": "./dist/index.cjs",
-		"scripts": {
-				"test": "vitest run",
-		"coverage": "vitest run --coverage"
-	},
-	"files": ["README.md", ".codemodrc.json", "./dist/index.cjs"],
-	"type": "module"
+  "name": "package-name",
+  "dependencies": {},
+  "devDependencies": {
+    "vitest": "^1.0.1",
+    "@vitest/coverage-v8": "^1.0.1"
+  },
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "files": ["README.md", ".codemodrc.json", "./dist/index.cjs"],
+  "type": "module"
 }
 ```
 
@@ -55,13 +55,13 @@ Run this codemod to upgrade configuration files that need to be changed after mi
 
 ```json
 {
-	"compilerOptions": { "types": ["mocha"] },
-	"include": [
-		"./src/**/*.ts",
-		"./src/**/*.js",
-		"./test/**/*.ts",
-		"./test/**/*.js"
-	]
+  "compilerOptions": { "types": ["mocha"] },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js",
+    "./test/**/*.ts",
+    "./test/**/*.js"
+  ]
 }
 ```
 
@@ -69,13 +69,13 @@ Run this codemod to upgrade configuration files that need to be changed after mi
 
 ```json
 {
-	"compilerOptions": {},
-	"include": [
-		"./src/**/*.ts",
-		"./src/**/*.js",
-		"./test/**/*.ts",
-		"./test/**/*.js"
-	]
+  "compilerOptions": {},
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js",
+    "./test/**/*.ts",
+    "./test/**/*.js"
+  ]
 }
 ```
 
@@ -85,12 +85,12 @@ Run this codemod to upgrade configuration files that need to be changed after mi
 
 ```json
 {
-	"loader": ["ts-node/esm"],
-	"full-trace": true,
-	"failZero": false,
-	"bail": true,
-	"spec": "./**/test.ts",
-	"timeout": 5000
+  "loader": ["ts-node/esm"],
+  "full-trace": true,
+  "failZero": false,
+  "bail": true,
+  "spec": "./**/test.ts",
+  "timeout": 5000
 }
 ```
 

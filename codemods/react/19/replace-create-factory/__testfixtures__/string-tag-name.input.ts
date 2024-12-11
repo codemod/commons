@@ -1,3 +1,3 @@
-import { createFactory } from 'react';
+import { createFactory } from "react";
 
-const button = createFactory('button');
+const button = createFactory("button");

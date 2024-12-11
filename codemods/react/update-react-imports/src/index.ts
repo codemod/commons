@@ -21,7 +21,7 @@ interface ExtendedImportSpecifier extends ImportSpecifier {
 export default function transform(
   file: FileInfo,
   api: API,
-  options?: Options
+  options?: Options,
 ): string | undefined | null {
   const j = api.jscodeshift;
   const printOptions = options?.printOptions || {};
@@ -48,7 +48,7 @@ export default function transform(
           (path) =>
             path.parent.value.type !== "MemberExpression" &&
             path.parent.value.type !== "QualifiedTypeIdentifier" &&
-            path.parent.value.type !== "JSXMemberExpression"
+            path.parent.value.type !== "JSXMemberExpression",
         )
         .size() > 0
     );
@@ -74,14 +74,14 @@ export default function transform(
       path.value.specifiers!.length > 0 &&
       path.value.importKind === "value" &&
       path.value.specifiers!.some(
-        (specifier) => specifier.local?.name === "React"
+        (specifier) => specifier.local?.name === "React",
       )
     );
   });
 
   if (reactPaths.size() > 1) {
     throw Error(
-      "There should only be one React import. Please remove the duplicate import and try again."
+      "There should only be one React import. Please remove the duplicate import and try again.",
     );
   }
 
@@ -96,7 +96,7 @@ export default function transform(
   const isDefaultImport = reactPath?.value.specifiers?.some(
     (specifier) =>
       specifier.type === "ImportDefaultSpecifier" &&
-      specifier.local?.name === "React"
+      specifier.local?.name === "React",
   );
 
   // Check to see if we should keep the React import
@@ -137,7 +137,7 @@ export default function transform(
             !(
               path.parent.value.type === "JSXMemberExpression" &&
               path.parent.value.object.name === "React"
-            )
+            ),
         )
         .size() === 0;
 
@@ -293,7 +293,7 @@ export default function transform(
     Object.keys(reactIdentifiers).forEach((local) => {
       const imported = reactIdentifiers[local]!;
       regularImports.push(
-        j.importSpecifier(j.identifier(imported), j.identifier(local))
+        j.importSpecifier(j.identifier(imported), j.identifier(local)),
       );
     });
 
@@ -301,18 +301,18 @@ export default function transform(
     Object.keys(reactTypeIdentifiers).forEach((local) => {
       const imported = reactTypeIdentifiers[local]!;
       typeImports.push(
-        j.importSpecifier(j.identifier(imported), j.identifier(local))
+        j.importSpecifier(j.identifier(imported), j.identifier(local)),
       );
     });
 
     if (regularImports.length > 0 && reactPath) {
       j(reactPath).insertAfter(
-        j.importDeclaration(regularImports, reactLiteral)
+        j.importDeclaration(regularImports, reactLiteral),
       );
     }
     if (typeImports.length > 0 && reactPath) {
       j(reactPath).insertAfter(
-        j.importDeclaration(typeImports, reactLiteral, "type")
+        j.importDeclaration(typeImports, reactLiteral, "type"),
       );
     }
 
@@ -327,15 +327,15 @@ export default function transform(
             specifier.local?.name === "React" &&
             ((specifier as unknown as ExtendedImportSpecifier).importKind ===
               "type" ||
-              path.value.importKind === "type")
+              path.value.importKind === "type"),
         )
       ) {
         j(path).insertAfter(
           j.importDeclaration(
             [j.importDefaultSpecifier(j.identifier("React"))],
             reactLiteral,
-            "type"
-          )
+            "type",
+          ),
         );
       }
       j(path).remove();
@@ -364,8 +364,8 @@ export default function transform(
           j(reactPath).insertAfter(
             j.importDeclaration(
               [j.importNamespaceSpecifier(j.identifier("React"))],
-              reactLiteral
-            )
+              reactLiteral,
+            ),
           );
         }
 
@@ -389,12 +389,12 @@ export default function transform(
           }
           if (regularImports.length > 0) {
             j(reactPath).insertAfter(
-              j.importDeclaration(regularImports, reactLiteral)
+              j.importDeclaration(regularImports, reactLiteral),
             );
           }
           if (typeImports.length > 0) {
             j(reactPath).insertAfter(
-              j.importDeclaration(typeImports, reactLiteral, "type")
+              j.importDeclaration(typeImports, reactLiteral, "type"),
             );
           }
         }

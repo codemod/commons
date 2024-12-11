@@ -3,15 +3,15 @@ In msw v2, lifecycle events callback methods have changed their signature. This 
 ## Before
 
 ```ts
-server.events.on('request:start', (req, reqId) => {
-	doStuff(req, reqId);
+server.events.on("request:start", (req, reqId) => {
+  doStuff(req, reqId);
 });
 ```
 
 ## After
 
 ```ts
-server.events.on('request:start', ({ request, requestId }) => {
-	doStuff(request, requestId);
+server.events.on("request:start", ({ request, requestId }) => {
+  doStuff(request, requestId);
 });
 ```

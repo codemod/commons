@@ -1,4 +1,4 @@
-const Future = Npm.require('fibers/future');
+const Future = Npm.require("fibers/future");
 
 function someFunction() {
   const future = new Future();

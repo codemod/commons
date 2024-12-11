@@ -14,52 +14,50 @@ The codemod accepts the following arguments:
 ```ts
 const theValue = getBooleanValue("the-key", true).value;
 
-console.log(getBooleanValue("the-key", false))
+console.log(getBooleanValue("the-key", false));
 
 if (theValue === true) {
-    const someVar = useGate("other-gate1")
-    const templateVar = `Hello, ${someVar}`
-    const concatVar = "Goodbye, " + someVar
+  const someVar = useGate("other-gate1");
+  const templateVar = `Hello, ${someVar}`;
+  const concatVar = "Goodbye, " + someVar;
 }
 
 if (theValue) {
-    console.log('theValue is truthy')
+  console.log("theValue is truthy");
 }
 
 if (theValue === 3) {
-    console.log('value var === 3')
+  console.log("value var === 3");
 }
 
-const x = theValue ? 1 : 0
+const x = theValue ? 1 : 0;
 
 if (getBooleanValue("the-key", true).value === true) {
-    console.log('obj.value === true')
+  console.log("obj.value === true");
 }
 
 if (getBooleanValue("the-key", true).value) {
-    console.log('obj.value is truthy')
+  console.log("obj.value is truthy");
 }
 
-console.log(getBooleanValue("the-key", true).value)
+console.log(getBooleanValue("the-key", true).value);
 ```
 
 ### After
 
 ```ts
-console.log(true)
+console.log(true);
 
-const someVar = useGate("other-gate1")
-const templateVar = `Hello, ${someVar}`
-const concatVar = "Goodbye, " + someVar
+const someVar = useGate("other-gate1");
+const templateVar = `Hello, ${someVar}`;
+const concatVar = "Goodbye, " + someVar;
 
-
-console.log('theValue is truthy')
+console.log("theValue is truthy");
 
 const x = 1;
 
-console.log('obj.value === true')
-console.log('obj.value is truthy')
+console.log("obj.value === true");
+console.log("obj.value is truthy");
 
-console.log(true)
+console.log(true);
 ```
-

@@ -1,7 +1,4 @@
-
-
-
-This codemod automates the migration of your Meteor project to version 3, updating function calls and modernizing your codebase to their renamed functions. 
+This codemod automates the migration of your Meteor project to version 3, updating function calls and modernizing your codebase to their renamed functions.
 
 You can find the implementation of this codemod in the studio [here](https://go.codemod.com/8OZx88x)
 
@@ -14,10 +11,9 @@ You can find the implementation of this codemod in the studio [here](https://go.
 ## Overview
 
 This codemod performs the following transformations:
+
 - Converts synchronous function calls to their asynchronous counterparts.
 - Renames functions according to new API changes in Meteor v3.
-
-
 
 ## Examples
 
@@ -49,7 +45,7 @@ This codemod updates asset retrieval functions to use their asynchronous version
 
 ```ts
 function someFunction() {
-  const text = Assets.getText('some-file.txt');
+  const text = Assets.getText("some-file.txt");
   return text;
 }
 ```
@@ -58,7 +54,7 @@ function someFunction() {
 
 ```ts
 async function someFunction() {
-  const text = await Assets.getTextAsync('some-file.txt');
+  const text = await Assets.getTextAsync("some-file.txt");
   return text;
 }
 ```
@@ -69,7 +65,7 @@ async function someFunction() {
 
 ```ts
 function someFunction() {
-  const binary = Assets.getBinary('some-file.txt');
+  const binary = Assets.getBinary("some-file.txt");
   return binary;
 }
 ```
@@ -78,7 +74,7 @@ function someFunction() {
 
 ```ts
 async function someFunction() {
-  const binary = await Assets.getBinaryAsync('some-file.txt');
+  const binary = await Assets.getBinaryAsync("some-file.txt");
   return binary;
 }
 ```
@@ -91,8 +87,8 @@ This codemod updates the `Accounts.addEmail` function to its asynchronous versio
 
 ```ts
 Accounts.addEmail(
-  'userId',
-  'newEmail',
+  "userId",
+  "newEmail",
   false, // this param is optional
 );
 ```
@@ -101,9 +97,8 @@ Accounts.addEmail(
 
 ```ts
 await Accounts.addEmailAsync(
-  'userId',
-  'newEmail',
+  "userId",
+  "newEmail",
   false, // this param is optional
 );
 ```
-

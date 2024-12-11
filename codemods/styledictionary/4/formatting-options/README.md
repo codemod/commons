@@ -20,7 +20,7 @@ This codemod updates file formats to accept options that influence output creati
       }
     }
   }
-  
+
 ```
 
 ## After

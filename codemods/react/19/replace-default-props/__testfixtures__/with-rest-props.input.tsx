@@ -1,8 +1,12 @@
 const Link = ({ href, children, ...props }) => {
-    return <a href={href} {...props}>{children}</a>;
-}
+  return (
+    <a href={href} {...props}>
+      {children}
+    </a>
+  );
+};
 
 Link.defaultProps = {
-    href: '#',
-    children: 'Click here'
-}
+  href: "#",
+  children: "Click here",
+};

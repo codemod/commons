@@ -1,6 +1,5 @@
 This codemod helps in transforming `PointerLockControls.getObject()` to `controls.object`
 
-
 ## Example
 
 ### Before
@@ -15,7 +14,6 @@ pointerLockControls.getObject().translateX(translationVelocity.x * delta);
 controls.object.translateX(translationVelocity.x * delta);
 ```
 
-
 ### Before
 
 ```ts
@@ -28,7 +26,6 @@ pointerLockControls.getObject().translateY(translationVelocity.y * delta);
 controls.object.translateY(translationVelocity.y * delta);
 ```
 
-
 ### Before
 
 ```ts
@@ -40,4 +37,3 @@ pointerLockControls.getObject().translateZ(translationVelocity.z * delta);
 ```ts
 controls.object.translateZ(translationVelocity.z * delta);
 ```
-

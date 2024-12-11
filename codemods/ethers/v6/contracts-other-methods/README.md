@@ -38,7 +38,6 @@ contract.estimateGas.foo(addr);
 contract.foo.estimateGas(addr);
 ```
 
-
 ### Before
 
 ```ts
@@ -56,5 +55,5 @@ Below transformation is not done using codemod, since it is a new feature in v6
 Explicitly sends a transaction, regardless of function type
 
 ```ts
-contract.foo.send(addr)
+contract.foo.send(addr);
 ```

@@ -40,17 +40,14 @@ const buildPropertyWithDefaultValue = (
   defaultValue: any,
 ) => {
   // Special handling for nested destructuring patterns
-  if (property.value.type === 'ObjectPattern') {
-    return j.assignmentPattern(
-      property.value,
-      defaultValue
-    );
+  if (property.value.type === "ObjectPattern") {
+    return j.assignmentPattern(property.value, defaultValue);
   }
 
   if (!j.Identifier.check(property.key)) {
     return property.value;
   }
-  
+
   const identifier = j.identifier(property.key.name);
   return j.assignmentPattern(identifier, defaultValue);
 };
@@ -95,7 +92,6 @@ export default function transform(
 
       defaultPropsMap.set(property.key.name, property.value);
     });
-
 
     const propsArg = path.value.params.at(0);
 

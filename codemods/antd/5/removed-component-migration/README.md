@@ -1,5 +1,3 @@
-
-
 Replace import for removed component in v5.
 
 ## Example

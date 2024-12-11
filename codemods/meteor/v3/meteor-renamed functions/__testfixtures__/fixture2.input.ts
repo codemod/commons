@@ -1,4 +1,4 @@
 function someFunction() {
-  const text = Assets.getText('some-file.txt');
+  const text = Assets.getText("some-file.txt");
   return text;
 }

@@ -4,9 +4,9 @@ Replaces `params` prop passed by react-router with `match.params`.
 
 ```jsx
 const PostEdit = ({ params }) => (
-	<div>
-		<h1>Post {params.id}</h1>
-	</div>
+  <div>
+    <h1>Post {params.id}</h1>
+  </div>
 );
 ```
 
@@ -14,8 +14,8 @@ const PostEdit = ({ params }) => (
 
 ```jsx
 const PostEdit = ({ match }) => (
-	<div>
-		<h1>Post {match.params.id}</h1>
-	</div>
+  <div>
+    <h1>Post {match.params.id}</h1>
+  </div>
 );
 ```

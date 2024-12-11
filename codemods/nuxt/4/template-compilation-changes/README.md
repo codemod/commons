@@ -12,31 +12,33 @@ In Nuxt v3, we moved to a 'virtual' syntax with a `getContents()` function, whic
 
 ```js
 addTemplate({
-    fileName: 'appinsights-vue.js',
-    options: {
-        /* some options */
-    },
-    src: resolver.resolve('./runtime/plugin.ejs'),
+  fileName: "appinsights-vue.js",
+  options: {
+    /* some options */
+  },
+  src: resolver.resolve("./runtime/plugin.ejs"),
 });
 ```
 
 ### After
 
 ```js
-import { template } from 'lodash-es';
-import { readFileSync } from 'node:fs';
+import { template } from "lodash-es";
+import { readFileSync } from "node:fs";
 
 addTemplate({
-    fileName: 'appinsights-vue.js',
-    options: {
-        /* some options */
-    },
-    getContents({ options }) {
-        const contents = readFileSync(resolver.resolve('./runtime/plugin.ejs'), 'utf-8');
-        return template(contents)({ options });
-    },
+  fileName: "appinsights-vue.js",
+  options: {
+    /* some options */
+  },
+  getContents({ options }) {
+    const contents = readFileSync(
+      resolver.resolve("./runtime/plugin.ejs"),
+      "utf-8",
+    );
+    return template(contents)({ options });
+  },
 });
 ```
-
 
 > This change applies to all templates using .ejs file format/syntax.

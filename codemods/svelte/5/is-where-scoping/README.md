@@ -4,7 +4,6 @@ This codemod updates CSS handling in your project:
 - Applies changes to CSS within `<style>` tags in Svelte files.
 - Ensures global scope is properly applied to Tailwind utilities and complex selectors.
 
-
 ## Before
 
 ```jsx

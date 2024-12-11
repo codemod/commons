@@ -5,7 +5,7 @@ Replaces `react-test-renderer/shallow` import.
 ### Before
 
 ```ts
-import ShallowRenderer from 'react-test-renderer/shallow';
+import ShallowRenderer from "react-test-renderer/shallow";
 ```
 
 ### After
@@ -13,4 +13,3 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 ```ts
 import ShallowRenderer from "react-shallow-renderer";
 ```
-

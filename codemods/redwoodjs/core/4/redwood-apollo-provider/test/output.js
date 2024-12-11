@@ -1,4 +1,4 @@
-import { AuthProvider, useAuth } from './auth';
+import { AuthProvider, useAuth } from "./auth";
 /*
 The MIT License (MIT)
 
@@ -23,19 +23,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-import Routes from 'src/Routes';
-import FatalErrorPage from 'src/pages/FatalErrorPage';
+import Routes from "src/Routes";
+import FatalErrorPage from "src/pages/FatalErrorPage";
 
-import './index.css';
+import "./index.css";
 
 const App = () => (
-	<FatalErrorBoundary page={FatalErrorPage}>
-		<RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
-			<AuthProvider>
-				<RedwoodApolloProvider useAuth={useAuth}>
-					<Routes />
-				</RedwoodApolloProvider>
-			</AuthProvider>
-		</RedwoodProvider>
-	</FatalErrorBoundary>
+  <FatalErrorBoundary page={FatalErrorPage}>
+    <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
+      <AuthProvider>
+        <RedwoodApolloProvider useAuth={useAuth}>
+          <Routes />
+        </RedwoodApolloProvider>
+      </AuthProvider>
+    </RedwoodProvider>
+  </FatalErrorBoundary>
 );

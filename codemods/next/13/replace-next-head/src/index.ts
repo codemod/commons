@@ -366,7 +366,7 @@ const handleJsxSelfClosingElement = (
   const metadataName = (
     tagName === "link"
       ? metadataAttributes.rel
-      : metadataAttributes.name ?? metadataAttributes.property
+      : (metadataAttributes.name ?? metadataAttributes.property)
   )?.replace(/\"/g, "");
 
   if (metadataName && knownNames.includes(metadataName)) {
@@ -1206,7 +1206,7 @@ const mergeNodes = (
             Record<string, string>
           >((acc, [key, value]) => {
             acc[key] = Node.isJsxExpression(value)
-              ? value.getExpression()?.getText() ?? ""
+              ? (value.getExpression()?.getText() ?? "")
               : value.getText();
 
             return acc;
@@ -1271,7 +1271,7 @@ const mergeNodes = (
         // add propValue declaration
 
         const propValueText = Node.isJsxExpression(propValue)
-          ? propValue.getExpression()?.getText() ?? ""
+          ? (propValue.getExpression()?.getText() ?? "")
           : propValue.getText();
 
         if (propValueText !== identifierName) {
@@ -1539,9 +1539,9 @@ const getPositionBeforeComponent = (sourceFile: SourceFile): number => {
 
   return Node.isFunctionDeclaration(component)
     ? component.getChildIndex()
-    : component
+    : (component
         .getFirstAncestorByKind(SyntaxKind.VariableStatement)
-        ?.getChildIndex() ?? 0;
+        ?.getChildIndex() ?? 0);
 };
 
 const getPositionAfterImports = (sourceFile: SourceFile): number => {

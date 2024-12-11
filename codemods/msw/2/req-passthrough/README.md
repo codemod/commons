@@ -3,17 +3,17 @@ A new way of calling a passthrough is available in msw v2. This codemod replaces
 ## Before
 
 ```ts
-rest.get('/resource', (req, res, ctx) => {
-	return req.passthrough();
+rest.get("/resource", (req, res, ctx) => {
+  return req.passthrough();
 });
 ```
 
 ## After
 
 ```ts
-import { passthrough } from 'msw';
+import { passthrough } from "msw";
 
-rest.get('/resource', (req, res, ctx) => {
-	return passthrough();
+rest.get("/resource", (req, res, ctx) => {
+  return passthrough();
 });
 ```

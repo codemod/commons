@@ -5,13 +5,13 @@ This codemod replaces viewportTopLeft with viewportUV
 ### Before
 
 ```ts
-import { toneMapping, color, viewportTopLeft } from 'three/nodes';
+import { toneMapping, color, viewportTopLeft } from "three/nodes";
 ```
 
 ### After
 
 ```ts
-import { toneMapping, color, viewportUV } from 'three/nodes';
+import { toneMapping, color, viewportUV } from "three/nodes";
 ```
 
 ### Before
@@ -25,4 +25,3 @@ scene.backgroundNode = viewportTopLeft.y.mix(color(0x66bbff), color(0x4466ff));
 ```ts
 scene.backgroundNode = viewportUV.y.mix(color(0x66bbff), color(0x4466ff));
 ```
-

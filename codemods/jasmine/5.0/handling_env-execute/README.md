@@ -6,23 +6,20 @@ This codemod migrates `Env.execute` callbacks to await.
 
 ```ts
 try {
-    env.execute(null, function () {
-        console.log("Test suite finished.");
-    });
+  env.execute(null, function () {
+    console.log("Test suite finished.");
+  });
 } catch (e) {
-    console.log("Failed to start the test suite.");
+  console.log("Failed to start the test suite.");
 }
-
 ```
 
 ### After
 
 ```ts
 try {
-    await env.execute();
+  await env.execute();
 } catch (e) {
-    console.log("Failed to start the test suite.");
+  console.log("Failed to start the test suite.");
 }
-
 ```
-

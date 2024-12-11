@@ -1,20 +1,21 @@
 module.exports = function (fileInfo, api) {
-    const j = api.jscodeshift;
-    const root = j(fileInfo.source);
-  
-    // Find all CallExpressions where .uniforms() is called
-    root.find(j.CallExpression, {
+  const j = api.jscodeshift;
+  const root = j(fileInfo.source);
+
+  // Find all CallExpressions where .uniforms() is called
+  root
+    .find(j.CallExpression, {
       callee: {
-        type: 'MemberExpression',
+        type: "MemberExpression",
         property: {
-          name: 'uniforms',
+          name: "uniforms",
         },
       },
-    }).forEach((path) => {
+    })
+    .forEach((path) => {
       // Replace 'uniforms' with 'uniformArray'
-      path.node.callee.property.name = 'uniformArray';
+      path.node.callee.property.name = "uniformArray";
     });
-  
-    return root.toSource();
-  };
-  
+
+  return root.toSource();
+};

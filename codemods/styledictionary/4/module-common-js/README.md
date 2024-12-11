@@ -5,11 +5,11 @@ This codemod updates Style Dictionary to use ES Modules format entirely in versi
 ## Before
 
 ```jsx
-const StyleDictionary = require('style-dictionary');
+const StyleDictionary = require("style-dictionary");
 ```
 
 ## After
 
 ```jsx
-import StyleDictionary from 'style-dictionary';
+import StyleDictionary from "style-dictionary";
 ```

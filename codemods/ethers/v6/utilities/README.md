@@ -17,6 +17,7 @@ text = ethers.utils.parseBytes32String(bytes32);
 bytes32 = ethers.encodeBytes32String(text);
 text = ethers.decodeBytes32String(bytes32);
 ```
+
 Constants
 
 ### Before
@@ -32,6 +33,7 @@ ethers.constants.HashZero;
 ethers.ZeroAddress;
 ethers.ZeroHash;
 ```
+
 Data Manipulation
 
 ### Before
@@ -50,6 +52,7 @@ padded = ethers.zeroPadValue(value, length);
 // v6; converting numbers to hexstrings
 hex = toBeHex(35);
 ```
+
 Deafult AbiCoder
 
 ### Before
@@ -65,6 +68,7 @@ coder = AbiCoder.defaultAbiCoder;
 // In v6, it is a static function on AbiCoder
 coder = AbiCoder.defaultAbiCoder();
 ```
+
 Hex Conversion
 
 ### Before
@@ -80,6 +84,7 @@ array = ethers.utils.arrayify(value);
 hex = ethers.toQuantity(value);
 array = ethers.getBytes(value);
 ```
+
 Solidity non-standard packed
 
 ### Before
@@ -97,11 +102,13 @@ ethers.solidityPacked(types, values);
 ethers.solidityPackedKeccak256(types, values);
 ethers.solidityPackedSha256(types, values);
 ```
+
 Property Manipulation
+
 ### Before
 
 ```ts
-ethers.utils.defineReadOnly(obj, 'name', value);
+ethers.utils.defineReadOnly(obj, "name", value);
 ```
 
 ### After
@@ -130,7 +137,7 @@ const req = new ethers.FetchRequest(url);
 req.body = json;
 req.processFunc = processFunc;
 const resp = await req.send();
-data = resp.bodyJson;  // or resp.bodyText / resp.body depending on the desired format
+data = resp.bodyJson; // or resp.bodyText / resp.body depending on the desired format
 ```
 
 Fetch with Connection Overrides:
@@ -139,10 +146,10 @@ Fetch with Connection Overrides:
 
 ```ts
 req = {
-    url: url,
-    user: "username",
-    password: "password"
-    // etc. properties have FetchRequest equivalents
+  url: url,
+  user: "username",
+  password: "password",
+  // etc. properties have FetchRequest equivalents
 };
 data = await ethers.utils.fetchJson(req, json, processFunc);
 ```
@@ -155,5 +162,5 @@ req.setCredentials("username", "password");
 req.body = json;
 req.processFunc = processFunc;
 const resp = await req.send();
-data = resp.bodyJson;  // or resp.bodyText / resp.body depending on the desired format
+data = resp.bodyJson; // or resp.bodyText / resp.body depending on the desired format
 ```

@@ -1,1 +1,1 @@
-const StyleDictionary = require('style-dictionary');
+const StyleDictionary = require("style-dictionary");

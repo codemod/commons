@@ -3,21 +3,21 @@ This codemod removes all calls to `propertyWillChange` and replaces all calls to
 ## Before
 
 ```jsx
-Ember.propertyWillChange(object, 'someProperty');
+Ember.propertyWillChange(object, "someProperty");
 doStuff(object);
-Ember.propertyDidChange(object, 'someProperty');
+Ember.propertyDidChange(object, "someProperty");
 
-object.propertyWillChange('someProperty');
+object.propertyWillChange("someProperty");
 doStuff(object);
-object.propertyDidChange('someProperty');
+object.propertyDidChange("someProperty");
 ```
 
 ## After
 
 ```tsx
 doStuff(object);
-Ember.notifyPropertyChange(object, 'someProperty');
+Ember.notifyPropertyChange(object, "someProperty");
 
 doStuff(object);
-object.notifyPropertyChange('someProperty');
+object.notifyPropertyChange("someProperty");
 ```

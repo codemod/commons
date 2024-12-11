@@ -4,9 +4,9 @@ This codemod removes all calls to `volatile()` and ensures that native getters a
 
 ```jsx
 const Person = EmberObject.extend({
-	fullName: computed(function () {
-		return `${this.firstName} ${this.lastName}`;
-	}).volatile(),
+  fullName: computed(function () {
+    return `${this.firstName} ${this.lastName}`;
+  }).volatile(),
 });
 ```
 
@@ -14,8 +14,8 @@ const Person = EmberObject.extend({
 
 ```tsx
 const Person = EmberObject.extend({
-	get fullName() {
-		return `${this.firstName} ${this.lastName}`;
-	},
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
 });
 ```

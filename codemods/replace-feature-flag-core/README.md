@@ -12,7 +12,7 @@ The codemod accepts the following arguments:
 ### Before
 
 ```ts
-const isDefaulted = useFlag(user, 'simple-case', true);
+const isDefaulted = useFlag(user, "simple-case", true);
 
 if (isDefaulted) {
   const a = b;
@@ -25,9 +25,8 @@ if (isDefaulted) {
 ### After
 
 ```ts
-  const a = b;
-  c?.forEach((d) => {
-    const f = e;
-  });
+const a = b;
+c?.forEach((d) => {
+  const f = e;
+});
 ```
-

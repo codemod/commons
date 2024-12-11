@@ -4,12 +4,12 @@ This codemod changes `patchEnvironmentVariable` to pass an object instead of the
 
 ```jsx
 patchEnvironmentVariable(
-	accountId,
-	siteId,
-	key,
-	context,
-	value,
-	contextParameter,
+  accountId,
+  siteId,
+  key,
+  context,
+  value,
+  contextParameter,
 );
 ```
 
@@ -17,11 +17,11 @@ patchEnvironmentVariable(
 
 ```jsx
 patchEnvironmentVariable({
-	accountId: accountId,
-	siteId: siteId,
-	key: key,
-	context: context,
-	value: value,
-	contextParameter: contextParameter,
+  accountId: accountId,
+  siteId: siteId,
+  key: key,
+  context: context,
+  value: value,
+  contextParameter: contextParameter,
 });
 ```

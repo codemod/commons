@@ -6,55 +6,55 @@ You will have to manually specify connection details if you used `createClient` 
 ## Before
 
 ```ts
-import Queue from 'bull';
-import Redis from 'ioredis';
+import Queue from "bull";
+import Redis from "ioredis";
 
 export function createQueue(
-	name: string,
-	defaultJobOptions?: Partial<Queue.JobOptions>,
+  name: string,
+  defaultJobOptions?: Partial<Queue.JobOptions>,
 ) {
-	const queue = new Queue(name, {
-		createClient(type) {
-			switch (type) {
-				case 'client':
-					return Redis.defaultClient;
+  const queue = new Queue(name, {
+    createClient(type) {
+      switch (type) {
+        case "client":
+          return Redis.defaultClient;
 
-				case 'subscriber':
-					return Redis.defaultSubscriber;
+        case "subscriber":
+          return Redis.defaultSubscriber;
 
-				case 'bclient':
-					return new Redis(env.REDIS_URL);
+        case "bclient":
+          return new Redis(env.REDIS_URL);
 
-				default:
-					throw new Error(`Unexpected connection type: ${type}`);
-			}
-		},
-		defaultJobOptions: {
-			removeOnComplete: true,
-			removeOnFail: true,
-			...defaultJobOptions,
-		},
-	});
-	queue.on('stalled', () => {
-		Metrics.increment('bull.jobs.stalled');
-	});
-	queue.on('completed', () => {
-		Metrics.increment('bull.jobs.completed');
-	});
-	queue.on('error', () => {
-		Metrics.increment('bull.jobs.errored');
-	});
-	queue.on('failed', () => {
-		Metrics.increment('bull.jobs.failed');
-	});
+        default:
+          throw new Error(`Unexpected connection type: ${type}`);
+      }
+    },
+    defaultJobOptions: {
+      removeOnComplete: true,
+      removeOnFail: true,
+      ...defaultJobOptions,
+    },
+  });
+  queue.on("stalled", () => {
+    Metrics.increment("bull.jobs.stalled");
+  });
+  queue.on("completed", () => {
+    Metrics.increment("bull.jobs.completed");
+  });
+  queue.on("error", () => {
+    Metrics.increment("bull.jobs.errored");
+  });
+  queue.on("failed", () => {
+    Metrics.increment("bull.jobs.failed");
+  });
 
-	return queue;
+  return queue;
 }
 
-const queue = createQueue('queue-name');
+const queue = createQueue("queue-name");
 
 queue.process(async function (job) {
-	const event = job.data;
+  const event = job.data;
 });
 ```
 

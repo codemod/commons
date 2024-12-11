@@ -9,25 +9,25 @@ The codemod will not remove the existing `use client` directive even if it would
 ### Before
 
 ```jsx
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Page() {
-	const [x, setX] = useState('');
+  const [x, setX] = useState("");
 
-	return x;
+  return x;
 }
 ```
 
 ### After
 
 ```jsx
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Page() {
-	const [x, setX] = useState('');
+  const [x, setX] = useState("");
 
-	return x;
+  return x;
 }
 ```

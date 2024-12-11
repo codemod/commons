@@ -5,9 +5,9 @@ Using event object APIs that are specific to `jQuery.Event`, such as `originalEv
 ```jsx
 // your event handler:
 export default Component.extend({
-	click(event) {
-		let x = event.originalEvent.clientX;
-	},
+  click(event) {
+    let x = event.originalEvent.clientX;
+  },
 });
 ```
 
@@ -16,8 +16,8 @@ export default Component.extend({
 ```tsx
 // your event handler:
 export default Component.extend({
-	click(event) {
-		let x = event.clientX;
-	},
+  click(event) {
+    let x = event.clientX;
+  },
 });
 ```

@@ -1,3 +1,3 @@
-const C = ({ text = 'test' }) => {
-    return <>{ text }</>;
-}
+const C = ({ text = "test" }) => {
+  return <>{text}</>;
+};

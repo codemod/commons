@@ -9,51 +9,51 @@ This codemod runs `.fixUnusedIdentifiers()` on a source file you are running it 
 ## Before
 
 ```ts
-import { http } from 'msw';
+import { http } from "msw";
 
-http.get('/resource', (req, res, ctx) => {
-	return HttpResponse.json({ id: 'abc-123' });
+http.get("/resource", (req, res, ctx) => {
+  return HttpResponse.json({ id: "abc-123" });
 });
 ```
 
 ## After
 
 ```ts
-import { http } from 'msw';
+import { http } from "msw";
 
-http.get('/resource', () => {
-	return HttpResponse.json({ id: 'abc-123' });
+http.get("/resource", () => {
+  return HttpResponse.json({ id: "abc-123" });
 });
 ```
 
 ## Before
 
 ```ts
-import { http } from 'msw';
+import { http } from "msw";
 
-http.get('/resource', (req, res, ctx) => {
-	const userCookie = cookies.user;
-	const url = new URL(request.url);
+http.get("/resource", (req, res, ctx) => {
+  const userCookie = cookies.user;
+  const url = new URL(request.url);
 
-	doSomething(url);
-	userCookie.doSomething();
+  doSomething(url);
+  userCookie.doSomething();
 
-	return HttpResponse.json({ id: 'abc-123' });
+  return HttpResponse.json({ id: "abc-123" });
 });
 ```
 
 ## After
 
 ```ts
-import { http } from 'msw';
+import { http } from "msw";
 
-http.get('/resource', ({ request, cookies }) => {
-	const userCookie = cookies.user;
-	const url = new URL(request.url);
+http.get("/resource", ({ request, cookies }) => {
+  const userCookie = cookies.user;
+  const url = new URL(request.url);
 
-	doSomething(url);
-	userCookie.doSomething();
+  doSomething(url);
+  userCookie.doSomething();
 
-	return HttpResponse.json({ id: 'abc-123' });
+  return HttpResponse.json({ id: "abc-123" });
 });
 ```

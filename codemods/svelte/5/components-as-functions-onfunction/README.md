@@ -9,20 +9,20 @@ This ensures compatibility with Svelte 5's function-based components and new eve
 ## Before
 
 ```jsx
-import App from './App.svelte';
+import App from "./App.svelte";
 
-const app = new App({ target: document.getElementById('app') });
-app.$on('event', callback);
+const app = new App({ target: document.getElementById("app") });
+app.$on("event", callback);
 ```
 
 ## After
 
 ```jsx
-import { mount } from 'svelte';
-import App from './App.svelte';
+import { mount } from "svelte";
+import App from "./App.svelte";
 
 const app = mount(App, {
-    target: document.getElementById('app'),
-    events: { event: callback },
+  target: document.getElementById("app"),
+  events: { event: callback },
 });
 ```

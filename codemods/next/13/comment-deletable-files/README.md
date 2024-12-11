@@ -4,21 +4,21 @@ It adds a comment to files that should be deleted and migrated to different file
 
 Namely, such are the following files:
 
--   `_document.*`,
--   `_app.*`,
--   `_error.*`.
+- `_document.*`,
+- `_app.*`,
+- `_error.*`.
 
 ## Example
 
 ### Before
 
 ```jsx
-import 'highlight.js/styles/default.css';
-import 'swagger-ui-react/swagger-ui.css';
-import '../styles/globals.css';
+import "highlight.js/styles/default.css";
+import "swagger-ui-react/swagger-ui.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
@@ -28,12 +28,12 @@ export default MyApp;
 
 ```jsx
 /*This file should be deleted. Please migrate its contents to appropriate files*/
-import 'highlight.js/styles/default.css';
-import 'swagger-ui-react/swagger-ui.css';
-import '../styles/globals.css';
+import "highlight.js/styles/default.css";
+import "swagger-ui-react/swagger-ui.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

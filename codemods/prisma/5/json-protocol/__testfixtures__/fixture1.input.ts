@@ -2,19 +2,19 @@
 prisma.post.findMany({
   where: {
     commentsList: {
-      equals: { text: 'hello' },
+      equals: { text: "hello" },
     },
   },
-})
+});
 
 prisma.post.create({
   data: {
-    commentsList: { text: 'hello' },
+    commentsList: { text: "hello" },
   },
-})
+});
 
 prisma.post.findMany({
   where: {
-    commentsList: { text: 'hello' },
+    commentsList: { text: "hello" },
   },
-})
+});

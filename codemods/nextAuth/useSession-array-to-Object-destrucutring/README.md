@@ -10,6 +10,5 @@ const [session, loading] = useSession();
 
 ```ts
 const { data: session, status } = useSession();
-const loading = status === 'loading';
+const loading = status === "loading";
 ```
-

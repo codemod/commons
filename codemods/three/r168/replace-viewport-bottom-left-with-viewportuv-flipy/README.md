@@ -1,6 +1,5 @@
 This codemod replaces viewportBottomLeft with viewportUV.flipY()
 
-
 ## Example
 
 Additional Information: But keep in mind we have to remove viewportBottomLeft manually from the import statement.
@@ -29,4 +28,3 @@ nodeUV = viewportBottomLeft;
 ```ts
 nodeUV = viewportUV.flipY();
 ```
-

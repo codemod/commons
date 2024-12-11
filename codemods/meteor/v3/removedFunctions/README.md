@@ -1,7 +1,3 @@
-
-
-
-
 This codemod helps remove deprecated functions like `Promise.await` and `Meteor.wrapAsync` from your Meteor codebase, aligning it with the new best practices introduced in Meteor v3.
 
 You can find the implementation of this codemod in the Studio [here](https://go.codemod.com/afcQUhT).

@@ -10,11 +10,10 @@ The Nuxt `builder:watch` hook now emits a path that is absolute rather than rela
 
 This change allows support for watching paths that are outside your `srcDir`, and offers better support for layers and other more complex patterns.
 
-
 ## Before
 
 ```jsx
-nuxt.hook('builder:watch', (event, path) => {
+nuxt.hook("builder:watch", (event, path) => {
   someFunction();
 });
 ```
@@ -22,7 +21,7 @@ nuxt.hook('builder:watch', (event, path) => {
 ## After
 
 ```jsx
-nuxt.hook('builder:watch', (event, path) => {
+nuxt.hook("builder:watch", (event, path) => {
   path = relative(nuxt.options.srcDir, resolve(nuxt.options.srcDir, path));
   refreshFunction();
 });

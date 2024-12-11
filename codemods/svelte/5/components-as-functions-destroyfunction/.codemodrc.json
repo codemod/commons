@@ -5,7 +5,10 @@
   "name": "svelte/5/components-as-functions-destroyfunction",
   "engine": "jscodeshift",
   "applicability": {
-    "from": [["svelte", ">=", "4.0.0"], ["svelte", "<", "5.0.0"]],
+    "from": [
+      ["svelte", ">=", "4.0.0"],
+      ["svelte", "<", "5.0.0"]
+    ],
     "to": [["svelte", ">=", "5.0.0"]]
   },
   "meta": {

@@ -6,45 +6,43 @@ This codemod updates registered filters to be placed inside the `hooks.filters` 
 
 ```jsx
 export default {
-    filter: {
-        'colors-only': (token) => token.type === 'color',
-    },
-    platforms: {
-        css: {
-            files: [
-                {
-                    format: 'css/variables',
-                    destination: '_variables.css',
-                    filter: 'colors-only',
-                },
-            ],
+  filter: {
+    "colors-only": (token) => token.type === "color",
+  },
+  platforms: {
+    css: {
+      files: [
+        {
+          format: "css/variables",
+          destination: "_variables.css",
+          filter: "colors-only",
         },
+      ],
     },
+  },
 };
-
 ```
 
 ## After
 
 ```jsx
 export default {
-    platforms: {
-        css: {
-            files: [
-                {
-                    format: 'css/variables',
-                    destination: '_variables.css',
-                    filter: 'colors-only',
-                },
-            ],
+  platforms: {
+    css: {
+      files: [
+        {
+          format: "css/variables",
+          destination: "_variables.css",
+          filter: "colors-only",
         },
+      ],
     },
+  },
 
-    hooks: {
-        filters: {
-            'colors-only': (token) => token.type === 'color',
-        },
+  hooks: {
+    filters: {
+      "colors-only": (token) => token.type === "color",
     },
+  },
 };
-
 ```

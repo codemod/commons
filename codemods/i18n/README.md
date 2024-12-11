@@ -1,5 +1,3 @@
-
-
 This codemod removes unused i18n translations.
 
 ## Example
@@ -9,12 +7,12 @@ This codemod removes unused i18n translations.
 ### Before:
 
 ```jsx
-import { useLocale } from '@calcom/lib/hooks/useLocale';
+import { useLocale } from "@calcom/lib/hooks/useLocale";
 
 export default function A() {
-	const { t } = useLocale();
+  const { t } = useLocale();
 
-	return <p>{t('key1')}</p>;
+  return <p>{t("key1")}</p>;
 }
 ```
 

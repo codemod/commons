@@ -1,1 +1,1 @@
-ethers.utils.defineReadOnly(obj, 'name', value);
+ethers.utils.defineReadOnly(obj, "name", value);

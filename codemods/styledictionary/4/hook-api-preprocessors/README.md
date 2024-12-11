@@ -6,42 +6,40 @@ This codemod updates registered preprocessors to be placed inside the `hooks.pre
 
 ```jsx
 export default {
-    preprocessors: {
-        foo: (dictionary) => {
-            // preprocess it
-            return dictionary;
-        },
+  preprocessors: {
+    foo: (dictionary) => {
+      // preprocess it
+      return dictionary;
     },
-    preprocessors: ['foo'],
-    platforms: {
-        css: {
-            preprocessors: ['foo'],
-        },
+  },
+  preprocessors: ["foo"],
+  platforms: {
+    css: {
+      preprocessors: ["foo"],
     },
+  },
 };
-
 ```
 
 ## After
 
 ```jsx
 export default {
-    preprocessors: ['foo'],
+  preprocessors: ["foo"],
 
-    platforms: {
-        css: {
-            preprocessors: ['foo'],
-        },
+  platforms: {
+    css: {
+      preprocessors: ["foo"],
     },
+  },
 
-    hooks: {
-        preprocessors: {
-            foo: (dictionary) => {
-                // preprocess it
-                return dictionary;
-            },
-        },
+  hooks: {
+    preprocessors: {
+      foo: (dictionary) => {
+        // preprocess it
+        return dictionary;
+      },
     },
+  },
 };
-
 ```

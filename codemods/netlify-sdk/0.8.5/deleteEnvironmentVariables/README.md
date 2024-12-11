@@ -10,8 +10,8 @@ deleteEnvironmentVariables(accountId, siteId, variables);
 
 ```jsx
 deleteEnvironmentVariables({
-	accountId: accountId,
-	siteId: siteId,
-	variables: variables,
+  accountId: accountId,
+  siteId: siteId,
+  variables: variables,
 });
 ```

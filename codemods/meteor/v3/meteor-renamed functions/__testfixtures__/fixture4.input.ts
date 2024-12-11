@@ -1,5 +1,5 @@
 Accounts.addEmail(
-  'userId',
-  'newEmail',
+  "userId",
+  "newEmail",
   false, // this param is optional
 );

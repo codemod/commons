@@ -1,1 +1,1 @@
-import type { DesignToken, Transform } from 'style-dictionary/types';
+import type { DesignToken, Transform } from "style-dictionary/types";

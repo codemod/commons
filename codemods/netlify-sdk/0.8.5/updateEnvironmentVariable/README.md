@@ -10,9 +10,9 @@ updateEnvironmentVariable(accountId, siteId, key, values);
 
 ```jsx
 updateEnvironmentVariable({
-	accountId: accountId,
-	siteId: siteId,
-	key: key,
-	values: values,
+  accountId: accountId,
+  siteId: siteId,
+  key: key,
+  values: values,
 });
 ```

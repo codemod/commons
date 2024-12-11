@@ -1,4 +1,4 @@
-This recipe is a set of codemods that will help migrate to Svelte 5.  
+This recipe is a set of codemods that will help migrate to Svelte 5.
 
 The recipe includes the following codemods:
 

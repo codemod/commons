@@ -41,4 +41,3 @@ const HOCPageComponent = HOC(PageComponent);
     </Switch>
 </Router>;
 ```
-

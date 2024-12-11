@@ -5,26 +5,24 @@ This codemod replaces all calls to `this.$()` inside of an `Ember.Component` wit
 ### Before:
 
 ```jsx
-import Component from '@ember/component';
+import Component from "@ember/component";
 
 export default Component.extend({
-	waitForAnimation() {
-		this.$().on('transitionend', () => this.doSomething());
-	},
+  waitForAnimation() {
+    this.$().on("transitionend", () => this.doSomething());
+  },
 });
 ```
 
 ### After:
 
 ```tsx
-import Component from '@ember/component';
+import Component from "@ember/component";
 
 export default Component.extend({
-	waitForAnimation() {
-		this.element.addEventListener('transitionend', () =>
-			this.doSomething(),
-		);
-	},
+  waitForAnimation() {
+    this.element.addEventListener("transitionend", () => this.doSomething());
+  },
 });
 ```
 
@@ -33,27 +31,27 @@ export default Component.extend({
 ### Before:
 
 ```jsx
-import Component from '@ember/component';
+import Component from "@ember/component";
 
 export default Component.extend({
-	waitForAnimation() {
-		this.$('.animated').on('transitionend', () => this.doSomething());
-	},
+  waitForAnimation() {
+    this.$(".animated").on("transitionend", () => this.doSomething());
+  },
 });
 ```
 
 ### After:
 
 ```tsx
-import Component from '@ember/component';
+import Component from "@ember/component";
 
 export default Component.extend({
-	waitForAnimation() {
-		this.element
-			.querySelectorAll('.animated')
-			.forEach((el) =>
-				el.addEventListener('transitionend', () => this.doSomething()),
-			);
-	},
+  waitForAnimation() {
+    this.element
+      .querySelectorAll(".animated")
+      .forEach((el) =>
+        el.addEventListener("transitionend", () => this.doSomething()),
+      );
+  },
 });
 ```

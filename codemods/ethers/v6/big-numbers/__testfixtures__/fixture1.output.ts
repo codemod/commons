@@ -1,4 +1,4 @@
-value = BigInt('1000');
+value = BigInt("1000");
 
 sum = value1 + value2;
 

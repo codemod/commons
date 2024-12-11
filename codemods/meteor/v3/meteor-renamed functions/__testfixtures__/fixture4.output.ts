@@ -1,5 +1,5 @@
 await Accounts.addEmailAsync(
-  'userId',
-  'newEmail',
+  "userId",
+  "newEmail",
   false, // this param is optional
 );

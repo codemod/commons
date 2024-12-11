@@ -4,9 +4,9 @@
 
 ```jsx
 const Person = EmberObject.extend({
-	friendNames: map('friends', function (friend) {
-		return friend[this.get('nameKey')];
-	}).property('nameKey'),
+  friendNames: map("friends", function (friend) {
+    return friend[this.get("nameKey")];
+  }).property("nameKey"),
 });
 ```
 
@@ -14,8 +14,8 @@ const Person = EmberObject.extend({
 
 ```tsx
 const Person = EmberObject.extend({
-	friendNames: map('friends', ['nameKey'], function (friend) {
-		return friend[this.get('nameKey')];
-	}),
+  friendNames: map("friends", ["nameKey"], function (friend) {
+    return friend[this.get("nameKey")];
+  }),
 });
 ```

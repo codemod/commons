@@ -6,7 +6,10 @@
   "private": false,
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"],
   "applicability": {
-    "from": [["nuxt", ">=", "3.0.0"], ["nuxt", "<", "4.0.0"]],
+    "from": [
+      ["nuxt", ">=", "3.0.0"],
+      ["nuxt", "<", "4.0.0"]
+    ],
     "to": [["nuxt", ">=", "4.0.0"]]
   },
   "arguments": [],

@@ -1,7 +1,7 @@
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
+      name: "MyLibrary",
       type: undefined,
     },
   },

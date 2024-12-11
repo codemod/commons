@@ -1,7 +1,7 @@
 module.exports = {
   output: {
-    library: 'MyLibrary',
-    libraryTarget: 'umd',
-    path: './dist',
+    library: "MyLibrary",
+    libraryTarget: "umd",
+    path: "./dist",
   },
 };

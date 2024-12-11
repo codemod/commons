@@ -426,9 +426,9 @@ const refactorConditionalExpressions = (sourceFile: SourceFile) => {
 const removeCodemodLiteralWrapper = (sourceFile: SourceFile) => {
   getCodemodLiterals(sourceFile).forEach((ce) => {
     if (ce.getParent()?.getKind() === SyntaxKind.ExpressionStatement) {
-      ce.getParent()?.replaceWithText(
-        getCodemodLiteralValue(ce)?.getFullText() ?? "",
-      );
+      ce
+        .getParent()
+        ?.replaceWithText(getCodemodLiteralValue(ce)?.getFullText() ?? "");
       return;
     }
     const literal = getCodemodLiteralValue(ce);
@@ -438,7 +438,7 @@ const removeCodemodLiteralWrapper = (sourceFile: SourceFile) => {
       !Node.isVariableDeclaration(ce.getParent()) &&
       !Node.isCallExpression(ce.getParent())
         ? `(${literal.getFullText()})`
-        : literal?.getFullText() ?? "";
+        : (literal?.getFullText() ?? "");
 
     ce.replaceWithText(text);
   });

@@ -7,8 +7,8 @@ This codemod migrates the `output.library` and `output.libraryTarget` properties
 ```ts
 module.exports = {
   output: {
-    library: 'MyLibrary',
-    libraryTarget: 'commonjs2',
+    library: "MyLibrary",
+    libraryTarget: "commonjs2",
   },
 };
 ```
@@ -19,12 +19,13 @@ module.exports = {
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
-      type: 'commonjs2',
+      name: "MyLibrary",
+      type: "commonjs2",
     },
   },
 };
 ```
+
 ,
 
 ### Before
@@ -32,9 +33,9 @@ module.exports = {
 ```ts
 module.exports = {
   output: {
-    library: 'MyLibrary',
-    libraryTarget: 'commonjs2',
-    filename: 'bundle.js',
+    library: "MyLibrary",
+    libraryTarget: "commonjs2",
+    filename: "bundle.js",
   },
 };
 ```
@@ -45,14 +46,15 @@ module.exports = {
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
-      type: 'commonjs2',
+      name: "MyLibrary",
+      type: "commonjs2",
     },
 
-    filename: 'bundle.js',
+    filename: "bundle.js",
   },
 };
 ```
+
 ,
 
 ### Before
@@ -60,7 +62,7 @@ module.exports = {
 ```ts
 module.exports = {
   output: {
-    library: 'MyLibrary',
+    library: "MyLibrary",
   },
 };
 ```
@@ -71,12 +73,13 @@ module.exports = {
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
+      name: "MyLibrary",
       type: undefined,
     },
   },
 };
 ```
+
 ,
 
 ### Before
@@ -84,9 +87,9 @@ module.exports = {
 ```ts
 module.exports = {
   output: {
-    library: 'MyLibrary',
-    libraryTarget: 'umd',
-    path: './dist',
+    library: "MyLibrary",
+    libraryTarget: "umd",
+    path: "./dist",
   },
 };
 ```
@@ -97,12 +100,11 @@ module.exports = {
 module.exports = {
   output: {
     library: {
-      name: 'MyLibrary',
-      type: 'umd',
+      name: "MyLibrary",
+      type: "umd",
     },
 
-    path: './dist',
+    path: "./dist",
   },
 };
 ```
-

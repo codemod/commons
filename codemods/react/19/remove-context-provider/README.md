@@ -1,5 +1,3 @@
-
-
 This codemod will remove the usage of `Provider` for contexts; e.g., Context.Provider to Context
 
 ## Example
@@ -8,7 +6,7 @@ This codemod will remove the usage of `Provider` for contexts; e.g., Context.Pro
 
 ```tsx
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
   // ...
   return (
     <UseTheme.Provider value={theme}>
@@ -22,7 +20,7 @@ function App() {
 
 ```tsx
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
   // ...
   return (
     <UseTheme value={theme}>

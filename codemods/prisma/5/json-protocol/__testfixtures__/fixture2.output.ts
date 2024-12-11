@@ -1,12 +1,12 @@
 // @ts-nocheck
 prisma.post.create({
   data: {
-    tags: ['databases'],
+    tags: ["databases"],
   },
-})
+});
 
 prisma.post.findMany({
   where: {
-    tags: ['databases'],
+    tags: ["databases"],
   },
-})
+});
