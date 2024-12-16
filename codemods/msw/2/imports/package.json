@@ -1,0 +1,22 @@
+{
+  "name": "@codemod-com/codemod-msw-2-imports",
+  "dependencies": {},
+  "devDependencies": {
+    "@codemod.com/codemod-utils": "^1.0.0",
+    "typescript": "^5.7.2",
+    "ts-node": "^10.9.1",
+    "ts-morph": "^24.0.0",
+    "vitest": "^1.0.1",
+    "@vitest/coverage-v8": "^1.0.1",
+    "@codemod.com/tsconfig": "workspace:*"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {},
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

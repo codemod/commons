@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist/**/*", "node_modules/**/*"],
+  "extends": "@codemod-com/tsconfig/base.json"
+}
