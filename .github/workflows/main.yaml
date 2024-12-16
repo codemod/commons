@@ -1,0 +1,91 @@
+name: Codemod publish
+
+on:
+  push:
+    paths:
+      - "codemods/**"
+    branches:
+      - main
+  pull_request:
+    types:
+      - closed
+    paths:
+      - "codemods/**"
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Check prettier
+        uses: creyD/prettier_action@v4.3
+        with:
+          dry: True
+
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run test
+        run: pnpm recursive run test
+  publish:
+    runs-on: ubuntu-24.04
+    needs: test
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        name: Filter codemods
+        with:
+          list-files: shell
+          filters: |
+            codemods:
+              - '**/.codemodrc.json'
+
+      - name: export files
+        run: |
+          echo "Modified files: ${{steps.filter.outputs.codemods_files}}"
+          echo "CODEMOD_FILES=${{steps.filter.outputs.codemods_files}}" >> $GITHUB_ENV
+          echo "Modified status: ${{steps.filter.outputs.codemods}}"
+          echo "CODEMOD_STATUS=${{steps.filter.outputs.codemods}}" >> $GITHUB_ENV
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+      - name: Install dependencies
+        run: pnpm install -g codemod
+
+      - name: Run publish codemod
+        run: |
+          if [ -n "$CODEMOD_STATUS" ]; then
+            echo "Modified files: $CODEMOD_FILES"
+            ROOT_DIR=$(pwd)
+            for FILE in $CODEMOD_FILES; do
+              DIR=$(dirname "$FILE")
+              echo "Checking codemod: $DIR"
+              cd "$ROOT_DIR/$DIR"
+              pnpm install
+              echo "Codemod published"
+            done
+          else
+            echo "No codemods found"
+          fi
