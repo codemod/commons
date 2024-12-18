@@ -1,4 +1,4 @@
-module.exports = function transform(file, api, options) {
+export default function transform(file, api, options) {
   const j = api.jscodeshift;
   const printOptions = options.printOptions || {};
   const root = j(file.source);
