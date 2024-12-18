@@ -1,16 +1,25 @@
-## Example
+This codemod transforms React.createElement calls into JSX syntax, making your code more readable and maintainable.
 
-This codemod turns X into Y. It also does Z.
-Note: this is a contrived example. Please modify it.
+## Example
 
 ### Before
 
-```ts
-const toReplace = "hello";
+```tsx
+return React.createElement(
+  "div",
+  { className: "container" },
+  React.createElement("h1", null, "Hello World"),
+  React.createElement("p", { style: { color: "blue" } }, "Welcome to React")
+);
 ```
 
 ### After
 
-```ts
-const replacement = "hello";
+```tsx
+return (
+  <div className="container">
+    <h1>Hello World</h1>
+    <p style={{ color: "blue" }}>Welcome to React</p>
+  </div>
+);
 ```
