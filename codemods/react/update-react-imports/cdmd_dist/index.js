@@ -34,7 +34,8 @@ function transform(file, api, options) {
           return (
             path.parent.value.type !== "MemberExpression" &&
             path.parent.value.type !== "QualifiedTypeIdentifier" &&
-            path.parent.value.type !== "JSXMemberExpression"
+            path.parent.value.type !== "JSXMemberExpression" &&
+            path.parent.value.type !== "TSQualifiedName"
           );
         })
         .size() > 0
@@ -82,7 +83,7 @@ function transform(file, api, options) {
     reactPath === null || reactPath === void 0
       ? void 0
       : reactPath.value.source;
-  var isDefaultImport =
+  var isDefaultOrNamespaceImport =
     (_a =
       reactPath === null || reactPath === void 0
         ? void 0
@@ -91,7 +92,8 @@ function transform(file, api, options) {
       : _a.some(function (specifier) {
           var _a;
           return (
-            specifier.type === "ImportDefaultSpecifier" &&
+            (specifier.type === "ImportDefaultSpecifier" ||
+              specifier.type === "ImportNamespaceSpecifier") &&
             ((_a = specifier.local) === null || _a === void 0
               ? void 0
               : _a.name) === "React"
@@ -111,7 +113,10 @@ function transform(file, api, options) {
   var reactIdentifiers = {};
   var reactTypeIdentifiers = {};
   var canDestructureReactVariable = false;
-  if (isReactImportUsed && (isDefaultImport || destructureNamespaceImports)) {
+  if (
+    isReactImportUsed &&
+    (isDefaultOrNamespaceImport || destructureNamespaceImports)
+  ) {
     // Checks to see if the react variable is used itself (rather than used to access its properties)
     canDestructureReactVariable =
       root
@@ -134,6 +139,10 @@ function transform(file, api, options) {
             !(
               path.parent.value.type === "JSXMemberExpression" &&
               path.parent.value.object.name === "React"
+            ) &&
+            !(
+              path.parent.value.type === "TSQualifiedName" &&
+              path.parent.value.left.name === "React"
             )
           );
         })
@@ -165,6 +174,24 @@ function transform(file, api, options) {
             }
           }
           if (isVariableDeclared(id)) {
+            canDestructureReactVariable = false;
+          }
+        });
+      // Support TypeScript qualified names (React.MouseEvent etc)
+      root
+        .find(j.TSQualifiedName, {
+          left: {
+            type: "Identifier",
+            name: "React",
+          },
+        })
+        .forEach(function (path) {
+          var right =
+            "name" in path.value.right
+              ? path.value.right.name
+              : path.value.right.name;
+          reactTypeIdentifiers[right] = right;
+          if (reactIdentifiers[right] || isVariableDeclared(right)) {
             canDestructureReactVariable = false;
           }
         });
@@ -218,6 +245,21 @@ function transform(file, api, options) {
       .forEach(function (path) {
         var id = path.value.id.name;
         j(path).replaceWith(j.identifier(id));
+      });
+    // Replace TypeScript qualified names
+    root
+      .find(j.TSQualifiedName, {
+        left: {
+          type: "Identifier",
+          name: "React",
+        },
+      })
+      .forEach(function (path) {
+        var right =
+          "name" in path.value.right
+            ? path.value.right.name
+            : path.value.right.name;
+        j(path).replaceWith(j.identifier(right));
       });
     root
       .find(j.MemberExpression, {
@@ -333,6 +375,16 @@ function transform(file, api, options) {
       if (!specifier) continue;
       if (specifier.type === "ImportNamespaceSpecifier") {
         if (!isReactImportUsed) {
+          isImportRemoved = true;
+          j(reactPath).remove();
+        } else if (destructureNamespaceImports) {
+          // If we can destructure namespace imports, handle it like default imports
+          j(reactPath).insertAfter(
+            j.importDeclaration(
+              [j.importNamespaceSpecifier(j.identifier("React"))],
+              reactLiteral,
+            ),
+          );
           isImportRemoved = true;
           j(reactPath).remove();
         }
