@@ -1,42 +1,38 @@
-module.exports = function transform(
-  file,
-  api,
-  options
-) {
+module.exports = function transform(file, api, options) {
   const j = api.jscodeshift;
   const printOptions = options.printOptions || {};
   const root = j(file.source);
-  const ReactUtils = require('@react-codemods/utils')(j);
-  const encodeJSXTextValue = value =>
-    value.replace(/</g, '&lt;').replace(/>/g, '&gt;'); 
+  const ReactUtils = require("@react-codemods/utils")(j);
+  const encodeJSXTextValue = (value) =>
+    value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-  const canLiteralBePropString = node =>
-    node.raw.indexOf('\\') === -1 && node.value.indexOf('"') === -1;
+  const canLiteralBePropString = (node) =>
+    node.raw.indexOf("\\") === -1 && node.value.indexOf('"') === -1;
 
-  const convertExpressionToJSXAttributes = expression => {
+  const convertExpressionToJSXAttributes = (expression) => {
     if (!expression) {
       return {
         attributes: [],
-        extraComments: []
+        extraComments: [],
       };
     }
 
     const isReactSpread =
-      expression.type === 'CallExpression' &&
-      expression.callee.type === 'MemberExpression' &&
-      expression.callee.object.name === 'React' &&
-      expression.callee.property.name === '__spread';
+      expression.type === "CallExpression" &&
+      expression.callee.type === "MemberExpression" &&
+      expression.callee.object.name === "React" &&
+      expression.callee.property.name === "__spread";
 
     const isObjectAssign =
-      expression.type === 'CallExpression' &&
-      expression.callee.type === 'MemberExpression' &&
-      expression.callee.object.name === 'Object' &&
-      expression.callee.property.name === 'assign';
+      expression.type === "CallExpression" &&
+      expression.callee.type === "MemberExpression" &&
+      expression.callee.object.name === "Object" &&
+      expression.callee.property.name === "assign";
 
     const validSpreadTypes = [
-      'Identifier',
-      'MemberExpression',
-      'CallExpression'
+      "Identifier",
+      "MemberExpression",
+      "CallExpression",
     ];
 
     if (isReactSpread || isObjectAssign) {
@@ -46,36 +42,35 @@ module.exports = function transform(
       for (const node of [callee, callee.object, callee.property]) {
         resultExtraComments.push(...(node.comments || []));
       }
-      expression.arguments.forEach(expression => {
-        const { attributes, extraComments } = convertExpressionToJSXAttributes(
-          expression
-        );
+      expression.arguments.forEach((expression) => {
+        const { attributes, extraComments } =
+          convertExpressionToJSXAttributes(expression);
         resultAttributes.push(...attributes);
         resultExtraComments.push(...extraComments);
       });
 
       return {
         attributes: resultAttributes,
-        extraComments: resultExtraComments
+        extraComments: resultExtraComments,
       };
     } else if (validSpreadTypes.indexOf(expression.type) != -1) {
       return {
         attributes: [j.jsxSpreadAttribute(expression)],
-        extraComments: []
+        extraComments: [],
       };
-    } else if (expression.type === 'ObjectExpression') {
-      const attributes = expression.properties.map(property => {
-        if (property.type === 'SpreadProperty') {
+    } else if (expression.type === "ObjectExpression") {
+      const attributes = expression.properties.map((property) => {
+        if (property.type === "SpreadProperty") {
           const spreadAttribute = j.jsxSpreadAttribute(property.argument);
           spreadAttribute.comments = property.comments;
           return spreadAttribute;
-        } else if (property.type === 'Property') {
+        } else if (property.type === "Property") {
           const propertyValueType = property.value.type;
 
           let value;
           if (
-            propertyValueType === 'Literal' &&
-            typeof property.value.value === 'string' &&
+            propertyValueType === "Literal" &&
+            typeof property.value.value === "string" &&
             canLiteralBePropString(property.value)
           ) {
             value = j.literal(property.value.value);
@@ -85,7 +80,7 @@ module.exports = function transform(
           }
 
           let jsxIdentifier;
-          if (property.key.type === 'Literal') {
+          if (property.key.type === "Literal") {
             jsxIdentifier = j.jsxIdentifier(property.key.value);
           } else {
             jsxIdentifier = j.jsxIdentifier(property.key.name);
@@ -101,40 +96,36 @@ module.exports = function transform(
 
       return {
         attributes,
-        extraComments: expression.comments || []
+        extraComments: expression.comments || [],
       };
-    } else if (expression.type === 'Literal' && expression.value === null) {
+    } else if (expression.type === "Literal" && expression.value === null) {
       return {
         attributes: [],
-        extraComments: expression.comments || []
+        extraComments: expression.comments || [],
       };
     } else {
       throw new Error(`Unexpected attribute of type "${expression.type}"`);
     }
   };
 
-  const canConvertToJSXIdentifier = node =>
-    (node.type === 'Literal' && typeof node.value === 'string') ||
-    node.type === 'Identifier' ||
-    (node.type === 'MemberExpression' &&
+  const canConvertToJSXIdentifier = (node) =>
+    (node.type === "Literal" && typeof node.value === "string") ||
+    node.type === "Identifier" ||
+    (node.type === "MemberExpression" &&
       !node.computed &&
       canConvertToJSXIdentifier(node.object) &&
       canConvertToJSXIdentifier(node.property));
 
-  const jsxIdentifierFor = node => {
+  const jsxIdentifierFor = (node) => {
     let identifier;
     let comments = node.comments || [];
-    if (node.type === 'Literal') {
+    if (node.type === "Literal") {
       identifier = j.jsxIdentifier(node.value);
-    } else if (node.type === 'MemberExpression') {
-      let {
-        identifier: objectIdentifier,
-        comments: objectComments
-      } = jsxIdentifierFor(node.object);
-      let {
-        identifier: propertyIdentifier,
-        comments: propertyComments
-      } = jsxIdentifierFor(node.property);
+    } else if (node.type === "MemberExpression") {
+      let { identifier: objectIdentifier, comments: objectComments } =
+        jsxIdentifierFor(node.object);
+      let { identifier: propertyIdentifier, comments: propertyComments } =
+        jsxIdentifierFor(node.property);
       identifier = j.jsxMemberExpression(objectIdentifier, propertyIdentifier);
       comments.push(...objectComments, ...propertyComments);
     } else {
@@ -143,11 +134,11 @@ module.exports = function transform(
     return { identifier, comments };
   };
 
-  const isCapitalizationInvalid = node =>
-    (node.type === 'Literal' && !/^[a-z]/.test(node.value)) ||
-    (node.type === 'Identifier' && /^[a-z]/.test(node.name));
+  const isCapitalizationInvalid = (node) =>
+    (node.type === "Literal" && !/^[a-z]/.test(node.value)) ||
+    (node.type === "Identifier" && /^[a-z]/.test(node.name));
 
-  const convertNodeToJSX = node => {
+  const convertNodeToJSX = (node) => {
     const comments = node.value.comments || [];
     const { callee } = node.value;
     for (const calleeNode of [callee, callee.object, callee.property]) {
@@ -167,15 +158,12 @@ module.exports = function transform(
       return node.value;
     }
 
-    const {
-      identifier: jsxIdentifier,
-      comments: identifierComments
-    } = jsxIdentifierFor(args[0]);
+    const { identifier: jsxIdentifier, comments: identifierComments } =
+      jsxIdentifierFor(args[0]);
     const props = args[1];
 
-    const { attributes, extraComments } = convertExpressionToJSXAttributes(
-      props
-    );
+    const { attributes, extraComments } =
+      convertExpressionToJSXAttributes(props);
 
     for (const comment of [...identifierComments, ...extraComments]) {
       comment.leading = false;
@@ -185,29 +173,29 @@ module.exports = function transform(
 
     const children = args.slice(2).map((child, index) => {
       if (
-        child.type === 'Literal' &&
-        typeof child.value === 'string' &&
+        child.type === "Literal" &&
+        typeof child.value === "string" &&
         !child.comments &&
-        child.value !== '' &&
+        child.value !== "" &&
         child.value.trim() === child.value
       ) {
         return j.jsxText(encodeJSXTextValue(child.value));
       } else if (
-        child.type === 'CallExpression' &&
+        child.type === "CallExpression" &&
         child.callee.object &&
-        child.callee.object.name === 'React' &&
-        child.callee.property.name === 'createElement'
+        child.callee.object.name === "React" &&
+        child.callee.property.name === "createElement"
       ) {
-        const jsxChild = convertNodeToJSX(node.get('arguments', index + 2));
+        const jsxChild = convertNodeToJSX(node.get("arguments", index + 2));
         if (
-          jsxChild.type !== 'JSXElement' ||
+          jsxChild.type !== "JSXElement" ||
           (jsxChild.comments || []).length > 0
         ) {
           return j.jsxExpressionContainer(jsxChild);
         } else {
           return jsxChild;
         }
-      } else if (child.type === 'SpreadElement') {
+      } else if (child.type === "SpreadElement") {
         return j.jsxExpressionContainer(child.argument);
       } else {
         return j.jsxExpressionContainer(child);
@@ -220,14 +208,14 @@ module.exports = function transform(
       const endIdentifier = Object.assign({}, jsxIdentifier, { comments: [] });
       // Add text newline nodes between elements so recast formats one child per
       // line instead of all children on one line.
-      const paddedChildren = [j.jsxText('\n')];
+      const paddedChildren = [j.jsxText("\n")];
       for (const child of children) {
-        paddedChildren.push(child, j.jsxText('\n'));
+        paddedChildren.push(child, j.jsxText("\n"));
       }
       const element = j.jsxElement(
         openingElement,
         j.jsxClosingElement(endIdentifier),
-        paddedChildren
+        paddedChildren,
       );
       element.comments = comments;
       return element;
@@ -239,17 +227,17 @@ module.exports = function transform(
     }
   };
 
-  if (options['explicit-require'] === false || ReactUtils.hasReact(root)) {
+  if (options["explicit-require"] === false || ReactUtils.hasReact(root)) {
     const mutations = root
       .find(j.CallExpression, {
         callee: {
           object: {
-            name: 'React'
+            name: "React",
           },
           property: {
-            name: 'createElement'
-          }
-        }
+            name: "createElement",
+          },
+        },
       })
       .replaceWith(convertNodeToJSX)
       .size();
@@ -260,4 +248,4 @@ module.exports = function transform(
   }
 
   return null;
-}
+};
