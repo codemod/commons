@@ -32,7 +32,8 @@ jobs:
       - name: Check prettier
         uses: creyD/prettier_action@v4.3
         with:
-          dry: True
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prettier_options: --check
 
       - name: Install dependencies
         run: pnpm install
@@ -41,6 +42,8 @@ jobs:
   publish:
     runs-on: ubuntu-24.04
     needs: test
+    env:
+      CODEMOD_API_KEY: ${{ secrets.CODEMOD_API_KEY }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -83,7 +86,7 @@ jobs:
               echo "Checking codemod: $DIR"
               cd "$ROOT_DIR/$DIR"
               pnpm install
-              echo "Codemod published"
+              npx codemod publish
             done
           else
             echo "No codemods found"
