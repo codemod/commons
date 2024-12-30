@@ -14,6 +14,6 @@
   "arguments": [],
   "meta": {
     "tags": ["meteor", "v3"],
-    "git": "https://github.com/codemod-com/codemod/pull/1277"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/meteor/v3/mongoDb-async-methods"
   }
 }
