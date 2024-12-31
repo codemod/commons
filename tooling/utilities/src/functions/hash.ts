@@ -8,15 +8,15 @@ export const buildCodemodMetadataHash = (name: string) =>
 
 // taken from https://stackoverflow.com/a/63361543
 export const streamToString = async (stream: NodeJS.ReadableStream) => {
-  const chunks = [];
+  const chunks: Uint8Array[] = [];
 
   for await (const chunk of stream) {
     if (chunk instanceof Buffer) {
-      chunks.push(chunk);
+      chunks.push(new Uint8Array(chunk.buffer));
       continue;
     }
 
-    chunks.push(Buffer.from(chunk));
+    chunks.push(new Uint8Array(Buffer.from(chunk)));
   }
 
   return Buffer.concat(chunks).toString("utf-8");

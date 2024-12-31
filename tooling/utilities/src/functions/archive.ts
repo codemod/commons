@@ -53,7 +53,7 @@ const tarExtractInMemory = async (
   outputDir: string,
 ): Promise<void> => {
   // Decompress the buffer using pako
-  const decompressedBuffer = Buffer.from(pako.ungzip(buffer));
+  const decompressedBuffer = Buffer.from(pako.ungzip(new Uint8Array(buffer)));
 
   const extractStream = tarStream.extract();
   extractStream.on("entry", async (header, stream, next) => {
@@ -63,10 +63,10 @@ const tarExtractInMemory = async (
     await mkdir(dirname(filePath), { recursive: true });
 
     // Write the file content
-    const chunks: Buffer[] = [];
+    const chunks: Uint8Array[] = [];
     stream.on("data", (chunk) => chunks.push(chunk));
     stream.on("end", async () => {
-      await writeFile(filePath, Buffer.concat(chunks));
+      await writeFile(filePath, new Uint8Array(Buffer.concat(chunks)));
       next();
     });
   });
@@ -98,7 +98,7 @@ const tarWriteInMemory = async (
 
   pack.finalize();
 
-  const chunks: Buffer[] = [];
+  const chunks: Uint8Array[] = [];
   pack.on("data", (chunk) => chunks.push(chunk));
 
   await new Promise<void>((resolve, reject) => {
@@ -107,7 +107,9 @@ const tarWriteInMemory = async (
   });
 
   // Compress the tar buffer using pako
-  const compressedBuffer = Buffer.from(pako.gzip(Buffer.concat(chunks)));
+  const compressedBuffer = Buffer.from(
+    pako.gzip(new Uint8Array(Buffer.concat(chunks).buffer)),
+  );
 
   return compressedBuffer;
 };
