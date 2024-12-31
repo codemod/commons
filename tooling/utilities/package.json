@@ -39,9 +39,11 @@
     "@types/tar-stream": "catalog:",
     "@types/unzipper": "catalog:",
     "@vitest/coverage-v8": "catalog:",
-    "memfs": "^4.8.2",
+    "memfs": "^4.15.2",
     "ts-node": "10.9.1",
-    "vitest": "^1.0.1"
+    "typescript": "^5.5.4",
+    "vitest": "^1.0.1",
+    "@codemod-com/tsconfig": "workspace:*"
   },
   "dependencies": {
     "@codemod-com/filemod": "workspace:*",

@@ -8,21 +8,41 @@ export type KeyIvPair = Readonly<{
 }>;
 
 export const encryptWithIv = (
-  algorithm: "aes-128-xts" | "aes-256-cbc",
+  algorithm: crypto.CipherGCMTypes,
   { key, iv }: KeyIvPair,
   data: Buffer,
 ) => {
-  const cipher = crypto.createCipheriv(algorithm, key, iv);
+  const cipher = crypto.createCipheriv(
+    algorithm,
+    key as unknown as crypto.CipherKey,
+    iv as unknown as crypto.BinaryLike
+  );
 
-  return Buffer.concat([cipher.update(data), cipher.final()]);
+  const encrypted = cipher.update(data as unknown as crypto.BinaryLike);
+  const final = cipher.final();
+  const authTag = cipher.getAuthTag();
+
+  return Buffer.concat([encrypted, final, authTag] as unknown as Uint8Array[]);
 };
 
 export const decryptWithIv = (
-  algorithm: "aes-128-xts" | "aes-256-cbc",
+  algorithm: crypto.CipherGCMTypes,
   { key, iv }: KeyIvPair,
   data: Buffer,
 ) => {
-  const decipher = crypto.createDecipheriv(algorithm, key, iv);
+  // Split the auth tag from the encrypted data (last 16 bytes)
+  const authTag = data.slice(-16);
+  const encryptedData = data.slice(0, -16);
 
-  return Buffer.concat([decipher.update(data), decipher.final()]);
+  const decipher = crypto.createDecipheriv(
+    algorithm,
+    key as unknown as crypto.CipherKey,
+    iv as unknown as crypto.BinaryLike
+  );
+
+  decipher.setAuthTag(new Uint8Array(authTag.buffer));
+  const decrypted = decipher.update(new Uint8Array(encryptedData.buffer));
+  const final = decipher.final();
+
+  return Buffer.concat([decrypted, final] as unknown as Uint8Array[]);
 };
