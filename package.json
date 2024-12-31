@@ -1,0 +1,32 @@
+{
+  "name": "@codemod-com/commons",
+  "version": "1.0.0",
+  "description": "Codemods, public or private, are preferred to reside in repositories owned by the main organization of their respective projects. This repository serves as a catch-all for some codemod sources that still have not found thier way to their ideal home or for Codemod-compatible forks of existing codemods for easier publishing. Please [chat with us](https://go.codemod.com/community) before making any major contribution.",
+  "main": "index.js",
+  "dependencies": {
+    "prettier": "^3.4.2"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.14",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@codemod-com/utilities": "workspace:*"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemod-com/commons.git"
+  },
+  "keywords": [
+    "codemod",
+    "migration"
+  ],
+  "author": "Codemod, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codemod-com/commons/issues"
+  },
+  "homepage": "https://github.com/codemod-com/commons#readme"
+}
