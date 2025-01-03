@@ -1,14 +1,23 @@
 {
   "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
-  "version": "1.0.1",
-  "private": false,
   "name": "msw/2/imports",
+  "version": "1.0.3",
   "engine": "ts-morph",
-  "meta": {
-    "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/imports"
-  },
+  "private": false,
   "applicability": {
-    "from": [["msw", ">=", "1.0.0"]]
+    "from": [
+      [
+        "msw",
+        ">=",
+        "1.0.0"
+      ]
+    ]
+  },
+  "arguments": [],
+  "meta": {
+    "tags": [
+      "migration"
+    ],
+    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/imports"
   }
 }
