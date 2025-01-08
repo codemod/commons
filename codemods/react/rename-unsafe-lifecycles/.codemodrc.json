@@ -5,10 +5,6 @@
   "description": "Renames unsafe React lifecycle methods to their new names with UNSAFE_ prefix",
   "engine": "jscodeshift",
   "private": false,
-  "author": {
-    "name": "Shubhra Agarwal",
-    "email": "agarwalshubhra2002@gmail.com"
-  },
   "arguments": [],
   "include": [
     "**/*.js",
@@ -24,7 +20,6 @@
       "react",
       "lifcycle-methods"
     ],
-    "deprecated": false,
-    "documentationUrl": "https://reactjs.org/docs/react-component.html#unsafe_componentwillmount"
+    "git": "https://docs.codemod.com/building-codemods/package-requirements#codemodrc-json-reference"
   }
 }
