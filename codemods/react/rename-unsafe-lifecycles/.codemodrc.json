@@ -1,0 +1,30 @@
+{
+  "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
+  "name": "react/rename-unsafe-lifecycles",
+  "version": "1.0.0",
+  "description": "Renames unsafe React lifecycle methods to their new names with UNSAFE_ prefix",
+  "engine": "jscodeshift",
+  "private": false,
+  "author": {
+    "name": "Shubhra Agarwal",
+    "email": "agarwalshubhra2002@gmail.com"
+  },
+  "arguments": [],
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist/**"
+  ],
+  "meta": {
+    "tags": [
+      "react",
+      "lifcycle-methods"
+    ],
+    "deprecated": false,
+    "documentationUrl": "https://reactjs.org/docs/react-component.html#unsafe_componentwillmount"
+  }
+}
