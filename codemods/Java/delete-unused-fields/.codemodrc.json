@@ -7,6 +7,6 @@
   "language": "java",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/Java/delete-unused-fields"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/Java/delete-unused-fields"
   }
 }

@@ -7,7 +7,7 @@
   "dependency": "react-redux",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-redux/0/add-state-type"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-redux/0/add-state-type"
   },
   "applicability": {
     "from": [["react-redux", ">=", "0.0.0"]]

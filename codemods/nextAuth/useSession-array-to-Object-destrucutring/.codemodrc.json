@@ -7,7 +7,7 @@
   "arguments": [],
   "meta": {
     "tags": ["nextAuth"],
-    "git": "https://github.com/codemod-com/commons/tree/main/nextAuth/useSession-array-to-Object-destrucutring"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/nextAuth/useSession-array-to-Object-destrucutring"
   },
   "applicability": {
     "from": [["nextAuth", "<", "v4"]]

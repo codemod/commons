@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-router/4/browser-router"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/4/browser-router"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

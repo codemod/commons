@@ -14,7 +14,7 @@
   ],
   "meta": {
     "tags": ["migration", "svelte"],
-    "git": "https://github.com/codemod-com/commons/tree/main/svelte/5/migration-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/svelte/5/migration-recipe"
   },
   "applicability": {
     "from": [

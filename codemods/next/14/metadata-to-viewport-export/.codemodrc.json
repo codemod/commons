@@ -13,7 +13,7 @@
   },
   "meta": {
     "tags": ["next.js", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/next/14/metadata-to-viewport-export"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/next/14/metadata-to-viewport-export"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

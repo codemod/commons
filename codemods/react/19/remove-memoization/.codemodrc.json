@@ -5,7 +5,7 @@
   "private": false,
   "engine": "jscodeshift",
   "meta": {
-    "git": "https://github.com/codemod-com/commons/tree/main/react/19/remove-memoization",
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react/19/remove-memoization",
     "tags": ["react", "react-compiler", "react-forget", "migration"]
   },
   "applicability": {

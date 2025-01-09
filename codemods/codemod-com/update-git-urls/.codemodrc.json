@@ -6,7 +6,7 @@
   "engine": "filemod",
   "applicability": {},
   "meta": {
-    "git": "https://github.com/codemod-com/commons/tree/main/codemod-com/update-git-urls",
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/codemod-com/update-git-urls",
     "tags": ["migration", "prisma"]
   }
 }

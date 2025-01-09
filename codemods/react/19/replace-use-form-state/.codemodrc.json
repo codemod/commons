@@ -9,6 +9,6 @@
   "arguments": [],
   "meta": {
     "tags": ["react", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react/19/replace-use-form-state"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react/19/replace-use-form-state"
   }
 }

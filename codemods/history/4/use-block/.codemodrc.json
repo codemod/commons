@@ -12,7 +12,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/history/4/use-block"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/history/4/use-block"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

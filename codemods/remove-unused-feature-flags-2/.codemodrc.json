@@ -26,6 +26,6 @@
   ],
   "meta": {
     "tags": ["cleanup"],
-    "git": "https://github.com/codemod-com/commons/tree/main/remove-unused-feature-flags-2"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/remove-unused-feature-flags-2"
   }
 }

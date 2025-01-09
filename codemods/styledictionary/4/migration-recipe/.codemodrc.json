@@ -26,7 +26,7 @@
   ],
   "meta": {
     "tags": ["migration", "styledictionary"],
-    "git": "https://github.com/codemod-com/commons/tree/main/styledictionary/4/migration-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/styledictionary/4/migration-recipe"
   },
   "applicability": {
     "from": [

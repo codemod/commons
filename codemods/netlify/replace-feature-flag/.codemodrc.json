@@ -6,7 +6,7 @@
   "engine": "ts-morph",
   "meta": {
     "tags": ["netlify", "feature-flag"],
-    "git": "https://github.com/codemod-com/commons/tree/main/netlify/replace-feature-flag"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/netlify/replace-feature-flag"
   },
   "arguments": [
     {

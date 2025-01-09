@@ -12,7 +12,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/history/4/replace-state-object"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/history/4/replace-state-object"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

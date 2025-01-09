@@ -6,7 +6,7 @@
   "description": "Codemod to remove React.forwardRef function that will be deprecated in next major React release",
   "engine": "jscodeshift",
   "meta": {
-    "git": "https://github.com/codemod-com/commons/tree/main/react/19/remove-forward-ref",
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react/19/remove-forward-ref",
     "tags": ["react", "migration"]
   },
   "applicability": {

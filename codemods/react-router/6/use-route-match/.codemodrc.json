@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-router/6/use-route-match"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/6/use-route-match"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration", "react-native"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-native/74/remove-event-listener-callback"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-native/74/remove-event-listener-callback"
   },
   "include": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"]
 }

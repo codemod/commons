@@ -7,7 +7,7 @@
   "engine": "jscodeshift",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/typescript/remove-public-modifier"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/typescript/remove-public-modifier"
   },
   "applicability": {
     "from": [["typescript", ">=", "1.4.0"]]

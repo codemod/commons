@@ -13,7 +13,7 @@
   },
   "meta": {
     "tags": ["styledictionary", "4", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/styledictionary/4/hook-api-formats"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/styledictionary/4/hook-api-formats"
   },
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"]
 }

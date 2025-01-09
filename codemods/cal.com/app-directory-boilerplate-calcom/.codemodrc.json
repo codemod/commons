@@ -13,6 +13,6 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/cal.com/app-directory-boilerplate-calcom"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/cal.com/app-directory-boilerplate-calcom"
   }
 }

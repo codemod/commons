@@ -6,7 +6,7 @@
   "engine": "ts-morph",
   "meta": {
     "tags": ["statsig", "feature-flag"],
-    "git": "https://github.com/codemod-com/commons/tree/main/statsig/replace-gate"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/statsig/replace-gate"
   },
   "arguments": [
     {

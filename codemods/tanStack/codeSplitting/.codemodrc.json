@@ -7,6 +7,6 @@
   "arguments": [],
   "meta": {
     "tags": ["tanStackRouter", "CodeSplitting"],
-    "git": "https://github.com/codemod-com/commons/tree/main/tanstack/codeSplitting"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/tanstack/codeSplitting"
   }
 }

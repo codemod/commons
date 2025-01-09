@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/immutable/0/remove-to-js"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/immutable/0/remove-to-js"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

@@ -9,6 +9,6 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/jest/vitest"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/jest/vitest"
   }
 }

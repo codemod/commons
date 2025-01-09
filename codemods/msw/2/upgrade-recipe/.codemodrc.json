@@ -17,7 +17,7 @@
   ],
   "meta": {
     "tags": ["msw", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/upgrade-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/msw/2/upgrade-recipe"
   },
   "applicability": {
     "from": [["msw", ">=", "1.0.0"]]

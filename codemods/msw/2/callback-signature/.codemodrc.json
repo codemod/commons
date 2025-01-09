@@ -6,7 +6,7 @@
   "engine": "ts-morph",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/callback-signature"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/msw/2/callback-signature"
   },
   "applicability": {
     "from": [["msw", ">=", "1.0.0"]]

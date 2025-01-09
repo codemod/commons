@@ -13,6 +13,6 @@
   ],
   "meta": {
     "tags": ["migration", "python", "json", "orjson", "sentry"],
-    "git": "https://github.com/codemod-com/commons/tree/main/python/orjson/recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/python/orjson/recipe"
   }
 }
