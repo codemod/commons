@@ -83,7 +83,8 @@ jobs:
             for FILE in $CODEMOD_FILES; do
               DIR=$(dirname "$FILE")
               echo "Checking codemod: $DIR"
-              cd "$ROOT_DIR/$DIR"
+              CLEANED_DIR=$(echo "$DIR" | sed "s/^'//;s/'$//")
+              cd "$ROOT_DIR/$CLEANED_DIR"
               pnpm install
               npx codemod publish
             done
