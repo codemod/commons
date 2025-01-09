@@ -19,7 +19,7 @@
       "msw",
       "migration"
     ],
-    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/upgrade-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/msw/2/upgrade-recipe"
   },
   "names": [
     "msw/2/imports",
