@@ -18,6 +18,6 @@
     "tags": [
       "migration"
     ],
-    "git": "https://github.com/codemod-com/commons/tree/main/msw/2/imports"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/msw/2/imports"
   }
 }
