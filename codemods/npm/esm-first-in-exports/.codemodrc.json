@@ -7,6 +7,6 @@
   "arguments": [],
   "meta": {
     "tags": ["npm", "export", "sort"],
-    "git": "https://github.com/codemod-com/commons/tree/main/npm/esm-first-in-exports"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/npm/esm-first-in-exports"
   }
 }

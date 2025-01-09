@@ -13,7 +13,7 @@
   },
   "meta": {
     "tags": ["nuxt", "4", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/nuxt/4/template-compilation-changes"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/nuxt/4/template-compilation-changes"
   },
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"]
 }

@@ -7,6 +7,6 @@
   "arguments": [],
   "meta": {
     "tags": ["pnpm", "9.5", "catalog"],
-    "git": "https://github.com/codemod-com/commons/tree/main/pnpm/catalog"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/pnpm/catalog"
   }
 }

@@ -6,7 +6,7 @@
   "arguments": [],
   "meta": {
     "tags": ["devcycle", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/devcycle/launchdarkly-to-devcycle"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/devcycle/launchdarkly-to-devcycle"
   },
   "deps": [
     "@devcycle/react-client-sdk@latest",

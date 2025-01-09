@@ -7,6 +7,6 @@
   "language": "go",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/Go/remove-unnecessary-nested-block"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/Go/remove-unnecessary-nested-block"
   }
 }

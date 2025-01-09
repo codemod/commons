@@ -13,7 +13,7 @@
   },
   "meta": {
     "tags": ["styledictionary", "4", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/styledictionary/4/hook-api-file-header"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/styledictionary/4/hook-api-file-header"
   },
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"]
 }

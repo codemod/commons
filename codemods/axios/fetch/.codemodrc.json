@@ -13,6 +13,6 @@
   ],
   "meta": {
     "tags": ["axios", "fetch", "LLM"],
-    "git": "https://github.com/codemod-com/commons/tree/main/axios/fetch"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/axios/fetch"
   }
 }

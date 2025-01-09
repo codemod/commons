@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/redwoodjs/core/4/redwood-apollo-provider"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/redwoodjs/core/4/redwood-apollo-provider"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

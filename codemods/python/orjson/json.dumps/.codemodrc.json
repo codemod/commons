@@ -6,6 +6,6 @@
   "engine": "ast-grep",
   "meta": {
     "tags": ["python", "json", "orjson", "sentry"],
-    "git": "https://github.com/codemod-com/commons/tree/main/python/orjson/json.dumps"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/python/orjson/json.dumps"
   }
 }

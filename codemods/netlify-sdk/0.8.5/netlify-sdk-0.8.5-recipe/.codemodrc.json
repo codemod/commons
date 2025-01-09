@@ -16,7 +16,7 @@
   ],
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/netlify-sdk/0.8.5/netlify-sdk-0.8.5-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/netlify-sdk/0.8.5/netlify-sdk-0.8.5-recipe"
   },
   "applicability": {
     "from": [["@netlify/sdk", ">=", "0.8.5"]]

@@ -12,6 +12,6 @@
   "arguments": [],
   "meta": {
     "tags": ["webpack", "migration", "codemod"],
-    "git": "https://github.com/codemod-com/commons/tree/main/webpack/v5/migrate-library-target-to-library-object"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/webpack/v5/migrate-library-target-to-library-object"
   }
 }

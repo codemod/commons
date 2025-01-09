@@ -7,6 +7,6 @@
   "arguments": [],
   "meta": {
     "tags": ["zod", "validation"],
-    "git": "https://github.com/codemod-com/commons/tree/main/netlify/add-zod-validation"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/netlify/add-zod-validation"
   }
 }

@@ -37,7 +37,7 @@
   ],
   "meta": {
     "tags": ["next.js", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/next/13/replace-use-search-params"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/next/13/replace-use-search-params"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

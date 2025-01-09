@@ -34,6 +34,6 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/cal.com/generate-url-patterns"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/cal.com/generate-url-patterns"
   }
 }

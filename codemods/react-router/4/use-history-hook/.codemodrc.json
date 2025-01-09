@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-router/4/use-history-hook"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/4/use-history-hook"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

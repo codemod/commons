@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-router/6/remove-redirect-inside-switch"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/6/remove-redirect-inside-switch"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

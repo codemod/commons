@@ -6,6 +6,6 @@
   "engine": "filemod",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/codemod-com/migrate-codemod-registry"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/codemod-com/migrate-codemod-registry"
   }
 }

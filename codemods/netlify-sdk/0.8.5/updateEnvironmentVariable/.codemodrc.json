@@ -6,7 +6,7 @@
   "engine": "jscodeshift",
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/netlify-sdk/0.8.5/updateEnvironmentVariable"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/netlify-sdk/0.8.5/updateEnvironmentVariable"
   },
   "applicability": {
     "from": [["@netlify/sdk", ">=", "0.8.5"]]

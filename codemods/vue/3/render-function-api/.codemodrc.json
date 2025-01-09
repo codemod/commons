@@ -10,7 +10,7 @@
   },
   "meta": {
     "tags": ["vue"],
-    "git": "https://github.com/codemod-com/commons/tree/main/vue/3/render-function-api"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/vue/3/render-function-api"
   },
   "include": ["**/*.js", "**/*.ts"]
 }

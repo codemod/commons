@@ -21,6 +21,6 @@
   "deps": ["-eslint", "-prettier", "@biomejs/biome@1.5.3"],
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/eslint/biome/migrate-rules"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/eslint/biome/migrate-rules"
   }
 }

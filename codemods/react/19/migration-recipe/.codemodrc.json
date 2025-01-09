@@ -13,7 +13,7 @@
   ],
   "meta": {
     "tags": ["migration", "react"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react/19/migration-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react/19/migration-recipe"
   },
   "deps": ["react@beta", "react-dom@beta"],
   "applicability": {

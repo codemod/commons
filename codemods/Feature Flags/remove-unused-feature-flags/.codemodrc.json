@@ -19,6 +19,6 @@
   ],
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/Feature Flags/remove-unused-feature-flags"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/Feature Flags/remove-unused-feature-flags"
   }
 }

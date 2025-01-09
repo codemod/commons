@@ -7,7 +7,7 @@
   "engine": "jscodeshift",
   "meta": {
     "tags": ["react", "migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react/replace-react-fc-typescript"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react/replace-react-fc-typescript"
   },
   "applicability": {
     "from": [["react", ">=", "15.0.0"]]

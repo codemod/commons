@@ -14,7 +14,7 @@
   ],
   "meta": {
     "tags": ["migration", "nuxt"],
-    "git": "https://github.com/codemod-com/commons/tree/main/nuxt/4/migration-recipe"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/nuxt/4/migration-recipe"
   },
   "applicability": {
     "from": [

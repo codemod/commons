@@ -9,7 +9,7 @@
     "to": [["prisma", ">=", "5.0.0"]]
   },
   "meta": {
-    "git": "https://github.com/codemod-com/commons/tree/main/prisma/5/json-protocol",
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/prisma/5/json-protocol",
     "tags": ["migration", "prisma"]
   }
 }

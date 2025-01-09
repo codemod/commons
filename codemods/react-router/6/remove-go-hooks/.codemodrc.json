@@ -9,7 +9,7 @@
   },
   "meta": {
     "tags": ["migration"],
-    "git": "https://github.com/codemod-com/commons/tree/main/react-router/6/remove-go-hooks"
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/6/remove-go-hooks"
   },
   "include": ["**/*.js", "**/*.ts"]
 }
