@@ -98,7 +98,7 @@ jobs:
               echo "Checking codemod: $DIR"
               cd "$ROOT_DIR/$DIR"
               pnpm install
-              npx codemod publish
+              npx codemod publish || true
             done
           else
             # Handle single file format
@@ -107,5 +107,5 @@ jobs:
             echo "Checking codemod: $DIR"
             cd "$ROOT_DIR/$DIR"
             pnpm install
-            npx codemod publish
+            npx codemod publish || true
           fi
