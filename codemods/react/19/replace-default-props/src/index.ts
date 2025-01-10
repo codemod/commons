@@ -6,6 +6,7 @@ import type {
   JSCodeshift,
   MemberExpression,
   ObjectProperty,
+  Property,
 } from "jscodeshift";
 
 import { getFunctionName } from "@codemod.com/codemod-utils/dist/jscodeshift/function.js";
@@ -36,7 +37,7 @@ const getComponentStaticPropValue = (
 
 const buildPropertyWithDefaultValue = (
   j: JSCodeshift,
-  property: ObjectProperty,
+  property: ObjectProperty | Property,
   defaultValue: any,
 ) => {
   // Special handling for nested destructuring patterns
@@ -84,13 +85,11 @@ export default function transform(
 
     defaultPropsRight.properties?.forEach((property) => {
       if (
-        !j.ObjectProperty.check(property) ||
-        !j.Identifier.check(property.key)
+        (j.Property.check(property) || j.ObjectProperty.check(property)) &&
+        j.Identifier.check(property.key)
       ) {
-        return;
+        defaultPropsMap.set(property.key.name, property.value);
       }
-
-      defaultPropsMap.set(property.key.name, property.value);
     });
 
     const propsArg = path.value.params.at(0);
@@ -98,19 +97,17 @@ export default function transform(
     if (j.ObjectPattern.check(propsArg)) {
       propsArg.properties.forEach((property) => {
         if (
-          !j.ObjectProperty.check(property) ||
-          !j.Identifier.check(property.key) ||
-          j.AssignmentPattern.check(property.value)
+          (j.Property.check(property) || j.ObjectProperty.check(property)) &&
+          j.Identifier.check(property.key)
         ) {
-          return;
-        }
-        if (defaultPropsMap.has(property.key.name)) {
-          isDirty = true;
-          property.value = buildPropertyWithDefaultValue(
-            j,
-            property,
-            defaultPropsMap.get(property.key.name),
-          );
+          if (defaultPropsMap.has(property.key.name)) {
+            isDirty = true;
+            property.value = buildPropertyWithDefaultValue(
+              j,
+              property,
+              defaultPropsMap.get(property.key.name),
+            );
+          }
         }
       });
     }
