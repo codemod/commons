@@ -208,4 +208,35 @@ describe("react/19/replace-default-props", () => {
       OUTPUT.replace(/W/gm, ""),
     );
   });
+
+  it("should correctly transform when props are not destructured", async () => {
+    const INPUT = await readFile(
+      join(__dirname, "..", "__testfixtures__/button-jsx-example-input.jsx"),
+      "utf-8",
+    );
+    const OUTPUT = await readFile(
+      join(__dirname, "..", "__testfixtures__/button-jsx-example-output.jsx"),
+      "utf-8",
+    );
+
+    const actualOutput = transform(
+      {
+        path: "index.js",
+        source: INPUT,
+      },
+      buildApi("jsx"),
+    );
+
+    const fs = require("node:fs");
+    fs.writeFileSync(
+      join(__dirname, "..", "__testfixtures__/button-jsx-example-output.jsx"),
+      actualOutput,
+    );
+
+    assert.deepEqual(
+      actualOutput?.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, ""),
+    );
+  });
 });
+
