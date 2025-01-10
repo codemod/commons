@@ -36,13 +36,16 @@ jobs:
   paths-filter:
     name: Check for .codemodrc.json files changes
     runs-on: ubuntu-latest
+    outputs:
+      codemods: ${{ steps.filter.outputs.codemods }}
+      codemods_files: ${{ steps.filter.outputs.codemods_files }}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
         id: filter
         name: Filter codemods
         with:
-          list-files: shell
+          list-files: json
           filters: |
             codemods:
               - '**/.codemodrc.json'
@@ -50,7 +53,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: paths-filter
-    if: always() || needs.paths-filter.outputs.codemods == 'true'
+    if: always() && needs.paths-filter.outputs.codemods == 'true'
     env:
       CODEMOD_API_KEY: ${{ secrets.CODEMOD_API_KEY }}
     steps:
@@ -64,16 +67,11 @@ jobs:
           echo "Modified files: ${{needs.paths-filter.outputs.codemods_files}}"
           echo "Modified status: ${{needs.paths-filter.outputs.codemods}}"
           echo "CODEMOD_STATUS=${{needs.paths-filter.outputs.codemods}}" >> $GITHUB_ENV
-          if [ -n "${{needs.paths-filter.outputs.codemods}}" ]; then
-            CODEMOD_FILES=$(echo "${{needs.paths-filter.outputs.codemods_files}}" | tr ' ' '\n' | sed "s/.*/'&'/")
-            echo "CODEMOD_FILES<<EOF" >> $GITHUB_ENV
-            echo "$CODEMOD_FILES" >> $GITHUB_ENV
-            echo "EOF" >> $GITHUB_ENV
+          echo "${{needs.paths-filter.outputs.codemods}}"
+          if [ "${{needs.paths-filter.outputs.codemods}}" == 'true' ]; then
+            echo "CODEMOD_FILES=${{needs.paths-filter.outputs.codemods_files}}" >> $GITHUB_ENV
           else
-            CODEMOD_FILES=$(find codemods/ -type d -mindepth 1 -maxdepth 1 | sed "s/.*/'&'/")
-            echo "CODEMOD_FILES<<EOF" >> $GITHUB_ENV
-            echo "$CODEMOD_FILES" >> $GITHUB_ENV
-            echo "EOF" >> $GITHUB_ENV
+            echo "CODEMOD_FILES=$(find codemods -name '.codemodrc.json' -type f -exec echo -n '\"{}\" ' \;)" >> $GITHUB_ENV
           fi
 
       - uses: pnpm/action-setup@v4
@@ -90,11 +88,24 @@ jobs:
         run: |
           echo "Modified files: $CODEMOD_FILES"
           ROOT_DIR=$(pwd)
-          for FILE in $CODEMOD_FILES; do
-            DIR=$(dirname "$FILE")
+          if [[ "$CODEMOD_FILES" == *"["* ]]; then
+            # Handle array format
+            # Use IFS to handle spaces in filenames
+            IFS=',' read -ra FILES <<< "$(echo "$CODEMOD_FILES" | tr -d '[]')"
+            for FILE in "${FILES[@]}"; do
+              CLEANED_PATH="${FILE//[\'\"]}"
+              DIR=$(dirname "$CLEANED_PATH")
+              echo "Checking codemod: $DIR"
+              cd "$ROOT_DIR/$DIR"
+              pnpm install
+              npx codemod publish
+            done
+          else
+            # Handle single file format
+            CLEANED_PATH="${CODEMOD_FILES//[\'\"]}"
+            DIR=$(dirname "$CLEANED_PATH")
             echo "Checking codemod: $DIR"
-            CLEANED_DIR=$(echo "$DIR" | sed "s/^'//;s/'$//")
-            cd "$ROOT_DIR/$CLEANED_DIR"
+            cd "$ROOT_DIR/$DIR"
             pnpm install
             npx codemod publish
-          done
+          fi
