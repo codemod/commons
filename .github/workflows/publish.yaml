@@ -1,14 +1,8 @@
 name: Codemod publish
 
 on:
+  workflow_dispatch:
   push:
-    paths:
-      - "codemods/**"
-    branches:
-      - main
-  pull_request:
-    types:
-      - closed
     paths:
       - "codemods/**"
     branches:
@@ -16,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -39,16 +33,11 @@ jobs:
         run: pnpm install
       - name: Run test
         run: pnpm recursive run test
-  publish:
-    runs-on: ubuntu-24.04
-    env:
-      CODEMOD_API_KEY: ${{ secrets.CODEMOD_API_KEY }}
+  paths-filter:
+    name: Check for .codemodrc.json files changes
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
+      - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3
         id: filter
         name: Filter codemods
@@ -58,12 +47,34 @@ jobs:
             codemods:
               - '**/.codemodrc.json'
 
+  publish:
+    runs-on: ubuntu-latest
+    needs: paths-filter
+    if: always() || needs.paths-filter.outputs.codemods == 'true'
+    env:
+      CODEMOD_API_KEY: ${{ secrets.CODEMOD_API_KEY }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: export files
         run: |
-          echo "Modified files: ${{steps.filter.outputs.codemods_files}}"
-          echo "CODEMOD_FILES=${{steps.filter.outputs.codemods_files}}" >> $GITHUB_ENV
-          echo "Modified status: ${{steps.filter.outputs.codemods}}"
-          echo "CODEMOD_STATUS=${{steps.filter.outputs.codemods}}" >> $GITHUB_ENV
+          echo "Modified files: ${{needs.paths-filter.outputs.codemods_files}}"
+          echo "Modified status: ${{needs.paths-filter.outputs.codemods}}"
+          echo "CODEMOD_STATUS=${{needs.paths-filter.outputs.codemods}}" >> $GITHUB_ENV
+          if [ -n "${{needs.paths-filter.outputs.codemods}}" ]; then
+            CODEMOD_FILES=$(echo "${{needs.paths-filter.outputs.codemods_files}}" | tr ' ' '\n' | sed "s/.*/'&'/")
+            echo "CODEMOD_FILES<<EOF" >> $GITHUB_ENV
+            echo "$CODEMOD_FILES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          else
+            CODEMOD_FILES=$(find codemods/ -type d -mindepth 1 -maxdepth 1 | sed "s/.*/'&'/")
+            echo "CODEMOD_FILES<<EOF" >> $GITHUB_ENV
+            echo "$CODEMOD_FILES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+          fi
 
       - uses: pnpm/action-setup@v4
         with:
@@ -77,17 +88,13 @@ jobs:
 
       - name: Run publish codemod
         run: |
-          if [ -n "$CODEMOD_STATUS" ]; then
-            echo "Modified files: $CODEMOD_FILES"
-            ROOT_DIR=$(pwd)
-            for FILE in $CODEMOD_FILES; do
-              DIR=$(dirname "$FILE")
-              echo "Checking codemod: $DIR"
-              CLEANED_DIR=$(echo "$DIR" | sed "s/^'//;s/'$//")
-              cd "$ROOT_DIR/$CLEANED_DIR"
-              pnpm install
-              npx codemod publish
-            done
-          else
-            echo "No codemods found"
-          fi
+          echo "Modified files: $CODEMOD_FILES"
+          ROOT_DIR=$(pwd)
+          for FILE in $CODEMOD_FILES; do
+            DIR=$(dirname "$FILE")
+            echo "Checking codemod: $DIR"
+            CLEANED_DIR=$(echo "$DIR" | sed "s/^'//;s/'$//")
+            cd "$ROOT_DIR/$CLEANED_DIR"
+            pnpm install
+            npx codemod publish
+          done
