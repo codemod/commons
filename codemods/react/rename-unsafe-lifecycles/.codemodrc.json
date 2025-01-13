@@ -9,7 +9,8 @@
   "include": [
     "**/*.js",
     "**/*.jsx",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.ts"
   ],
   "exclude": [
     "node_modules/**",
