@@ -12,7 +12,6 @@ if (simpleCaseValue === true) {
 }
 
 if (simpleCase.value) {
-  // Simple Case is true
   console.log("obj var .value is truthy");
 }
 
