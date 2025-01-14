@@ -3,7 +3,9 @@ const HOCPageComponent = HOC(PageComponent);
   <Switch>
     <Route
       path="/"
-      render={(props) => <Route exact path="/a" component={HOCPageComponent} />}
+      render={(props) => (
+        <Route exact path="/a" component={HOCPageComponent} />
+      )}
     />
   </Switch>
 </Router>;
