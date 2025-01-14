@@ -12,7 +12,6 @@ if (theValue === true) {
 }
 
 if (theGate.value) {
-  // Simple Case is true
   console.log("obj var .value is truthy");
 }
 
