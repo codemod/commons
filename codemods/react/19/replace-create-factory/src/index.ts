@@ -17,7 +17,7 @@ export default function transform(
 
   let isDirty = false;
 
-  findPatterns(j, root).forEach((path) => {
+  findPatterns(j, root)?.forEach((path) => {
     const arg0 = path.value.arguments.at(0);
 
     if (!arg0) {
