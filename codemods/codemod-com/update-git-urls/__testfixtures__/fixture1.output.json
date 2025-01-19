@@ -1,6 +1,6 @@
 {
   "name": "myname",
   "meta": {
-    "git": "https://github.com/codemod-com/commons/tree/main/codemods/codemod-com/update-git-urls/__testfixtures__"
+    "git": "https://github.com/codemod-com/codemod/tree/main/packages/codemods/codemod-com/update-git-urls/__testfixtures__"
   }
 }
