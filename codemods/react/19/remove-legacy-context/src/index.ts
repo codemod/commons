@@ -37,7 +37,7 @@ export default function transform(
 
   let isDirty = false;
 
-  findPatterns(j, root).forEach((pattern) => {
+  findPatterns(j, root)?.forEach((pattern) => {
     if (!pattern) {
       return;
     }
