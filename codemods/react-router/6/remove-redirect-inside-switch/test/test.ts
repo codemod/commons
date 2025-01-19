@@ -11,11 +11,11 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
 describe("react-router v6 remove-redirect-inside-switch", () => {
   it("should remove Redirect inside Switch", async () => {
-    const input = await readFile(join(__dirname, "input.js"), {
+    const input = await readFile(join(__dirname, "../__testfixtures__/input.js"), {
       encoding: "utf8",
     });
 
-    const output = await readFile(join(__dirname, "output.js"), {
+    const output = await readFile(join(__dirname, "../__testfixtures__/output.js"), {
       encoding: "utf8",
     });
 
