@@ -13,8 +13,6 @@
   "private": true,
   "main": "./dist/index.cjs",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest watch",
     "coverage": "vitest run --coverage"
   },
   "files": [
