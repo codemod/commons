@@ -22,15 +22,12 @@ const transform = (
 
   const actualSourceFile = project.createSourceFile(path, beforeText);
 
-  const actual = handleSourceFile(actualSourceFile, options)?.replace(
-    /\s/gm,
-    "",
-  );
+  const actual = handleSourceFile(actualSourceFile, options)?.replace(/W/gm, "");
 
   const expected = project
     .createSourceFile(`expected${extname(path)}`, afterText)
     .getFullText()
-    .replace(/\s/gm, "");
+    .replace(/W/gm, "");
 
   return {
     actual,
@@ -73,6 +70,8 @@ describe("Replace feature flag", () => {
       type: "JSON",
       value: `{ "foo": { "bar": null, "baz": "str", "faz": 12 } }`,
     });
+
+    console.log(actual, "actual");
 
     assert.deepEqual(actual, expected);
   });
