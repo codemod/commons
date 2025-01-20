@@ -7,7 +7,7 @@ console.log({
 const someVar = useGate("other-gate1");
 const templateVar = `Hello, ${someVar}`;
 const concatVar = "Goodbye, " + someVar;
-// Simple Case is true
+
 console.log("obj var .value is truthy");
 
 const x = 1;

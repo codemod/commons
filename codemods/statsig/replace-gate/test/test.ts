@@ -23,14 +23,14 @@ const transform = (
   const actualSourceFile = project.createSourceFile(path, beforeText);
 
   const actual = handleSourceFile(actualSourceFile, options)?.replace(
-    /\s/gm,
+    /\W/gm,
     "",
   );
 
   const expected = project
     .createSourceFile(`expected${extname(path)}`, afterText)
     .getFullText()
-    .replace(/\s/gm, "");
+    .replace(/\W/gm, "");
 
   return {
     actual,
