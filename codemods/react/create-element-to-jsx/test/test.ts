@@ -1,6 +1,6 @@
 import { describe, it } from "vitest";
 import jscodeshift, { type API } from "jscodeshift";
-import transform from "../src/index.cjs";
+import transform from "../src/index.js";
 import assert from "node:assert";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
