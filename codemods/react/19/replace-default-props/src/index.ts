@@ -9,14 +9,16 @@ import type {
   Property,
 } from "jscodeshift";
 
-import { getFunctionName } from "@codemod.com/codemod-utils/dist/jscodeshift/function.js";
-import { getFunctionComponents } from "@codemod.com/codemod-utils/dist/jscodeshift/react.js";
+import {
+  getFunctionName,
+  getFunctionComponents,
+} from "@codemod.com/codemod-utils";
 
 const getComponentStaticPropValue = (
   j: JSCodeshift,
   root: Collection<any>,
   componentName: string,
-  name: string,
+  name: string
 ): ASTPath<MemberExpression> | null => {
   return (
     root
@@ -38,7 +40,7 @@ const getComponentStaticPropValue = (
 const buildPropertyWithDefaultValue = (
   j: JSCodeshift,
   property: ObjectProperty | Property,
-  defaultValue: any,
+  defaultValue: any
 ) => {
   // Special handling for nested destructuring patterns
   if (property.value.type === "ObjectPattern") {
@@ -55,7 +57,7 @@ const buildPropertyWithDefaultValue = (
 
 export default function transform(
   file: FileInfo,
-  api: API,
+  api: API
 ): string | undefined {
   const j = api.jscodeshift;
   const root = j(file.source);
@@ -72,7 +74,7 @@ export default function transform(
       j,
       root,
       componentName,
-      "defaultProps",
+      "defaultProps"
     );
 
     const defaultPropsRight = defaultProps?.parent?.value?.right ?? null;
@@ -105,7 +107,7 @@ export default function transform(
             property.value = buildPropertyWithDefaultValue(
               j,
               property,
-              defaultPropsMap.get(property.key.name),
+              defaultPropsMap.get(property.key.name)
             );
           }
         }
