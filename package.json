@@ -4,30 +4,36 @@
   "description": "Codemods, public or private, are preferred to reside in repositories owned by the main organization of their respective projects. This repository serves as a catch-all for some codemod sources that still have not found thier way to their ideal home or for Codemod-compatible forks of existing codemods for easier publishing. Please [chat with us](https://go.codemod.com/community) before making any major contribution.",
   "main": "index.js",
   "dependencies": {
-    "prettier": "^3.4.2"
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.11"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
     "@codemod-com/tsconfig": "workspace:*",
     "@codemod-com/utilities": "workspace:*",
     "turbo": "^1.10.14",
-    "vitest": "^1.0.1"
+    "vitest": "^1.0.1",
+    "husky": "^8.0.0"
   },
   "scripts": {
     "build": "turbo run build",
-    "clean": "turbo run clean"
+    "clean": "turbo run clean",
+    "prepare": "husky && husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemod-com/commons.git"
   },
-  "keywords": [
-    "codemod",
-    "migration"
-  ],
+  "keywords": ["codemod", "migration"],
   "author": "Codemod, Inc.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codemod-com/commons/issues"
   },
-  "homepage": "https://github.com/codemod-com/commons#readme"
+  "homepage": "https://github.com/codemod-com/commons#readme",
+  "lint-staged": {
+    "*": [
+      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --diagnostic-level=error"
+    ]
+  }
 }
