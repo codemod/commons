@@ -81,8 +81,7 @@ function isCustomValidator(path: NodePath) {
 const resolveRequired = (path: NodePath) =>
   isRequired(path) ? path.get("object") : path;
 
-//@ts-expect-error any
-function getTSType(path: NodePath) {
+function getTSType(path: NodePath): any {
   const { value: name } =
     path.get("type").value === "MemberExpression"
       ? path.get("property", "name")
@@ -127,8 +126,7 @@ function getTSType(path: NodePath) {
       return arg.get("type").value !== "ArrayExpression"
         ? j.tsArrayType(j.tsUnknownKeyword())
         : j.tsUnionType(
-            //@ts-expect-error any
-            arg.get("elements").value.map(({ type, value }) => {
+            arg.get("elements").value.map(({ type, value }: { type: any, value: any }) => {
               switch (type) {
                 case "StringLiteral":
                   return j.tsLiteralType(j.stringLiteral(value));
@@ -175,10 +173,9 @@ function getTSType(path: NodePath) {
     object: j.tsObjectKeyword(),
     string: j.tsStringKeyword(),
     symbol: j.tsSymbolKeyword(),
-  };
+  } as const;
 
-  //@ts-expect-error any
-  return map[name] || j.tsUnknownKeyword();
+  return (name in map ? map[name as keyof typeof map] : j.tsUnknownKeyword());
 }
 
 const isRequired = (path: NodePath) =>
@@ -226,8 +223,7 @@ function getTSTypes(
         component: getComponentName(path),
         types: path
           .filter(
-            //@ts-expect-error any
-            ({ value }) => propertyTypes.includes(value.type),
+            ({ value }: { value: any }) => propertyTypes.includes(value.type),
             null,
           )
           .map(mapType, null),
@@ -237,8 +233,7 @@ function getTSTypes(
   return collected;
 }
 
-//@ts-expect-error any
-function getFunctionParent(path: NodePath) {
+function getFunctionParent(path: NodePath): NodePath {
   return path.parent.get("type").value === "Program"
     ? path
     : getFunctionParent(path.parent);
