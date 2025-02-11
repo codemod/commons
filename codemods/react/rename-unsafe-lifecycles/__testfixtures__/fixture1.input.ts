@@ -1,5 +1,3 @@
-import React from 'react';
-
 class MyComponent extends React.Component {
     componentWillMount() {
         console.log('component will mount');
@@ -17,6 +15,5 @@ class MyComponent extends React.Component {
         return <div>My Component</div>;
     }
 }
-
 
 export { MyComponent };
