@@ -1,25 +1,19 @@
-import React from 'react';
-
 class MyComponent extends React.Component {
     UNSAFE_componentWillMount() {
-        // Migration: renamed from componentWillMount
-        console.log('Component will mount');
+        console.log('component will mount');
     }
 
     UNSAFE_componentWillReceiveProps(nextProps) {
-        // Migration: renamed from componentWillReceiveProps
-            console.log('Props will update');
-
+        console.log('component will receive props', nextProps);
     }
 
     UNSAFE_componentWillUpdate(nextProps, nextState) {
-        // Migration: renamed from componentWillUpdate
-        console.log('Component will update');
+        console.log('component will update', nextProps, nextState);
     }
 
     render() {
-        return <div>Test Component</div>;
+        return <div>My Component</div>;
     }
 }
 
-export default MyComponent;
+export { MyComponent };
