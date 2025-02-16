@@ -34,6 +34,16 @@ import type {
   Options,
   TSAnyKeyword,
   TSFunctionType,
+  TSUnknownKeyword,
+  TSArrayType,
+  TSUnionType,
+  TSTypeReference,
+  TSTypeLiteral,
+  TSBooleanKeyword,
+  TSNumberKeyword,
+  TSObjectKeyword,
+  TSStringKeyword,
+  TSSymbolKeyword,
 } from "jscodeshift";
 
 let j: JSCodeshift;
@@ -49,7 +59,19 @@ type TSType = {
   comments: (CommentLine | CommentBlock)[];
   key: Identifier | Literal;
   required: boolean;
-  type: TSAnyKeyword | TSFunctionType;
+  type:
+    | TSAnyKeyword
+    | TSFunctionType
+    | TSUnknownKeyword
+    | TSArrayType
+    | TSUnionType
+    | TSTypeReference
+    | TSTypeLiteral
+    | TSBooleanKeyword
+    | TSNumberKeyword
+    | TSObjectKeyword
+    | TSStringKeyword
+    | TSSymbolKeyword;
 };
 
 function createPropertySignature({ comments, key, required, type }: TSType) {
@@ -81,7 +103,21 @@ function isCustomValidator(path: NodePath) {
 const resolveRequired = (path: NodePath) =>
   isRequired(path) ? path.get("object") : path;
 
-function getTSType(path: NodePath): any {
+function getTSType(
+  path: NodePath
+):
+  | TSAnyKeyword
+  | TSFunctionType
+  | TSUnknownKeyword
+  | TSArrayType
+  | TSUnionType
+  | TSTypeReference
+  | TSTypeLiteral
+  | TSBooleanKeyword
+  | TSNumberKeyword
+  | TSObjectKeyword
+  | TSStringKeyword
+  | TSSymbolKeyword {
   const { value: name } =
     path.get("type").value === "MemberExpression"
       ? path.get("property", "name")
@@ -128,21 +164,29 @@ function getTSType(path: NodePath): any {
         : j.tsUnionType(
             arg
               .get("elements")
-              .value.map(({ type, value }: { type: any; value: any }) => {
-                switch (type) {
-                  case "StringLiteral":
-                    return j.tsLiteralType(j.stringLiteral(value));
+              .value.map(
+                ({
+                  type,
+                  value,
+                }: {
+                  type: string;
+                  value: string | number | boolean;
+                }) => {
+                  switch (type) {
+                    case "StringLiteral":
+                      return j.tsLiteralType(j.stringLiteral(String(value)));
 
-                  case "NumericLiteral":
-                    return j.tsLiteralType(j.numericLiteral(value));
+                    case "NumericLiteral":
+                      return j.tsLiteralType(j.numericLiteral(Number(value)));
 
-                  case "BooleanLiteral":
-                    return j.tsLiteralType(j.booleanLiteral(value));
+                    case "BooleanLiteral":
+                      return j.tsLiteralType(j.booleanLiteral(Boolean(value)));
 
-                  default:
-                    return j.tsUnknownKeyword();
+                    default:
+                      return j.tsUnknownKeyword();
+                  }
                 }
-              })
+              )
           );
     }
 
@@ -225,7 +269,8 @@ function getTSTypes(
         component: getComponentName(path),
         types: path
           .filter(
-            ({ value }: { value: any }) => propertyTypes.includes(value.type),
+            ({ value }: { value: { type: string } }) =>
+              propertyTypes.includes(value.type),
             null
           )
           .map(mapType, null),
