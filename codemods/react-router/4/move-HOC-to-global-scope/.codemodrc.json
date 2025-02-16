@@ -1,9 +1,12 @@
 {
   "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
   "name": "react-router/4/move-hoc-to-global-scope",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engine": "jscodeshift",
   "private": false,
   "arguments": [],
-  "meta": {}
+  "meta": {
+    "tags": ["react", "react router", "migration"],
+    "git": "https://github.com/codemod-com/commons/tree/main/codemods/react-router/4/move-hoc-to-global-scope"
+  }
 }
