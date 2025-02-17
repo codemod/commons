@@ -86,4 +86,4 @@ jobs:
           echo "Publishing codemod in: $DIR"
           cd "$DIR"
           pnpm install
-          npx codemod publish
+          pnpx codemod publish
