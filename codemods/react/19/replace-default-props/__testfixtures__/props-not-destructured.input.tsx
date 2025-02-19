@@ -1,7 +1,10 @@
 const C = (props) => {
+  console.log(props.helloWorld);
   return <>{props.text}</>;
 };
 
 C.defaultProps = {
-  text: "test",
+  text: "Hello",
+  test: 2,
+  helloWorld: true,
 };
