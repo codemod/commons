@@ -77,8 +77,9 @@ jobs:
         run: |
           DIR=$(dirname "${{ matrix.file }}")
           echo "Testing codemod in: $DIR"
-          cd "$DIR"
           pnpm install
+          pnpm run build
+          cd "$DIR"
           pnpm run --if-present test
 
       - name: Publish codemod
