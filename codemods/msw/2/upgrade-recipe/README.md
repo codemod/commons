@@ -2,15 +2,15 @@ This recipe is a set of codemods that will upgrade your project from using msw v
 
 The recipe includes the following codemods:
 
-- [imports](/registry/msw-2-imports)
-- [type-args](/registry/msw-2-type-args)
-- [request-changes](/registry/msw-2-request-changes)
-- [ctx-fetch](/registry/msw-2-ctx-fetch)
-- [req-passthrough](/registry/msw-2-req-passthrough)
-- [response-usages](/registry/msw-2-response-usages)
-- [callback-signature](/registry/msw-2-callback-signature)
-- [lifecycle-events-signature](/registry/msw-2-lifecycle-events-signature)
-- [print-handler](/registry/msw-2-print-handler)
+- [imports](/codemods/msw/2/imports)
+- [type-args](/codemods/msw/2/type-args)
+- [request-changes](/codemods/msw/2/request-changes)
+- [ctx-fetch](/codemods/msw/2/ctx-fetch)
+- [req-passthrough](/codemods/msw/2/req-passthrough)
+- [response-usages](/codemods/msw/2/response-usages)
+- [callback-signature](/codemods/msw/2/callback-signature)
+- [lifecycle-events-signature](/codemods/msw/2/lifecycle-events-signature)
+- [print-handler](/codemods/msw/2/print-handler)
 
 ### FNs
 
