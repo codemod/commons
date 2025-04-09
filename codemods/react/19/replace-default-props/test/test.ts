@@ -10,12 +10,12 @@ const buildApi = (parser: string | undefined): API => ({
   jscodeshift: parser ? jscodeshift.withParser(parser) : jscodeshift,
   stats: () => {
     console.error(
-      "The stats function was called, which is not supported on purpose",
+      "The stats function was called, which is not supported on purpose"
     );
   },
   report: () => {
     console.error(
-      "The report function was called, which is not supported on purpose",
+      "The report function was called, which is not supported on purpose"
     );
   },
 });
@@ -24,11 +24,11 @@ describe("react/19/replace-default-props", () => {
   it("should correctly transform single default prop", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/single-default-prop.input.tsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/single-default-prop.output.tsx"),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -36,12 +36,12 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
@@ -50,17 +50,17 @@ describe("react/19/replace-default-props", () => {
       join(
         __dirname,
         "..",
-        "__testfixtures__/multiple-default-props.input.tsx",
+        "__testfixtures__/multiple-default-props.input.tsx"
       ),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(
         __dirname,
         "..",
-        "__testfixtures__/multiple-default-props.output.tsx",
+        "__testfixtures__/multiple-default-props.output.tsx"
       ),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -68,23 +68,23 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
   it("should correctly transform nested default props", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/nested-destructuring.input.tsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/nested-destructuring.output.tsx"),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -92,23 +92,23 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
   it("should correctly transform default props with functions", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/with-functions.input.tsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/with-functions.output.tsx"),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -116,23 +116,23 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
   it("should correctly transform when props have rest prop", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/with-rest-props.input.tsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/with-rest-props.output.tsx"),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -140,12 +140,12 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
@@ -154,17 +154,17 @@ describe("react/19/replace-default-props", () => {
       join(
         __dirname,
         "..",
-        "__testfixtures__/props-not-destructured.input.tsx",
+        "__testfixtures__/props-not-destructured.input.tsx"
       ),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(
         __dirname,
         "..",
-        "__testfixtures__/props-not-destructured.output.tsx",
+        "__testfixtures__/props-not-destructured.output.tsx"
       ),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -172,27 +172,27 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
   it("should correctly transform when some but not all props are defaulted", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/partial-default-props.input.tsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(
         __dirname,
         "..",
-        "__testfixtures__/partial-default-props.output.tsx",
+        "__testfixtures__/partial-default-props.output.tsx"
       ),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -200,23 +200,23 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("tsx"),
+      buildApi("tsx")
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 
   it("should correctly transform when props are not destructured", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/button-jsx-example-input.jsx"),
-      "utf-8",
+      "utf-8"
     );
     const OUTPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/button-jsx-example-output.jsx"),
-      "utf-8",
+      "utf-8"
     );
 
     const actualOutput = transform(
@@ -224,19 +224,42 @@ describe("react/19/replace-default-props", () => {
         path: "index.js",
         source: INPUT,
       },
-      buildApi("jsx"),
+      buildApi("jsx")
     );
 
     const fs = require("node:fs");
     fs.writeFileSync(
       join(__dirname, "..", "__testfixtures__/button-jsx-example-output.jsx"),
-      actualOutput,
+      actualOutput
     );
 
     assert.deepEqual(
       actualOutput?.replace(/W/gm, ""),
-      OUTPUT.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
+    );
+  });
+
+  it("rest element example", async () => {
+    const INPUT = await readFile(
+      join(__dirname, "..", "__testfixtures__/rest-element-example.input.jsx"),
+      "utf-8"
+    );
+    const OUTPUT = await readFile(
+      join(__dirname, "..", "__testfixtures__/rest-element-example.output.jsx"),
+      "utf-8"
+    );
+
+    const actualOutput = transform(
+      {
+        path: "index.js",
+        source: INPUT,
+      },
+      buildApi("jsx")
+    );
+
+    assert.deepEqual(
+      actualOutput?.replace(/W/gm, ""),
+      OUTPUT.replace(/W/gm, "")
     );
   });
 });
-

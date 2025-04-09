@@ -2,7 +2,7 @@
   "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
   "name": "react/create-element-to-jsx",
   "description": "Transform React.createElement to JSX",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "engine": "jscodeshift",
   "private": false,
   "arguments": [],

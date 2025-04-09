@@ -1,6 +1,6 @@
 {
   "name": "devcycle/launchdarkly-to-devcycle",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "engine": "jscodeshift",
   "private": false,
   "arguments": [],
