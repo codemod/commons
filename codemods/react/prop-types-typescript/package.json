@@ -8,7 +8,8 @@
     "jscodeshift": "^0.15.1",
     "@types/jscodeshift": "^0.11.10",
     "vitest": "^1.0.1",
-    "@vitest/coverage-v8": "catalog:"
+    "@vitest/coverage-v8": "catalog:",
+    "ast-types": "^0.15.0"
   },
   "private": true,
   "main": "./dist/index.cjs",

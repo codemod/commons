@@ -51,7 +51,7 @@ let options: {
   preservePropTypes: "none" | "unconverted" | "all";
 };
 
-function reactType(type: string) {
+function reactType(type: string) { 
   return j.tsQualifiedName(j.identifier("React"), j.identifier(type));
 }
 
