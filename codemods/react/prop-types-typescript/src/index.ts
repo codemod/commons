@@ -33,7 +33,17 @@ import type {
   Literal,
   Options,
   TSAnyKeyword,
+  TSArrayType,
+  TSBooleanKeyword,
   TSFunctionType,
+  TSNumberKeyword,
+  TSObjectKeyword,
+  TSStringKeyword,
+  TSSymbolKeyword,
+  TSTypeLiteral,
+  TSTypeReference,
+  TSUnionType,
+  TSUnknownKeyword,
 } from "jscodeshift";
 
 let j: JSCodeshift;
@@ -49,7 +59,19 @@ type TSType = {
   comments: (CommentLine | CommentBlock)[];
   key: Identifier | Literal;
   required: boolean;
-  type: TSAnyKeyword | TSFunctionType;
+  type:
+    | TSAnyKeyword
+    | TSFunctionType
+    | TSUnknownKeyword
+    | TSArrayType
+    | TSUnionType
+    | TSTypeReference
+    | TSTypeLiteral
+    | TSBooleanKeyword
+    | TSNumberKeyword
+    | TSObjectKeyword
+    | TSStringKeyword
+    | TSSymbolKeyword;
 };
 
 function createPropertySignature({ comments, key, required, type }: TSType) {
@@ -81,8 +103,21 @@ function isCustomValidator(path: NodePath) {
 const resolveRequired = (path: NodePath) =>
   isRequired(path) ? path.get("object") : path;
 
-//@ts-expect-error any
-function getTSType(path: NodePath) {
+function getTSType(
+  path: NodePath,
+):
+  | TSAnyKeyword
+  | TSFunctionType
+  | TSUnknownKeyword
+  | TSArrayType
+  | TSUnionType
+  | TSTypeReference
+  | TSTypeLiteral
+  | TSBooleanKeyword
+  | TSNumberKeyword
+  | TSObjectKeyword
+  | TSStringKeyword
+  | TSSymbolKeyword {
   const { value: name } =
     path.get("type").value === "MemberExpression"
       ? path.get("property", "name")
@@ -127,22 +162,29 @@ function getTSType(path: NodePath) {
       return arg.get("type").value !== "ArrayExpression"
         ? j.tsArrayType(j.tsUnknownKeyword())
         : j.tsUnionType(
-            //@ts-expect-error any
-            arg.get("elements").value.map(({ type, value }) => {
-              switch (type) {
-                case "StringLiteral":
-                  return j.tsLiteralType(j.stringLiteral(value));
+            arg.get("elements").value.map(
+              ({
+                type,
+                value,
+              }: {
+                type: string;
+                value: string | number | boolean;
+              }) => {
+                switch (type) {
+                  case "StringLiteral":
+                    return j.tsLiteralType(j.stringLiteral(String(value)));
 
-                case "NumericLiteral":
-                  return j.tsLiteralType(j.numericLiteral(value));
+                  case "NumericLiteral":
+                    return j.tsLiteralType(j.numericLiteral(Number(value)));
 
-                case "BooleanLiteral":
-                  return j.tsLiteralType(j.booleanLiteral(value));
+                  case "BooleanLiteral":
+                    return j.tsLiteralType(j.booleanLiteral(Boolean(value)));
 
-                default:
-                  return j.tsUnknownKeyword();
-              }
-            }),
+                  default:
+                    return j.tsUnknownKeyword();
+                }
+              },
+            ),
           );
     }
 
@@ -175,10 +217,9 @@ function getTSType(path: NodePath) {
     object: j.tsObjectKeyword(),
     string: j.tsStringKeyword(),
     symbol: j.tsSymbolKeyword(),
-  };
+  } as const;
 
-  //@ts-expect-error any
-  return map[name] || j.tsUnknownKeyword();
+  return name in map ? map[name as keyof typeof map] : j.tsUnknownKeyword();
 }
 
 const isRequired = (path: NodePath) =>
@@ -226,8 +267,8 @@ function getTSTypes(
         component: getComponentName(path),
         types: path
           .filter(
-            //@ts-expect-error any
-            ({ value }) => propertyTypes.includes(value.type),
+            ({ value }: { value: { type: string } }) =>
+              propertyTypes.includes(value.type),
             null,
           )
           .map(mapType, null),
@@ -237,8 +278,7 @@ function getTSTypes(
   return collected;
 }
 
-//@ts-expect-error any
-function getFunctionParent(path: NodePath) {
+function getFunctionParent(path: NodePath): NodePath {
   return path.parent.get("type").value === "Program"
     ? path
     : getFunctionParent(path.parent);
