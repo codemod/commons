@@ -1,5 +1,5 @@
 import { basename, extname } from "node:path";
-import type { Filemod } from "@codemod-com/filemod";
+import type { Filemod } from "@intuita-inc/filemod";
 import type tsmorph from "ts-morph";
 
 type Dependencies = Readonly<{

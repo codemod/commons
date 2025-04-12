@@ -1,5 +1,5 @@
 import { sep } from "node:path";
-import type { Filemod } from "@codemod-com/filemod";
+import type { Filemod } from "@intuita-inc/filemod";
 import { isNeitherNullNorUndefined } from "@codemod-com/utilities";
 import { type InferInput, is } from "valibot";
 import type { Configuration as BiomeConfig } from "../types/biome.js";
@@ -87,7 +87,7 @@ export const repomod: Filemod<Dependencies, Options> = {
     options: {
       biomeJsonStringContent?: string;
     },
-    state,
+    state
   ) => {
     const fileName = path.split(sep).at(-1)!;
     const biomePath = api.joinPaths(api.currentWorkingDirectory, "biome.json");
@@ -126,7 +126,7 @@ export const repomod: Filemod<Dependencies, Options> = {
       biomeJsonContent.linter = await buildLinterConfig(
         state.config.rules,
         biomeJsonContent.linter,
-        api,
+        api
       );
 
       return {
@@ -146,7 +146,7 @@ export const repomod: Filemod<Dependencies, Options> = {
 
       biomeJsonContent.formatter = buildFormatterConfig(
         prettierConfig,
-        biomeJsonContent.formatter,
+        biomeJsonContent.formatter
       );
 
       return {

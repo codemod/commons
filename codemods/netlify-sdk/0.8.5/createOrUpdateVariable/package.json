@@ -2,7 +2,7 @@
   "name": "@codemod-com/codemod-netlify-sdk-0.8.5-createorupdatevariable",
   "dependencies": {},
   "devDependencies": {
-    "@codemod-com/utilities": "workspace:*",
+    
     "typescript": "^5.2.2",
     "ts-node": "^10.9.1",
     "jscodeshift": "^0.15.1",

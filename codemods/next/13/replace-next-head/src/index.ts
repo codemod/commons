@@ -1,5 +1,5 @@
 import { isAbsolute, join, parse, relative } from "node:path";
-import type { Filemod, UnifiedFileSystem } from "@codemod-com/filemod";
+import type { Filemod, UnifiedFileSystem } from "@intuita-inc/filemod";
 import type { fromMarkdown } from "mdast-util-from-markdown";
 import type {
   ArrowFunction,

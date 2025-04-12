@@ -1,7 +1,7 @@
 import { basename } from "node:path";
 import type { Identifier } from "jscodeshift";
 
-import type { Filemod } from "@codemod-com/filemod";
+import type { Filemod } from "@intuita-inc/filemod";
 import { isNeitherNullNorUndefined } from "@codemod-com/utilities";
 import { getSchema } from "@mrleebo/prisma-ast";
 import { prismaMethodNames, scalarTypes } from "./constants.js";
@@ -12,7 +12,7 @@ export const repomod: Filemod<Dependencies, Options> = {
   excludePatterns: ["**/node_modules/**"],
   initializeState: async (_options, _prev, api, paths) => {
     const prismaSchemaPath = paths?.find((path) =>
-      path.endsWith("schema.prisma"),
+      path.endsWith("schema.prisma")
     );
 
     if (!prismaSchemaPath) {
@@ -28,30 +28,29 @@ export const repomod: Filemod<Dependencies, Options> = {
 
     const schema = getSchema(prismaSchema);
 
-    const pairs = schema.list.reduce(
-      (acc, node) => {
-        if (node.type === "model") {
-          const modelName = `${node.name.at(0)?.toLowerCase()}${node.name.slice(1)}`;
+    const pairs = schema.list.reduce((acc, node) => {
+      if (node.type === "model") {
+        const modelName = `${node.name.at(0)?.toLowerCase()}${node.name.slice(
+          1
+        )}`;
 
-          acc[modelName] = node.properties
-            .filter((prop) => prop.type === "field")
-            .filter(
-              (prop) =>
-                typeof prop.fieldType === "string" &&
-                (prop.fieldType === "Json" || prop.array === true),
-            )
-            .map((prop) => ({
-              name: prop.name,
-              type: prop.array
-                ? `${prop.fieldType}[]`
-                : (prop.fieldType as string),
-            }));
-        }
+        acc[modelName] = node.properties
+          .filter((prop) => prop.type === "field")
+          .filter(
+            (prop) =>
+              typeof prop.fieldType === "string" &&
+              (prop.fieldType === "Json" || prop.array === true)
+          )
+          .map((prop) => ({
+            name: prop.name,
+            type: prop.array
+              ? `${prop.fieldType}[]`
+              : (prop.fieldType as string),
+          }));
+      }
 
-        return acc;
-      },
-      {} as Options["pairs"],
-    );
+      return acc;
+    }, {} as Options["pairs"]);
 
     return { pairs };
   },
@@ -117,7 +116,7 @@ export const repomod: Filemod<Dependencies, Options> = {
           }
 
           const field = state?.pairs[calledByModel]?.find(
-            (pair) => pair.name === (fieldProp.key as Identifier).name,
+            (pair) => pair.name === (fieldProp.key as Identifier).name
           );
 
           // Fixture #2 (Scalar arrays)
@@ -184,7 +183,7 @@ export const repomod: Filemod<Dependencies, Options> = {
                 }
 
                 return filterProp.key.name === "equals";
-              },
+              }
             );
 
             // If it's a long notation, covers fixture #1, case #1

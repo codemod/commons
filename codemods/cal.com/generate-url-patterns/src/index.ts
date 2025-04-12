@@ -5,7 +5,7 @@ import type {
   HandleFile,
   HandleFinish,
   InitializeState,
-} from "@codemod-com/filemod";
+} from "@intuita-inc/filemod";
 import type { TSAsExpressionKind } from "ast-types/gen/kinds.js";
 import type { JSCodeshift } from "jscodeshift";
 

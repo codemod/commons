@@ -7,8 +7,8 @@
     "prettier": "^3.4.2"
   },
   "devDependencies": {
-    "@codemod-com/tsconfig": "workspace:*",
-    "@codemod-com/utilities": "workspace:*",
+    
+    
     "turbo": "^1.10.14",
     "vitest": "^1.0.1"
   },

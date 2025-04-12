@@ -1,5 +1,5 @@
 import { format, join, parse, sep } from "node:path";
-import type { Filemod, HandleData, HandleFile } from "@codemod-com/filemod";
+import type { Filemod, HandleData, HandleFile } from "@intuita-inc/filemod";
 import type { fromMarkdown } from "mdast-util-from-markdown";
 import type {
   ArrowFunction,

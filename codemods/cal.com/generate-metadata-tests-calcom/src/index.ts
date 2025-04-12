@@ -1,5 +1,5 @@
 import { parse, sep } from "node:path";
-import type { Filemod, HandleData, HandleFile } from "@codemod-com/filemod";
+import type { Filemod, HandleData, HandleFile } from "@intuita-inc/filemod";
 
 export const buildData = (appPath: string) => `
 	import { expect } from "@playwright/test";

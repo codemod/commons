@@ -1,4 +1,4 @@
-import type { Filemod, UnifiedFileSystem } from "@codemod-com/filemod";
+import type { Filemod, UnifiedFileSystem } from "@intuita-inc/filemod";
 import type {
   CallExpression,
   ImportDeclaration,

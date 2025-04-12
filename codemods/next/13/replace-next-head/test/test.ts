@@ -1,6 +1,6 @@
 import { deepStrictEqual } from "node:assert";
-import type { UnifiedFileSystem } from "@codemod-com/filemod";
-import { buildApi, executeFilemod } from "@codemod-com/filemod";
+import type { UnifiedFileSystem } from "@intuita-inc/filemod";
+import { buildApi, executeFilemod } from "@intuita-inc/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import { fromMarkdown } from "mdast-util-from-markdown";
 import { mdxFromMarkdown, mdxToMarkdown } from "mdast-util-mdx";

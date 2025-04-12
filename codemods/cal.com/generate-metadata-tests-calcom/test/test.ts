@@ -1,5 +1,5 @@
 import { deepStrictEqual } from "node:assert";
-import { buildApi, executeFilemod } from "@codemod-com/filemod";
+import { buildApi, executeFilemod } from "@intuita-inc/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";

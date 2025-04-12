@@ -1,8 +1,8 @@
 {
   "name": "@codemod-com/codemod-prisma-json-protocol",
   "devDependencies": {
-    "@codemod-com/filemod": "workspace:*",
-    "@codemod-com/utilities": "workspace:*",
+    "@intuita-inc/filemod": "latest",
+    
     "@loancrate/prisma-schema-parser": "^2.0.0",
     "@types/jscodeshift": "^0.11.10",
     "@vitest/coverage-v8": "catalog:",

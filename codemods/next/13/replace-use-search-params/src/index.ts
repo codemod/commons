@@ -1,4 +1,4 @@
-import type { Filemod, HandleFile } from "@codemod-com/filemod";
+import type { Filemod, HandleFile } from "@intuita-inc/filemod";
 import type {
   CallExpression,
   Collection,

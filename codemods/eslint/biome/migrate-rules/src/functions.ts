@@ -1,4 +1,4 @@
-import type { DataAPI } from "@codemod-com/filemod";
+import type { DataAPI } from "@intuita-inc/filemod";
 import { isNeitherNullNorUndefined } from "@codemod-com/utilities";
 import type { InferInput } from "valibot";
 import type {
@@ -27,7 +27,7 @@ function deepCopy<T>(obj: T): T {
 
 export function replaceKeys(
   obj: Record<string, unknown>,
-  replacements: Record<string, string>,
+  replacements: Record<string, string>
 ): Record<string, unknown> {
   // Just in case
   if (typeof obj !== "object" || obj === null) {
@@ -49,7 +49,7 @@ export function replaceKeys(
           }
           newObj[key] = replaceKeys(
             newObj[key] as Record<string, unknown>,
-            replacements,
+            replacements
           );
         } else {
           // If the value is not an object, check for the pattern in the string
@@ -95,7 +95,7 @@ export function eslintToBiomeRuleValue(value: string): RuleValue {
 }
 
 export function getPackageManager(
-  packageJson: InferInput<typeof packageJsonSchema>,
+  packageJson: InferInput<typeof packageJsonSchema>
 ) {
   const isYarn = (
     packageJson.packageManager ?? JSON.stringify(packageJson.scripts)
@@ -122,7 +122,7 @@ export function getPackageManager(
 }
 
 export function clearDependenciesAndAddNotes(
-  packageJson: InferInput<typeof packageJsonSchema>,
+  packageJson: InferInput<typeof packageJsonSchema>
 ): InferInput<typeof packageJsonSchema> {
   const newObj = deepCopy(packageJson);
 
@@ -185,7 +185,7 @@ export function clearDependenciesAndAddNotes(
 
 export function buildFormatterConfig(
   prettierConfig: PrettierConfig,
-  existingFormatterConfig: BiomeConfig["formatter"],
+  existingFormatterConfig: BiomeConfig["formatter"]
 ): BiomeConfig["formatter"] {
   return {
     ...existingFormatterConfig,
@@ -208,7 +208,7 @@ export function buildFormatterConfig(
 export async function buildLinterConfig(
   rules: Record<string, unknown>,
   existingLinterConfig: BiomeConfig["linter"],
-  api: DataAPI<Dependencies>,
+  api: DataAPI<Dependencies>
 ): Promise<BiomeConfig["linter"]> {
   const { fetch } = api.getDependencies();
 
@@ -229,7 +229,7 @@ export async function buildLinterConfig(
     }
 
     const ruleIndex = biomeRules.findIndex((rule) =>
-      rule.includes(`[${ruleName}]`),
+      rule.includes(`[${ruleName}]`)
     );
     if (ruleIndex === -1) {
       continue;
@@ -257,7 +257,7 @@ export async function buildLinterConfig(
       ?.at(1);
 
     const biomePageContent = await fetch(
-      `https://biomejs.dev/${urlFragment}`,
+      `https://biomejs.dev/${urlFragment}`
     ).then((res) => res.text());
 
     const [, biomeRuleGroup, biomeRuleName] =
@@ -271,7 +271,7 @@ export async function buildLinterConfig(
     if (
       isNeitherNullNorUndefined(
         // @ts-expect-error avoid as keyof casts
-        newObj.rules?.[biomeRuleGroup]?.[biomeRuleName],
+        newObj.rules?.[biomeRuleGroup]?.[biomeRuleName]
       )
     ) {
       continue;

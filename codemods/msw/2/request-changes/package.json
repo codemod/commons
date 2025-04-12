@@ -2,7 +2,7 @@
   "name": "@codemod-com/codemod-msw-2-request-changes",
   "dependencies": {},
   "devDependencies": {
-    "@codemod-com/utilities": "workspace:*",
+    
     "typescript": "^5.2.2",
     "ts-node": "^10.9.1",
     "ts-morph": "^19.0.0",

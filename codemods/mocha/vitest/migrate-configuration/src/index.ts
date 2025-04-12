@@ -11,7 +11,7 @@ import {
 import type {
   Filemod,
   FileCommand as FilemodCommand,
-} from "@codemod-com/filemod";
+} from "@intuita-inc/filemod";
 
 const packageJsonSchema = object({
   name: optional(string()),

@@ -1,4 +1,4 @@
-import type { Filemod } from "@codemod-com/filemod";
+import type { Filemod } from "@intuita-inc/filemod";
 
 type Dependencies = Record<string, never>;
 type State = {

@@ -1,7 +1,7 @@
 import { deepEqual, ok } from "node:assert";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { buildApi, executeFilemod } from "@codemod-com/filemod";
+import { buildApi, executeFilemod } from "@intuita-inc/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import jscodeshift from "jscodeshift";
 import type { DirectoryJSON } from "memfs";
@@ -48,37 +48,37 @@ describe("prisma json protocol tests", async () => {
   const example1Path = "/opt/project/example1.ts";
   const example1Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture1.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   const example2Path = "/opt/project/example2.ts";
   const example2Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture2.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   const example3Path = "/opt/project/example3.ts";
   const example3Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture3.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   const example4Path = "/opt/project/example4.ts";
   const example4Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture4.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   const example5Path = "/opt/project/example5.ts";
   const example5Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture5.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   const example6Path = "/opt/project/example6.ts";
   const example6Content = await readFile(
     join(__dirname, "..", "__testfixtures__", "fixture6.input.ts"),
-    "utf-8",
+    "utf-8"
   );
 
   it("should contain correct file commands", async () => {
@@ -100,8 +100,8 @@ describe("prisma json protocol tests", async () => {
           (command.kind === "upsertFile" && command.path === example2Path) ||
           (command.kind === "upsertFile" && command.path === example3Path) ||
           (command.kind === "upsertFile" && command.path === example4Path) ||
-          (command.kind === "upsertFile" && command.path === example5Path),
-      ).length === externalFileCommands.length,
+          (command.kind === "upsertFile" && command.path === example5Path)
+      ).length === externalFileCommands.length
     );
   });
 
@@ -113,14 +113,14 @@ describe("prisma json protocol tests", async () => {
 
     const example1Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example1Path,
+        command.kind === "upsertFile" && command.path === example1Path
     );
 
     ok(example1Command);
     ok(example1Command.kind === "upsertFile");
     const example1Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture1.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example1Command.newData, example1Fixture);
   });
@@ -133,14 +133,14 @@ describe("prisma json protocol tests", async () => {
 
     const example2Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example2Path,
+        command.kind === "upsertFile" && command.path === example2Path
     );
 
     ok(example2Command);
     ok(example2Command.kind === "upsertFile");
     const example2Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture2.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example2Command.newData, example2Fixture);
   });
@@ -153,14 +153,14 @@ describe("prisma json protocol tests", async () => {
 
     const example3Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example3Path,
+        command.kind === "upsertFile" && command.path === example3Path
     );
 
     ok(example3Command);
     ok(example3Command.kind === "upsertFile");
     const example3Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture3.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example3Command.newData, example3Fixture);
   });
@@ -173,14 +173,14 @@ describe("prisma json protocol tests", async () => {
 
     const example4Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example4Path,
+        command.kind === "upsertFile" && command.path === example4Path
     );
 
     ok(example4Command);
     ok(example4Command.kind === "upsertFile");
     const example4Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture4.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example4Command.newData, example4Fixture);
   });
@@ -193,14 +193,14 @@ describe("prisma json protocol tests", async () => {
 
     const example5Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example5Path,
+        command.kind === "upsertFile" && command.path === example5Path
     );
 
     ok(example5Command);
     ok(example5Command.kind === "upsertFile");
     const example5Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture5.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example5Command.newData, example5Fixture);
   });
@@ -213,14 +213,14 @@ describe("prisma json protocol tests", async () => {
 
     const example6Command = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === example6Path,
+        command.kind === "upsertFile" && command.path === example6Path
     );
 
     ok(example6Command);
     ok(example6Command.kind === "upsertFile");
     const example6Fixture = await readFile(
       join(__dirname, "..", "__testfixtures__", "fixture6.output.ts"),
-      "utf-8",
+      "utf-8"
     );
     deepEqual(example6Command.newData, example6Fixture);
   });

@@ -2,7 +2,7 @@
   "name": "@codemod-com/codemod-react-router-4-use-history-hook",
   "dependencies": {},
   "devDependencies": {
-    "@codemod-com/utilities": "workspace:*",
+    
     "typescript": "^5.2.2",
     "esbuild": "0.19.5",
     "ts-node": "^10.9.1",

@@ -2,7 +2,7 @@
   "name": "@codemod-com/codemod-immutable-0-replace-merge",
   "dependencies": {},
   "devDependencies": {
-    "@codemod-com/utilities": "workspace:*",
+    
     "typescript": "^5.2.2",
     "ts-node": "^10.9.1",
     "jscodeshift": "^0.15.1",

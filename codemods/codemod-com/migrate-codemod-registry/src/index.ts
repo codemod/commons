@@ -5,7 +5,7 @@ import type {
   HandleFile,
   HandleFinish,
   InitializeState,
-} from "@codemod-com/filemod";
+} from "@intuita-inc/filemod";
 import type jscodeshift from "jscodeshift";
 
 type Dependencies = {
@@ -275,7 +275,7 @@ const handleData: HandleData<Dependencies, State> = async (
       } else if (devDependencies !== undefined && engine === "ts-morph") {
         devDependencies["ts-morph"] = "^19.0.0";
       } else if (devDependencies !== undefined && engine === "filemod") {
-        devDependencies["@codemod-com/filemod"] = "1.1.0";
+        devDependencies["@intuita-inc/filemod"] = "1.1.0";
         // this might be required sometimes
         devDependencies.memfs = "^4.6.0";
         devDependencies["ts-morph"] = "^19.0.0";
@@ -368,7 +368,7 @@ const handleData: HandleData<Dependencies, State> = async (
               ].join("\n")
             : engine === "filemod"
               ? [
-                  "import type { Filemod } from '@codemod-com/filemod';",
+                  "import type { Filemod } from '@intuita-inc/filemod';",
                   "export const repomod: Filemod<{}, {}>;",
                 ].join("\n")
               : "";

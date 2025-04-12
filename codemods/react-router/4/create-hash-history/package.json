@@ -2,7 +2,7 @@
   "name": "@codemod-com/codemod-react-router-4-create-hash-history",
   "dependencies": {},
   "devDependencies": {
-    "@codemod-com/utilities": "workspace:*",
+    
     "typescript": "^5.2.2",
     "ts-node": "^10.9.1",
     "jscodeshift": "^0.15.1",

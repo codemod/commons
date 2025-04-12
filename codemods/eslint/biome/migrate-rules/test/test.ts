@@ -1,5 +1,5 @@
 import { deepEqual, ok } from "node:assert";
-import { type API, buildApi, executeFilemod } from "@codemod-com/filemod";
+import { type API, buildApi, executeFilemod } from "@intuita-inc/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";
@@ -37,7 +37,7 @@ const transform = async (api: API<any>) => {
         ],
       }),
     },
-    {},
+    {}
   );
 };
 
@@ -110,7 +110,7 @@ describe("eslint and prettier to biome migration", async () => {
     });
     const biomeJsonPath = api.fileAPI.joinPaths(
       api.fileAPI.currentWorkingDirectory,
-      "biome.json",
+      "biome.json"
     );
 
     const externalFileCommands = await transform(api);
@@ -127,8 +127,8 @@ describe("eslint and prettier to biome migration", async () => {
           (command.kind === "deleteFile" && command.path === prettierRcPath) ||
           (command.kind === "deleteFile" &&
             command.path === prettierIgnorePath) ||
-          (command.kind === "upsertFile" && command.path === biomeJsonPath),
-      ).length === externalFileCommands.length,
+          (command.kind === "upsertFile" && command.path === biomeJsonPath)
+      ).length === externalFileCommands.length
     );
   });
 
@@ -142,14 +142,14 @@ describe("eslint and prettier to biome migration", async () => {
     });
     const biomeJsonPath = api.fileAPI.joinPaths(
       api.fileAPI.currentWorkingDirectory,
-      "biome.json",
+      "biome.json"
     );
 
     const externalFileCommands = await transform(api);
 
     const packageJsonCommand = externalFileCommands.find(
       (command) =>
-        command.kind === "upsertFile" && command.path === packageJsonPath,
+        command.kind === "upsertFile" && command.path === packageJsonPath
     );
 
     ok(packageJsonCommand);
@@ -183,7 +183,7 @@ describe("eslint and prettier to biome migration", async () => {
           },
           "type": "module"
         }
-      `.replace(/\W/gm, ""),
+      `.replace(/\W/gm, "")
     );
 
     ok(
@@ -217,8 +217,8 @@ describe("eslint and prettier to biome migration", async () => {
                   "ignore": [],
                 }
               }
-            `.replace(/\W/gm, ""),
-      ),
+            `.replace(/\W/gm, "")
+      )
     );
   });
 });

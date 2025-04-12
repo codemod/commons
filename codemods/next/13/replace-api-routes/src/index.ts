@@ -1,6 +1,6 @@
 import { format, parse, sep } from "node:path";
 import type { ParsedPath } from "node:path";
-import type { Filemod, UnifiedFileSystem } from "@codemod-com/filemod";
+import type { Filemod, UnifiedFileSystem } from "@intuita-inc/filemod";
 import type {
   ArrowFunction,
   Block,
