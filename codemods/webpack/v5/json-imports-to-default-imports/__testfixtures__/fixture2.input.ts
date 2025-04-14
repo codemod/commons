@@ -1,2 +1,2 @@
-import { version, name, description } from "./package.json";
-console.log(version, name, description);
+import { data } from './config.json';
+console.log(data.nested.key, data.anotherKey);
