@@ -1,7 +1,7 @@
 export default function transform(file, api, options) {
   const j = api.jscodeshift;
   const root = j(file.source);
-  let hasModified = false;
+  let dirtyFlag = false;
 
   // Determine the original quote style
   const originalQuoteStyle = file.source.includes("'") ? 'single' : 'double';
@@ -78,12 +78,12 @@ export default function transform(file, api, options) {
           }
         });
 
-        hasModified = true;
+        dirtyFlag = true;
       }
     }
   });
 
-  return hasModified
-    ? root.toSource({ quote: originalQuoteStyle })
-    : file.source;
+return dirtyFlag
+? root.toSource({ quote: originalQuoteStyle })
+: undefined;
 }

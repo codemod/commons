@@ -1,2 +1,2 @@
 import config from './config.json';
-console.log(config.key, config.nested.value);
+console.log(config.data.nested.key, config.data.anotherKey);

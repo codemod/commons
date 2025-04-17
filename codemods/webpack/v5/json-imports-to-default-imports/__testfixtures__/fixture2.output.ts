@@ -1,2 +1,2 @@
-import config from './config.json';
-console.log(config.data.nested.key, config.data.anotherKey);
+import pkg from "./package.json";
+console.log(pkg.version, pkg.name, pkg.description);

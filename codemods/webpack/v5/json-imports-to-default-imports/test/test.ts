@@ -50,12 +50,7 @@ describe("json-imports-to-default-imports", () => {
     );
   });
 
-  /**
-   * Test Case 2: Nested References Transformation
-   * This test validates that named imports with nested references
-   */
-
-  it("test #2 - Named Import with Nested References", async () => {
+  it("test #2 - Basic Named Import Transformation", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/fixture2.input.ts"),
       "utf-8",
@@ -80,8 +75,11 @@ describe("json-imports-to-default-imports", () => {
     );
   });
 
-  // Test Case 3: No Change for Default Import
-  it("test #3 - No Change for Default Import", async () => {
+  /**
+   * Test Case 3: Nested References Transformation
+   * This test validates that named imports with nested references
+   */
+  it("test #3 - Nested References Transformation", async () => {
     const INPUT = await readFile(
       join(__dirname, "..", "__testfixtures__/fixture3.input.ts"),
       "utf-8",
