@@ -1,2 +1,2 @@
-import { nested, nested2 } from "./data.json";
-console.log(nested.property, nested2.property);
+import { data } from './config.json';
+console.log(data.nested.key, data.anotherKey);

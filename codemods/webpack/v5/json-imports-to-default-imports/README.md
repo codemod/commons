@@ -1,6 +1,6 @@
 This codemod migrates imports from JSON modules that use named exports to use default exports instead.
 
-It replaces code like `import { version } from './package.json'; console.log(version);` with `import pkg from './package.json'; console.log(pkg.version);`.
+This codemod transforms named imports from JSON files into default imports, adhering to the new ECMAScript specification and Webpack v5 compatibility. Named imports from JSON modules are no longer supported.
 
 ## Example
 
@@ -39,13 +39,29 @@ console.log(pkg.version, pkg.name, pkg.description);
 ### Before
 
 ```ts
-import { nested, nested2 } from "./data.json";
-console.log(nested.property, nested2.property);
+import { data } from './config.json';
+console.log(data.nested.key, data.anotherKey);
 ```
 
 ### After
 
 ```ts
-import pkg from "./data.json";
-console.log(pkg.nested.property, pkg.nested2.property);
+import config from './config.json';
+console.log(config.data.nested.key, config.data.anotherKey);
+```
+
+,
+
+### Before
+
+```ts
+import { key1, key2 } from './config.json';
+console.log(key1, key2);
+```
+
+### After
+
+```ts
+import config from './config.json';
+console.log(config.key1, config.key2);
 ```

@@ -1,2 +1,2 @@
-import pkg from './data.json';
-console.log(pkg.nested.property, pkg.nested2.property);
+import config from './config.json';
+console.log(config.data.nested.key, config.data.anotherKey);
