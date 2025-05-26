@@ -7,20 +7,20 @@ import type {
   MemberExpression,
   ObjectProperty,
   Property,
-  VariableDeclaration,
   RestElement,
+  VariableDeclaration,
 } from "jscodeshift";
 
 import {
-  getFunctionName,
   getFunctionComponents,
+  getFunctionName,
 } from "@codemod.com/codemod-utils";
 
 const getComponentStaticPropValue = (
   j: JSCodeshift,
   root: Collection<any>,
   componentName: string,
-  name: string
+  name: string,
 ): ASTPath<MemberExpression> | null => {
   return (
     root
@@ -42,7 +42,7 @@ const getComponentStaticPropValue = (
 const buildPropertyWithDefaultValue = (
   j: JSCodeshift,
   property: ObjectProperty | Property,
-  defaultValue: any
+  defaultValue: any,
 ) => {
   if (property.value.type === "ObjectPattern") {
     return j.assignmentPattern(property.value, defaultValue);
@@ -58,7 +58,7 @@ const buildPropertyWithDefaultValue = (
 
 export default function transform(
   file: FileInfo,
-  api: API
+  api: API,
 ): string | undefined {
   const j = api.jscodeshift;
   const root = j(file.source);
@@ -71,21 +71,23 @@ export default function transform(
       return;
     }
 
-    const componentFunction = j.functionDeclaration(
-      j.identifier(componentName),
-      path.value.params,
-      path.value.body
-    );
+    let componentFunction = null;
 
-    if (componentFunction === null) {
-      return;
+    const isImplicitReturnComponent = path.value.body.type === "JSXElement";
+
+    if (!isImplicitReturnComponent) {
+      componentFunction = j.functionDeclaration(
+        j.identifier(componentName),
+        path.value.params,
+        path.value.body,
+      );
     }
 
     const defaultProps = getComponentStaticPropValue(
       j,
       root,
       componentName,
-      "defaultProps"
+      "defaultProps",
     );
 
     const defaultPropsRight = defaultProps?.parent?.value?.right ?? null;
@@ -108,7 +110,7 @@ export default function transform(
           property.value.type === "ArrowFunctionExpression"
         ) {
           const constName = `${componentName[0]?.toLowerCase()}${componentName.slice(
-            1
+            1,
           )}DefaultProp${
             property.key.name[0]?.toUpperCase() + property.key.name.slice(1)
           }`;
@@ -123,7 +125,7 @@ export default function transform(
           defaultPropsConstants.push(
             j.variableDeclaration("const", [
               j.variableDeclarator(j.identifier(constName), property.value),
-            ])
+            ]),
           );
           defaultPropsMap.set(property.key.name, j.identifier(constName));
         } else {
@@ -147,7 +149,7 @@ export default function transform(
             property.value = buildPropertyWithDefaultValue(
               j,
               property,
-              defaultPropsMap.get(property.key.name)
+              defaultPropsMap.get(property.key.name),
             );
             defaultPropsMap.delete(property.key.name);
           }
@@ -156,7 +158,7 @@ export default function transform(
           if (j.Identifier.check(restElement.argument)) {
             propsArgName = restElement.argument.name;
             inlineDefaultProps = Array.from(defaultPropsMap.entries()).map(
-              ([key, value]) => ({ key, value })
+              ([key, value]) => ({ key, value }),
             );
           }
         }
@@ -164,11 +166,11 @@ export default function transform(
     } else if (j.Identifier.check(propsArg)) {
       propsArgName = propsArg.name;
       inlineDefaultProps = Array.from(defaultPropsMap.entries()).map(
-        ([key, value]) => ({ key, value })
+        ([key, value]) => ({ key, value }),
       );
     }
 
-    if (propsArgName && inlineDefaultProps.length) {
+    if (componentFunction && propsArgName && inlineDefaultProps.length) {
       componentFunction.body.body.unshift(
         j.expressionStatement(
           j.assignmentExpression(
@@ -184,23 +186,23 @@ export default function transform(
                       "===",
                       j.unaryExpression(
                         "typeof",
-                        j.identifier(`${propsArgName}.${key}`)
+                        j.identifier(`${propsArgName}.${key}`),
                       ),
-                      j.literal("undefined")
+                      j.literal("undefined"),
                     ),
                     value,
-                    j.identifier(`${propsArgName}.${key}`)
-                  )
-                )
+                    j.identifier(`${propsArgName}.${key}`),
+                  ),
+                ),
               ),
-            ])
-          )
-        )
+            ]),
+          ),
+        ),
       );
     }
 
     if (defaultPropsConstants.length && path.parent) {
-      for (let defaultPropsConstant of defaultPropsConstants) {
+      for (const defaultPropsConstant of defaultPropsConstants) {
         path.parent.parent.insertBefore(defaultPropsConstant);
       }
     }
