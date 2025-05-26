@@ -71,9 +71,9 @@ export default function transform(
       return;
     }
 
-    let componentFunction = null;
-
     const isImplicitReturnComponent = path.value.body.type === "JSXElement";
+
+    let componentFunction = null;
 
     if (!isImplicitReturnComponent) {
       componentFunction = j.functionDeclaration(
