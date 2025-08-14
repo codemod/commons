@@ -1,4 +1,4 @@
-name: Codemod publish
+name: Publish legacy codemods
 
 on:
   workflow_dispatch:
@@ -71,7 +71,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install libsecret-1-dev
-          pnpm install -g codemod
+          pnpm install -g codemod@legacy
 
       - name: Test codemod
         run: |
@@ -87,4 +87,4 @@ jobs:
           DIR=$(dirname "${{ matrix.file }}")
           echo "Publishing codemod in: $DIR"
           cd "$DIR"
-          pnpx codemod publish
+          pnpx codemod@legacy publish
