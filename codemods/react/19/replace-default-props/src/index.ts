@@ -71,14 +71,15 @@ export default function transform(
       return;
     }
 
-    const componentFunction = j.functionDeclaration(
-      j.identifier(componentName),
-      path.value.params,
-      path.value.body
-    );
+    let componentFunction = null;
+    const isImplicitReturnComponent = path.value.body.type === "JSXElement";
 
-    if (componentFunction === null) {
-      return;
+    if (!isImplicitReturnComponent) {
+      componentFunction = j.functionDeclaration(
+        j.identifier(componentName),
+        path.value.params,
+        path.value.body
+      );
     }
 
     const defaultProps = getComponentStaticPropValue(
@@ -168,7 +169,7 @@ export default function transform(
       );
     }
 
-    if (propsArgName && inlineDefaultProps.length) {
+    if (componentFunction && propsArgName && inlineDefaultProps.length) {
       componentFunction.body.body.unshift(
         j.expressionStatement(
           j.assignmentExpression(
