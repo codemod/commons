@@ -21,3 +21,27 @@ $ npx codemod <transform> --target <path> [...options]
 See the [codemod CLI doc](https://go.codemod.com/cli-docs) for a full list of available commands.
 
 All codemods are also available in the [Codemod Registry](https://go.codemod.com/registry).
+
+## GitHub Action
+
+Use the composite action in this repository to run the Codemod CLI in GitHub Actions:
+
+```yaml
+name: Codemod
+on:
+  workflow_dispatch:
+jobs:
+  run-codemod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run codemod (dry run)
+        uses: codemod-com/commons@v0
+        with:
+          args: "@codemod-com/your-codemod --dry-run"
+```
+
+Notes:
+- `inputs.args` is passed to `npx codemod` and defaults to `--version`.
+- The Action wraps `npx -y codemod`; no install needed.
+- To publish on Marketplace, create a tagged release (e.g., `v0.0.1`) and select "Publish this Action to Marketplace" when drafting the release.
