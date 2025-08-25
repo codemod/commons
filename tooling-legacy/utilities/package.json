@@ -1,0 +1,58 @@
+{
+  "name": "@codemod-com/utilities",
+  "author": "Codemod, Inc.",
+  "version": "1.1.8",
+  "description": "The utilities used across Codemod.com packages",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "./dist",
+    "!**/*.test.js",
+    "!**/*.test.d.ts",
+    "LICENSE",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/adm-zip": "0.5.7",
+    "@types/js-beautify": "^1.14.3",
+    "@types/jscodeshift": "^0.11.11",
+    "@types/node": "20.10.3",
+    "@types/pako": "^2.0.0",
+    "@types/semver": "^7.5.8",
+    "@types/tar": "6.1.13",
+    "@types/tar-stream": "^3.1.3",
+    "@types/unzipper": "^0.10.9",
+    "@vitest/coverage-v8": "catalog:",
+    "memfs": "^4.15.2",
+    "ts-node": "10.9.1",
+    "typescript": "^5.5.4",
+    "vitest": "^1.0.1",
+    "@codemod-com/tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@codemod-com/filemod": "workspace:*",
+    "adm-zip": "0.5.16",
+    "change-case": "^5.2.0",
+    "glob": "catalog:",
+    "js-beautify": " ^1.14.11",
+    "jscodeshift": "^0.15.1",
+    "pako": "^2.1.0",
+    "prettier": "^3.2.5",
+    "semver": "^7.6.2",
+    "tar": "^6.1.15",
+    "tar-stream": "^3.1.7",
+    "unzipper": "^0.11.6",
+    "valibot": "catalog:"
+  }
+}

@@ -4,18 +4,11 @@
   "description": "Codemods, public or private, are preferred to reside in repositories owned by the main organization of their respective projects. This repository serves as a catch-all for some codemod sources that still have not found thier way to their ideal home or for Codemod-compatible forks of existing codemods for easier publishing. Please [chat with us](https://go.codemod.com/community) before making any major contribution.",
   "main": "index.js",
   "devDependencies": {
-    "@biomejs/biome": "^1.6.4",
-    "@codemod-com/tsconfig": "workspace:*",
-    "@codemod-com/utilities": "workspace:*",
-    "turbo": "^1.10.14",
-    "vitest": "^1.0.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.11"
+    "@biomejs/biome": "^1.6.4"
   },
   "scripts": {
-    "build": "turbo run build",
-    "clean": "turbo run clean",
-    "prepare": "husky && husky install"
+    "build:legacy": "pnpm --filter codemod-legacy --filter tooling-legacy run build",
+    "clean:legacy": "pnpm --filter codemod-legacy --filter tooling-legacy run clean"
   },
   "repository": {
     "type": "git",
@@ -27,10 +20,5 @@
   "bugs": {
     "url": "https://github.com/codemod-com/commons/issues"
   },
-  "homepage": "https://github.com/codemod-com/commons#readme",
-  "lint-staged": {
-    "*": [
-      "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --diagnostic-level=error"
-    ]
-  }
+  "homepage": "https://github.com/codemod-com/commons#readme"
 }
