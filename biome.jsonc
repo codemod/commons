@@ -1,0 +1,77 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": [
+      "**",
+      "!codemods-legacy",
+      "!tooling-legacy",
+      "!**/*.snap.cjs",
+      "!**/fixtures",
+      "!**/expected",
+      "!**/input"
+    ]
+  },
+  "assist": { "actions": { "source": { "organizeImports": "off" } } },
+  // Rules for the linter
+  "linter": {
+    "rules": {
+      "style": {
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "off",
+        "noYodaExpression": "error",
+        "useImportType": "error",
+        "useNodeAssertStrict": "error",
+        "useNodejsImportProtocol": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error",
+        "useArrayLiterals": "off",
+        "noEnum": "error"
+      },
+      "suspicious": {
+        "noAssignInExpressions": "off",
+        "noExplicitAny": "error",
+        "noEmptyBlock": "error",
+        "noDuplicateAtImportRules": "error",
+        "noDuplicateObjectKeys": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnknownFunction": "error"
+      },
+      "nursery": {},
+      "performance": {
+        "recommended": true
+      }
+    }
+  },
+  // Language specific settings
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "semicolons": "always",
+      "quoteStyle": "single",
+      "trailingCommas": "all"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space"
+    }
+  },
+  // VSC specific settings
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git"
+  }
+}

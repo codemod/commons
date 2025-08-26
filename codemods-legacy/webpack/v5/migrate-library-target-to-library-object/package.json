@@ -1,0 +1,23 @@
+{
+  "name": "migrate-library-target-to-library-object",
+  "license": "MIT",
+  "devDependencies": {
+    "@codemod.com/codemod-utils": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/jscodeshift": "^0.11.10",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "files": [
+    "README.md",
+    ".codemodrc.json",
+    "/dist/index.cjs"
+  ],
+  "type": "module",
+  "author": "akash-kumar-dev"
+}

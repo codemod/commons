@@ -1,0 +1,24 @@
+{
+  "name": "@codemod-com/codemod-react-router-4-use-history-hook",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "typescript": "^5.2.2",
+    "esbuild": "0.19.5",
+    "jscodeshift": "^0.15.1",
+    "@types/jscodeshift": "^0.11.10",
+    "vitest": "^1.0.1"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "build:cjs": "cjs-builder ./src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

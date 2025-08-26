@@ -1,0 +1,33 @@
+{
+  "name": "@codemod-com/codemod-cal.com-app-directory-boilerplate-calcom",
+  "dependencies": {
+    "mdast-util-from-markdown": "catalog:",
+    "mdast-util-to-markdown": "catalog:",
+    "micromark-extension-mdxjs": "catalog:",
+    "mdast-util-mdx": "catalog:",
+    "unist-util-visit": "catalog:"
+  },
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod-com/filemod": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/jscodeshift": "^0.11.10",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.2.2",
+    "memfs": "^4.6.0",
+    "ts-morph": "^19.0.0",
+    "jscodeshift": "^0.15.1"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

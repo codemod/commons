@@ -1,0 +1,24 @@
+{
+  "name": "@codemod-com/codemod-react-remove-forward-ref",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod.com/codemod-utils": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1",
+    "@types/jscodeshift": "^0.11.10",
+    "vitest": "^3.2.4"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@codemod-com/codemod-netlify-sdk-0.8.5-deleteenvironmentvariable",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/jscodeshift": "^0.11.10",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1",
+    "vitest": "^1.0.1"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

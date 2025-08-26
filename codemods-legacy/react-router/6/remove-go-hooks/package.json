@@ -1,0 +1,17 @@
+{
+  "name": "@codemod-com/codemod-react-router-6-remove-go-hooks",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1",
+    "@types/jscodeshift": "^0.11.10"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

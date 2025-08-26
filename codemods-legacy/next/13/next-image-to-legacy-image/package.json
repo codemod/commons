@@ -1,0 +1,17 @@
+{
+  "name": "@codemod-com/codemod-next-13-next-image-to-legacy-image",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1",
+    "@types/jscodeshift": "^0.11.10"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@codemod-com/codemod-cal.com-generate-url-patterns",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@codemod-com/filemod": "workspace:*",
+    "@types/jscodeshift": "^0.11.10",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.2.2",
+    "memfs": "^4.6.0",
+    "ts-morph": "^19.0.0",
+    "jscodeshift": "^0.15.1"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

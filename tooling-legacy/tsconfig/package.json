@@ -1,0 +1,14 @@
+{
+  "name": "@codemod-com/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "base.json",
+    "codemod.json",
+    "lib.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

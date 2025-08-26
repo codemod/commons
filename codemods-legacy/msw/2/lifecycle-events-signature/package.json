@@ -1,0 +1,17 @@
+{
+  "name": "@codemod-com/codemod-msw-2-lifecycle-events-signature",
+  "devDependencies": {
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "typescript": "^5.2.2",
+    "ts-morph": "^19.0.0"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

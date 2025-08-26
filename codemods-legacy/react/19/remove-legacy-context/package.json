@@ -1,0 +1,25 @@
+{
+  "name": "remove-legacy-context",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@codemod.com/codemod-utils": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/jscodeshift": "^0.11.10",
+    "@types/node": "20.9.0",
+    "jscodeshift": "^0.15.1",
+    "typescript": "^5.2.2",
+    "vitest": "^3.2.4 "
+  },
+  "scripts": {
+    "test-fails": "vitest run && echo this test fails",
+    "test:watch": "vitest watch"
+  },
+  "files": [
+    "README.md",
+    ".codemodrc.json",
+    "/dist/index.cjs"
+  ],
+  "type": "module",
+  "author": "dmytrohryshyn"
+}

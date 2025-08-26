@@ -1,0 +1,25 @@
+{
+  "name": "@codemod-com/codemod-eslint-to-biome-rules",
+  "devDependencies": {
+    "@codemod-com/filemod": "workspace:*",
+    "@codemod-com/utilities": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "memfs": "^4.6.0",
+    "typescript": "^5.2.2",
+    "valibot": "catalog:",
+    "vitest": "^1.0.1"
+  },
+  "private": true,
+  "main": "./dist/index.cjs",
+  "scripts": {
+    "generate": "tsx generate-latest-dts.ts",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "files": [
+    "./README.md",
+    "./.codemodrc.json",
+    "./dist/index.cjs"
+  ],
+  "type": "module"
+}

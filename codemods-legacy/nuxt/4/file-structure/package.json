@@ -1,0 +1,17 @@
+{
+  "name": "@codemod/nuxt-4-file-structure",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/node": "20.9.0",
+    "typescript": "^5.2.2",
+    "@codemod.com/workflow": "0.0.31"
+  },
+  "files": [
+    "README.md",
+    ".codemodrc.json",
+    "/dist/index.cjs"
+  ],
+  "type": "module"
+}

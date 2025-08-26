@@ -1,0 +1,20 @@
+{
+  "name": "tanStackRouter-CodeSplitting",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@codemod-com/tsconfig": "workspace:*",
+    "@types/node": "20.9.0",
+    "typescript": "^5.5.4"
+  },
+  "files": [
+    "README.md",
+    ".codemodrc.json",
+    "/dist/index.cjs"
+  ],
+  "type": "module",
+  "dependencies": {
+    "@codemod.com/workflow": "^0.0.31",
+    "fast-glob": "^3.3.2"
+  }
+}
