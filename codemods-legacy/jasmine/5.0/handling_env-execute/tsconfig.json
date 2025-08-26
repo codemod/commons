@@ -29,7 +29,4 @@
     "./test/**/*.js"
   ],
   "exclude": ["node_modules", "./dist/**/*"],
-  "ts-node": {
-    "transpileOnly": true
-  }
 }

@@ -4,7 +4,6 @@
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",
-    "ts-node": "^10.9.1",
     "@codemod-com/filemod": "workspace:*",
     "memfs": "^4.6.0",
     "ts-morph": "^19.0.0",

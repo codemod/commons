@@ -6,7 +6,6 @@
     "@codemod-com/filemod": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
     "typescript": "^5.2.2",
-    "ts-node": "^10.9.1",
     "memfs": "^4.6.0",
     "ts-morph": "^19.0.0",
     "jscodeshift": "^0.15.1",

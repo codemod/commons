@@ -1,8 +1,8 @@
 import * as changeCase from "change-case";
 import jsBeautify from "js-beautify";
 
-import baseTsconfig from "@codemod-com/tsconfig/base.json" assert { type: "json" };
-import codemodTsconfig from "@codemod-com/tsconfig/codemod.json" assert { type: "json" };
+import baseTsconfig from "@codemod-com/tsconfig/base.json";
+import codemodTsconfig from "@codemod-com/tsconfig/codemod.json";
 import { isNeitherNullNorUndefined } from "./functions/validation.js";
 import {
   type CodemodConfigInput,
@@ -189,10 +189,7 @@ const tsconfigJson = () => {
         "./test/**/*.ts",
         "./test/**/*.js"
       ],
-      "exclude": ["node_modules", "./dist/**/*"],
-      "ts-node": {
-        "transpileOnly": true
-      }
+      "exclude": ["node_modules", "./dist/**/*"]
     }
 	`);
 };

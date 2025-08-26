@@ -5,7 +5,6 @@
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
     "typescript": "^5.2.2",
-    "ts-node": "^10.9.1",
     "ts-morph": "^19.0.0",
     "vitest": "^1.0.1",
     "@vitest/coverage-v8": "catalog:"
