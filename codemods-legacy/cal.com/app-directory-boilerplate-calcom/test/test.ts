@@ -1,11 +1,11 @@
-import { deepStrictEqual, ok } from "node:assert";
+import { deepStrictEqual, ok } from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi, executeFilemod } from "@codemod-com/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";
 import tsmorph from "ts-morph";
-import { describe, it } from "vitest";
-import { repomod } from "../src/index.js";
+import { repomod } from "../src/index.ts";
 
 const transform = async (json: DirectoryJSON) => {
   const volume = Volume.fromJSON(json);
@@ -145,17 +145,17 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
             `
             import type { Params } from "next/dist/shared/lib/router/utils/route-matcher";
             import { getData } from "../page";
-            
+
             type PageProps = Readonly<{
                 params: Params;
             }>;
-            
+
             const Page = ({ params }: PageProps) => {
                 await getData(params, true);
-            
+
                 return null;
             };
-                
+
             export default Page;`.replace(/\W/gm, "")
         );
       }),
@@ -203,7 +203,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
             `
                 import Page from "@pages/a/b";
                 import { _generateMetadata } from "app/_utils";
-                
+
                 export const generateMetadata = async () => await _generateMetadata(() => "", () => "");
                 export default Page;
             `.replace(/\W/gm, "")
@@ -240,7 +240,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 					import { buildLegacyCtx } from "@lib/buildLegacyCtx";
 
 					export const generateMetadata = async () => await _generateMetadata(() => "", () => "");
-					
+
 					type PageProps = Readonly<{
 						params: Params;
 					}>;
@@ -248,7 +248,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 					const Page = async ({ params }: PageProps) => {
 						const h = headers();
 						const nonce = h.get("x-nonce") ?? undefined;
-						
+
 						const legacyCtx = buildLegacyCtx(headers(), cookies(), params);
 						const props = await getData(legacyCtx);
 
@@ -258,7 +258,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 							</PageWrapper>
 						);
 					};
-					
+
 					export default Page;`;
 
         return (
@@ -300,7 +300,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 					import { buildLegacyCtx } from "@lib/buildLegacyCtx";
 
 					export const generateMetadata = async () => await _generateMetadata(() => "", () => "");
-					
+
 					type PageProps = Readonly<{
 						params: Params;
 					}>;
@@ -308,7 +308,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 					const Page = async ({ params }: PageProps) => {
 						const h = headers();
 						const nonce = h.get("x-nonce") ?? undefined;
-						
+
 						const legacyCtx = buildLegacyCtx(headers(), cookies(), params);
 						const props = await getData(legacyCtx);
 
@@ -318,7 +318,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 							</PageWrapper>
 						);
 					};
-					
+
 					export default Page;`;
         return (
           command.kind === "upsertFile" &&
@@ -359,7 +359,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 			export const getServerSideProps = (ctx) => {
 				return a + b;
 			}
-			
+
 			const getData = () => {
 				getServerSideProps();
 			}
@@ -387,14 +387,14 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 			import {headers, cookies} from "next/headers";
 			import { buildLegacyCtx } from "@lib/buildLegacyCtx";
 
-			import b from 'b'; 
+			import b from 'b';
 			import { a } from 'a';
 			const getServerSideProps = (ctx) => {
 				return a + b;
 			}
 			const getData = () => {
 				getServerSideProps();
-			} 
+			}
 
 			export const generateMetadata = async ()=> await _generateMetadata(()=>"",()=>"");
 			type PageProps=Readonly<{params:Params;}>;
@@ -404,7 +404,7 @@ describe("cal.com app-directory-boilerplate-calcom", () => {
 
 				const legacyCtx = buildLegacyCtx(headers(), cookies(), params);
 				const props = await getData(legacyCtx);
-				
+
 				return(<PageWrapper requiresLicense={false} nonce={nonce }themeBasis={null}><OldPage {...props}/></PageWrapper>);
 			};
 			export default Page;

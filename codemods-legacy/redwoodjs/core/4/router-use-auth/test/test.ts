@@ -1,11 +1,11 @@
 import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { API, FileInfo } from "jscodeshift";
 import jscodeshift from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 

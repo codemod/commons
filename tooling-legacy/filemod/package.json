@@ -18,8 +18,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "test": "vitest run"
   },
   "keywords": [],
   "license": "Apache-2.0",
@@ -29,7 +28,6 @@
     "memfs": "^4.6.0",
     "glob": "catalog:",
     "vitest": "^1.0.1",
-    "@vitest/coverage-v8": "catalog:",
     "typescript": "^5.2.2"
   }
 }

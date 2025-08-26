@@ -1,11 +1,11 @@
-import { deepStrictEqual } from "node:assert";
+import { deepStrictEqual } from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi, executeFilemod } from "@codemod-com/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import jscodeshift from "jscodeshift";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";
-import { describe, it } from "vitest";
-import { repomod } from "../src/index.js";
+import { repomod } from "../src/index.ts";
 
 const transform = async (
   json: DirectoryJSON,
@@ -61,7 +61,7 @@ const abTestMiddlewareContent = `
 const middlewareContent = `
   export const config = {
     matcher: [
-      "otherPath", 
+      "otherPath",
     ]
   }
 `;
@@ -149,7 +149,7 @@ describe("generate-url-patterns", () => {
         newData: `
 				export const config = {
 					matcher: [
-						"otherPath", 
+						"otherPath",
 						"/noSegment",
 						"/future/noSegment/",
 
@@ -162,7 +162,7 @@ describe("generate-url-patterns", () => {
 						"/dynamicSegment/:b/:c",
 						"/future/dynamicSegment/:b/:c/",
 
-						"/optionalCatchAllDynamicSegments/:element*/f", 
+						"/optionalCatchAllDynamicSegments/:element*/f",
 						"/future/optionalCatchAllDynamicSegments/:element*/f/"
 					]
 				}

@@ -1,12 +1,12 @@
 import { deepStrictEqual } from "node:assert";
+import { describe, it } from "node:test";
 import type { UnifiedFileSystem } from "@codemod-com/filemod";
 import { buildApi, executeFilemod } from "@codemod-com/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";
 import tsmorph from "ts-morph";
-import { describe, it } from "vitest";
-import { repomod } from "../src/index.js";
+import { repomod } from "../src/index.ts";
 
 const transform = async (json: DirectoryJSON) => {
   const volume = Volume.fromJSON(json);
@@ -34,10 +34,10 @@ describe("i18n remove unused translations", () => {
   it("should support t('translationKey')", async () => {
     const A_CONTENT = `
 		import { useLocale } from "@calcom/lib/hooks/useLocale";
-		
+
 		export default function A() {
 			const { t } = useLocale();
-			
+
 			return <>
 			<p>{t('key_1')}</p>
 			<p>{t( a ? 'key_2' : 'key_3')}</p>
@@ -51,7 +51,7 @@ describe("i18n remove unused translations", () => {
 		"key_2": "key2",
 		"key_3": "key3",
 		"key_4": "key4",
-	}	
+	}
 	`;
 
     const [upsertDataCommand] = await transform({
@@ -64,7 +64,7 @@ describe("i18n remove unused translations", () => {
 			"key_1": "key1",
 			"key_2": "key2",
 			"key_3": "key3",
-		}	
+		}
 		`;
     deepStrictEqual(upsertDataCommand?.kind, "upsertFile");
 
@@ -82,7 +82,7 @@ describe("i18n remove unused translations", () => {
   it("should support props.language('translationKey')", async () => {
     const A_CONTENT = `
 		import { useLocale } from "@calcom/lib/hooks/useLocale";
-		
+
 		export default function A(props) {
 			return <p>{props.language('key_1')}</p>
 		}
@@ -92,7 +92,7 @@ describe("i18n remove unused translations", () => {
 	{
 		"key_1": "key1",
 		"key_2": "key2"
-	}	
+	}
 	`;
 
     const [upsertDataCommand] = await transform({
@@ -103,7 +103,7 @@ describe("i18n remove unused translations", () => {
     const expectedResult = `
 		{
 			"key_1": "key1"
-		}	
+		}
 		`;
     deepStrictEqual(upsertDataCommand?.kind, "upsertFile");
 
@@ -121,7 +121,7 @@ describe("i18n remove unused translations", () => {
   it("should support this.getTextBody('translationKey1', 'translationText2')", async () => {
     const A_CONTENT = `
 		import { useLocale } from "@calcom/lib/hooks/useLocale";
-		
+
 		export default class A extends B {
 			protected c() {
 				return {
@@ -134,9 +134,9 @@ describe("i18n remove unused translations", () => {
     const LOCALE_CONTENT = `
 	{
 		"key_1": "key1",
-		"key_2": "key2", 
+		"key_2": "key2",
 		"key_3": "key3,
-	}	
+	}
 	`;
 
     const [upsertDataCommand] = await transform({
@@ -148,7 +148,7 @@ describe("i18n remove unused translations", () => {
 		{
 			"key_1": "key1",
 			"key_2": "key2",
-		}	
+		}
 		`;
     deepStrictEqual(upsertDataCommand?.kind, "upsertFile");
 
@@ -166,7 +166,7 @@ describe("i18n remove unused translations", () => {
   it("should support a.translate('translationKey')", async () => {
     const A_CONTENT = `
 		import { useLocale } from "@calcom/lib/hooks/useLocale";
-		
+
 		export default function A(props) {
 			return <p>{props.a.b.c.translate('key_1')}</p>
 		}
@@ -176,7 +176,7 @@ describe("i18n remove unused translations", () => {
 	{
 		"key_1": "key1",
 		"key_2": "key2"
-	}	
+	}
 	`;
 
     const [upsertDataCommand] = await transform({
@@ -187,7 +187,7 @@ describe("i18n remove unused translations", () => {
     const expectedResult = `
 		{
 			"key_1": "key1"
-		}	
+		}
 		`;
     deepStrictEqual(upsertDataCommand?.kind, "upsertFile");
 
@@ -205,7 +205,7 @@ describe("i18n remove unused translations", () => {
   it("should support <Trans i18nKey='translationKey'>", async () => {
     const A_CONTENT = `
 		import { Trans } from "next-i18next";
-		
+
 		export default function A() {
 			return <Trans i18nKey="key_1"></Trans>
 		}
@@ -215,7 +215,7 @@ describe("i18n remove unused translations", () => {
 	{
 		"key_1": "key1",
 		"key_2": "key2"
-	}	
+	}
 	`;
 
     const [upsertDataCommand] = await transform({
@@ -226,7 +226,7 @@ describe("i18n remove unused translations", () => {
     const expectedResult = `
 		{
 			"key_1": "key1"
-		}	
+		}
 		`;
     deepStrictEqual(upsertDataCommand?.kind, "upsertFile");
 
@@ -244,10 +244,10 @@ describe("i18n remove unused translations", () => {
   it("should support <Trans i18nKey={`key${variable}`}>", async () => {
     const A_CONTENT = `
 			import { Trans } from "next-i18next";
-			
+
 			const variable1 = "1";
 			const variable2 = "2";
-			
+
 			export default function A() {
 				return <>
 				<Trans i18nKey={\`key_\${variable1}\`} ></Trans>
@@ -291,9 +291,9 @@ describe("i18n remove unused translations", () => {
   it("should support <Trans i18nKey={`${variable}_tail`}>", async () => {
     const A_CONTENT = `
 			import { Trans } from "next-i18next";
-			
+
 			const variable = "1";
-			
+
 			export default function A() {
 				return <>
 					<Trans i18nKey={\`\${variable}_tail\`} ></Trans>
@@ -367,7 +367,7 @@ describe("i18n remove unused translations", () => {
   });
 
   it("should consider snake_case component props i18n keys>", async () => {
-    const A_CONTENT = `			
+    const A_CONTENT = `
 			export default function Component() {
 				return <Component a='key_1' b='key_2' c='name' />
 			}

@@ -6,15 +6,9 @@ settings:
 
 catalogs:
   default:
-    '@vitest/coverage-v8':
-      specifier: ^1.0.1
-      version: 1.6.0
     glob:
       specifier: ^10.4.5
       version: 10.4.5
-    json-schema-to-typescript:
-      specifier: ^13.1.2
-      version: 13.1.2
     mdast-util-from-markdown:
       specifier: ^2.0.0
       version: 2.0.2
@@ -186,18 +180,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/cal.com/app-directory-boilerplate-calcom:
     dependencies:
@@ -229,9 +217,9 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -244,9 +232,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/cal.com/generate-metadata-tests-calcom:
     devDependencies:
@@ -262,9 +247,9 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -277,9 +262,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/cal.com/generate-url-patterns:
     devDependencies:
@@ -295,9 +277,9 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -310,9 +292,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/codemod-com/migrate-codemod-registry:
     devDependencies:
@@ -328,9 +307,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -343,9 +319,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/devcycle/launchdarkly-to-devcycle:
     devDependencies:
@@ -356,17 +329,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: 5.2.2
         version: 5.2.2
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/devcycle/replace-feature-flag:
     devDependencies:
@@ -397,9 +367,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -421,9 +388,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -445,9 +409,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -469,9 +430,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -493,9 +451,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -517,9 +472,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -541,9 +493,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -565,9 +514,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -589,9 +535,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -613,9 +556,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -637,9 +577,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -661,9 +598,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -685,9 +619,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -709,9 +640,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -733,9 +661,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -757,9 +682,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -781,9 +703,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -805,12 +724,6 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
-      json-schema-to-typescript:
-        specifier: 'catalog:'
-        version: 13.1.2
       memfs:
         specifier: ^4.6.0
         version: 4.17.0
@@ -1029,18 +942,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/history/4/use-back:
     devDependencies:
@@ -1053,18 +963,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/history/4/use-block:
     devDependencies:
@@ -1077,18 +984,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/history/4/use-location:
     devDependencies:
@@ -1101,18 +1005,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/i18n:
     devDependencies:
@@ -1128,9 +1029,9 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1143,9 +1044,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/immutable/0/add-deprecation-comment:
     devDependencies:
@@ -1338,9 +1236,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1399,17 +1294,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/jasmine/5.0/jasmine_migration_recipe: {}
 
@@ -1425,17 +1317,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/jest/vitest:
     devDependencies:
@@ -1448,9 +1337,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1599,9 +1485,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1626,9 +1509,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1754,9 +1634,6 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1795,18 +1672,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/netlify-sdk/0.8.1/addBuildEventContext:
     devDependencies:
@@ -1819,9 +1693,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1843,9 +1714,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1867,9 +1735,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1891,9 +1756,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1915,9 +1777,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1939,9 +1798,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -1963,9 +1819,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2029,6 +1882,9 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
+      vitest:
+        specifier: ^1.0.1
+        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/netlify-sdk/0.8.5/deleteEnvironmentVariables:
     devDependencies:
@@ -2151,9 +2007,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2181,9 +2034,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2227,9 +2077,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2271,9 +2118,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2292,9 +2136,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2316,9 +2157,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2337,9 +2175,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2376,9 +2211,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: 0.14.0
         version: 0.14.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2406,9 +2238,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2436,9 +2265,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2485,9 +2311,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2509,9 +2332,6 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
@@ -2533,9 +2353,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2557,9 +2374,6 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
@@ -2578,9 +2392,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2599,9 +2410,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2618,17 +2426,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/npm/esm-first-in-exports:
     devDependencies:
@@ -2791,9 +2596,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2820,9 +2622,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2841,9 +2640,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2862,9 +2658,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2883,18 +2676,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/react-router/4/add-exact-prop:
     devDependencies:
@@ -2904,9 +2694,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2925,9 +2712,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2946,9 +2730,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2967,9 +2748,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -2988,9 +2766,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3027,9 +2802,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3048,9 +2820,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3069,9 +2838,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3090,9 +2856,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3111,9 +2874,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3132,9 +2892,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       esbuild:
         specifier: 0.19.5
         version: 0.19.5
@@ -3156,9 +2913,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3285,9 +3039,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3336,9 +3087,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3452,9 +3200,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3527,9 +3272,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3668,9 +3410,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3713,9 +3452,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3759,9 +3495,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       ast-types:
         specifier: ^0.15.0
         version: 0.15.2
@@ -3786,9 +3519,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -3838,18 +3568,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/redwoodjs/core/4/redwood-apollo-provider:
     devDependencies:
@@ -3859,18 +3586,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/redwoodjs/core/4/router-use-auth:
     devDependencies:
@@ -3880,18 +3604,15 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/redwoodjs/core/4/use-armor:
     devDependencies:
@@ -3922,9 +3643,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@24.3.0))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4381,8 +4099,8 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4391,7 +4109,7 @@ importers:
         version: 5.7.3
       vitest:
         specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
+        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/three/r168/drag-controls-to-connect:
     devDependencies:
@@ -4405,41 +4123,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
-
-  codemods-legacy/three/r168/pointer-lock-controls-to-controls-object:
-    devDependencies:
-      '@codemod-com/tsconfig':
-        specifier: workspace:*
-        version: link:../../../../tooling-legacy/tsconfig
-      '@codemod.com/codemod-utils':
-        specifier: workspace:*
-        version: link:../../../../tooling-legacy/codemod-utils
-      '@types/jscodeshift':
-        specifier: ^0.11.10
-        version: 0.11.11
-      '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
-      jscodeshift:
-        specifier: ^0.15.1
-        version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
-      typescript:
-        specifier: ^5.2.2
-        version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/three/r168/replace-dragcontrols-getraycaster:
     devDependencies:
@@ -4453,17 +4144,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/three/r168/replace-viewport-bottom-left-with-viewportuv-flipy:
     devDependencies:
@@ -4477,17 +4165,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/three/r168/replace-viewport-top-left-with-viewport-uv:
     devDependencies:
@@ -4501,8 +4186,8 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4511,7 +4196,7 @@ importers:
         version: 5.7.3
       vitest:
         specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
+        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/three/r168/three_migration_recipe: {}
 
@@ -4527,17 +4212,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/three/r168/uniforms-to-uniformarray:
     devDependencies:
@@ -4551,8 +4233,8 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4561,7 +4243,7 @@ importers:
         version: 5.7.3
       vitest:
         specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
+        version: 1.6.0(@types/node@24.3.0)
 
   codemods-legacy/typescript/remove-public-modifier:
     devDependencies:
@@ -4614,17 +4296,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: ^20.12.3
-        version: 20.17.16
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/webpack/v5/json-imports-to-default-imports:
     devDependencies:
@@ -4632,23 +4311,20 @@ importers:
         specifier: workspace:*
         version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/webpack/v5/migrate-library-target-to-library-object:
     devDependencies:
@@ -4662,17 +4338,14 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/webpack/v5/migration-recipe: {}
 
@@ -4688,23 +4361,23 @@ importers:
         specifier: ^0.11.10
         version: 0.11.11
       '@types/node':
-        specifier: 20.9.0
-        version: 20.9.0
+        specifier: ^24.3.0
+        version: 24.3.0
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   tooling-legacy/codemod-utils:
     dependencies:
       '@babel/parser':
         specifier: ^7.24.4
         version: 7.26.7
+      '@types/jscodeshift':
+        specifier: ^0.11.11
+        version: 0.11.11
       jscodeshift:
         specifier: ^0.16.1
         version: 0.16.1(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4712,15 +4385,15 @@ importers:
       '@codemod-com/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
-      '@types/jscodeshift':
-        specifier: ^0.11.11
-        version: 0.11.11
       '@types/node':
-        specifier: ^24.3.0
-        version: 24.3.0
+        specifier: 20.10.3
+        version: 20.10.3
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
+      vitest:
+        specifier: ^1.0.1
+        version: 1.6.0(@types/node@20.10.3)
 
   tooling-legacy/filemod:
     devDependencies:
@@ -4730,9 +4403,6 @@ importers:
       '@types/node':
         specifier: 20.8.5
         version: 20.8.5
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.8.5))
       glob:
         specifier: 'catalog:'
         version: 10.4.5
@@ -4820,18 +4490,12 @@ importers:
       '@types/unzipper':
         specifier: ^0.10.9
         version: 0.10.10
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.10.3))
       memfs:
         specifier: ^4.15.2
         version: 4.17.0
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.10.3)
 
 packages:
 
@@ -5508,13 +5172,6 @@ packages:
     resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
 
-  '@bcherny/json-schema-ref-parser@10.0.5-fork':
-    resolution: {integrity: sha512-E/jKbPoca1tfUPj3iSbitDZTGnq6FUFjkH6L8U2oDwSuwK1WhnnVtCG7oFOTg/DDnyoXbQYUiUiGOibHqaGVnw==}
-    engines: {node: '>= 16'}
-
-  '@bcoe/v8-coverage@0.2.3':
-    resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
-
   '@biomejs/biome@2.2.2':
     resolution: {integrity: sha512-j1omAiQWCkhuLgwpMKisNKnsM6W8Xtt1l0WZmqY/dFj8QPNkIoTvk4tSsi40FaAAkBE1PU0AFG2RWFBWenAn+w==}
     engines: {node: '>=14.21.3'}
@@ -5864,10 +5521,6 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@istanbuljs/schema@0.1.3':
-    resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
-    engines: {node: '>=8'}
-
   '@jest/schemas@29.6.3':
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -5889,9 +5542,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@jsdevtools/ono@7.1.3':
-    resolution: {integrity: sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==}
 
   '@jsonjoy.com/base64@1.1.2':
     resolution: {integrity: sha512-q6XAnWQDIMA3+FTiOYajoYqySkO+JSat0ytXGSuRdq9uXE7o92gzuQwQM14xaCRlBLGq3v5miDGC4vkVTn54xA==}
@@ -6146,9 +5796,6 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
-  '@types/glob@7.2.0':
-    resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
-
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
@@ -6158,17 +5805,8 @@ packages:
   '@types/jscodeshift@0.11.11':
     resolution: {integrity: sha512-d7CAfFGOupj5qCDqMODXxNz2/NwCv/Lha78ZFbnr6qpk3K98iSB8I+ig9ERE2+EeYML352VMRsjPyOpeA+04eQ==}
 
-  '@types/json-schema@7.0.15':
-    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
-
-  '@types/lodash@4.17.15':
-    resolution: {integrity: sha512-w/P33JFeySuhN6JLkysYUK2gEmy9kHHFN7E8ro0tkfmlDOgxBDzWEZ/J8cWA+fHqFevpswDTFZnDx+R9lbL6xw==}
-
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
-
-  '@types/minimatch@5.1.2':
-    resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
@@ -6197,9 +5835,6 @@ packages:
   '@types/pako@2.0.3':
     resolution: {integrity: sha512-bq0hMV9opAcrmE0Byyo0fY3Ew4tgOevJmQ9grUhpXQhYfyLJ1Kqg3P33JT5fdbT2AjeAjR51zqqVjAL/HMkx7Q==}
 
-  '@types/prettier@2.7.3':
-    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
-
   '@types/react@19.0.8':
     resolution: {integrity: sha512-9P/o1IGdfmQxrujGbIMDyYaaCykhLKc0NGCtYcECNUr9UAaDe4gwvV9bR6tvd5Br1SG0j+PBpbKr2UYY8CwqSw==}
 
@@ -6220,11 +5855,6 @@ packages:
 
   '@types/unzipper@0.10.10':
     resolution: {integrity: sha512-jKJdNxhmCHTZsaKW5x0qjn6rB+gHk0w5VFbEKsw84i+RJqXZyfTmGnpjDcKqzMpjz7VVLsUBMtO5T3mVidpt0g==}
-
-  '@vitest/coverage-v8@1.6.0':
-    resolution: {integrity: sha512-KvapcbMY/8GYIG0rlwwOKCVNRc0OL20rrhFkg/CHNzncV03TE2XWvO5w9uZYoxNiMEBacAJt3unSOiZ7svePew==}
-    peerDependencies:
-      vitest: 1.6.0
 
   '@vitest/expect@1.6.0':
     resolution: {integrity: sha512-ixEvFVQjycy/oNgHjqsL6AZCDduC+tflRluaHIzKIsdbzkLn2U/iBnVeJwB6HsIjQBdfMR8Z0tRxKUsvFJEeWQ==}
@@ -6323,12 +5953,6 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
-
-  any-promise@1.3.0:
-    resolution: {integrity: sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==}
-
-  argparse@2.0.1:
-    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
   array-buffer-byte-length@1.0.2:
     resolution: {integrity: sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==}
@@ -6453,9 +6077,6 @@ packages:
     resolution: {integrity: sha512-YTd+6wGlNlPxSuri7Y6X8tY2dmm12UMH66RpKMhiX6rsk5wXXnYgbUcOt8kiS31/AjfoTOvCsE+w8nZQLQnzHA==}
     engines: {node: '>= 0.4'}
 
-  call-me-maybe@1.0.2:
-    resolution: {integrity: sha512-HpX65o1Hnr9HH25ojC1YGs7HCQLq0GCOibSaWER0eNpgJ/Z1MZv2mTc7+xh6WOPxbRVcmgbv4hGU+uSQ/2xFZQ==}
-
   caniuse-lite@1.0.30001696:
     resolution: {integrity: sha512-pDCPkvzfa39ehJtJ+OwGT/2yvT2SbjfHhiIW2LWOAcMQ7BzwxT/XuyUp4OTOd0XFWA6BKw0JalnBHgSi5DGJBQ==}
 
@@ -6511,10 +6132,6 @@ packages:
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
-
-  cli-color@2.0.4:
-    resolution: {integrity: sha512-zlnpg0jNcibNrO7GG9IeHH7maWFeCz+Ja1wx/7tZNU5ASSSSZ+/qZciM0/LHCYxSdqv5h2sdbQ/PXYdOuetXvA==}
-    engines: {node: '>=0.10'}
 
   cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
@@ -6591,10 +6208,6 @@ packages:
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
-
-  d@1.0.2:
-    resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
-    engines: {node: '>=0.12'}
 
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
@@ -6744,20 +6357,6 @@ packages:
     resolution: {integrity: sha512-w+5mJ3GuFL+NjVtJlvydShqE1eN3h3PbI7/5LAsYJP/2qtuMXjfL2LpHSRqo4b4eSF5K/DH1JXKUAHSB2UW50g==}
     engines: {node: '>= 0.4'}
 
-  es5-ext@0.10.64:
-    resolution: {integrity: sha512-p2snDhiLaXe6dahss1LddxqEm+SkuDvV8dnIQG0MWjyHpcMNfXKPE+/Cc0y+PhxJX3A4xGNeFCj5oc0BUh6deg==}
-    engines: {node: '>=0.10'}
-
-  es6-iterator@2.0.3:
-    resolution: {integrity: sha512-zw4SRzoUkd+cl+ZoE15A9o1oQd920Bb0iOJMQkQhl3jNc03YqVjAhG7scf9C5KWRU/R13Orf588uCC6525o02g==}
-
-  es6-symbol@3.1.4:
-    resolution: {integrity: sha512-U9bFFjX8tFiATgtkJ1zg25+KviIXpgRvRHS8sau3GfhVzThRQrOeksPeT0BWW2MNZs1OEWJ1DPXOQMn0KKRkvg==}
-    engines: {node: '>=0.12'}
-
-  es6-weak-map@2.0.3:
-    resolution: {integrity: sha512-p5um32HOTO1kP+w7PRnB+5lQ43Z6muuMuIMffvDN8ZB4GcnjLBV6zGStpbASIMk4DCAvEaamhe2zhyCb/QXXsA==}
-
   esbuild@0.19.5:
     resolution: {integrity: sha512-bUxalY7b1g8vNhQKdB24QDmHeY4V4tw/s6Ak5z+jJX9laP5MoQseTOMemAr0gxssjNcH0MCViG8ONI2kksvfFQ==}
     engines: {node: '>=12'}
@@ -6775,10 +6374,6 @@ packages:
   escape-string-regexp@5.0.0:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
-
-  esniff@2.0.1:
-    resolution: {integrity: sha512-kTUIGKQ/mDPFoJ0oVfcmyJn4iBDRptjNVIzwIFR7tqWXdVI9xfA2RMwY/gbSpJG3lkdWNEjLap/NqVHZiJsdfg==}
-    engines: {node: '>=0.10'}
 
   esprima@4.0.1:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
@@ -6798,9 +6393,6 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
 
-  event-emitter@0.3.5:
-    resolution: {integrity: sha512-D9rRn9y7kLPnJ+hMq7S/nhvoKwwvVJahBi2BPmx3bvbsEdK3W9ii8cBSGjP+72/LnM4n6fo3+dkCX5FeTQruXA==}
-
   event-target-shim@5.0.1:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
     engines: {node: '>=6'}
@@ -6812,9 +6404,6 @@ packages:
   expect-type@1.2.2:
     resolution: {integrity: sha512-JhFGDVJ7tmDJItKhYgJCGLOWjuK9vPxiXoUFLwLDc99NlmklilbiQJwoctZtt13+xMw91MCk/REan6MWHqDjyA==}
     engines: {node: '>=12.0.0'}
-
-  ext@1.7.0:
-    resolution: {integrity: sha512-6hxeJYaL110a9b5TEJSj0gojyHQAmA2ch5Os+ySCiA1QGdS697XWY1pzsrSjqA9LDEEgdB/KypIlR59RcLuHYw==}
 
   external-editor@3.1.0:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
@@ -6932,10 +6521,6 @@ packages:
     resolution: {integrity: sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==}
     engines: {node: '>= 0.4'}
 
-  get-stdin@8.0.0:
-    resolution: {integrity: sha512-sY22aA6xchAzprjyqmSEQv4UbAAzRN0L2dQB0NlN5acTTK9Don6nhoc3eAbUnpZiCANAMfd/+40kVdKfFygohg==}
-    engines: {node: '>=10'}
-
   get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
@@ -6953,12 +6538,6 @@ packages:
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
-
-  glob-promise@4.2.2:
-    resolution: {integrity: sha512-xcUzJ8NWN5bktoTIX7eOclO1Npxd/dyVqUJxlLIDasT4C7KZyqlPIwkdJ0Ypiy3p2ZKahTjK4M9uC3sNSfNMzw==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      glob: ^7.1.6
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
@@ -7009,9 +6588,6 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
-
-  html-escaper@2.0.2:
-    resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
 
   human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
@@ -7140,9 +6716,6 @@ packages:
     resolution: {integrity: sha512-h5PpgXkWitc38BBMYawTYMWJHFZJVnBquFE57xFpjB8pJFiF6gZ+bU+WyI/yqXiFR5mdLsgYNaPe8uao6Uv9Og==}
     engines: {node: '>=0.10.0'}
 
-  is-promise@2.2.2:
-    resolution: {integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==}
-
   is-regex@1.2.1:
     resolution: {integrity: sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==}
     engines: {node: '>= 0.4'}
@@ -7203,22 +6776,6 @@ packages:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
 
-  istanbul-lib-coverage@3.2.2:
-    resolution: {integrity: sha512-O8dpsF+r0WV/8MNRKfnmrtCWhuKjxrq2w+jpzBL5UZKTi2LeVWnWOmWRxFlesJONmc+wLAGvKQZEOanko0LFTg==}
-    engines: {node: '>=8'}
-
-  istanbul-lib-report@3.0.1:
-    resolution: {integrity: sha512-GCfE1mtsHGOELCU8e/Z7YWzpmybrx/+dSTfLrvY8qRmaY6zXTKWn6WQIjaAFw069icm6GVMNkgu0NzI4iPZUNw==}
-    engines: {node: '>=10'}
-
-  istanbul-lib-source-maps@5.0.6:
-    resolution: {integrity: sha512-yg2d+Em4KizZC5niWhQaIomgf5WlL4vOOjZ5xGCmF8SnPE/mDWWXgvRExdcpCgh9lLRRa1/fSYp2ymmbJ1pI+A==}
-    engines: {node: '>=10'}
-
-  istanbul-reports@3.1.7:
-    resolution: {integrity: sha512-BewmUXImeuRk2YY0PVbxgKAysvhRPUQE0h5QRM++nVWyubKGV0l8qQ5op8+B2DOmwSe63Jivj0BjkPQVf8fP5g==}
-    engines: {node: '>=8'}
-
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
@@ -7236,10 +6793,6 @@ packages:
 
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
-
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
-    hasBin: true
 
   jscodeshift@0.14.0:
     resolution: {integrity: sha512-7eCC1knD7bLUPuSCwXsMZUH51O8jIcoVyKtI6P0XM0IVzlGjckPy3FIwQlorzbN0Sg79oK+RlohN32Mqf/lrYA==}
@@ -7273,11 +6826,6 @@ packages:
   jsesc@3.1.0:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
-    hasBin: true
-
-  json-schema-to-typescript@13.1.2:
-    resolution: {integrity: sha512-17G+mjx4nunvOpkPvcz7fdwUwYCEwyH8vR3Ym3rFiQ8uzAL3go+c1306Kk7iGRk8HuXBXqy+JJJmpYl0cvOllw==}
-    engines: {node: '>=12.0.0'}
     hasBin: true
 
   json5@2.2.3:
@@ -7339,22 +6887,12 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lru-queue@0.1.0:
-    resolution: {integrity: sha512-BpdYkt9EvGl8OfWHDQPISVpcl5xZthb+XPsbELj5AQXxIC8IriDZIQYjBJPEm5rS420sjZ0TLEzRcq5KdBhYrQ==}
-
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
-
-  magicast@0.3.5:
-    resolution: {integrity: sha512-L0WhttDl+2BOsybvEOLK7fW3UA0OQ0IQ2d6Zl2x/a6vVRs3bAY0ECOSHHeL5jD+SbOpOCUEi0y1DgHEn9Qn1AQ==}
 
   make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
-
-  make-dir@4.0.0:
-    resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
-    engines: {node: '>=10'}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -7390,10 +6928,6 @@ packages:
   memfs@4.17.0:
     resolution: {integrity: sha512-4eirfZ7thblFmqFjywlTmuWVSvccHAJbn1r8qQLzmTO11qcqpohOjmY2mFce6x7x7WtskzRqApPD0hv+Oa74jg==}
     engines: {node: '>= 4.0.0'}
-
-  memoizee@0.4.17:
-    resolution: {integrity: sha512-DGqD7Hjpi/1or4F/aYAspXKNm5Yili0QDAFAY4QYvpqpgiY6+1jOfqpmByzjxbWd/T9mChbCArXAbDAsTm5oXA==}
-    engines: {node: '>=0.12'}
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -7573,9 +7107,6 @@ packages:
     resolution: {integrity: sha512-avsJQhyd+680gKXyG/sQc0nXaC6rBkPOfyHYcFb9+hdkqQkR9bdnkJ0AMZhke0oesPqIO+mFFJ+IdBc7mst4IA==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  mz@2.7.0:
-    resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
-
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -7583,9 +7114,6 @@ packages:
 
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
-
-  next-tick@1.1.0:
-    resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
   nise@5.1.9:
     resolution: {integrity: sha512-qOnoujW4SV6e40dYxJOb3uvuoPHtmLzIk4TFo+j0jPJoC+5Z9xja5qH5JZobEPsa8+YYphMrOSwnrshEhG2qww==}
@@ -7622,10 +7150,6 @@ packages:
   npm-run-path@5.3.0:
     resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-
-  object-assign@4.1.1:
-    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
-    engines: {node: '>=0.10.0'}
 
   object-inspect@1.13.3:
     resolution: {integrity: sha512-kDCGIbxkDSXE3euJZZXzc6to7fCrKHNI/hSRQnRuQ+BWjFNzZwiFF8fj/6o2t2G9/jTj8PSIYTfCLelLZEeRpA==}
@@ -7775,11 +7299,6 @@ packages:
   postcss@8.5.1:
     resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
-
-  prettier@2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
 
   prettier@3.4.2:
     resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
@@ -8085,29 +7604,14 @@ packages:
     resolution: {integrity: sha512-yYrrsWnrXMcdsnu/7YMYAofM1ktpL5By7vZhf15CrXijWWrEYZks5AXBudalfSWJLlnen/QUJUB5aoB0kqZUGA==}
     engines: {node: '>=6.0.0'}
 
-  test-exclude@6.0.0:
-    resolution: {integrity: sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w==}
-    engines: {node: '>=8'}
-
   text-decoder@1.2.3:
     resolution: {integrity: sha512-3/o9z3X0X0fTupwsYvR03pJ/DjWuqqrfwBgTQzdWDiQSm9KitAyz/9WqsT2JQW7KV2m+bC2ol/zqpW37NHxLaA==}
-
-  thenify-all@1.6.0:
-    resolution: {integrity: sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==}
-    engines: {node: '>=0.8'}
-
-  thenify@3.3.1:
-    resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
 
   thingies@1.21.0:
     resolution: {integrity: sha512-hsqsJsFMsV+aD4s3CWKk85ep/3I9XzYV/IXaSouJMYIoDlgyi11cBhsqYe9/geRfB0YIikBQg6raRaM+nIMP9g==}
     engines: {node: '>=10.18'}
     peerDependencies:
       tslib: ^2
-
-  timers-ext@0.1.8:
-    resolution: {integrity: sha512-wFH7+SEAcKfJpfLPkrgMPvvwnEtj8W4IurvEyrKsDleXnKLCDw71w8jltvfLa8Rm4qQxxT4jmDBYbJG/z7qoww==}
-    engines: {node: '>=0.12'}
 
   tiny-invariant@1.3.3:
     resolution: {integrity: sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==}
@@ -8198,9 +7702,6 @@ packages:
   type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
-
-  type@2.7.3:
-    resolution: {integrity: sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==}
 
   typed-array-buffer@1.0.3:
     resolution: {integrity: sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==}
@@ -9298,15 +8799,6 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@bcherny/json-schema-ref-parser@10.0.5-fork':
-    dependencies:
-      '@jsdevtools/ono': 7.1.3
-      '@types/json-schema': 7.0.15
-      call-me-maybe: 1.0.2
-      js-yaml: 4.1.0
-
-  '@bcoe/v8-coverage@0.2.3': {}
-
   '@biomejs/biome@2.2.2':
     optionalDependencies:
       '@biomejs/cli-darwin-arm64': 2.2.2
@@ -9541,8 +9033,6 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@istanbuljs/schema@0.1.3': {}
-
   '@jest/schemas@29.6.3':
     dependencies:
       '@sinclair/typebox': 0.27.8
@@ -9563,8 +9053,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@jsdevtools/ono@7.1.3': {}
 
   '@jsonjoy.com/base64@1.1.2(tslib@2.8.1)':
     dependencies:
@@ -9814,11 +9302,6 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@types/glob@7.2.0':
-    dependencies:
-      '@types/minimatch': 5.1.2
-      '@types/node': 24.3.0
-
   '@types/hast@3.0.4':
     dependencies:
       '@types/unist': 3.0.3
@@ -9830,15 +9313,9 @@ snapshots:
       ast-types: 0.14.2
       recast: 0.20.5
 
-  '@types/json-schema@7.0.15': {}
-
-  '@types/lodash@4.17.15': {}
-
   '@types/mdast@4.0.4':
     dependencies:
       '@types/unist': 3.0.3
-
-  '@types/minimatch@5.1.2': {}
 
   '@types/ms@2.1.0': {}
 
@@ -9873,8 +9350,6 @@ snapshots:
 
   '@types/pako@2.0.3': {}
 
-  '@types/prettier@2.7.3': {}
-
   '@types/react@19.0.8':
     dependencies:
       csstype: 3.1.3
@@ -9897,63 +9372,6 @@ snapshots:
   '@types/unzipper@0.10.10':
     dependencies:
       '@types/node': 24.3.0
-
-  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@20.10.3))':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@bcoe/v8-coverage': 0.2.3
-      debug: 4.4.0
-      istanbul-lib-coverage: 3.2.2
-      istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 5.0.6
-      istanbul-reports: 3.1.7
-      magic-string: 0.30.17
-      magicast: 0.3.5
-      picocolors: 1.1.1
-      std-env: 3.8.0
-      strip-literal: 2.1.1
-      test-exclude: 6.0.0
-      vitest: 1.6.0(@types/node@20.10.3)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@20.8.5))':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@bcoe/v8-coverage': 0.2.3
-      debug: 4.4.0
-      istanbul-lib-coverage: 3.2.2
-      istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 5.0.6
-      istanbul-reports: 3.1.7
-      magic-string: 0.30.17
-      magicast: 0.3.5
-      picocolors: 1.1.1
-      std-env: 3.8.0
-      strip-literal: 2.1.1
-      test-exclude: 6.0.0
-      vitest: 1.6.0(@types/node@20.8.5)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@vitest/coverage-v8@1.6.0(vitest@1.6.0(@types/node@24.3.0))':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@bcoe/v8-coverage': 0.2.3
-      debug: 4.4.0
-      istanbul-lib-coverage: 3.2.2
-      istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 5.0.6
-      istanbul-reports: 3.1.7
-      magic-string: 0.30.17
-      magicast: 0.3.5
-      picocolors: 1.1.1
-      std-env: 3.8.0
-      strip-literal: 2.1.1
-      test-exclude: 6.0.0
-      vitest: 1.6.0(@types/node@24.3.0)
-    transitivePeerDependencies:
-      - supports-color
 
   '@vitest/expect@1.6.0':
     dependencies:
@@ -10071,10 +9489,6 @@ snapshots:
   ansi-styles@5.2.0: {}
 
   ansi-styles@6.2.1: {}
-
-  any-promise@1.3.0: {}
-
-  argparse@2.0.1: {}
 
   array-buffer-byte-length@1.0.2:
     dependencies:
@@ -10212,8 +9626,6 @@ snapshots:
       call-bind-apply-helpers: 1.0.1
       get-intrinsic: 1.2.7
 
-  call-me-maybe@1.0.2: {}
-
   caniuse-lite@1.0.30001696: {}
 
   catch-unknown@1.0.0: {}
@@ -10273,14 +9685,6 @@ snapshots:
       regexp-to-ast: 0.5.0
 
   chownr@2.0.0: {}
-
-  cli-color@2.0.4:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
-      es6-iterator: 2.0.3
-      memoizee: 0.4.17
-      timers-ext: 0.1.8
 
   cli-cursor@3.1.0:
     dependencies:
@@ -10344,11 +9748,6 @@ snapshots:
   crypt@0.0.2: {}
 
   csstype@3.1.3: {}
-
-  d@1.0.2:
-    dependencies:
-      es5-ext: 0.10.64
-      type: 2.7.3
 
   data-view-buffer@1.0.2:
     dependencies:
@@ -10550,31 +9949,6 @@ snapshots:
       is-date-object: 1.1.0
       is-symbol: 1.1.1
 
-  es5-ext@0.10.64:
-    dependencies:
-      es6-iterator: 2.0.3
-      es6-symbol: 3.1.4
-      esniff: 2.0.1
-      next-tick: 1.1.0
-
-  es6-iterator@2.0.3:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
-      es6-symbol: 3.1.4
-
-  es6-symbol@3.1.4:
-    dependencies:
-      d: 1.0.2
-      ext: 1.7.0
-
-  es6-weak-map@2.0.3:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
-      es6-iterator: 2.0.3
-      es6-symbol: 3.1.4
-
   esbuild@0.19.5:
     optionalDependencies:
       '@esbuild/android-arm': 0.19.5
@@ -10630,13 +10004,6 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  esniff@2.0.1:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
-      event-emitter: 0.3.5
-      type: 2.7.3
-
   esprima@4.0.1: {}
 
   estree-util-is-identifier-name@2.1.0: {}
@@ -10651,11 +10018,6 @@ snapshots:
       '@types/estree': 1.0.6
 
   esutils@2.0.3: {}
-
-  event-emitter@0.3.5:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
 
   event-target-shim@5.0.1: {}
 
@@ -10672,10 +10034,6 @@ snapshots:
       strip-final-newline: 3.0.0
 
   expect-type@1.2.2: {}
-
-  ext@1.7.0:
-    dependencies:
-      type: 2.7.3
 
   external-editor@3.1.0:
     dependencies:
@@ -10800,8 +10158,6 @@ snapshots:
       dunder-proto: 1.0.1
       es-object-atoms: 1.1.1
 
-  get-stdin@8.0.0: {}
-
   get-stream@8.0.1: {}
 
   get-symbol-description@1.1.0:
@@ -10822,11 +10178,6 @@ snapshots:
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
-
-  glob-promise@4.2.2(glob@7.2.3):
-    dependencies:
-      '@types/glob': 7.2.0
-      glob: 7.2.3
 
   glob@10.4.5:
     dependencies:
@@ -10878,8 +10229,6 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
-
-  html-escaper@2.0.2: {}
 
   human-signals@5.0.0: {}
 
@@ -11014,8 +10363,6 @@ snapshots:
     dependencies:
       isobject: 3.0.1
 
-  is-promise@2.2.2: {}
-
   is-regex@1.2.1:
     dependencies:
       call-bound: 1.0.3
@@ -11071,27 +10418,6 @@ snapshots:
 
   isobject@3.0.1: {}
 
-  istanbul-lib-coverage@3.2.2: {}
-
-  istanbul-lib-report@3.0.1:
-    dependencies:
-      istanbul-lib-coverage: 3.2.2
-      make-dir: 4.0.0
-      supports-color: 7.2.0
-
-  istanbul-lib-source-maps@5.0.6:
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.25
-      debug: 4.4.0
-      istanbul-lib-coverage: 3.2.2
-    transitivePeerDependencies:
-      - supports-color
-
-  istanbul-reports@3.1.7:
-    dependencies:
-      html-escaper: 2.0.2
-      istanbul-lib-report: 3.0.1
-
   jackspeak@3.4.3:
     dependencies:
       '@isaacs/cliui': 8.0.2
@@ -11111,10 +10437,6 @@ snapshots:
   js-tokens@4.0.0: {}
 
   js-tokens@9.0.1: {}
-
-  js-yaml@4.1.0:
-    dependencies:
-      argparse: 2.0.1
 
   jscodeshift@0.14.0(@babel/preset-env@7.26.7(@babel/core@7.26.7)):
     dependencies:
@@ -11198,23 +10520,6 @@ snapshots:
 
   jsesc@3.1.0: {}
 
-  json-schema-to-typescript@13.1.2:
-    dependencies:
-      '@bcherny/json-schema-ref-parser': 10.0.5-fork
-      '@types/json-schema': 7.0.15
-      '@types/lodash': 4.17.15
-      '@types/prettier': 2.7.3
-      cli-color: 2.0.4
-      get-stdin: 8.0.0
-      glob: 7.2.3
-      glob-promise: 4.2.2(glob@7.2.3)
-      is-glob: 4.0.3
-      lodash: 4.17.21
-      minimist: 1.2.8
-      mkdirp: 1.0.4
-      mz: 2.7.0
-      prettier: 2.8.8
-
   json5@2.2.3: {}
 
   just-extend@6.2.0: {}
@@ -11264,28 +10569,14 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lru-queue@0.1.0:
-    dependencies:
-      es5-ext: 0.10.64
-
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-
-  magicast@0.3.5:
-    dependencies:
-      '@babel/parser': 7.26.7
-      '@babel/types': 7.26.7
-      source-map-js: 1.2.1
 
   make-dir@2.1.0:
     dependencies:
       pify: 4.0.1
       semver: 5.7.2
-
-  make-dir@4.0.0:
-    dependencies:
-      semver: 7.7.0
 
   math-intrinsics@1.1.0: {}
 
@@ -11388,17 +10679,6 @@ snapshots:
       '@jsonjoy.com/util': 1.5.0(tslib@2.8.1)
       tree-dump: 1.0.2(tslib@2.8.1)
       tslib: 2.8.1
-
-  memoizee@0.4.17:
-    dependencies:
-      d: 1.0.2
-      es5-ext: 0.10.64
-      es6-weak-map: 2.0.3
-      event-emitter: 0.3.5
-      is-promise: 2.2.2
-      lru-queue: 0.1.0
-      next-tick: 1.1.0
-      timers-ext: 0.1.8
 
   merge-stream@2.0.0: {}
 
@@ -11680,17 +10960,9 @@ snapshots:
 
   mute-stream@1.0.0: {}
 
-  mz@2.7.0:
-    dependencies:
-      any-promise: 1.3.0
-      object-assign: 4.1.1
-      thenify-all: 1.6.0
-
   nanoid@3.3.8: {}
 
   neo-async@2.6.2: {}
-
-  next-tick@1.1.0: {}
 
   nise@5.1.9:
     dependencies:
@@ -11724,8 +10996,6 @@ snapshots:
   npm-run-path@5.3.0:
     dependencies:
       path-key: 4.0.0
-
-  object-assign@4.1.1: {}
 
   object-inspect@1.13.3: {}
 
@@ -11878,8 +11148,6 @@ snapshots:
       nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
-
-  prettier@2.8.8: {}
 
   prettier@3.4.2: {}
 
@@ -12276,32 +11544,13 @@ snapshots:
       mkdirp: 0.5.6
       rimraf: 2.6.3
 
-  test-exclude@6.0.0:
-    dependencies:
-      '@istanbuljs/schema': 0.1.3
-      glob: 7.2.3
-      minimatch: 3.1.2
-
   text-decoder@1.2.3:
     dependencies:
       b4a: 1.6.7
 
-  thenify-all@1.6.0:
-    dependencies:
-      thenify: 3.3.1
-
-  thenify@3.3.1:
-    dependencies:
-      any-promise: 1.3.0
-
   thingies@1.21.0(tslib@2.8.1):
     dependencies:
       tslib: 2.8.1
-
-  timers-ext@0.1.8:
-    dependencies:
-      es5-ext: 0.10.64
-      next-tick: 1.1.0
 
   tiny-invariant@1.3.3: {}
 
@@ -12373,8 +11622,6 @@ snapshots:
   type-fest@0.21.3: {}
 
   type-fest@2.19.0: {}
-
-  type@2.7.3: {}
 
   typed-array-buffer@1.0.3:
     dependencies:

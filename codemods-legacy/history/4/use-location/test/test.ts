@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi, trimLicense } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 describe("history v4 use-location", () => {
   it("should replace history.getCurrentLocation() with history.location", async () => {
@@ -10,7 +10,7 @@ describe("history v4 use-location", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		const currentLocation = history.getCurrentLocation();
 		`;
 
@@ -18,7 +18,7 @@ describe("history v4 use-location", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		const currentLocation = history.location;
 		`;
 

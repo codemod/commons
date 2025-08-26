@@ -1,8 +1,9 @@
-import assert from "node:assert";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+
+import transform from "../src/index.ts";
 
 describe("mui/5/core-styles-import", () => {
   it("basic test", () => {

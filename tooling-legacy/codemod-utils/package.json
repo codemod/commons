@@ -21,15 +21,13 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
-    "test:watch": "vitest watch",
-    "coverage": "vitest run --coverage"
+    "test:watch": "vitest watch"
   },
   "keywords": [],
   "license": "Apache-2.0",
   "devDependencies": {
     "@codemod-com/tsconfig": "workspace:*",
     "@types/node": "20.10.3",
-    "@vitest/coverage-v8": "catalog:",
     "vitest": "^1.0.1",
     "typescript": "^5.9.2"
   },

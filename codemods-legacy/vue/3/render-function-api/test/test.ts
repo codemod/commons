@@ -1,9 +1,12 @@
 import assert from "node:assert";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import jscodeshift, { type API } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import { describe, it } from "node:test";
+import jscodeshift from "jscodeshift";
+import type { API } from "jscodeshift";
+import transform from "../src/index.ts";
+
+const __dirname = new URL(".", import.meta.url).pathname;
 
 const buildApi = (parser: string | undefined): API => ({
   j: parser ? jscodeshift.withParser(parser) : jscodeshift,

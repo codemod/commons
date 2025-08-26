@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 describe("history v4 use-block", () => {
   it("should replace history.listenBefore() with history.block() when location is used", async () => {
@@ -10,7 +10,7 @@ describe("history v4 use-block", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.listenBefore(location => {
 			console.log(location);
 		});
@@ -20,7 +20,7 @@ describe("history v4 use-block", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.block(({ location }) => {
 			console.log(location);
 		});
@@ -44,7 +44,7 @@ describe("history v4 use-block", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.listenBefore((location, callback) => {
 			console.log(location);
 			callback();
@@ -55,7 +55,7 @@ describe("history v4 use-block", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.block(({ location, action }) => {
 			console.log(location);
 			action();

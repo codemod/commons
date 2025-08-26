@@ -11,11 +11,12 @@ const removeLeadingLineBreaks = (input: string): string => {
   return input.replace(/^\n+/, "");
 };
 
-enum FilePurpose {
-  ORIGINAL_PAGE = "ORIGINAL_PAGE",
-  // route directories
-  ROUTE_PAGE = "ROUTE_PAGE",
-}
+const FilePurpose = {
+  ORIGINAL_PAGE: "ORIGINAL_PAGE",
+  ROUTE_PAGE: "ROUTE_PAGE", // route directories
+} as const;
+
+type FilePurpose = typeof FilePurpose[keyof typeof FilePurpose];
 
 const map = new Map([
   [FilePurpose.ORIGINAL_PAGE, ""],
@@ -429,7 +430,7 @@ const Page = ({ params }: PageProps) => {
 
 	return null;
 };
-	
+
 export default Page;`;
   }
   if (newPagePath.includes("(individual-page-wrapper")) {
@@ -456,17 +457,17 @@ type PageProps = Readonly<{
 const Page = async ({ params }: PageProps) => {
 	const h = headers();
 	const nonce = h.get("x-nonce") ?? undefined;
-	
+
 	const legacyCtx = buildLegacyCtx(headers(), cookies(), params);
 	const props = await getData(legacyCtx);
-	
+
 	return (
 		<PageWrapper ${usesLayout ? "getLayout={getLayout} " : ""} requiresLicense={false} nonce={nonce} themeBasis={null}>
 			<OldPage {...props} />
 		</PageWrapper>
 	);
 };
-	
+
 export default Page;`;
   }
 

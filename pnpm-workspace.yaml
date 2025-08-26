@@ -14,7 +14,6 @@ catalog:
   '@types/lodash-es': ^4.17.4
   '@types/parse-github-url': 1.0.3
   '@types/tar': ^6.1.11
-  '@vitest/coverage-v8': ^1.0.1
   ast-types: ^0.14.2
   colors-cli: ^1.0.33
   detect-indent: ^7.0.1

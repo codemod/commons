@@ -1,30 +1,30 @@
-import assert from "node:assert";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 describe("remove-public-modifier", () => {
   it("basic", () => {
     const INPUT = `
 				class MyClass {
 					public myProperty: string;
-				
+
 					public constructor() {
 					}
-				
+
 					public myMethod(): void {
 					}
-				}  
+				}
 			`;
 
     const OUTPUT = `
 				class MyClass {
 					myProperty: string;
-				
+
 					constructor() {
 					}
-				
+
 					myMethod(): void {
 					}
 				}
@@ -47,16 +47,16 @@ describe("remove-public-modifier", () => {
 				class MyClass {
 					myMethod(): void {
 					}
-					
+
 					myProperty: string = 'value';
-				}  
+				}
 			`;
 
     const OUTPUT = `
 				class MyClass {
 					myMethod(): void {
 					}
-					
+
 					myProperty: string = 'value';
 				}
 			`;
@@ -79,7 +79,7 @@ describe("remove-public-modifier", () => {
 					public static readonly myProperty: string = 'value';
 					private secondProperty: string = 'value';
 					protected thirdProperty: string = 'value';
-				}		  
+				}
 			`;
 
     const OUTPUT = `
@@ -87,7 +87,7 @@ describe("remove-public-modifier", () => {
 					static readonly myProperty: string = 'value';
 					private secondProperty: string = 'value';
 					protected thirdProperty: string = 'value';
-				}	
+				}
 			`;
     const fileInfo: FileInfo = {
       path: "index.ts",
@@ -107,20 +107,20 @@ describe("remove-public-modifier", () => {
 				class Class1 {
 					public method1(): void {}
 				}
-				
+
 				class Class2 {
 					public method2(): void {}
-				}	  
+				}
 			`;
 
     const OUTPUT = `
 				class Class1 {
 					method1(): void {}
 				}
-				
+
 				class Class2 {
 					method2(): void {}
-				}	
+				}
 			`;
     const fileInfo: FileInfo = {
       path: "index.ts",

@@ -7,15 +7,13 @@
     "jscodeshift": "^0.15.1",
     "@types/jscodeshift": "^0.11.10",
     "vitest": "^1.0.1",
-    "@vitest/coverage-v8": "catalog:",
     "ast-types": "^0.15.0"
   },
   "private": true,
   "main": "./dist/index.cjs",
   "scripts": {
     "test": "vitest run",
-    "test:watch": "vitest watch",
-    "coverage": "vitest run --coverage"
+    "test:watch": "vitest watch"
   },
   "files": [
     "./README.md",

@@ -2,18 +2,16 @@
   "name": "@codemod-com/codemod-react-redux-0-add-state-type",
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
-    "typescript": "^5.2.2",
-    "jscodeshift": "^0.15.1",
     "@types/jscodeshift": "^0.11.10",
-    "vitest": "^1.0.1",
-    "@vitest/coverage-v8": "catalog:"
+    "@types/node": "^24.3.0",
+    "typescript": "^5.2.2",
+    "jscodeshift": "^0.15.1"
   },
   "private": true,
   "main": "./dist/index.cjs",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest watch",
-    "coverage": "vitest run --coverage"
+    "test": "node --test",
+    "test:watch": "node --test --watch"
   },
   "files": [
     "./README.md",

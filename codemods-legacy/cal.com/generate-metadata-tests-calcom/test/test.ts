@@ -1,10 +1,10 @@
 import { deepStrictEqual } from "node:assert";
+import { describe, it } from "node:test";
 import { buildApi, executeFilemod } from "@codemod-com/filemod";
 import { buildPathAPI, buildUnifiedFileSystem } from "@codemod-com/utilities";
 import type { DirectoryJSON } from "memfs";
 import { Volume, createFsFromVolume } from "memfs";
-import { describe, it } from "vitest";
-import { buildData, repomod } from "../src/index.js";
+import { buildData, repomod } from "../src/index.ts";
 
 const transform = async (json: DirectoryJSON) => {
   const volume = Volume.fromJSON(json);

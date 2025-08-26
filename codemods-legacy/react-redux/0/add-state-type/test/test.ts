@@ -1,8 +1,9 @@
-import assert from "node:assert";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
+
 
 describe("react-redux-8 add-state-type", () => {
   it("should add the State type for state parameter of the mapStateToProps arrow function", () => {
@@ -288,7 +289,7 @@ describe("react-redux-8 add-state-type", () => {
 
     const OUTPUT = `
 			import { State } from "state";
-			
+
 			function selectX (state: State) {
 				return {
 					...state
@@ -320,7 +321,7 @@ describe("react-redux-8 add-state-type", () => {
 
     const OUTPUT = `
 			import { State } from "state";
-			
+
 			const selectX = (state: State) => {
 				return {
 					...state

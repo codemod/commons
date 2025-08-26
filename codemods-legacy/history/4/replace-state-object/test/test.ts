@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 describe("history v4 replace-state-object", () => {
   it("should extract `state` object into the second argument", async () => {
@@ -10,7 +10,7 @@ describe("history v4 replace-state-object", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.push({ pathname: '/new-path', search: 'search', hash: 'hash', state: { key: 'value' } });
 		`;
 
@@ -18,7 +18,7 @@ describe("history v4 replace-state-object", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.push({ pathname: '/new-path', search: 'search', hash: 'hash' }, { key: 'value' });
 		`;
 
@@ -40,7 +40,7 @@ describe("history v4 replace-state-object", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.push('/new-path');
 		`;
 
@@ -48,7 +48,7 @@ describe("history v4 replace-state-object", () => {
 		import createHistory from 'history/createBrowserHistory';
 
 		const history = createHistory();
-		
+
 		history.push('/new-path');
 		`;
 
