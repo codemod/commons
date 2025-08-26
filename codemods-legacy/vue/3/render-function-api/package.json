@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
+    "@codemod-com/tsconfig": "workspace:*",
     "@types/node": "^20.12.3",
     "@types/jscodeshift": "^0.11.10",
     "jscodeshift": "^0.15.1",

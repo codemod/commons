@@ -112,7 +112,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -143,7 +143,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -168,7 +168,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -193,7 +193,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -215,7 +215,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -239,7 +239,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod.com/workflow':
         specifier: workspace:*
         version: link:../../../tooling-legacy/workflow
@@ -257,7 +257,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -303,7 +303,7 @@ importers:
         version: link:../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -339,7 +339,7 @@ importers:
         version: link:../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -375,7 +375,7 @@ importers:
         version: link:../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -411,7 +411,7 @@ importers:
         version: link:../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -444,7 +444,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -465,7 +465,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@types/node':
         specifier: 20.9.0
         version: 20.9.0
@@ -483,7 +483,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -510,7 +510,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -537,7 +537,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -564,7 +564,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -591,7 +591,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -618,7 +618,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -645,7 +645,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -672,7 +672,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -699,7 +699,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -726,7 +726,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -753,7 +753,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -780,7 +780,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -807,7 +807,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -834,7 +834,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -861,7 +861,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -888,7 +888,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -915,7 +915,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -945,7 +945,7 @@ importers:
         version: link:../../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -975,7 +975,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: '*'
         version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -999,7 +999,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1023,7 +1023,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1047,7 +1047,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1073,7 +1073,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1097,7 +1097,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1121,7 +1121,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1145,7 +1145,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1169,7 +1169,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1196,7 +1196,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1223,7 +1223,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1250,7 +1250,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1280,7 +1280,7 @@ importers:
         version: link:../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../tooling-legacy/typescript
+        version: link:../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../tooling-legacy/utilities
@@ -1313,7 +1313,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1340,7 +1340,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1367,7 +1367,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1394,7 +1394,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1421,7 +1421,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1448,7 +1448,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1475,7 +1475,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1502,7 +1502,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1529,7 +1529,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1556,7 +1556,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1583,7 +1583,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1610,7 +1610,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1637,7 +1637,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1664,7 +1664,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1690,7 +1690,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1714,7 +1714,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -1741,7 +1741,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1765,7 +1765,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1789,7 +1789,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1813,7 +1813,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1837,7 +1837,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1868,7 +1868,7 @@ importers:
         version: link:../../../../tooling-legacy/filemod
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1898,7 +1898,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1927,7 +1927,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1951,7 +1951,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -1975,7 +1975,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -1999,7 +1999,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2023,7 +2023,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2047,7 +2047,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2071,7 +2071,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2095,7 +2095,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2119,7 +2119,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2145,7 +2145,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2172,7 +2172,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2199,7 +2199,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2226,7 +2226,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2253,7 +2253,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2280,7 +2280,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2307,7 +2307,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2334,7 +2334,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2361,7 +2361,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2388,7 +2388,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2415,7 +2415,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2442,7 +2442,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2469,7 +2469,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2498,7 +2498,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2525,7 +2525,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -2552,7 +2552,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod.com/workflow':
         specifier: workspace:*
         version: link:../../../tooling-legacy/workflow
@@ -2570,7 +2570,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@types/node':
         specifier: 20.9.0
         version: 20.9.0
@@ -3157,6 +3157,9 @@ importers:
 
   codemods-legacy/nuxt/4/absolute-watch-path:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -3178,6 +3181,9 @@ importers:
 
   codemods-legacy/nuxt/4/default-data-error-value:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -3199,6 +3205,9 @@ importers:
 
   codemods-legacy/nuxt/4/deprecated-dedupe-value:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -3220,6 +3229,9 @@ importers:
 
   codemods-legacy/nuxt/4/file-structure:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/workflow':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/workflow
@@ -3237,6 +3249,9 @@ importers:
 
   codemods-legacy/nuxt/4/shallow-function-reactivity:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -3258,6 +3273,9 @@ importers:
 
   codemods-legacy/nuxt/4/template-compilation-changes:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -3279,6 +3297,9 @@ importers:
 
   codemods-legacy/openFeature/replace-feature-flags:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@types/node':
         specifier: 20.9.0
         version: 20.9.0
@@ -4174,7 +4195,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -4201,7 +4222,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -4231,7 +4252,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -4255,7 +4276,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -4285,7 +4306,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4306,7 +4327,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -4330,7 +4351,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: 'workspace:'
         version: link:../../../../tooling-legacy/codemod-utils
@@ -4354,7 +4375,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4375,7 +4396,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
@@ -4399,7 +4420,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -4429,7 +4450,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4450,7 +4471,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../../tooling-legacy/typescript
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
@@ -4479,9 +4500,12 @@ importers:
         specifier: ^0.14.2
         version: 0.14.2
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/codemod-utils
       '@react-codemods/utils':
         specifier: workspace:*
         version: link:../../../tooling-legacy/react-utils
@@ -4503,6 +4527,9 @@ importers:
 
   codemods-legacy/react/prop-types-typescript:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -4530,6 +4557,9 @@ importers:
 
   codemods-legacy/react/replace-react-fc-typescript:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -4561,9 +4591,12 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4741,6 +4774,9 @@ importers:
 
   codemods-legacy/statsig/replace-gate:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@types/node':
         specifier: 20.9.0
         version: 20.9.0
@@ -4756,6 +4792,9 @@ importers:
 
   codemods-legacy/styledictionary/4/asynchronous-api:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4777,6 +4816,9 @@ importers:
 
   codemods-legacy/styledictionary/4/asynchronous-api-file-headers:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4798,6 +4840,9 @@ importers:
 
   codemods-legacy/styledictionary/4/format-helpers:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4819,6 +4864,9 @@ importers:
 
   codemods-legacy/styledictionary/4/formatting-options:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4840,6 +4888,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-actions:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4861,6 +4912,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-file-header:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4882,6 +4936,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-filters:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4903,6 +4960,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-formats:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4924,6 +4984,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-parsers:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4945,6 +5008,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-preprocessors:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4966,6 +5032,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-transform:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -4987,6 +5056,9 @@ importers:
 
   codemods-legacy/styledictionary/4/hook-api-transform-groups:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5008,6 +5080,9 @@ importers:
 
   codemods-legacy/styledictionary/4/instantiating-style-dictionary:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5029,6 +5104,9 @@ importers:
 
   codemods-legacy/styledictionary/4/logging:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5052,6 +5130,9 @@ importers:
 
   codemods-legacy/styledictionary/4/module-common-js:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5073,6 +5154,9 @@ importers:
 
   codemods-legacy/styledictionary/4/reference-utils:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5094,6 +5178,9 @@ importers:
 
   codemods-legacy/styledictionary/4/type:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5115,6 +5202,9 @@ importers:
 
   codemods-legacy/styledictionary/4/updated-and-removed-transforms:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5136,6 +5226,9 @@ importers:
 
   codemods-legacy/svelte/5/components-as-functions:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5157,6 +5250,9 @@ importers:
 
   codemods-legacy/svelte/5/components-as-functions-destroyfunction:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5178,6 +5274,9 @@ importers:
 
   codemods-legacy/svelte/5/components-as-functions-onfunction:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5199,6 +5298,9 @@ importers:
 
   codemods-legacy/svelte/5/is-where-scoping:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5222,6 +5324,9 @@ importers:
 
   codemods-legacy/svelte/5/server-api-changes:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5243,6 +5348,9 @@ importers:
 
   codemods-legacy/svelte/5/svelte-element-expression:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5271,6 +5379,9 @@ importers:
         specifier: ^3.3.2
         version: 3.3.3
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling-legacy/tsconfig
       '@types/node':
         specifier: 20.9.0
         version: 20.9.0
@@ -5283,9 +5394,12 @@ importers:
 
   codemods-legacy/three/r168/deactivate-to-disconnect:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5304,9 +5418,12 @@ importers:
 
   codemods-legacy/three/r168/drag-controls-to-connect:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5325,9 +5442,12 @@ importers:
 
   codemods-legacy/three/r168/pointer-lock-controls-to-controls-object:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5346,9 +5466,12 @@ importers:
 
   codemods-legacy/three/r168/replace-dragcontrols-getraycaster:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5367,9 +5490,12 @@ importers:
 
   codemods-legacy/three/r168/replace-viewport-bottom-left-with-viewportuv-flipy:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5388,9 +5514,12 @@ importers:
 
   codemods-legacy/three/r168/replace-viewport-top-left-with-viewport-uv:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5411,9 +5540,12 @@ importers:
 
   codemods-legacy/three/r168/transform_logluvloader:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5432,9 +5564,12 @@ importers:
 
   codemods-legacy/three/r168/uniforms-to-uniformarray:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5455,7 +5590,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -5482,7 +5617,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../../../tooling-legacy/typescript
+        version: link:../../../tooling-legacy/tsconfig
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../tooling-legacy/utilities
@@ -5507,6 +5642,9 @@ importers:
 
   codemods-legacy/vue/3/render-function-api:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5525,6 +5663,9 @@ importers:
 
   codemods-legacy/webpack/v5/json-imports-to-default-imports:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
         specifier: '*'
         version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -5546,9 +5687,12 @@ importers:
 
   codemods-legacy/webpack/v5/migrate-library-target-to-library-object:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5569,9 +5713,12 @@ importers:
 
   codemods-legacy/webpack/v5/set-target-to-false-and-update-plugins:
     devDependencies:
+      '@codemod-com/tsconfig':
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/tsconfig
       '@codemod.com/codemod-utils':
-        specifier: '*'
-        version: 1.0.0(@babel/preset-env@7.26.7(@babel/core@7.26.7))
+        specifier: workspace:*
+        version: link:../../../../tooling-legacy/codemod-utils
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
@@ -5602,7 +5749,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../typescript
+        version: link:../tsconfig
       '@types/node':
         specifier: 20.10.3
         version: 20.10.3
@@ -5623,7 +5770,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../typescript
+        version: link:../tsconfig
       '@types/node':
         specifier: 20.8.5
         version: 20.8.5
@@ -5649,8 +5796,6 @@ importers:
   tooling-legacy/react-utils: {}
 
   tooling-legacy/tsconfig: {}
-
-  tooling-legacy/typescript: {}
 
   tooling-legacy/utilities:
     dependencies:
@@ -5696,7 +5841,7 @@ importers:
     devDependencies:
       '@codemod-com/tsconfig':
         specifier: workspace:*
-        version: link:../typescript
+        version: link:../tsconfig
       '@types/adm-zip':
         specifier: 0.5.7
         version: 0.5.7
