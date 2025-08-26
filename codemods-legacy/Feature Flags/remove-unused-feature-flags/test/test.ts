@@ -1,8 +1,8 @@
 import assert from "node:assert";
+import { describe, it } from "node:test";
 import { buildApi } from "@codemod-com/utilities";
 import type { FileInfo } from "jscodeshift";
-import { describe, it } from "vitest";
-import transform from "../src/index.js";
+import transform from "../src/index.ts";
 
 describe("remove-unused-feature-flags", () => {
   it("should not change code without feature flags", () => {
