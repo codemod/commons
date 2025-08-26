@@ -1,17 +1,13 @@
 {
   "name": "@codemod-com/codemod-react-router-6-compat-router",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",
     "jscodeshift": "^0.15.1",
-    "@types/jscodeshift": "^0.11.10",
-    "vitest": "^1.0.1",
-    "@vitest/coverage-v8": "catalog:"
+    "@types/jscodeshift": "^0.11.10"
   },
   "private": true,
   "main": "./dist/index.cjs",
-  "scripts": {},
   "files": [
     "./README.md",
     "./.codemodrc.json",

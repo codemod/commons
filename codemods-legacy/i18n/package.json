@@ -1,6 +1,6 @@
 {
   "name": "@codemod-com/codemod-i18n",
-  "dependencies": {},
+
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/filemod": "workspace:*",

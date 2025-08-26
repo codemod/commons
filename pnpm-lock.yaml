@@ -1161,18 +1161,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/nest-from-js:
     devDependencies:
@@ -1185,18 +1179,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/remove-from-js:
     devDependencies:
@@ -1209,18 +1197,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/remove-import:
     devDependencies:
@@ -1233,18 +1215,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/remove-to-js:
     devDependencies:
@@ -1257,18 +1233,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/replace-get:
     devDependencies:
@@ -1281,18 +1251,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/replace-get-in:
     devDependencies:
@@ -1305,18 +1269,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/replace-merge:
     devDependencies:
@@ -1329,18 +1287,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/replace-set:
     devDependencies:
@@ -1353,18 +1305,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/0/replace-set-in:
     devDependencies:
@@ -1377,18 +1323,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/4/isterable-to-iscollection:
     devDependencies:
@@ -1425,18 +1365,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/immutable/4/rename-to-seq:
     devDependencies:
@@ -1449,18 +1383,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/jasmine/5.0/handling_env-execute:
     devDependencies:
@@ -1724,18 +1652,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/ctx-fetch:
     devDependencies:
@@ -1745,18 +1667,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/imports:
     devDependencies:
@@ -1766,18 +1682,12 @@ importers:
       '@codemod.com/codemod-utils':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/codemod-utils
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^24.0.0
         version: 24.0.0
       typescript:
         specifier: ^5.7.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/lifecycle-events-signature:
     devDependencies:
@@ -1787,18 +1697,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/print-handler:
     devDependencies:
@@ -1808,18 +1712,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/req-passthrough:
     devDependencies:
@@ -1829,18 +1727,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/request-changes:
     devDependencies:
@@ -1850,18 +1742,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/response-usages:
     devDependencies:
@@ -1892,18 +1778,12 @@ importers:
       '@codemod-com/utilities':
         specifier: workspace:*
         version: link:../../../../tooling-legacy/utilities
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       ts-morph:
         specifier: ^19.0.0
         version: 19.0.0
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/msw/2/upgrade-recipe: {}
 
@@ -2110,18 +1990,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/createOrUpdateVariables:
     devDependencies:
@@ -2134,18 +2008,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/deleteEnvironmentVariable:
     devDependencies:
@@ -2158,18 +2026,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/deleteEnvironmentVariables:
     devDependencies:
@@ -2182,18 +2044,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/getEnvironmentVariables:
     devDependencies:
@@ -2206,18 +2062,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/netlify-sdk-0.8.5-recipe: {}
 
@@ -2232,18 +2082,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify-sdk/0.8.5/updateEnvironmentVariable:
     devDependencies:
@@ -2256,18 +2100,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/netlify/add-zod-validation:
     devDependencies:
@@ -2421,18 +2259,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/next/13/comment-deletable-files:
     devDependencies:
@@ -2529,18 +2361,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/next/13/remove-get-static-props:
     devDependencies:
@@ -2830,18 +2656,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/nuxt/4/default-data-error-value:
     devDependencies:
@@ -2851,18 +2671,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/nuxt/4/deprecated-dedupe-value:
     devDependencies:
@@ -2872,18 +2686,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/nuxt/4/file-structure:
     devDependencies:
@@ -2899,9 +2707,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/nuxt/4/migration-recipe: {}
 
@@ -2913,18 +2718,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/nuxt/4/template-compilation-changes:
     devDependencies:
@@ -2934,18 +2733,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/openFeature/replace-feature-flags:
     devDependencies:
@@ -2982,9 +2775,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/prisma/5/json-protocol:
     dependencies:
@@ -3390,18 +3180,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/compat-router:
     devDependencies:
@@ -3411,18 +3195,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/link-to-props:
     devDependencies:
@@ -3432,18 +3210,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/match-path-arguments:
     devDependencies:
@@ -3453,18 +3225,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/navlink-exact-end:
     devDependencies:
@@ -3474,18 +3240,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/redirect-to-navigate:
     devDependencies:
@@ -3495,18 +3255,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/remove-active-classname:
     devDependencies:
@@ -3516,18 +3270,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/remove-active-style:
     devDependencies:
@@ -3558,18 +3306,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/remove-go-hooks:
     devDependencies:
@@ -3579,18 +3321,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/remove-redirect-inside-switch:
     devDependencies:
@@ -3621,18 +3357,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/static-router-imports:
     devDependencies:
@@ -3642,18 +3372,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/use-location:
     devDependencies:
@@ -3663,18 +3387,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/use-navigate:
     devDependencies:
@@ -3684,18 +3402,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/use-params:
     devDependencies:
@@ -3705,18 +3417,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react-router/6/use-route-match:
     devDependencies:
@@ -3726,18 +3432,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/react/19/migration-recipe: {}
 
@@ -3779,9 +3479,6 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@3.2.4(@types/debug@4.1.12)(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
@@ -4213,18 +3910,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: 'catalog:'
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/remove-unused-feature-flags-2:
     devDependencies:
@@ -4282,9 +3973,6 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/statsig/replace-gate:
     devDependencies:
@@ -4312,18 +4000,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/asynchronous-api-file-headers:
     devDependencies:
@@ -4333,18 +4015,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/format-helpers:
     devDependencies:
@@ -4354,18 +4030,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/formatting-options:
     devDependencies:
@@ -4375,18 +4045,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-actions:
     devDependencies:
@@ -4396,18 +4060,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-file-header:
     devDependencies:
@@ -4417,18 +4075,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-filters:
     devDependencies:
@@ -4438,18 +4090,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-formats:
     devDependencies:
@@ -4459,18 +4105,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-parsers:
     devDependencies:
@@ -4480,18 +4120,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-preprocessors:
     devDependencies:
@@ -4501,18 +4135,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-transform:
     devDependencies:
@@ -4522,18 +4150,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/hook-api-transform-groups:
     devDependencies:
@@ -4543,18 +4165,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/instantiating-style-dictionary:
     devDependencies:
@@ -4564,18 +4180,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/logging:
     devDependencies:
@@ -4585,18 +4195,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/migration-recipe: {}
 
@@ -4608,18 +4212,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/reference-utils:
     devDependencies:
@@ -4629,18 +4227,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/type:
     devDependencies:
@@ -4650,18 +4242,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/styledictionary/4/updated-and-removed-transforms:
     devDependencies:
@@ -4671,18 +4257,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/components-as-functions:
     devDependencies:
@@ -4692,18 +4272,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/components-as-functions-destroyfunction:
     devDependencies:
@@ -4713,18 +4287,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/components-as-functions-onfunction:
     devDependencies:
@@ -4734,18 +4302,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/is-where-scoping:
     devDependencies:
@@ -4755,18 +4317,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/migration-recipe: {}
 
@@ -4778,18 +4334,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/svelte/5/svelte-element-expression:
     devDependencies:
@@ -4799,18 +4349,12 @@ importers:
       '@types/jscodeshift':
         specifier: ^0.11.10
         version: 0.11.11
-      '@vitest/coverage-v8':
-        specifier: ^1.0.1
-        version: 1.6.0(vitest@1.6.0(@types/node@20.17.16))
       jscodeshift:
         specifier: ^0.15.1
         version: 0.15.2(@babel/preset-env@7.26.7(@babel/core@7.26.7))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.17.16)
 
   codemods-legacy/tanStack/codeSplitting:
     dependencies:
@@ -4830,9 +4374,6 @@ importers:
       typescript:
         specifier: ^5.5.4
         version: 5.7.3
-      vitest:
-        specifier: ^1.0.1
-        version: 1.6.0(@types/node@20.9.0)
 
   codemods-legacy/three/r168/deactivate-to-disconnect:
     devDependencies:
@@ -10421,25 +9962,6 @@ snapshots:
       strip-literal: 2.1.1
       test-exclude: 6.0.0
       vitest: 1.6.0(@types/node@20.8.5)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@vitest/coverage-v8@1.6.0(vitest@3.2.4(@types/debug@4.1.12)(@types/node@20.17.16))':
-    dependencies:
-      '@ampproject/remapping': 2.3.0
-      '@bcoe/v8-coverage': 0.2.3
-      debug: 4.4.0
-      istanbul-lib-coverage: 3.2.2
-      istanbul-lib-report: 3.0.1
-      istanbul-lib-source-maps: 5.0.6
-      istanbul-reports: 3.1.7
-      magic-string: 0.30.17
-      magicast: 0.3.5
-      picocolors: 1.1.1
-      std-env: 3.8.0
-      strip-literal: 2.1.1
-      test-exclude: 6.0.0
-      vitest: 3.2.4(@types/debug@4.1.12)(@types/node@20.17.16)
     transitivePeerDependencies:
       - supports-color
 

@@ -1,7 +1,6 @@
 {
   "name": "@codemod-com/vue-render-function-api",
   "version": "1.0.0",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/tsconfig": "workspace:*",
     "@types/node": "^20.12.3",

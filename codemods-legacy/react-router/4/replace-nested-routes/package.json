@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-react-router-4-replace-nested-routes",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

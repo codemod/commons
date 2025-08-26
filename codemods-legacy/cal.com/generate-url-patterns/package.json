@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-cal.com-generate-url-patterns",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-mui-5-adapter-v4",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

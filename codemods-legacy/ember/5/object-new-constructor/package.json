@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-ember-5-object-new-constructor",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

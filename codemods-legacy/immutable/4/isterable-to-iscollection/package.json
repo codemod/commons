@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-immutable-4-isterable-to-iscollection",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

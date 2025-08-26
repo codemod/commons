@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-migrate-codemod-registry",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
@@ -15,7 +14,6 @@
   },
   "private": true,
   "main": "./dist/index.cjs",
-  "scripts": {},
   "files": [
     "./README.md",
     "./.codemodrc.json",

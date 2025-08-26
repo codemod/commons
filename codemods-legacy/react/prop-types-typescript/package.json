@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-react-prop-types-typescript",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

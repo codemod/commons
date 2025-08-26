@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-remove-unused-feature-flags-2",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

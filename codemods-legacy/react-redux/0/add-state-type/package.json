@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-react-redux-0-add-state-type",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

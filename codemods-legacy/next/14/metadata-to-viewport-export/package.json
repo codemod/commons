@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-next-14-metadata-to-viewport-export",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

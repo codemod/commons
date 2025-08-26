@@ -1,7 +1,6 @@
 {
   "name": "statsig/replace-gate",
   "author": "dmytrohryshyn",
-  "dependencies": {},
   "private": true,
   "devDependencies": {
     "@codemod-com/tsconfig": "workspace:*",

@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-jest-vitest",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
@@ -13,7 +12,6 @@
   },
   "private": true,
   "main": "./dist/index.cjs",
-  "scripts": {},
   "files": [
     "./README.md",
     "./.codemodrc.json",

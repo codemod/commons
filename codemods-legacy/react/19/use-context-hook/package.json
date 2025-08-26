@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-react-19-use-context",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

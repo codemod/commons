@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-feature-flags-remove-unused-feature-flags",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

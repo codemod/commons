@@ -2,7 +2,6 @@
   "name": "react/19/replace-reactdom-render",
   "author": "dmytrohryshyn",
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@codemod.com/codemod-utils": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

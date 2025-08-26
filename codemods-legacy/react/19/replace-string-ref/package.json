@@ -1,7 +1,6 @@
 {
   "name": "@codemod-com/codemod-react-19-replace-string-ref",
   "author": "codemod",
-  "dependencies": {},
   "devDependencies": {
     "@codemod.com/codemod-utils": "workspace:*",
     "@codemod-com/utilities": "workspace:*",

@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/typescript-remove-public-modifier",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/tsconfig": "workspace:*",
     "@codemod-com/utilities": "workspace:*",

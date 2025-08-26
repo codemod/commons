@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-next-i18next-copy-keys",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

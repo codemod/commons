@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-netlify-sdk-0.8.1-addbuildeventcontext",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

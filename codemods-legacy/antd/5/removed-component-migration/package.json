@@ -12,7 +12,6 @@
   },
   "private": true,
   "main": "./dist/index.cjs",
-  "scripts": {},
   "files": [
     "./README.md",
     "./.codemodrc.json",

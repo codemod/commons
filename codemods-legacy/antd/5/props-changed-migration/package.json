@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-antd-5-props-changed-migration",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
@@ -10,7 +9,6 @@
   },
   "private": true,
   "main": "./dist/index.cjs",
-  "scripts": {},
   "files": [
     "./README.md",
     "./.codemodrc.json",

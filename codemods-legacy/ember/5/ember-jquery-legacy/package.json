@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-ember-5-ember-jquery-legacy",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

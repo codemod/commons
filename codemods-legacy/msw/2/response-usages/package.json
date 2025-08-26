@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-msw-2-response-usages",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

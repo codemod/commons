@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-redwoodjs-core-4-router-use-auth",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

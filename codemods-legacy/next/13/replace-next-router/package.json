@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-next-13-replace-next-router",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "typescript": "^5.2.2",

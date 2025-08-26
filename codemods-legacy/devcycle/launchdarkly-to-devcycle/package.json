@@ -2,7 +2,6 @@
   "name": "launchdarkly-to-devcycle",
   "author": "dmytrohryshyn",
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/tsconfig": "workspace:*",
     "@types/node": "20.9.0",

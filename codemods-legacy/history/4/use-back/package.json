@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-history-4-use-back",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",

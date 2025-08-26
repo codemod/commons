@@ -1,6 +1,5 @@
 {
   "name": "@codemod-com/codemod-cal.com-generate-metadata-tests-calcom",
-  "dependencies": {},
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
     "@codemod-com/tsconfig": "workspace:*",
