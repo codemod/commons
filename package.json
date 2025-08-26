@@ -7,8 +7,8 @@
     "@biomejs/biome": "^1.6.4"
   },
   "scripts": {
-    "build:legacy": "pnpm --filter codemod-legacy --filter tooling-legacy run build",
-    "clean:legacy": "pnpm --filter codemod-legacy --filter tooling-legacy run clean"
+    "build:legacy": "pnpm --filter './tooling-legacy/**' build",
+    "test:legacy": "pnpm --filter './tooling-legacy/**' --filter './codemods-legacy/**' test"
   },
   "repository": {
     "type": "git",

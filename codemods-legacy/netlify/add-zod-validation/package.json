@@ -3,7 +3,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@codemod.com/workflow": "workspace:*",
+    "@codemod.com/workflow": "0.0.31",
     "@codemod-com/tsconfig": "workspace:*",
     "@types/node": "20.9.0",
     "typescript": "^5.2.2",
