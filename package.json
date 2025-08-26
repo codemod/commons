@@ -4,17 +4,22 @@
   "description": "Codemods, public or private, are preferred to reside in repositories owned by the main organization of their respective projects. This repository serves as a catch-all for some codemod sources that still have not found thier way to their ideal home or for Codemod-compatible forks of existing codemods for easier publishing. Please [chat with us](https://go.codemod.com/community) before making any major contribution.",
   "main": "index.js",
   "devDependencies": {
-    "@biomejs/biome": "^1.6.4"
+    "@biomejs/biome": "^2.2.2"
   },
   "scripts": {
     "build:legacy": "pnpm --filter './tooling-legacy/**' build",
-    "test:legacy": "pnpm --filter './tooling-legacy/**' --filter './codemods-legacy/**' test"
+    "test:legacy": "pnpm --filter './tooling-legacy/**' --filter './codemods-legacy/**' test",
+    "lint": "biome lint ./",
+    "pre-commit": "biome check ./ --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemod-com/commons.git"
   },
-  "keywords": ["codemod", "migration"],
+  "keywords": [
+    "codemod",
+    "migration"
+  ],
   "author": "Codemod, Inc.",
   "license": "ISC",
   "bugs": {
