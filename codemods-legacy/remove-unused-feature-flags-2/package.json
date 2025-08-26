@@ -2,8 +2,9 @@
   "name": "@codemod-com/codemod-remove-unused-feature-flags-2",
   "devDependencies": {
     "@codemod-com/utilities": "workspace:*",
-    "typescript": "^5.2.2",
     "@codemod-com/filemod": "workspace:*",
+    "@codemod-com/tsconfig": "workspace:*",
+    "typescript": "^5.2.2",
     "memfs": "^4.6.0",
     "ts-morph": "^19.0.0",
     "jscodeshift": "^0.15.1",

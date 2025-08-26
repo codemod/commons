@@ -1,8 +1,29 @@
+const hasModule = (j, path, module) =>
+	path
+		.findVariableDeclarators()
+		.filter(j.filters.VariableDeclarator.requiresModule(module))
+		.size() === 1 ||
+	path
+		.find(j.ImportDeclaration, {
+			type: 'ImportDeclaration',
+			source: {
+				type: 'Literal',
+			},
+		})
+		.filter(declarator => declarator.value.source.value === module)
+		.size() === 1;
+
+const hasReact = (j, path) => (
+	hasModule(j, path, 'React') ||
+	hasModule(j, path, 'react') ||
+	hasModule(j, path, 'react/addons') ||
+	hasModule(j, path, 'react-native')
+);
+
 export default function transform(file, api, options) {
   const j = api.jscodeshift;
   const printOptions = options.printOptions || {};
   const root = j(file.source);
-  const ReactUtils = require("@react-codemods/utils")(j);
   const encodeJSXTextValue = (value) =>
     value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -227,7 +248,7 @@ export default function transform(file, api, options) {
     }
   };
 
-  if (options["explicit-require"] === false || ReactUtils.hasReact(root)) {
+  if (options["explicit-require"] === false || hasReact(j, root)) {
     const mutations = root
       .find(j.CallExpression, {
         callee: {
