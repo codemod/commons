@@ -1,0 +1,26 @@
+{
+  "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
+  "name": "react/rename-unsafe-lifecycles",
+  "version": "1.0.0",
+  "description": "Renames unsafe React lifecycle methods to their new names with UNSAFE_ prefix",
+  "engine": "jscodeshift",
+  "private": false,
+  "arguments": [],
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.tsx",
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist/**"
+  ],
+  "meta": {
+    "tags": [
+      "react",
+      "lifcycle-methods"
+    ],
+    "git": "https://docs.codemod.com/building-codemods/package-requirements#codemodrc-json-reference"
+  }
+}
