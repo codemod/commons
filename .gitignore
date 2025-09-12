@@ -2,5 +2,6 @@ sgconfig.yml
 rules/
 node_modules
 dist
+cdmd_dist
 .turbo
 tsconfig.tsbuildinfo
