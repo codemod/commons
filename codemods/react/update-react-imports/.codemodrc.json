@@ -2,13 +2,13 @@
   "$schema": "https://codemod-utils.s3.us-west-1.amazonaws.com/configuration_schema.json",
   "name": "react/update-react-imports",
   "description": "Transform React imports to use named imports instead of default or namespace imports.",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "engine": "jscodeshift",
   "private": false,
   "include": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"],
   "arguments": [],
   "meta": {
     "tags": ["react", "migration"],
-    "git": "https://github.com/reactjs/react-codemod/tree/master/transforms"
+    "git": "https://github.com/reactjs/react-codemod"
   }
 }
