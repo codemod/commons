@@ -1,3 +1,8 @@
+
+NOTE: This is a legacy codemod! use https://go.codemod.com/msw-2-recipe instead.
+
+------------------------------------
+
 This recipe is a set of codemods that will upgrade your project from using msw v1 to v2.
 
 The recipe includes the following codemods:
