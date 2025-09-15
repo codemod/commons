@@ -1,136 +1,19 @@
 {
-  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
-  "files": {
-    "ignore": ["**/__testfixtures__/**"]
-  },
-  "linter": {
-    "ignore": [
-      "*.d.ts",
-      "dist",
-      "cdmd_dist",
-      "build",
-      "pnpm-lock.yaml",
-      "node_modules",
-      ".eslint*",
-      ".vscode",
-      "build-ncc",
-      "generated"
-    ],
-    "rules": {
-      "suspicious": {
-        "noMisleadingCharacterClass": "warn",
-        "noDuplicateClassMembers": "off",
-        "noRedeclare": "off",
-        "noDoubleEquals": "warn",
-        "noAssignInExpressions": "warn",
-        "noControlCharactersInRegex": "warn",
-        "noDuplicateParameters": "warn",
-        "noDuplicateObjectKeys": "warn",
-        "noDuplicateCase": "warn",
-        "noCatchAssign": "warn",
-        "noFallthroughSwitchClause": "warn",
-        "noFunctionAssign": "warn",
-        "noLabelVar": "warn",
-        "noConfusingLabels": "warn",
-        "noUnsafeNegation": "warn",
-        "noSelfCompare": "warn",
-        "noShadowRestrictedNames": "warn",
-        "useValidTypeof": "warn",
-        "useGetterReturn": "warn",
-        "noCommentText": "warn",
-        "noDuplicateJsxProps": "warn",
-        "noExplicitAny": "warn",
-        "noUnsafeDeclarationMerging": "warn",
-        "noArrayIndexKey": "off"
-      },
-      "correctness": {
-        "noUndeclaredVariables": "off",
-        "noUnusedVariables": "off",
-        "noUnusedImports": "error",
-        "noConstAssign": "warn",
-        "noEmptyCharacterClassInRegex": "warn",
-        "noEmptyPattern": "warn",
-        "noNewSymbol": "warn",
-        "noGlobalObjectCalls": "warn",
-        "noSelfAssign": "warn",
-        "noUnreachableSuper": "warn",
-        "noUnreachable": "warn",
-        "noUnusedLabels": "warn",
-        "useExhaustiveDependencies": "warn",
-        "useYield": "warn",
-        "useIsNan": "warn",
-        "useHookAtTopLevel": "error",
-        "useJsxKeyInIterable": "warn"
-      },
-      "complexity": {
-        "noUselessConstructor": "off",
-        "noUselessLabel": "warn",
-        "noMultipleSpacesInRegularExpressionLiterals": "warn",
-        "noUselessRename": "warn",
-        "noWith": "warn",
-        "noForEach": "off"
-      },
-      "style": {
-        "noArguments": "warn",
-        "noUnusedTemplateLiteral": "off",
-        "noCommaOperator": "warn",
-        "noRestrictedGlobals": "error",
-        "useLiteralEnumMembers": "off",
-        "noNonNullAssertion": "warn"
-      },
-      "a11y": {
-        "noSvgWithoutTitle": "warn",
-        "noBlankTarget": "warn",
-        "useAltText": "warn",
-        "useAnchorContent": "warn",
-        "useValidAnchor": "warn",
-        "useAriaActivedescendantWithTabindex": "warn",
-        "useValidAriaProps": "warn",
-        "useValidAriaValues": "warn",
-        "useValidAriaRole": "warn",
-        "noAriaUnsupportedElements": "warn",
-        "useHeadingContent": "warn",
-        "useIframeTitle": "warn",
-        "noAccessKey": "warn",
-        "noDistractingElements": "warn",
-        "noRedundantAlt": "warn",
-        "useAriaPropsForRole": "warn",
-        "noHeaderScope": "warn",
-        "useButtonType": "warn",
-        "useKeyWithClickEvents": "off",
-        "noNoninteractiveTabindex": "warn"
-      },
-      "performance": { "noDelete": "off", "noAccumulatingSpread": "warn" },
-      "security": { "noDangerouslySetInnerHtml": "warn" }
-    }
-  },
-  "formatter": {
-    "formatWithErrors": true,
-    "indentStyle": "space",
-    "ignore": [
-      "*.d.ts",
-      "input.js",
-      "output.js",
-      "dist",
-      "cdmd_dist",
-      "build",
-      "pnpm-lock.yaml",
-      "node_modules",
-      "build-ncc",
-      ".vscode",
-      "generated",
-      "**/__testfixtures__/**"
-    ]
-  },
-  "organizeImports": {
-    "ignore": [
-      "node_modules",
-      "dist",
-      "cdmd_dist",
-      "build",
-      ".vscode",
-      "build-ncc",
-      "**/__testfixtures__/**"
-    ]
-  }
+	"$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+	"files": {
+		"include": ["."],
+		"ignore": ["codemods/**/tests/**/fixtures/**"]
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 100
+	},
+	"linter": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		}
+	}
 }
