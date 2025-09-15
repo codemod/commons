@@ -4,3 +4,5 @@ node_modules
 dist
 .turbo
 tsconfig.tsbuildinfo
+.DS_Store
+**/.DS_Store

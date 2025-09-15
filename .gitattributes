@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.ts diff=javascript
+*.tsx diff=javascript
+*.js diff=javascript
+*.jsx diff=javascript
+*.json linguist-language=JSON
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
