@@ -1,0 +1,70 @@
+version: "1"
+
+nodes:
+  - id: apply-transforms
+    name: Apply AST Transformations for MSW upgrade
+    type: automatic
+    steps:
+      - name: "Imports"
+        js-ast-grep:
+          js_file: scripts/imports.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "CTX fetch"
+        js-ast-grep:
+          js_file: scripts/ctx-fetch.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Type arguments"
+        js-ast-grep:
+          js_file: scripts/type-arguments.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Request changes"
+        js-ast-grep:
+          js_file: scripts/request-changes.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Req passthrough"
+        js-ast-grep:
+          js_file: scripts/req-passthrough.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Response usages"
+        js-ast-grep:
+          js_file: scripts/response-usages.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Callback signature"
+        js-ast-grep:
+          js_file: scripts/callback-signature.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Lifecycle events signature"
+        js-ast-grep:
+          js_file: scripts/lifecycle-signature.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"
+      - name: "Print handler"
+        js-ast-grep:
+          js_file: scripts/print-handler.ts
+          exclude:
+            - "**/*.cjs"
+            - "**/*.md"
+            - "**/*.txt"

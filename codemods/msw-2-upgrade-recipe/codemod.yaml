@@ -1,0 +1,18 @@
+schema_version: "1.0"
+
+name: "msw-2-upgrade-recipe"
+version: "0.1.2"
+description: "Transform legacy code patterns"
+author: "Author <author@example.com>"
+license: "MIT"
+workflow: "workflow.yaml"
+category: "migration"
+
+targets:
+  languages: ["typescript"]
+
+keywords: ["transformation", "migration"]
+
+registry:
+  access: "public"
+  visibility: "public"
