@@ -1,7 +1,7 @@
 schema_version: "1.0"
 
 name: "msw-2-upgrade-recipe"
-version: "0.1.2"
+version: "0.1.3"
 description: "Transform legacy code patterns"
 author: "Author <author@example.com>"
 license: "MIT"
