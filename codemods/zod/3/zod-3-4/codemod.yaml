@@ -1,0 +1,17 @@
+schema_version: "1.0"
+name: "zod-3-4"
+version: "0.1.0"
+description: "Helps migrate Zod 3 to Zod 4."
+author: "hello@codemod.com"
+license: "MIT"
+workflow: "workflow.yaml"
+category: "migration"
+
+targets:
+  languages: ["javascript"]
+
+keywords: ["transformation", "migration"]
+
+registry:
+  access: "public"
+  visibility: "public"
