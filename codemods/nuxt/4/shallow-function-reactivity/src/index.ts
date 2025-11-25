@@ -63,7 +63,7 @@ export default function transform(
     .forEach((path) => {
       const args = path.node.arguments;
       if (args[0].type === "ArrowFunctionExpression") {
-        let slug = "";
+        let slugVar = "";
         root
           .find(j.VariableDeclarator, {
             init: {
@@ -74,18 +74,18 @@ export default function transform(
             },
           })
           .forEach((path) => {
-            slug = path.node.id.name;
+            slugVar = path.node.id.name;
           });
-        slug += ".params.slug";
-
-        // Create the new arguments
-        const newArg = j.identifier(slug);
-
-        path.node.arguments.unshift(newArg);
-
-        // Replace the node with the new node, preserving comments
-        replaceWithComments(path, path.node);
-        isDirty = true;
+        if (slugVar) {
+          const slug = slugVar + ".params.slug";
+          // Create the new arguments
+          const newArg = j.identifier(slug);
+          path.node.arguments.unshift(newArg);
+          // Replace the node with the new node, preserving comments
+          replaceWithComments(path, path.node);
+          isDirty = true;
+        }
+        // If no slugVar found, do nothing (skip transformation)
       }
     });
 
